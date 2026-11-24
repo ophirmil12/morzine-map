@@ -1,0 +1,621 @@
+{
+ "categories": {
+  "Accommodation": {
+   "color": "#8A56B6",
+   "icon": "hotel",
+   "group": "accommodation"
+  },
+  "Chambrehote": {
+   "color": "#8A56B6",
+   "icon": "cottage",
+   "group": "accommodation"
+  },
+  "Cycling": {
+   "color": "#FAB333",
+   "icon": "directions_bike",
+   "group": "activity"
+  },
+  "Fashion_accessories": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "Hiking": {
+   "color": "#3C863A",
+   "icon": "hiking",
+   "group": "nature"
+  },
+  "Hotel": {
+   "color": "#8A56B6",
+   "icon": "hotel",
+   "group": "accommodation"
+  },
+  "Parapente": {
+   "color": "#FAB333",
+   "icon": "paragliding",
+   "group": "activity"
+  },
+  "Sledging": {
+   "color": "#FAB333",
+   "icon": "sledding",
+   "group": "activity"
+  },
+  "Sportsnautiques": {
+   "color": "#72A2D5",
+   "icon": "sailing",
+   "group": "water"
+  },
+  "Walk": {
+   "color": "#3C863A",
+   "icon": "directions_walk",
+   "group": "nature"
+  },
+  "alpin_skiing": {
+   "color": "#FAB333",
+   "icon": "downhill_skiing",
+   "group": "activity"
+  },
+  "associations": {
+   "color": "#FD9215",
+   "icon": "people",
+   "group": "shops_and_services"
+  },
+  "bank": {
+   "color": "#FD9215",
+   "icon": "bank",
+   "group": "shops_and_services"
+  },
+  "bar": {
+   "color": "#F44C65",
+   "icon": "bar",
+   "group": "restaurant"
+  },
+  "biathlon": {
+   "color": "#FAB333",
+   "icon": "biathlon",
+   "group": "activity"
+  },
+  "bowling": {
+   "color": "#FAB333",
+   "icon": "bowling",
+   "group": "activity"
+  },
+  "brasserie": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "cable_car": {
+   "color": "#60666C",
+   "icon": "cable_lift",
+   "group": "mobility"
+  },
+  "car_park": {
+   "color": "#60666C",
+   "icon": "parking",
+   "group": "mobility"
+  },
+  "carpet_ski_lift": {
+   "color": "#60666C",
+   "icon": "carpet_ski_lift",
+   "group": "mobility"
+  },
+  "caterer": {
+   "color": "#FD9215",
+   "icon": "food",
+   "group": "shops_and_services"
+  },
+  "chairlift": {
+   "color": "#60666C",
+   "icon": "chairlift",
+   "group": "mobility"
+  },
+  "cinema": {
+   "color": "#FAB333",
+   "icon": "theaters",
+   "group": "activity"
+  },
+  "city_hall": {
+   "color": "#FD9215",
+   "icon": "city_hall",
+   "group": "shops_and_services"
+  },
+  "collective_accommodation": {
+   "color": "#8A56B6",
+   "icon": "bed-bunk",
+   "group": "accommodation"
+  },
+  "communication": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "communication_agency": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "cord_lift": {
+   "color": "#60666C",
+   "icon": "surface_lift",
+   "group": "mobility"
+  },
+  "crafts": {
+   "color": "#7D5103",
+   "icon": "craft",
+   "group": "legacy"
+  },
+  "craftsman": {
+   "color": "#FD9215",
+   "icon": "hammer",
+   "group": "shops_and_services"
+  },
+  "craftsmanship": {
+   "color": "#FAB333",
+   "icon": "store",
+   "group": "activity"
+  },
+  "creperie": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "cross_country_skiing": {
+   "color": "#FAB333",
+   "icon": "nordic_skiing",
+   "group": "activity"
+  },
+  "dentist": {
+   "color": "#FD9215",
+   "icon": "tooth",
+   "group": "shops_and_services"
+  },
+  "diy_decoration": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "doctor": {
+   "color": "#FD9215",
+   "icon": "doctor",
+   "group": "shops_and_services"
+  },
+  "education": {
+   "color": "#FD9215",
+   "icon": "classroom",
+   "group": "shops_and_services"
+  },
+  "equipments": {
+   "color": "#60666C",
+   "icon": "",
+   "group": "mobility"
+  },
+  "escape_game": {
+   "color": "#FAB333",
+   "icon": "bright_mind",
+   "group": "activity"
+  },
+  "excursion": {
+   "color": "#FAB333",
+   "icon": "directions_bus",
+   "group": "activity"
+  },
+  "fast_food": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "financial_insurance": {
+   "color": "#FD9215",
+   "icon": "protect",
+   "group": "shops_and_services"
+  },
+  "fishing": {
+   "color": "#72A2D5",
+   "icon": "hook",
+   "group": "water"
+  },
+  "food": {
+   "color": "#FD9215",
+   "icon": "food",
+   "group": "shops_and_services"
+  },
+  "food_court": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "foreign_specialities": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "french_bowls": {
+   "color": "#FAB333",
+   "icon": "bocce_filled",
+   "group": "activity"
+  },
+  "gastronomy": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "gondola_lift": {
+   "color": "#60666C",
+   "icon": "gondola",
+   "group": "mobility"
+  },
+  "handisport": {
+   "color": null,
+   "icon": null,
+   "group": null
+  },
+  "health": {
+   "color": "#FD9215",
+   "icon": "health",
+   "group": "shops_and_services"
+  },
+  "helicopter": {
+   "color": "#FAB333",
+   "icon": "helicopter",
+   "group": "activity"
+  },
+  "high_altitude_restaurant": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "history": {
+   "color": "#7D5103",
+   "icon": "legacy",
+   "group": "legacy"
+  },
+  "hockey": {
+   "color": "#FAB333",
+   "icon": "sports_hockey",
+   "group": "activity"
+  },
+  "holiday_resort": {
+   "color": "#8A56B6",
+   "icon": "hotel",
+   "group": "accommodation"
+  },
+  "horse_riding": {
+   "color": "#FAB333",
+   "icon": "horse_riding",
+   "group": "activity"
+  },
+  "ice_skating": {
+   "color": "#FAB333",
+   "icon": "ice_skating",
+   "group": "activity"
+  },
+  "lake": {
+   "color": "#72A2D5",
+   "icon": "lake",
+   "group": "water"
+  },
+  "laser_game": {
+   "color": "#FAB333",
+   "icon": "paintball",
+   "group": "activity"
+  },
+  "library": {
+   "color": "#7D5103",
+   "icon": "library",
+   "group": "legacy"
+  },
+  "local_producer": {
+   "color": "#3C863A",
+   "icon": "honey",
+   "group": "nature"
+  },
+  "local_product": {
+   "color": "#3C863A",
+   "icon": "honey",
+   "group": "nature"
+  },
+  "massage": {
+   "color": "#72A2D5",
+   "icon": "spa",
+   "group": "water"
+  },
+  "mechanic": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "municipal_services": {
+   "color": "#FD9215",
+   "icon": "city_hall",
+   "group": "shops_and_services"
+  },
+  "nordic_ski_advanced": {
+   "color": "#000000",
+   "icon": "nordic_ski_advanced",
+   "group": "ski_advanced"
+  },
+  "nordic_ski_easy": {
+   "color": "#1B65D4",
+   "icon": "nordic_ski_easy",
+   "group": "ski_easy"
+  },
+  "nordic_ski_intermediate": {
+   "color": "#E11C1C",
+   "icon": "nordic_ski_intermediate",
+   "group": "ski_intermediate"
+  },
+  "nordic_ski_novice": {
+   "color": "#66BE58",
+   "icon": "nordic_ski_novice",
+   "group": "ski_novice"
+  },
+  "nursery": {
+   "color": "#FAB333",
+   "icon": "baby",
+   "group": "activity"
+  },
+  "pharmacy": {
+   "color": "#FD9215",
+   "icon": "pharmacy",
+   "group": "shops_and_services"
+  },
+  "pizza": {
+   "color": "#F44C65",
+   "icon": "local_pizza",
+   "group": "restaurant"
+  },
+  "plane_first_flight": {
+   "color": "#FAB333",
+   "icon": "aircraft",
+   "group": "activity"
+  },
+  "playground": {
+   "color": "#FAB333",
+   "icon": "playground",
+   "group": "activity"
+  },
+  "police": {
+   "color": "#FD9215",
+   "icon": "police",
+   "group": "shops_and_services"
+  },
+  "post_office": {
+   "color": "#FD9215",
+   "icon": "post_office",
+   "group": "shops_and_services"
+  },
+  "practical_services": {
+   "color": "#193DBE",
+   "icon": "usefull",
+   "group": "usefull"
+  },
+  "public_service": {
+   "color": "#FD9215",
+   "icon": "shopping_bag",
+   "group": "shops_and_services"
+  },
+  "real_estate": {
+   "color": "#FD9215",
+   "icon": "lease",
+   "group": "shops_and_services"
+  },
+  "recreational_activities": {
+   "color": "#FAB333",
+   "icon": "recreational_activities",
+   "group": "activity"
+  },
+  "serviced_chalets": {
+   "color": "#8A56B6",
+   "icon": "cabin",
+   "group": "accommodation"
+  },
+  "shelter": {
+   "color": "#8A56B6",
+   "icon": "cabin",
+   "group": "accommodation"
+  },
+  "ski": {
+   "color": "#FAB333",
+   "icon": "downhill_skiing",
+   "group": "activity"
+  },
+  "ski_advanced": {
+   "color": "#000000",
+   "icon": "ski_advanced",
+   "group": "ski_advanced"
+  },
+  "ski_easy": {
+   "color": "#1B65D4",
+   "icon": "ski_easy",
+   "group": "ski_easy"
+  },
+  "ski_intermediate": {
+   "color": "#E11C1C",
+   "icon": "ski_intermediate",
+   "group": "ski_intermediate"
+  },
+  "ski_novice": {
+   "color": "#66BE58",
+   "icon": "ski_novice",
+   "group": "ski_novice"
+  },
+  "ski_touring": {
+   "color": "#FAB333",
+   "icon": "cross_country_skiing",
+   "group": "activity"
+  },
+  "snowboard": {
+   "color": "#FAB333",
+   "icon": "snowboarding",
+   "group": "activity"
+  },
+  "snowmobile": {
+   "color": "#FAB333",
+   "icon": "snowmobile",
+   "group": "activity"
+  },
+  "snowshoeing": {
+   "color": "#FAB333",
+   "icon": "snowshoeing",
+   "group": "activity"
+  },
+  "spa": {
+   "color": "#72A2D5",
+   "icon": "spa",
+   "group": "water"
+  },
+  "sport_shop": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "sports_clubs": {
+   "color": "#FAB333",
+   "icon": "directions_run",
+   "group": "activity"
+  },
+  "store": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "supermarket": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "surface_lift": {
+   "color": "#60666C",
+   "icon": "surface_lift",
+   "group": "mobility"
+  },
+  "swimmingpool": {
+   "color": "#72A2D5",
+   "icon": "pool",
+   "group": "water"
+  },
+  "tobacco_press": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "toilets": {
+   "color": "#193DBE",
+   "icon": "toilet",
+   "group": "usefull"
+  },
+  "tourism_residence": {
+   "color": "#8A56B6",
+   "icon": "hotel",
+   "group": "accommodation"
+  },
+  "tourist_transport": {
+   "color": "#60666C",
+   "icon": "publictransport",
+   "group": "mobility"
+  },
+  "touristboard": {
+   "color": "#FAB333",
+   "icon": "tourism_office",
+   "group": "activity"
+  },
+  "traditional_cooking": {
+   "color": "#F44C65",
+   "icon": "restaurant",
+   "group": "restaurant"
+  },
+  "trail_running": {
+   "color": "#FAB333",
+   "icon": "directions_run",
+   "group": "activity"
+  },
+  "transport_company": {
+   "color": "#60666C",
+   "icon": "taxi",
+   "group": "mobility"
+  },
+  "travel_agency": {
+   "color": "#FD9215",
+   "icon": "store",
+   "group": "shops_and_services"
+  },
+  "unusual_accommodation": {
+   "color": "#8A56B6",
+   "icon": "cottage",
+   "group": "accommodation"
+  },
+  "wellness": {
+   "color": "#72A2D5",
+   "icon": "spa",
+   "group": "water"
+  },
+  "yoga": {
+   "color": "#FAB333",
+   "icon": "self_improvement",
+   "group": "activity"
+  }
+ },
+ "families": {
+  "accommodations": {
+   "color": "#8A56B6",
+   "icon": "hotel"
+  },
+  "activities": {
+   "color": "#FAB333",
+   "icon": "directions_run"
+  },
+  "activity_routes": {
+   "color": "#FAB333",
+   "icon": "directions_run"
+  },
+  "bars": {
+   "color": "#F44C65",
+   "icon": "bar"
+  },
+  "nordic_ski_trail": {
+   "color": null,
+   "icon": null
+  },
+  "producers": {
+   "color": "#3C863A",
+   "icon": "honey"
+  },
+  "rental_accommodation": {
+   "color": "#8A56B6",
+   "icon": "cottage"
+  },
+  "restaurants": {
+   "color": "#F44C65",
+   "icon": "restaurant"
+  },
+  "shops_and_services": {
+   "color": "#FD9215",
+   "icon": "store"
+  },
+  "ski_lift": {
+   "color": "#60666C",
+   "icon": {
+    "small": null,
+    "big": "chairlift",
+    "selected": "chairlift"
+   }
+  },
+  "ski_trail": {
+   "color": "#FAB333",
+   "icon": {
+    "small": null,
+    "big": "downhill_skiing",
+    "selected": "downhill_skiing"
+   }
+  },
+  "stops": {
+   "color": "#006FD6",
+   "icon": {
+    "small": null,
+    "big": null,
+    "selected": "bus-stop"
+   }
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+  "page": { "title": "Morzine Interactive Map" },
+  "brand": { "sub": "Interactive map" },
+  "season": { "winter": "Winter", "summer": "Summer", "label": "Season" },
+  "lang": { "choose": "Language" },
+  "search": { "placeholder": "Search a run, lift or place" },
+  "layers": {
+    "pistes": "Ski runs",
+    "lifts": "Lifts",
+    "nordic": "Nordic & snowshoe",
+    "routes": "Walks & hikes",
+    "mtb": "Mountain bike",
+    "running": "Trail running"
+  },
+  "results": {
+    "count": { "one": "{n} place", "other": "{n} places" },
+    "more": "{n} more: zoom in or search to narrow the list",
+    "none": "Nothing matches. Try another word or turn on more layers."
+  },
+  "detail": {
+    "back": "Back to list",
+    "noDescription": "No description yet.",
+    "showOnMap": "Show on map",
+    "area": "Ski area",
+    "difficulty": "Difficulty",
+    "type": "Type",
+    "season": "Open in",
+    "length": "Length"
+  },
+  "map": {
+    "3d": "3D",
+    "2d": "2D",
+    "north": "Reset to north",
+    "locate": "Show my position",
+    "legend": "Legend",
+    "label": "Map of Morzine",
+    "locateFailed": "Your position could not be found.",
+    "outside": "You are outside the map area."
+  },
+  "legend": {
+    "title": "Ski runs and lifts",
+    "novice": "Green: beginner",
+    "easy": "Blue: easy",
+    "intermediate": "Red: intermediate",
+    "advanced": "Black: difficult",
+    "nordic": "Nordic ski trail (dashed)",
+    "route": "Snowshoe and walking route",
+    "lift": "Lift"
+  },
+  "footer": { "office": "Morzine Tourist Office" },
+  "offline": {
+    "saving": "Saving the map for offline use: {pct}%",
+    "done": "Map saved. It now works without signal."
+  },
+  "units": { "km": "{n} km", "m": "{n} m" }
+}

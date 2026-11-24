@@ -1,0 +1,98 @@
+{
+ "accommodation": {
+  "mono": true,
+  "viewBox": "0 0 49 48"
+ },
+ "accommodation-colored": {
+  "mono": false,
+  "viewBox": "0 0 24 16"
+ },
+ "activity": {
+  "mono": false,
+  "viewBox": "0 0 20 20"
+ },
+ "alpine-skiing": {
+  "mono": true,
+  "viewBox": "0 0 49 48"
+ },
+ "bar": {
+  "mono": false,
+  "viewBox": "0 0 16 21"
+ },
+ "bus-colored": {
+  "mono": false,
+  "viewBox": "0 0 24 24"
+ },
+ "cable-lift": {
+  "mono": true,
+  "viewBox": "0 0 24 24"
+ },
+ "chairlift": {
+  "mono": true,
+  "viewBox": "0 0 56 56"
+ },
+ "directions-bus": {
+  "mono": true,
+  "viewBox": "0 0 24 24"
+ },
+ "figmoji-cycling": {
+  "mono": false,
+  "viewBox": "0 0 80 80"
+ },
+ "figmoji-running": {
+  "mono": false,
+  "viewBox": "0 0 80 80"
+ },
+ "figmoji-walking": {
+  "mono": false,
+  "viewBox": "0 0 80 80"
+ },
+ "gondola-lift": {
+  "mono": true,
+  "viewBox": "0 0 24 24"
+ },
+ "hiking": {
+  "mono": true,
+  "viewBox": "0 0 49 48"
+ },
+ "info": {
+  "mono": true,
+  "viewBox": "0 0 16 17"
+ },
+ "mountain-bike": {
+  "mono": true,
+  "viewBox": "0 0 24 24"
+ },
+ "nordic-skiing": {
+  "mono": true,
+  "viewBox": "0 0 88 88"
+ },
+ "nordic-skiing-colored": {
+  "mono": false,
+  "viewBox": "0 0 24 24"
+ },
+ "restaurant": {
+  "mono": false,
+  "viewBox": "0 0 20 20"
+ },
+ "shops-and-services": {
+  "mono": false,
+  "viewBox": "0 0 20 22"
+ },
+ "ski-colored": {
+  "mono": false,
+  "viewBox": "0 0 24 24"
+ },
+ "snowshoeing": {
+  "mono": true,
+  "viewBox": "0 0 56 56"
+ },
+ "terroir": {
+  "mono": false,
+  "viewBox": "0 0 24 24"
+ },
+ "toilet": {
+  "mono": true,
+  "viewBox": "0 0 29 29"
+ }
+}

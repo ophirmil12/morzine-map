@@ -1,0 +1,8 @@
+# Downloaded copies of the original site's responses and local terrain tiles (rebuildable)
+cache/
+cache_fetch.log
+__pycache__/
+# test page made while designing the base map
+site/dev/
+# Starter package the user supplied (reference only, not part of the site)
+morzine-ski-map-initial-data/

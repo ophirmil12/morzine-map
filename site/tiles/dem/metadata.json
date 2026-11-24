@@ -1,0 +1,14 @@
+{
+  "encoding": "terrarium",
+  "tileSize": 256,
+  "minzoom": 8,
+  "maxzoom": 14,
+  "bbox": [
+    6.56,
+    46.09,
+    6.89,
+    46.26
+  ],
+  "source": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+  "attribution": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+}

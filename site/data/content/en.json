@@ -1,0 +1,3331 @@
+{
+ "items": {
+  "fc27d44b-0690-4efa-9778-1ab3e5e97946": {
+   "name": "Handiski ESF Morzine",
+   "description": "Lessons or guiding for skiers with physical or mental disabilities"
+  },
+  "e89e455c-60c3-4b79-afcd-9d08be10a917": {
+   "name": "Sledging",
+   "description": "Reserved for people who want to have fun!"
+  },
+  "5933e369-f2e6-4b43-acb2-ad458ea27300": {
+   "name": "Airéole - Paragliding School in Morzine",
+   "description": "Accredited by the FFVL since 1987, the Airéole professional school invites you to take to the skies in the heart of the fabulous Portes du Soleil ski area."
+  },
+  "6c4b5220-3bbd-4350-ba9d-58153bdf7943": {
+   "name": "Avokart",
+   "description": "With Avokart, race down the slopes like you've never done before!"
+  },
+  "834ac0ef-09fa-4326-b705-434a10af56d8": {
+   "name": "Snowshoeing walk with Evolution 2",
+   "description": "Discover the mountain, snowshoes on your feet and enjoy the calm of nature. Our Evolution 2 guides will make you live a unique moment in an exceptional setting."
+  },
+  "83578d65-5e8c-48cf-839d-0e1f9144c21b": {
+   "name": "Guided snowmobile tours",
+   "description": "At nightfall, the snow becomes a terrain to discover our mountains from a different perspective. With friends, family, or alone, you will take pleasure in driving a motorized vehicle while enjoying the panorama."
+  },
+  "ec4483f4-4875-4742-a4f8-7b6672963db8": {
+   "name": "Walks & Hikes with Montagne Aventure by ESI Morzine",
+   "description": "Guided walks and hikes with a certified guide for all skill levels: chairlift rides in the Portes du Soleil, challenging hikes, themed outings, orienteering, and donkey rides."
+  },
+  "39b92c5d-7c52-418d-9361-73bfe3be59e7": {
+   "name": "Helicopter baptism",
+   "description": "You want to make your first helicopter flight?"
+  },
+  "9ed55f6c-9f16-4876-829b-46436e47351e": {
+   "name": "Paragliding experience with Évolution 2",
+   "description": "Evolution 2 offers paragliding flights in winter and summer. Would you like to make your first flight with certified instructors? Fly in a unique setting and live an exceptional moment by discovering the beauty of nature from the air."
+  },
+  "f005c48d-9b90-489a-9247-3a8bc6676ef6": {
+   "name": "Speed Riding with Airéole Paragliding School",
+   "description": "Between skiing and paragliding, sometimes on snow sometimes in the sky, speed riding offers unique sensations ! It's time to get started ! Ski level: good skier required"
+  },
+  "f8f24309-81fd-4d74-9bf2-e2e073635e83": {
+   "name": "Paragliding baptisms and Discovery tandem flights with AERO-Bi",
+   "description": "Spend a magical and unforgettable moment with Aero-Bi! We'll take you flying in a two-seater paraglider above Morzine, in complete safety, with a state-licensed paragliding pilot on hand from the moment you arrive."
+  },
+  "1abde295-e91f-4506-b5aa-e2a1b7996141": {
+   "name": "\"Le Vieux Pont\" Library",
+   "description": "The library offers you a wide choice of children's and adult books, books in English as well as bilingual books (Spanish, English, Portuguese, Russian, German), games, magazines, CDs, read novels, local backgrounds, etc."
+  },
+  "e0b02557-940a-4516-acb4-c6dc92db383b": {
+   "name": "Bowling - Woody",
+   "description": "WOODY has six state-of-the-art bowling lanes, equipped to accommodate both casual players and experienced enthusiasts."
+  },
+  "f4de076a-7d99-40b9-ae83-dd5c9494da01": {
+   "name": "Bubble Foot",
+   "description": "Protected by a bubble, come and take a tumble in complete safety."
+  },
+  "85aa309e-ad06-47e9-b52b-cbea38369d40": {
+   "name": "Equestrian Center",
+   "description": "A true paradise for nature and horse lovers! Nestled in the heart of the majestic Haute-Savoie Alps, at an altitude of 1000 meters, our equestrian center offers a unique equestrian experience in an exceptional natural setting."
+  },
+  "3aac4357-f0b6-4a01-a527-6e81067d53d0": {
+   "name": "Cinema Le Rex",
+   "description": "Do you fancy seeing a good film or the latest blockbuster that all your friends are talking about ? Make sure you're sitting comfortably in the projection room of the Rex cinema."
+  },
+  "4b54ed1c-b557-4d1e-81a1-6b04181dfb0d": {
+   "name": "Snowboard group lessons",
+   "description": "Achieve your goals in a lesson designed just for you. Private lessons are the best way to progress."
+  },
+  "057d2d01-091c-40cc-9927-2e884a3b087a": {
+   "name": "Ski Lessons with BASS",
+   "description": "BASS, the British ski school in the French Alps since 1991, offers lessons for English speakers with ISTD Level 4 certified instructors in small groups tailored to your needs."
+  },
+  "a5b3df0f-0707-4ea1-bfe6-0f07e2e30e28": {
+   "name": "Ski touring courses with FollowMetoSki",
+   "description": "Private ski touring outings and lessons for children and adults, all levels. Tailored guidance to progress safely, build confidence and discover the winter mountains."
+  },
+  "8ad1ed61-ede0-44b6-939e-4d7904d5ed59": {
+   "name": "Ski touring with Marco Deshayes",
+   "description": "Full or half-day to either discover, even challenging on ski mountaineering to broaden the ski domain."
+  },
+  "67ab40a4-f19c-4367-b295-790481d8aa08": {
+   "name": "Ski touring lessons with the B ski School",
+   "description": "Ski touring is one of the most beautiful ways to discover the mountain."
+  },
+  "8b3d2d4d-884f-41e9-8455-f718daed129e": {
+   "name": "Ski touring lessons - group or individual with the ESF",
+   "description": "Cross-country skiing For the day, or over several days, this way of exploring the mountains allows you to discover untouched areas far away from the busy ski trails."
+  },
+  "6affb98a-802c-4ba2-9c72-6d03264f505f": {
+   "name": "Ski touring lessons - group or individual",
+   "description": "Cross-country skiing For the day, or over several days, this way of exploring the mountains allows you to discover untouched areas far away from the busy ski trails."
+  },
+  "fdadc633-84b9-42f2-be2a-2714ae1a1945": {
+   "name": "Snowboard Lessons with BASS",
+   "description": "BASS Snowboard lessons: professional instructors for English speakers, in small groups (max 4), since 1991."
+  },
+  "909dd409-9b8e-41c6-84c6-bf13f56d095a": {
+   "name": "Speed riding lessons with ABC Ecole des portes du soleil",
+   "description": "Speed riding is an outdoor sport combining paragliding and skiing. Equipped with a small glider, and a pair of skis, you can then alternate flying and gliding on the safe and attractive pleney slope, awarded for teaching disipline. All the equipment: glider+harness+headset+radio are included. At your expense: skis and ski pass for the pleney."
+  },
+  "85711067-59db-415a-8726-113bfc5f655f": {
+   "name": "Cours d'initiation au ski de hors pistes avec Airéole",
+   "description": "With or without the help of ski lifts, conquer the peaks large and small that you can find in our amazing part of the world. Athleticism, peacefulness, pleasure, and contentment are guaranteed."
+  },
+  "a0012c2b-c85c-4f24-88a3-a016a547ba16": {
+   "name": "Introductory off-piste skiing course with ESF",
+   "description": "Explore off-piste skiing in the local area with an instructor, learn about avalanche safety equipment (transceiver, shovel, probe...), security techniques and about snow and its different forms."
+  },
+  "49a4fda8-8f54-4d5f-9e01-712fc33c7821": {
+   "name": "Introduction to ski touring with the Bureau des Guides",
+   "description": "Far away from the ski-lifts, set off in search of untouched snow, off the beaten track accompanied by one of our guides who will choose a route suitable for your level and the snow conditions."
+  },
+  "1b1019a3-dadf-4eda-a6ad-502d5fd3f5f4": {
+   "name": "Freestyle Snowboarding Lessons",
+   "description": "We offer dedicated freestyle lessons for all levels, whether you are new to freestyle, wish to perfect your halfpipe skills or even learn new rail tricks."
+  },
+  "a70b4727-303c-4b90-bb2f-7af6563b5efa": {
+   "name": "Speed Riding Discovery",
+   "description": "A sport involving skiing, paragliding and sky-diving, the aim being to get down steep slopes on skis with a harness and small sail!"
+  },
+  "fddad463-4837-49c5-87df-13219c238791": {
+   "name": "Sledging by night",
+   "description": "When the sun goes down, come and sledge down the slopes from Avoriaz to Morzine: a relaxed atmosphere and plenty of laughs await! 1 descent in complete safety... Sledge + Helmet + Headtorch supplied. Suitable for all."
+  },
+  "474c2254-4481-4e08-a3c9-574b22609b2c": {
+   "name": "Morzine ski area",
+   "description": "Welcome to the Morzine ski area. Along with the Pleney, Nyon and Chamossière sectors, the Pleney company manages half of the Morzine-Les Gets area."
+  },
+  "afef0f75-72a3-4a99-accb-114d80495af5": {
+   "name": "Church Sainte Marie Madeleine",
+   "description": "Church built in 1825 with canopy roof and carved 16th-century stalls"
+  },
+  "ef0d6159-3759-419e-b96a-01db43e012b3": {
+   "name": "Apéritif Escape Game",
+   "description": "Gather your friends, with the sole aim of unlocking your Savoyard aperitif locked in an enormous icebox. Are you up to the challenge?"
+  },
+  "7337a6b6-b594-4d21-bf14-f9f75c99fb40": {
+   "name": "Aquatic Center",
+   "description": "Prepare your bathing suits! Morzine's pool complex and outdoor pools are perfect for those looking to escape the heat or take a break from the slopes!"
+  },
+  "be7163d2-8e21-49fc-b66c-9b6d5d531621": {
+   "name": "Wellness Area at the Aquatic Center",
+   "description": "Come and unwind in our relaxing spa, covering 160m², comprising of 2 steam rooms and 3 saunas"
+  },
+  "c488c091-15bd-4535-a535-be4af32c4811": {
+   "name": "Kids' Area - Woody",
+   "description": "WOODY offers a 200 m² children's area, entirely dedicated to younger guests: ball pool, slide, Ninja Warrior kids..."
+  },
+  "8657b561-aa05-46f3-ab62-177428ed29b9": {
+   "name": "Slate Mine Morzine exhibition",
+   "description": "With the help of a large selection of photos, discover the history of the slate mines in Morzine. This limestone formed in the Alpine ocean, has been mined for more than three centuries by the locals."
+  },
+  "5f2ed92c-87bc-4b15-a799-ef8af3d3b59e": {
+   "name": "Smart Darts - Woody",
+   "description": "Connected darts revisit the traditional game with an interactive system offering several game modes and automatic score counting."
+  },
+  "135b626c-3bad-4389-8700-109e24cfb082": {
+   "name": "Heli-skiing",
+   "description": "As we are situated close to Italy and Switzerland it allows us to do Heli-skiing in the Mont Blanc area. Only taken back skiers flight are allowed in the french side of the Portes du Soleil."
+  },
+  "901224fd-68f1-45fb-9645-4108cc8c76ec": {
+   "name": "Indiana'Ventures - Nocturnal toboggan ride",
+   "description": "When night falls and skiers have gone home, fly down Pleney's slopes with a sledge and headtorch. It's a madcap, steep descent taking in 4km of ski trails overlooking Morzine."
+  },
+  "2f91de1d-9fc3-43c7-ac5c-a504df0e4435": {
+   "name": "Indiana'Ventures -Outdoor skating rink",
+   "description": "Discover Morzine's outdoor skating rink: the perfect place for magical moments this winter!"
+  },
+  "934e406c-4ab9-42a2-880d-c850da14e4da": {
+   "name": "Indiana'Ventures -Snowshoe outing",
+   "description": "Discover the moutain through a relaxing activity. Wear your snowshoes and here we go."
+  },
+  "9566d2e3-2b14-415d-a880-b2e8dc780646": {
+   "name": "Indiana'Ventures -Yooner",
+   "description": "Indiana'Venture has a great new way of enjoying the snow: Yooner sledging is exciting from the moment you set off! The Yooner is light, easy to steer and comfortable."
+  },
+  "7b400689-d44d-4fa6-bdda-654d2f96ac0e": {
+   "name": "Introduction to Biathlon with ESF",
+   "description": "As an initiation session or as a group lesson, the ESF in Morzine offers the sport of biathlon. Don't hesitate to contact us if you would like to discover this activity which combines laser shooting with cross country skiing."
+  },
+  "98ac3712-6c8d-4a6e-b9a9-4a5342b5254e": {
+   "name": "JIM FISHING GUIDE",
+   "description": "Certified fishing guide in Haute-Savoie offering guided fishing trips on rivers and lakes. Trout and predator fishing, various techniques and an outstanding natural environment."
+  },
+  "9d37fc4b-ace4-4935-8c5b-e466db3828f6": {
+   "name": "Karaoke - Woody",
+   "description": "Two private karaoke rooms allow you to sing freely in a festive and intimate atmosphere."
+  },
+  "c2876149-0c9c-4825-a463-78069c61d489": {
+   "name": "Montriond Lake",
+   "description": "This stunning lake - known also as the emerald green lake - sits quietly at the foot of immense cliffs and is a favourite with children and adults thanks to the idyllic vision it offers and the feeling of calm it evokes."
+  },
+  "270bbea3-069d-4268-ae9e-86c60219c215": {
+   "name": "Montriond Lake in winter",
+   "description": "Immerse yourself in Montriond Lake's Frozen North setting as you take in the vast expanse of snow at the foot of immense cliffs…during the cold months Lake Montriond offers a dazzling winter coat thanks to a frozen layer of ice -- make sure you see it!"
+  },
+  "230863af-56ab-411e-8201-a85831ec67aa": {
+   "name": "Mines d'or lake",
+   "description": "Located at the bottom of the Manche Valley, about 15 minutes from the center of Morzine, this small bucolic lake benefits from a very pleasant environment conducive to walks with its passes, mountain pastures and coniferous forests that surround it."
+  },
+  "c266fea6-7717-499d-88aa-99b79b2b362f": {
+   "name": "Axe Throwing - Woody",
+   "description": "An original and convivial activity, axe throwing allows you to discover a fun discipline based on precision and control of movement."
+  },
+  "4daa07b3-d15a-46ff-b73c-18e263da6c01": {
+   "name": "Laser Tag - Woody",
+   "description": "Immerse yourself in a 300 m² arena where strategy and adrenaline meet. Equipped with vests and interactive lasers, players compete in a dynamic environment suitable for all."
+  },
+  "13158131-b855-48bf-b59a-8355f48b773e": {
+   "name": "Le Clos",
+   "description": ""
+  },
+  "356af49c-e652-4732-9f34-258216134b8d": {
+   "name": "Le Room Escape Game",
+   "description": "Morzine’s first Escape Room experience, Le ROOM is a live 60-minute adventure. Your team has an hour to solve the challenges, complete the mission and escape."
+  },
+  "1f2ad749-7ce2-4e88-8044-ec3bbb03f764": {
+   "name": "Le Vieux Pont",
+   "description": ""
+  },
+  "4c86bb5a-2ba4-4c6e-a873-8a02ea681b03": {
+   "name": "Private lessons Ski / Off piste with Adrénaline Ski School",
+   "description": "Adrenaline Morzine ski school is for all ages, kids ski from 4 to 99’s adult participant."
+  },
+  "ad837581-9ed9-424d-a7c5-ff3378f083e3": {
+   "name": "Les Gets-Morzine",
+   "description": "In the Portes du Soleil Territory, discover the Les Gets-Morzine ski area: 68 slopes and 50 lifts as well as numerous mountain restaurants."
+  },
+  "358b4298-4712-4119-b65d-a964c7b1b0e7": {
+   "name": "Les Moulins",
+   "description": ""
+  },
+  "494addc9-d308-483e-ba4f-f57ec2be684c": {
+   "name": "L'Hôtel des Alpes",
+   "description": ""
+  },
+  "97b859b2-8e54-4c58-b3cd-7be3faf2a8a0": {
+   "name": "Night sledging with Alpi'Raquettes & Luge",
+   "description": "1 descent of 5km in complete safety… Sledge + Helmet + Headlamp ''Gliding at Night under the Stars''"
+  },
+  "cc4ed2a9-95c4-42c3-990c-ee11981ca3ab": {
+   "name": "Maison de la Poste",
+   "description": ""
+  },
+  "80e28853-e781-4fac-8c09-0382fd9829bb": {
+   "name": "Moonbike",
+   "description": "Go for a ride in Avoriaz on a fast, silent and easy to handle machine. On a marked out course, enjoy a guided ride and add fun to your vacations! The mountain is waiting for you."
+  },
+  "e1534f0d-bfce-4532-8ddf-74252cec7b6d": {
+   "name": "Mechanical Music Museum",
+   "description": "Come to discover the incredible mechanical instruments collection of the museum. More than 1000 pieces are exposed : carillons, clocks, music boxes, orchestrions, mechanical pianos, stringed instruments, barrel organs, automates, phonographes..."
+  },
+  "91f0f0a7-a1da-4af3-96aa-2ad6b446871e": {
+   "name": "Padel",
+   "description": "Two artificial turf paddleball courts in a modern, friendly setting, ideal for paddleball in Morzine."
+  },
+  "9a2b2e46-ccfe-4743-b637-7c86f303ed34": {
+   "name": "Sports Hall",
+   "description": "The Palais des Sport offers a large choice of rooms able to accomodate 20 to 700 people. The rooms can be used for seminars, workshops, weddings and dinner receptions"
+  },
+  "e1d8b332-1a2b-4b27-8c46-fbbeea6cfcbd": {
+   "name": "Dereches Park",
+   "description": "The Park des Dérêches has its own internet site, listing all the details of the sports you can participate in, in this preserved area of Morzine. Parc des Dérêches is a piece of nature that has grown with the village and emerges along the river."
+  },
+  "e5bb1d98-2e78-4cfc-b604-7248581fff1e": {
+   "name": "Ceramic Painting: \"Mountain Adventure\" by ESI Morzine",
+   "description": "Discover ceramic painting, a creative and fun activity that lets you personalize your own items while enjoying a relaxing experience. Take home a one-of-a-kind creation you made yourself—to give as a gift or keep as a memento."
+  },
+  "077e9517-fddb-4f0d-ab44-b1d782737d39": {
+   "name": "Little Train",
+   "description": "Line between Morzine Tourist Office and Palais des Sports in summer. Line between the gondala of Super Morzine and the Pleney in winter."
+  },
+  "14b1bdca-52ae-4e32-9945-ecb0b3b2b71f": {
+   "name": "Meuniers fish farm",
+   "description": "Visit the fish farm for a closer look at what they do and to learn about the fish in our mountain lakes and streams: arctic char and faro trout. You’ll also see rainbow trout and brook trout."
+  },
+  "a9692f20-9bd2-412a-95a6-fe2d7ddb0954": {
+   "name": "\"Who Wants to Win Reblochons?",
+   "description": "WHO WANTS TO WIN SOME REBLOCHONS? The VACHEment gourmand game show! Parody, revisit, variation: these are 3 words that could sum up our new offbeat TV game show concept: ‘Who Wants to Win the Reblochons’."
+  },
+  "f17bdd86-d121-4e8c-9abf-8a62d4e1efea": {
+   "name": "Hiking with ADRÉNALINE Ski School",
+   "description": "Full day or half day hiking to discover the nature . We will find the best track according to your expectations. If you have any special request do not hesitate to contact us."
+  },
+  "5c7c59d8-6e02-4e3d-9d7f-c1088667c788": {
+   "name": "Hiking with RELIEF",
+   "description": "Relief offers you different hikes."
+  },
+  "df6e34ce-1888-4f0e-9b54-023556546c4d": {
+   "name": "Fitness",
+   "description": "Group fitness sessions and Personal Training. Suitable for all levels."
+  },
+  "145af2b7-610c-439c-be4e-39d97ae6c3f8": {
+   "name": "La Battante Nature Trail",
+   "description": "Discover the route between the church and La Battante while having fun and learning more about Morzine's heritage."
+  },
+  "8b3ceae4-c6c2-455f-94e9-1d9323ab043c": {
+   "name": "Shinrin Yoku (forest bathing) and snow",
+   "description": "This is a wonderful slow walk through nature, on snowshoes, taking the time to consider and notice the wonderful and beautiful things often not observed when walking at normal pace."
+  },
+  "2f9b3a83-aa3d-46a3-bc20-d7e8a95c9bac": {
+   "name": "Ski touring with the guide bureau",
+   "description": "The Morzine-Avoriaz Guide Bureau offers safe ski touring in the Portes du Soleil area."
+  },
+  "dd2ceb97-b5f4-4a8e-88f5-258a0a3d2394": {
+   "name": "Ski de randonnée avec MB Ski Snowboard and Outdoor Experiences",
+   "description": "Ski touring with MB Ski Snowboard and Outdoor Experiences: guided trips to explore the mountains."
+  },
+  "dff556a9-b718-4e5c-aeec-5c85b9e4dee7": {
+   "name": "Ski touring with SNOWTRIBE SKI & SNOWBOARD",
+   "description": "Discover the pleasure of making your own tracks."
+  },
+  "f694af9f-2ad0-4ce5-ac6d-ca4f7a2c8535": {
+   "name": "Freeride ski avec le bureau des guides",
+   "description": "For thrill seekers, try FREERIDE, in complete safety, with the Morzine Avoriaz guide office."
+  },
+  "5a123a93-e367-48e8-9d20-0db512b727a5": {
+   "name": "Off piste skiing with Marco Deshayes",
+   "description": "Experience my knowledge of the french-swiss domain \"Portes du Soleil\" off piste and I will make you have a pleasant day adapted to your level."
+  },
+  "f6966ce4-71bf-4a01-812b-dde27de0e9a8": {
+   "name": "Ski Joering",
+   "description": "Ski-Jöering, the pleasure of skiing in a different way. Come and enjoy an unforgettable experience on skis behind a horse, in the majestic scenery of the Portes du Soleil. Several sessions are available: 30-minute initiation, 1-hour ride or 1-hour advanced session."
+  },
+  "d1155fe5-dd77-43dc-ab8c-384f400875ca": {
+   "name": "Snowpark d'Arare - Nami Park",
+   "description": "Avoriaz's historic snowpark, created in 1993, is named Nami-Park. Nami means \"wave\" in Japanese and defines a new shape inspired by surfing philosophy, featuring large snow waves and original modules."
+  },
+  "4146ad17-d9ce-4eb2-8236-be60ebcdffc2": {
+   "name": "Snowpark de la Chapelle",
+   "description": "La Chapelle is a snowpark for all riders. It’s the perfect place to train and improve. It features four kicker lines of different levels (XS, S, M, and L) for smooth progression, as well as two jib lines (S and L) with boxes and rails."
+  },
+  "ddebd023-564f-480e-a790-223875cfe8b4": {
+   "name": "Ski touring with Adrénaline",
+   "description": "Skin-up for the first time or push yourself to the next level under the guidance of a ski touring professional. Our experienced instructors show you the ropes, technique and etiquette while safely guiding you over exciting new terrain. The safety gear will be provided (Transceiver, shovel and probe)"
+  },
+  "93a0f63f-6126-4f4d-8539-a85903100d1e": {
+   "name": "Cross-country skiing",
+   "description": "A nice, fun way to escape and re-discover nature. Far from the crowds, experience a great feeling of freedom."
+  },
+  "788916b9-a770-45ec-9cbf-78caaa096069": {
+   "name": "Mountaineering",
+   "description": "The Portes du Soleil area and the Mont-Blanc range offers a great choice of summits with rock faces, ridges and spurs for all levels. Whether you are interested in rock climbing or to climb on snow and ice, our UIAGM mountain guides will be glad to give you advices and will help you to choose your project ; your summit for your dream come true."
+  },
+  "5e6277ac-0e38-4a26-9512-d9d90d258d87": {
+   "name": "Snow-shoeing with ESF",
+   "description": "Try a traditional way to explore the mountains, on snowshoes, away from the pistes to discover unspoilt nature."
+  },
+  "62eb9a80-4a2e-4fe3-9dd6-7177901a5515": {
+   "name": "Snowshoeing with Magical Snow Treks",
+   "description": "Snowshoeing is a fantastic and safe way to enjoy the mountains and learn about the alpine winter environment."
+  },
+  "38a9e5b6-54f5-47de-83dc-d1f9ebc42bcd": {
+   "name": "Day/evening snowshoe outings with Alpi'Rando",
+   "description": "You don’t need to know how to ski to be able to have a good time in the snow with snow shoes. Hervé shows you unspoilt areas where the skiers can’t go..."
+  },
+  "0694597d-b8ac-4642-8ef7-126bd094c8d2": {
+   "name": "Heliskiing trip in Switzerland and Italy",
+   "description": "As heliskiing is not permited in France (only pickup are allowed in the Porte du Soleil – ask for info!) we will bring you in the best spots right over the border in Italy or Switzerland."
+  },
+  "28c4f0a0-94a3-4acf-82d8-bfcb8008ddf8": {
+   "name": "Off-piste snowboarding with MINT Snowboard School",
+   "description": "Off-piste riding is a lot more technical than coming down a well groomed slope."
+  },
+  "09c4c487-8a39-4fbe-9fcc-21455bcb234c": {
+   "name": "Night snowshoe outing with Magical Snow Treks",
+   "description": "Morzine is an incredible area to explore by snowshoe, with numerous beautiful trails alongside rivers, through forests and up onto the mountain tops to choose from. Walk as night falls and the stars come out"
+  },
+  "c7f4f577-9d85-415f-8fd6-1d2ab9cec2b4": {
+   "name": "Paragliding course with ABC Ecole professionnel",
+   "description": "We propose multiple type of courses : Paragliding initiation course Three days course Five days course"
+  },
+  "db9105f6-657c-45d2-b552-1330cca0cbf6": {
+   "name": "Speed Riding course with AERO-Bi",
+   "description": "Sport combining ski and mini wing accessible for all good skiers. No flying experience necessary."
+  },
+  "b718e1c5-59df-4cd1-8267-33845b2b9532": {
+   "name": "Nabor magic carper",
+   "description": "The Nabor carpet is located at the top of the Pleney cable car."
+  },
+  "1647934b-1ff0-4769-9d44-80e4abbba732": {
+   "name": "Ardent Gondola Lift",
+   "description": "Take the Ardent cable car to visit our famous linderets goats and enjoy a delicious meal on the terrace ! From here you can take the other chairlifts on the plateau for further exploration on VTT or for hikers."
+  },
+  "769ee840-5f9e-4a0a-aeb6-e89cf3dc0364": {
+   "name": "Super Morzine Gondola",
+   "description": "The Super Morzine Gondola links Morzine and Avoriaz. This walk can lead you all the way to the Valley d'Abondance or into Switzerland enjoying the Portes de Soleil circuit."
+  },
+  "3d063b08-95cb-4f12-9af3-0ca03e71b1bb": {
+   "name": "Pleney Gondola",
+   "description": "The cable car lifts you up to a panoramic view of Morzine, the Chablais and Mont Blanc. It is also the departure point for many hiking routes."
+  },
+  "05662c02-e7e1-447c-bb47-ab4916b326a1": {
+   "name": "Nyon cable car",
+   "description": "The cable car is situated in the Nyon ski area"
+  },
+  "ee2bad40-bc27-4d51-bc42-f1df22b3eb3e": {
+   "name": "Les Prodains cable car",
+   "description": "The 3S Gondola connects the Morzine area to Avoriaz. Cars with 35 seats each run from bottom to top in less than 5 minutes."
+  },
+  "dc0a9547-eef2-4043-b6e2-53fe47956795": {
+   "name": "Télésiège de la Charniaz",
+   "description": "In summer: pedestrian access to the detachable La Charniaz chairlift, which brings you closer to the Col de Joux Plane."
+  },
+  "526a10a6-6521-4283-8e99-891ba98fd1d5": {
+   "name": "Pointe de Nyon Chairlift",
+   "description": "The Pointe de Nyon chairlift, located in the Nyon sector, provides access to the Pas de l'Aigle. Open to skiers in winter, it is accessible to pedestrians only in summer."
+  },
+  "d6db9ce1-56f4-4f4d-8e1e-e5f8645972d6": {
+   "name": "Proclou chairlift",
+   "description": "Installed on the \"Proclou\" plateau, this detachable lift makes the connection between Super-Morzine and Avoriaz. Reach the resort from the Bike Park without effort."
+  },
+  "a448b003-2c04-41cf-9b65-880305d87946": {
+   "name": "Zore Chairlift",
+   "description": "Underneath the Paragliding launch site the Zore 4 seater chairlift links the arrival of the Super Morzine Gondola to Avoriaz"
+  },
+  "81e1ad30-23eb-4f08-8145-3aec11d80450": {
+   "name": "Landing Site Putheys",
+   "description": "Sport: Handgliding, Paragliding Direction: North Notes/Hazards: Easy for Paragliding, landing close to windsock. Stick to designated paths. Flying height 300m from ground. Always respect the local regulations."
+  },
+  "e96d3ec8-75cb-4a49-baba-b3a4d9e123fa": {
+   "name": "Trip round Mont Blanc",
+   "description": "Our flights depart from the airfield in Megeve and are available all year round, throughout the week and weekends. Depending on the weather conditions and helicopter availability"
+  },
+  "1e3fb361-f594-4916-8ced-daec149e9ad7": {
+   "name": "Self-guided tours of the Battante Morzinoise",
+   "description": "Discover the work of sawing wood in an authentic sawmill, restored by members of the \"La Battante Morzinoise\" association! The smell of sawdust, the paddle wheel, the cogs and the beating saw. An ancestral heritage."
+  },
+  "19d4781b-f81c-4cf4-bed4-b78327decaef": {
+   "name": "Paragliding Discovery Flight",
+   "description": "Reach for the sky with the Portes du Soleil paragliding school and enjoy magnificent views. Lots of options available: discovery tandem flights or beginner's sessions."
+  },
+  "9c707a8b-af3c-4580-8deb-3494ad56ca44": {
+   "name": "Double flight with ABC Paragliding School",
+   "description": "You will discover here the rates of our various flights offered all year long, in winter as in summer, all flights offered are accessible all neophytes from the youngest to the oldest."
+  },
+  "dc63e58a-9a0d-4807-97cd-053eb524620c": {
+   "name": "Electric mountain biking on snow with MCF Morzine",
+   "description": "Rides in the heart of nature. Electric mountain biking on snow is great fun and accessible to all, whatever your level or physical condition. Minimum age 10 (1m40)."
+  },
+  "469a1c0a-fc17-44e1-a3c1-2bb142be923b": {
+   "name": "Yoga - yoga session",
+   "description": "Accessible to all, “energy yoga” is a Hatha Yoga, which takes place in the rhythm of the seasons. Throughout the sessions, you will discover the benefits of this yoga that brings calm, serenity and harmony body-heart-spirit."
+  },
+  "b95292ad-518b-4123-bd77-c0ae565ba707": {
+   "name": "Avoriaz",
+   "description": "Arrêt de transport en commun."
+  },
+  "ddbeb0ed-f13a-4165-87ac-a8f8d43db507": {
+   "name": "Cabinet médical Les Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "1b463955-68ee-4bfd-814a-cbb1741ba870": {
+   "name": "Chef-lieu",
+   "description": "Arrêt de transport en commun."
+  },
+  "67cbf0cb-aada-43c7-8df2-7de32b012ef1": {
+   "name": "Chef-lieu",
+   "description": "Arrêt de transport en commun."
+  },
+  "b00c80e0-4100-4bfc-9550-da576a7cd6da": {
+   "name": "Chef-lieu",
+   "description": "Arrêt de transport en commun."
+  },
+  "2ffd8415-173e-4cb6-8eb4-b972808dc00a": {
+   "name": "Chef-lieu",
+   "description": "Arrêt de transport en commun."
+  },
+  "a7e9ad6c-f1dc-4c7f-bdfa-0c5a4d2cb8f1": {
+   "name": "College H. Corbet",
+   "description": "Arrêt de transport en commun."
+  },
+  "f77e59dd-2274-4e62-9f0f-1d8dca80dea6": {
+   "name": "Ecole Essert-Romand",
+   "description": "Arrêt de transport en commun."
+  },
+  "4eb3d6fe-5b15-454f-9ae7-b0124143e906": {
+   "name": "Ecole Morzine",
+   "description": "Arrêt de transport en commun."
+  },
+  "0ee48986-fd49-43fe-9b84-3b058056ae79": {
+   "name": "Gare Routiere",
+   "description": "Arrêt de transport en commun."
+  },
+  "6baeee64-171e-45d2-a4c4-d09cccb48066": {
+   "name": "Gare Routiere",
+   "description": "Arrêt de transport en commun."
+  },
+  "2ebf6078-38d9-40d8-9932-38d38b10f940": {
+   "name": "Gare Routiere",
+   "description": "Arrêt de transport en commun."
+  },
+  "153125ab-5ff5-4042-908d-3a762c459c88": {
+   "name": "La Glière Montriond",
+   "description": "Arrêt de transport en commun."
+  },
+  "4eba0c3f-e419-46a0-af2c-a33e5b1cf7aa": {
+   "name": "Laydevant Essert-Romand",
+   "description": "Arrêt de transport en commun."
+  },
+  "69961300-200a-4f7a-8f2b-35bff36a2460": {
+   "name": "L'Elé",
+   "description": "Arrêt de transport en commun."
+  },
+  "91fdf6a5-c3d6-405e-afc1-303735b9a824": {
+   "name": "L'Elé",
+   "description": "Arrêt de transport en commun."
+  },
+  "e2f8e36c-bb6c-4d9f-b969-0624e270c7ea": {
+   "name": "L'Élé Montriond",
+   "description": "Arrêt de transport en commun."
+  },
+  "beaf2ff3-3c6c-4eef-ad7e-5b182c42f20e": {
+   "name": "Les Bois Venants",
+   "description": "Arrêt de transport en commun."
+  },
+  "0d56aadf-999f-4852-bab6-d267752545fc": {
+   "name": "Les Bois Venants",
+   "description": "Arrêt de transport en commun."
+  },
+  "75299be4-f70b-4605-b458-254bb11f65b6": {
+   "name": "Les Bois Venants Morzine",
+   "description": "Arrêt de transport en commun."
+  },
+  "d97b43b8-0455-4b23-bdf9-9718bc17a652": {
+   "name": "Les Clos",
+   "description": "Arrêt de transport en commun."
+  },
+  "e42ab816-be84-41e6-b45d-140994857aea": {
+   "name": "Les Clos",
+   "description": "Arrêt de transport en commun."
+  },
+  "47e6e319-fd99-48c2-9ce0-847e98e80475": {
+   "name": "Les Granges Morzine",
+   "description": "Arrêt de transport en commun."
+  },
+  "815eace7-a8ae-4770-97d1-e5dedd38b241": {
+   "name": "Les Perrieres",
+   "description": "Arrêt de transport en commun."
+  },
+  "3836ea48-4208-4eaa-bc35-c744ea9c0671": {
+   "name": "Les Perrieres",
+   "description": "Arrêt de transport en commun."
+  },
+  "6a588f43-0217-459c-97ea-6c9a0bb08b52": {
+   "name": "Les Prodains",
+   "description": "Arrêt de transport en commun."
+  },
+  "12a5cfff-9b24-4816-8c57-13eb47e8afab": {
+   "name": "Les Prodains",
+   "description": "Arrêt de transport en commun."
+  },
+  "3bcf4315-2fcb-471e-b495-caf20c424bd5": {
+   "name": "Mairie Montriond",
+   "description": "Arrêt de transport en commun."
+  },
+  "2e9d02bc-4fb4-472e-b9ca-08b555e2ec9e": {
+   "name": "Mairie Morzine",
+   "description": "Arrêt de transport en commun."
+  },
+  "1fe0e864-9d58-48f1-bdd0-ecb9a95edfe8": {
+   "name": "MSP Saint Jean d'Aulps",
+   "description": "Arrêt de transport en commun."
+  },
+  "749ade44-b188-4bab-86f4-9f9314cdfd27": {
+   "name": "Nant Cru Les Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "2781970f-ace5-428d-979f-80a4264075a4": {
+   "name": "Office de tourisme Saint Jean d'Aulps",
+   "description": "Arrêt de transport en commun."
+  },
+  "b5ca7718-5d73-44fb-a820-f3901466e622": {
+   "name": "Parking les Perrières Les Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "d12497f5-ca9a-4b4c-bad6-9720c2a47e82": {
+   "name": "Place du Pressenage",
+   "description": "Arrêt de transport en commun."
+  },
+  "b9450b3e-6d10-4277-8f3e-156c90acb737": {
+   "name": "Place du Pressenage",
+   "description": "Arrêt de transport en commun."
+  },
+  "40d64f27-76fb-4bc9-abc9-b2d8dba6de3e": {
+   "name": "Place du Pressenage Les Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "432e8cc4-c1ce-47b8-92d1-06caf7e7705a": {
+   "name": "Pont des Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "d82b556d-aab7-4f45-a045-dbef8dae7255": {
+   "name": "Pont des Gets",
+   "description": "Arrêt de transport en commun."
+  },
+  "070ff402-b6ae-4fb7-ba28-6cfb58283751": {
+   "name": "Pont des Plagnettes",
+   "description": "Arrêt de transport en commun."
+  },
+  "fe70a624-7a5f-49be-aeae-97efb73aad8c": {
+   "name": "Pont des Plagnettes",
+   "description": "Arrêt de transport en commun."
+  },
+  "31844571-b324-480c-99ea-c0902a2575ce": {
+   "name": "Pont des Plagnettes Montriond",
+   "description": "Arrêt de transport en commun."
+  },
+  "4aa42615-ba9b-4ab8-a957-928647713fd2": {
+   "name": "Rond point passerelle",
+   "description": "Arrêt de transport en commun."
+  },
+  "5ad2ebee-3acd-41c9-914d-8496df448866": {
+   "name": "Rond Point Passerelle",
+   "description": "Arrêt de transport en commun."
+  },
+  "1faac8d3-bcdf-4f48-9478-2faf88612e4c": {
+   "name": "Vernay Bron",
+   "description": "Arrêt de transport en commun."
+  },
+  "496e0937-ee59-4e48-9e1c-c9eba2b70c75": {
+   "name": "Vernay Bron",
+   "description": "Arrêt de transport en commun."
+  },
+  "bd46365a-74b4-4a19-95f9-eee2e732aaee": {
+   "name": "Vernay Bron Saint Jean d'Aulps",
+   "description": "Arrêt de transport en commun."
+  },
+  "7844ef0d-4beb-4786-a3a2-ca9e3f311c2d": {
+   "name": "Bar Robinson",
+   "description": "Established in 1926, Bar Robinson is one of the oldest bar in Morzine. It has been run by the same family for the entire time it has been open."
+  },
+  "265603b2-2397-4f59-8294-1b62125d427a": {
+   "name": "Café Bistrot \"Le 19.38\"",
+   "description": "A great spot for all the good moments of the day !"
+  },
+  "127ff82b-5d5c-4ed3-aa1e-23cc47a24129": {
+   "name": "Le Crépu",
+   "description": "The \"Le Crépu\" bar welcomes you to the heart of Morzine since 2003! After-ski, après-MTB, live music evenings... Atmosphere guaranteed all year round!"
+  },
+  "898e15f2-75b8-43e0-bc42-ead927390e22": {
+   "name": "ABC Paragliding and Speedriding professional School of Portes du Soleil",
+   "description": "L'école de Parapente des Portes du Soleil offers a large range of paragliding courses for beginners and those wishing to progress their skills. Fly with us and discover Morzine form the sky."
+  },
+  "1aed1833-5b55-4a96-aa1a-e6a8773b6121": {
+   "name": "Action Sport - Ski rider",
+   "description": "Action Sport Ski rider becomes DH/ ENDURO / ELECTRIQUE / GRAVEL mountain bike rental company Brands: FORBIDDEN BIKE, NORCO BIKE & E-BIKE & GRAVEL Textiles & accessories: Oakley, Forbike, Muc-off"
+  },
+  "798447d3-aace-4d56-b4b0-9ae7cfcda0e1": {
+   "name": "Adrénaline Ski School",
+   "description": "Beginners, skiers of all levels, looking for technique, off-piste or beautiful ski touring outings, we will be able to adapt to your desires."
+  },
+  "79fa2afb-e884-4cb7-834b-b57b93160808": {
+   "name": "Aero Bi",
+   "description": "Aero-bi is a paragliding and speed riding school located in Morzine - Avoriaz. Discover with us the joys of paragliding and / or speed riding, in summer or winter, in the unique area that is \"Portes du Soleil\"."
+  },
+  "db6da14c-9ecc-4533-adf2-f9ba6c9ef935": {
+   "name": "Aero-bi Parapente",
+   "description": "Aero-bi organises discovery flights above Morzine-Avoriaz with a professional instructor. It's the simplest way of having fun in a paraglider in Morzine-Avoriaz!"
+  },
+  "7689c6e4-4064-41b5-842b-3b9f7bc9796f": {
+   "name": "Agence Barnes",
+   "description": "BARNES Portes du Soleil opens its doors to you in the heart of the Morzine resort village. Our real estate agency can help you with all your real estate projects, whether for sale or purchase."
+  },
+  "8f8d20ea-a285-4845-866a-e6989cf4a929": {
+   "name": "Barnes International Realty",
+   "description": "Luxury real estate agency: sales, seasonal rentals and property management"
+  },
+  "bf5a0606-e71b-4ee6-b710-c121b358e69b": {
+   "name": "Agence Immobilière Baud",
+   "description": "Open since 1962, Agence BAUD is at your service all year round for all your rental needs (short stay, week, year) and all your property purchase projects."
+  },
+  "bfcdfec4-234b-4637-be16-cc3ac121550b": {
+   "name": "Agence Immoblière BAUD Agence de transaction",
+   "description": "Open since 1962, Agence BAUD is at your service all year round for all your rental needs (short stay, week, year) and all your property purchase projects."
+  },
+  "bae75fb4-1f28-4579-86f1-e2b560b92ec3": {
+   "name": "My Home in the Alps Real Estate",
+   "description": "Real estate agency specialized in the sale of all types of property and rental of luxury properties. Hotel services and concierge on request."
+  },
+  "182015e6-2708-4448-853c-908241a766e9": {
+   "name": "Agence Olivier",
+   "description": "Property Agents, book online by the website"
+  },
+  "d56cc365-c83d-4e39-b718-7aff3f7bebed": {
+   "name": "AgenceKo Architects",
+   "description": "Qualified architect, Anthony Carron designs collective and individual housing projects, with a strong expertise in mountain environments, timber construction and high-end chalets. AGENCEKO has been established in Morzine since 2019."
+  },
+  "fdd6d95d-5c1e-40d5-8773-f844df7aabf8": {
+   "name": "Airéole - Paragliding School in Morzine",
+   "description": "Accredited by the FFVL since 1987, the Airéole professional school invites you to take to the skies in the heart of the fabulous Portes du Soleil ski area."
+  },
+  "b0f1d49a-a666-4629-ae27-2546e365c8f9": {
+   "name": "Alan bike / Ski Shop",
+   "description": "ALAN SKISHOP welcomes you to the center of the resort!"
+  },
+  "21536d24-a71d-4bea-b465-1dae8ce15b7c": {
+   "name": "AliKats Morzine Chalets",
+   "description": "AliKats is an award-winning chalet company on a mission to create joyful mountain experiences for all whilst protecting the health of the planet."
+  },
+  "3e6b3df4-7d1d-4a93-855f-ae728b3180b6": {
+   "name": "Alpes Attitude",
+   "description": "Welcome to Alpes Attitude Skimium Morzine, your sports equipment rental partner of choice located in the centre of the village just outside the Tourist Office and 2 min. away from the Pleney and Super Morzine cable car stations."
+  },
+  "573b46c0-aeae-4a47-9f93-dcca695ae822": {
+   "name": "Alpes bien-être - Audrey Lemerre",
+   "description": "Alpes-bien-être offers aesthetic services at the villa violette in Morzine, or we can come to your home, hotel or chalet for your services. with its organic brand, Clairjoie, waxing, facials, massage, manicure."
+  },
+  "114e078a-a970-430f-a624-4e5e2d2d10bf": {
+   "name": "Alpi' Rando",
+   "description": "Hervé, mountain guide share with you his passion : ''the MOUNTAIN''."
+  },
+  "a7083618-5b3c-435e-aed9-7fb23852d08f": {
+   "name": "Alpine Elements",
+   "description": "Welcome to iGOSKI and Alpine Elements At Alpine Elements we’ve become somewhat expert at running ski holidays and ski weekends over the past 24 years. We’re big enough that you can have 100% trust in us to give you an amazing holiday, yet small enough that you’re never just a number to our team. We know everyone who comes away with us and we’re here to help with everything from your ski pass to your transfer home. Take a look at some of our catered chalets and hotels around Morzine, they are available for winter and summer bookings."
+  },
+  "93d52143-1ea7-4998-9506-3e7ca4db458c": {
+   "name": "Alpine French School / Alpine English",
+   "description": "Alpine French School / Alpine English is a language school located in the heart of Morzine, offering both French & English courses and summer camps."
+  },
+  "561cf134-8235-477b-b94f-bdb6359d2e2b": {
+   "name": "Alpine Property",
+   "description": "Alpine Property - Your Local Property Experts in Morzine and the Vallée d'Aulps"
+  },
+  "15f99c90-2e0f-40e9-b79e-865d046ee525": {
+   "name": "AltiViande",
+   "description": "The Altiviande butcher's shop sells meat and poultry to wholesalers, semi-wholesalers and private customers, as well as charcuterie, cheese and ready-made meals."
+  },
+  "da0afef0-4f1e-45e7-8a7e-59b9fea86e07": {
+   "name": "Anderlaine",
+   "description": "Anderlaine Morzine is a business consultancy that brings together chartered accountants, lawyers, notaries and auditors under one roof to offer a comprehensive, targeted service."
+  },
+  "077dbb32-05ab-4c5a-ba14-a31472441078": {
+   "name": "Association des résidents de Morzine",
+   "description": "The \"Association des Résidents de Morzine\" also known as A.R.M. brings together families and individuals who own a second home in Morzine or in a nearby town"
+  },
+  "e7dbca72-292d-493d-8741-1a1cfa9ab12c": {
+   "name": "Assurances Allianz / Cabinet Laurent Cornali",
+   "description": "The Allianz agency in Morzine supports you with your insurance needs and projects, for both your personal life and professional activity."
+  },
+  "487dafdc-6dad-484e-a1d2-40bcf5c22a3c": {
+   "name": "Au 7",
+   "description": "Tobacco and exchange office."
+  },
+  "c23c2899-b3a5-4e12-afcd-aeebb687d83f": {
+   "name": "Aventure Sud",
+   "description": "Located between the Lac Leman and the Mont Blanc, Le Chablais is one of the most beautiful locations in the Alps, with its countless lakes, roaring rivers and vast forests, it’s the ideal location to organise your holiday, in the winter or any other time of the year."
+  },
+  "8e274c9e-275b-4019-8262-a357d06b2c0f": {
+   "name": "Avoscoot",
+   "description": "The circuit winds through forest trails and offers you a magnificent panorama over the resort of Avoriaz, the Morzine valley, and the surrounding landscape. Every evening from 5:30pm, Avoscoot offers skidoo rides around the Proclou area."
+  },
+  "4fde4b22-35dd-444f-a1fc-e6c8d6b71c0c": {
+   "name": "AXA Insurance - Banque - Placements",
+   "description": "Insurance of goods and people Car, home, business, legal protection, financial protection, health care, savings, investments and banking"
+  },
+  "06811e9f-26e8-4dc2-b9ec-376363c7ea42": {
+   "name": "B Ski School",
+   "description": "Benefit from our experience. B ski garantees you an unforgettable moment."
+  },
+  "26a111ec-791d-4a96-a666-708437ab01ab": {
+   "name": "Banque Populaire des Alpes",
+   "description": "The Banque Populaire in Morzine supports you in all your financial projects, personal or professional, with tailored solutions and local, attentive service."
+  },
+  "691651b1-874a-4b2a-b122-c0be85bb6c14": {
+   "name": "Bass (British Alpine Ski School)",
+   "description": "Our favourite days on the mountain are the ones we share with you."
+  },
+  "81f592e8-537c-44ec-b4a3-60b6b9e91aef": {
+   "name": "Baud Chausseur",
+   "description": "Baud Chausseur offers a wide range of boots in all the latest winter fashions, including snow-friendly après-ski boots for both children and adults, as well as town footwear for finer weather."
+  },
+  "ef19f212-522e-4422-a090-ed8989792c06": {
+   "name": "Berger Ski",
+   "description": "The Berger Ski Station Service shop offers a very wide selection of ski equipment for sale and for hire. With a range covering beginner to pro ski gear, the best brands can be found here: Rossignol, Head, Dynastar, Technica, Nordica."
+  },
+  "22b98045-986c-4b28-b1b1-944c4db3e007": {
+   "name": "Blanc des Montagnes",
+   "description": "For over six years, Blanc des Montagnes has been assisting owners and travellers, offering a wide range of services for managing holiday rentals in Morzine and the surrounding area."
+  },
+  "b5b74077-a819-4b93-ab35-c6137f75966e": {
+   "name": "Blugeon Helicopters",
+   "description": "Treat yourself or your family to an exceptional experience with Blugeon Hélicoptères: soar over Mont Blanc in elegance and enjoy private transfers from Geneva to the finest Alpine resorts. A family-run company combining refinement, safety, and passion."
+  },
+  "7cbd1659-3098-453d-9415-d5647ba9acba": {
+   "name": "Blugeon Hélicoptères - transport",
+   "description": "BLUGEON HÉLICOPTÈRES is a family business founded by Christian BLUGEON with over 38 years' experience and 33,000 flying hours."
+  },
+  "ddc15d34-ff64-4a8a-a067-a232321f0890": {
+   "name": "Braize Electricité / Luminaires",
+   "description": "In a fast-changing market, it's easy to get lost. Our team of professionals, constantly on the lookout for new products, will be able to guide you and meet your expectations. See you soon in our showroom!"
+  },
+  "ac4cd398-44aa-490c-95b5-d553a96b4bf9": {
+   "name": "Bureau des Guides de Morzine Avoriaz",
+   "description": "Skiing, snowshoeing, with crampons, ice axes, or at the end of a rope... the Morzine-Avoriaz Guide Office makes you experience unforgettable days!"
+  },
+  "803a27c2-7be9-4479-bcf7-ebd6a255b652": {
+   "name": "Buzz Performance",
+   "description": "Experts in triathlon, swimming, road cycling and fitness. Offering coached group and individual sessions throughout the year. For all levels from beginner to expert."
+  },
+  "14837009-c249-47a7-9bce-781411ac6851": {
+   "name": "Nursing Practice",
+   "description": "Nurse's surgery (no appointment needed) Nurse's surgery (home visit, appointment only)"
+  },
+  "10890c71-f9c8-43c0-80ab-0cf6185f5782": {
+   "name": "Cabinet Wirion - Groupe Blanc Experts-Comptables",
+   "description": "Accountancy - Payslips - Tax advice"
+  },
+  "9d388aae-d139-48d7-88e9-2c348f4c8f52": {
+   "name": "Mr Calba",
+   "description": "Dentist"
+  },
+  "7ce85c7b-407e-491e-99fb-9b41265cee4a": {
+   "name": "Century 21 - Call Home",
+   "description": "Your estate agency is specialised in sales. From all walks of life, our team of French and British staff are perfectly suited to understand all of your needs and demands. Our client satisfaction is at the heart of everything we strive for each day."
+  },
+  "b6578a11-5e24-4faf-94fa-967dda92f506": {
+   "name": "Cameleon Alpes Explorer",
+   "description": "Since 1998, Cameleon Organisations has been helping companies organize business trips in the Alps, France and abroad."
+  },
+  "ffe29e94-f52c-4a11-8613-7192ffff75a6": {
+   "name": "Canel Géomètre Expert",
+   "description": "SARL CANEL Géomètre Expert Topography-Coproperty-Property division"
+  },
+  "1d5e0b8d-985e-4215-83f1-04d20a52b878": {
+   "name": "Caribou 2 (Skiset)",
+   "description": "Caribou 2 (previously ABC Sport), your ski and snowboard rental shop in winter."
+  },
+  "3974c311-827e-4a67-99d7-e6258a156c26": {
+   "name": "Caribou (Skiset)",
+   "description": "Caribou, your Rent and Sale Ski & Snowboard shop, Bootfitting specialist. A specialized shop of downhill, enduro and electric bikes in summer; 200m from the Pleney Gondola."
+  },
+  "cbb1753e-650b-4ada-b41f-36dde5f9ebbf": {
+   "name": "Carrefour Market",
+   "description": "Your Carrefour Market store in Morzine."
+  },
+  "437070c8-ba01-43c5-a5f1-697389b8c036": {
+   "name": "Wellness Center \"Le Dahu\"",
+   "description": "You can choose from among the whole line of treatment options and services, as well as quality massages."
+  },
+  "98b290f6-a259-47f5-a978-b3716ff9011b": {
+   "name": "Chalet Fourmilière",
+   "description": "La Fourmiliere is your country house in the mountains"
+  },
+  "6b8bd00a-2dd6-4528-96ca-8fad55669863": {
+   "name": "Champ Perdu",
+   "description": "From conception to completion..."
+  },
+  "37049feb-b2eb-48ac-abf8-abd7fb582f03": {
+   "name": "Chez le Miladiou - Epicerie fine",
+   "description": "Le Miladiou, regional products and delicatessen, a stone's throw from the Tourist Office, offers a wide choice of charcuterie and typical Savoyard dairy products, as well as a wide selection of wines, spirits, herbs and spices, and chocolates."
+  },
+  "9ad18f48-ae1d-4be6-a868-1ceb10598a83": {
+   "name": "Chocolaterie Florian Fontaine",
+   "description": "Originally from Haute-Savoie and the neighbouring resort of Les Gets, Florian studied in Taninges and then in Australia."
+  },
+  "71834c31-49ad-4f1c-874e-0e4dd7f994ea": {
+   "name": "Chris Bike Morzine",
+   "description": "The Santa Cruz mountain bike and road bike specialist."
+  },
+  "79c1f027-7e0a-40b9-aa78-a0facd477e0e": {
+   "name": "CIC Lyonnaise de Banque Morzine",
+   "description": "The CIC in Morzine supports you in your financial and banking projects, personal or professional, with solutions tailored to your needs and local, attentive service."
+  },
+  "d64c3a99-7246-473a-95ab-78ee07b53f0e": {
+   "name": "Cimalpes Morzine | Sales & Holiday Rental",
+   "description": "The leader in luxury real estate in the French Alps, Cimalpes brings together tourism and luxury real estate in a portfolio of the finest properties for sale or rental in the most beautiful resorts."
+  },
+  "3a16be7c-d8a7-4938-8188-28ce98deef89": {
+   "name": "Clic On Line",
+   "description": "Installation and troubleshooting of computer systems."
+  },
+  "9c5f1a2e-cd58-4ad4-91d2-158ea7b45e21": {
+   "name": "La Palanquée Diving Club",
+   "description": "Diving club in the Morzine Espace Aquatique"
+  },
+  "70465c57-d695-48bb-8f0f-035daa687736": {
+   "name": "Club des Piou-Piou",
+   "description": "Crèche combined with group ski lessons"
+  },
+  "04b24a31-3076-4a69-a485-d6f3e949d870": {
+   "name": "Nautical Club",
+   "description": "The Morzine Swimming Club brings together 60 to 80 members each year, from the “Avenir” category to seniors. Registration is open to swimmers proficient in all strokes, validated by an entry test."
+  },
+  "aea994e6-b4e9-417c-9202-63751298fe0e": {
+   "name": "Compagnons du Feu",
+   "description": "Since the 1980s, Compagnons du Feu have been putting their expertise at the service of your heating projects. Tradition, innovation, customer satisfaction and a passionate team support you in a friendly atmosphere."
+  },
+  "b18d14a3-d31e-4998-841d-4f39bc8a6e38": {
+   "name": "Converset Nathalie - Clothing workshop",
+   "description": "Workshop of clothing and interior decoration installed for 30 years in Morzine-Avoriaz, craftsman specializing in curtains, blinds, cushions, sofas ... Repair, renovation, embellishment of new and old. Coaching and homestaging."
+  },
+  "6326ca0c-00cd-40cc-af69-c3fb2fa1a46b": {
+   "name": "Converset Nathalie - Decoration",
+   "description": "Workshop of clothing and interior decoration installed for 30 years in Morzine-Avoriaz, craftsman specializing in curtains, blinds, cushions, sofas ... Repair, renovation, embellishment of new and old. Coaching and homestaging."
+  },
+  "93d20da6-68c5-4b84-8a32-3c3b0676423b": {
+   "name": "Crédit Agricole des Savoie",
+   "description": "Crédit Agricole Morzine bank branch"
+  },
+  "a9b3cc0f-e456-492d-b8d1-f54fe199f537": {
+   "name": "Déco d'en Haut",
+   "description": "Déco d'en Haut, create with us your dream interior."
+  },
+  "831d98d8-8b40-4ac5-8d2a-7d884e661a20": {
+   "name": "Délices Folie's",
+   "description": "Bakery-Pastry shop open all year round located in Morzine village center. Bread, traditional French baguette, homemade pastries, cakes for all occasions, sandwiches, quiches, and other snacks. You have many choices!"
+  },
+  "1622a689-762f-4260-acb5-fc1477061ae7": {
+   "name": "Distillerie du Père François",
+   "description": "Artisanal distillery: sale of liqueurs, eaux de vie, spirits and regional products."
+  },
+  "cae747a0-fbe4-41ef-af2d-880b818d00a1": {
+   "name": "DoorStep Skis",
+   "description": "Come into the store or use our free home delivery service. Ski rentals. Snowboard rentals. Simple, convenient and easy."
+  },
+  "1ddcc95a-0253-4163-93a4-80dce912d739": {
+   "name": "Elevation Alps Conciergerie",
+   "description": "Our serviced chalets in Morzine allow you to create a tailor-made stay by adding the services you need."
+  },
+  "101fdd36-cd0c-4214-9926-19726c2ec587": {
+   "name": "Emerald Stay",
+   "description": "Looking for a rental in Morzine? Emerald Stay offers you a range of exceptional accommodations, from authentic chalets to prestigious apartments: for a mountain vacation that's just like you."
+  },
+  "86d0a400-9832-4500-9431-01a60b7230e5": {
+   "name": "ESF Business",
+   "description": "Business tourism professionals: ESF Business, the ESF seminar service at your disposal."
+  },
+  "8b0b4e68-f8b6-4be4-b298-0f1b3446fb81": {
+   "name": "ESF Morzine",
+   "description": "French Ski School of Morzine (ESF): for all levels, led by instructors, to learn or improve skiing skills."
+  },
+  "15f5da69-dc05-46b4-9a12-d35ea9831a59": {
+   "name": "ESI Morzine « Ecole de ski international»",
+   "description": "Founded in 1999, the Morzine International Ski School. Our school has continued to evolve to offer you exceptional instruction and increasingly personalized services."
+  },
+  "eab82435-8872-4ffc-be18-58620da0bfeb": {
+   "name": "Evolution 2",
+   "description": "Welcome to Evolution 2, your ski and adventure school in the mountains, both in summer and winter. Our team of instructors guides and supports you in all your activities, ensuring safety and providing personalized teaching."
+  },
+  "df53ec81-79fa-4ea2-852d-8bbc22d98772": {
+   "name": "FB Freeride",
+   "description": "In the winter FBFREERIDE offers a wide variety of skis and snowbaord rental, repairs, accessories and storage. In the summer FB FREERIDE offers a full range of MTB equipment , accessories, parts and bikes, maintenance services and of course bike rental."
+  },
+  "8904cfcc-3273-490e-9ee0-9d34f7b9b34f": {
+   "name": "Félix Ski",
+   "description": "Winter : - A ski and snowboard shop also offering winter sports hire equipment. - Accessories shop: hats, socks, sunglasses, goggles, gloves… Summer: - The shop changes over into a summer activities sales desk, specialising in Mountain Biking."
+  },
+  "8b187348-a13d-471a-b3ad-600cfda76f04": {
+   "name": "FIDUCIAL Expertise Morzine Centre",
+   "description": "Fiducial Expertise Morzine: our agency is a local accounting firm, on a human scale and close to its customers. Our vocation is to help them manage their business more simply and efficiently."
+  },
+  "a611e368-780a-48f5-8ee6-d52c97da415c": {
+   "name": "Flora Richard",
+   "description": "Support for individuals: NLP, hypnosis, meditation... Support for teams, organizations, companies: teambuilding, team coaching, time management, stress management, well being at work, team coaching"
+  },
+  "ccf7beb1-c5f2-471b-8a4d-ffc2c2a47acb": {
+   "name": "Flora Richard Coaching",
+   "description": "Coaching, personal development: relaxation sessions, hypno relaxation, project support, better know yourself, living a change, burn out... various issues can be approached in order to find balance, sense of living and well being..."
+  },
+  "6c2b0ba4-6046-4338-83aa-fc9fc3ae267b": {
+   "name": "FollowMeToSki - Boucher Alex",
+   "description": "Superior and Professional private lessons skiing, Snowboarding, off-piste and ski touring for all levels and abilities for adults and children form the age of 3. Fun, progression, support and guidance guaranteed !"
+  },
+  "4b65947d-e32a-4e12-8e05-4b21c27ac3e9": {
+   "name": "France Boissons",
+   "description": "Retail and semi-wholesale beverages (wines, soft drinks, beers, spirits...) + possibility to rent a beer tapping machine with barrels for your private events (weddings, birthdays...)"
+  },
+  "df38fe20-6c39-409a-ba0a-25aed6ba1d2e": {
+   "name": "Friperie Montagne Verte",
+   "description": "Montagne Verte is a non-profit thrift store committed to sustainable and accessible fashion for everyone. The association collects, repairs and resells high-quality clothing and outdoor equipment to give them a second life."
+  },
+  "0f23217b-5a14-4ab0-a31e-f7f66ad0c5d4": {
+   "name": "Nursery Tourist Les Marmottins",
+   "description": "Reopening December 2026. Pre-booking from October 1, 2026"
+  },
+  "6a2377de-6ac3-44c0-bbd2-2439d1ed233a": {
+   "name": "Police station",
+   "description": "National Gendarmerie"
+  },
+  "73379bad-7711-47f1-b0f1-2242197b3316": {
+   "name": "Gitem - Idéal Ménager",
+   "description": "Gitem Idéal Ménager in Morzine sells and repairs televisions, audio and multimedia equipment and household appliances. The team also installs antennas and satellite dishes."
+  },
+  "9959c328-7f41-445d-a504-0419ef85d082": {
+   "name": "Grande pharmacie de Morzine",
+   "description": "Our team are here to welcome and advice you in many fields as homeopathy, nutrition science, personal care products , home-based care, orthopaedics, veterinarian products… We will always be attentive to answer your need."
+  },
+  "448b13fc-142c-41a1-83b6-84728ffb958c": {
+   "name": "Gravier Ski Shop",
+   "description": "High-end and expertly maintained ski and snowboard equipment. Stone finish for ski bases, with ceramic sharpening and polishing of edges. Hot wax service. Delivered directly to your holiday accommodation or come by to collect in store."
+  },
+  "e3d93785-e929-4142-8c29-c499ad4f12d6": {
+   "name": "Grorod Travaux Publics",
+   "description": "General Digging, Pipe Laying, Building Services"
+  },
+  "4d5613e8-6958-452f-a299-e2a0a85ba7c7": {
+   "name": "Groupama Rhône-Alpes-Auvergne",
+   "description": "Private and professionnal insurance. We welcome you to find out about our insurance and guide you in your choice. Feel free to contact us to make an appointment."
+  },
+  "b50fe777-1899-4530-929b-9d6fee6ed409": {
+   "name": "Guest Chalet Croc Blanc 4 Saisons",
+   "description": "Located in the center of Morzine and recently renovated, the Guest Chalet Croc Blanc 4 Saisons can accommodate up to 10 people."
+  },
+  "7462c6b6-1ca0-44eb-9928-17b12c15d1c7": {
+   "name": "Morzine-Avoriaz Hockey Club",
+   "description": "The Morzine-Avoriaz Hockey Club or the \"Morzine-Avoriaz Pinguins\" is a French Hockey club playing in D2."
+  },
+  "f8f97e9b-296c-4ea3-bb69-7cd267778e9a": {
+   "name": "Hubert Sports Ski",
+   "description": "Hubert Sports is two in-store spaces: one specialising in action sports and the other in sportswear."
+  },
+  "45845319-cd9e-4e26-8d7d-4ea6b19b9a5d": {
+   "name": "Hubert Sports Vêtements",
+   "description": "Mountain sports store: selling winter sports and hiking/trail running gear. Winter & Summer. In the heart of the resort Our brands: Picture – Patagonia – Scarpa – Buff…"
+  },
+  "f58d3440-2e0e-44d1-be7d-f2f2bdffa2fa": {
+   "name": "The Portes du Soleil Printing House",
+   "description": "From graphic design to prints, the Portes du Soleil Printing House will print anything on anything."
+  },
+  "2b5453c6-915d-438e-be07-b807375015fc": {
+   "name": "Indiana'Ventures - Bureau des Activités de Montagne",
+   "description": "With adventure parks in Morzine and Samöens, Indiana'Ventures organises all manner of leisure and sporting activities in the Haute-Savoie region…"
+  },
+  "3880bae9-8ad1-4563-a77e-6f0a9553f3d1": {
+   "name": "Indiana'Ventures - Bureau des Activités de Montagne -Seminaire",
+   "description": "\"The more the merrier,\" they say! Indiana'Ventures is convinced that group synergy is built by sharing moments of conviviality and exceptional adventures."
+  },
+  "c4b32a29-4b37-4176-8095-3ec0b89138bf": {
+   "name": "Intersport Morzine - Le Pleney",
+   "description": "Ski with a clear head!"
+  },
+  "704839ec-292b-4133-a009-44d2342eec6a": {
+   "name": "Intersport Morzine - Rue du Bourg",
+   "description": "In the heart of Morzine !"
+  },
+  "edb915a9-70b0-47c0-8e28-e6f6c84b9580": {
+   "name": "Intersport Morzine - Super Morzine",
+   "description": "Rent, leave, ride - right at the foot of the gondola!"
+  },
+  "ca8528b5-f1fb-4d9a-b565-119563129fda": {
+   "name": "Jardinerie Delbard",
+   "description": "2200 m2 garden center. Everything for the garden, cut flower store, pet shop, high-altitude nursery, decoration, gifts, outdoors, barbecues."
+  },
+  "efb6a040-df35-42ff-90c7-371f6b895021": {
+   "name": "La cage Fleurie - Bondaz Violaine",
+   "description": "Traditional boutique florist, Sales of flowers, floral arrangements for all occasions (Wedding....), sales of plants and by-products. Delivery service and Interflora service"
+  },
+  "b4f572d5-6ffb-4133-8a1e-c8241bc8326c": {
+   "name": "La Capitale",
+   "description": "Souvenir shop, decoration, knives, posters, textiles, high-tech articles…"
+  },
+  "d83c9310-2854-4bce-80aa-d4e6ea0e9f9b": {
+   "name": "La Cascade des Délices",
+   "description": "In 2021, former restaurateurs Christel and Gilles are embarking on a new adventure : The Cascade des délices food truck."
+  },
+  "4952a541-708d-406a-9268-d99dacaa1b19": {
+   "name": "La Chevrerie des Ardoisières",
+   "description": "Located at an altitude of 1,200 m in Morzine, the Chèvrerie des Ardoisières is an authentic farm specializing in the production of farmhouse cheese. Come and meet our goats, yaks, chickens and pigs."
+  },
+  "0b57142f-edd7-42d6-a8c5-73137a711fc0": {
+   "name": "La Clinik - Précision",
+   "description": "La Clinik, Snowboard / Ski / Bike Shop at the foot of Pleney ."
+  },
+  "61ff0602-16a4-46c5-bf25-0291ac98a123": {
+   "name": "La Courterie",
+   "description": "La courterie, wooden toys, board games, decorative objects ....."
+  },
+  "0dedce5e-f8a1-4c47-be49-238d79fe1211": {
+   "name": "La Dez'Alp Traiteur",
+   "description": "Looking for an original, tasty menu for your banquets, christenings, family meals, birthdays, weddings, end-of-year parties, company meals and other events?"
+  },
+  "29b16c62-58aa-4ca4-99f3-4440b168b62a": {
+   "name": "La Ferme de Seraussaix",
+   "description": "In our store, we offer various products, such as our cheeses and our cured meat made from our pigs raised on the farm. Our farm only sells products from its own production (milk, cheese, charcuterie, terrines)."
+  },
+  "cca37ef2-a26e-4063-9f2b-61cb5b10a3f2": {
+   "name": "La Fruitière de Morzine - L'Alpage",
+   "description": "Established since 1983 on the Route de la Plagne near the center of Morzine, we are affineurs of local cheeses and manufacturers of fresh produce."
+  },
+  "a6b8fa02-9e8a-48bf-a82f-9001d8b68ab9": {
+   "name": "La Loge",
+   "description": "The \"La Loge\" team welcomes you to a modern and warm hairdressing salon located in the heart of the Morzine resort. The ideal place for a good moment of relaxation. The salon offers hairstyles for Women, Men, Barbers and Children."
+  },
+  "d83992ce-2056-4382-af8b-def746223571": {
+   "name": "La Lunetterie",
+   "description": "Qualified opticians. Eye exam. Eyeglasses. Sunglasses. Sport glasses. Eye masks. Contact lenses. Contact lens products."
+  },
+  "cf09f085-0a9d-478c-b256-d1ea26359d02": {
+   "name": "La P'tite Boucherie",
+   "description": "Altiviande butcher's shop - sales to private individuals and prepared meals."
+  },
+  "5f598c92-6116-405d-b545-83fbb58f0ef1": {
+   "name": "La Vie Claire",
+   "description": "Organic food store in Morzine Regional organic products."
+  },
+  "269a1f93-c24f-4c22-b185-b3e3db0c9ce6": {
+   "name": "Le Comptoir du Miel",
+   "description": "Le Comptoir du Miel: rare and unusual honeys from beekeepers worldwide, royal jelly, pollen, and quality bee products."
+  },
+  "abe7e98b-23e4-4b65-be6e-5baba661faec": {
+   "name": "Le Panier Montagnard",
+   "description": "Regional products shop located 100 m from the Morzine Tourist Office: sliced cheeses, ready-to-use fondue and raclette, aperitif platters, wine cellar, spirits, chocolates and gourmet gift baskets."
+  },
+  "232f6afa-35df-4761-a885-39cc82376677": {
+   "name": "Jardiflore",
+   "description": "Landscape Specialists"
+  },
+  "d440394e-b94a-4c78-98c3-f2c9a81edd91": {
+   "name": "Les Planches",
+   "description": "Alpes concept store"
+  },
+  "f34dc7c8-8e86-4ac6-9673-59e3bbd0ecb5": {
+   "name": "Passaquin Bookshop",
+   "description": "The bookshop offers a large choice of regional titles, mountaineering books, tourist guides and walking maps."
+  },
+  "b5e44753-883d-4397-805d-bcef4262f3de": {
+   "name": "Location de motos Royal Enfield",
+   "description": "Want to hit the road on a motorcycle? We have 3 Royal Enfield 350cc models, 1 Honda Varadero 1000, and 1 Pan-European 1100cc."
+  },
+  "a63b7a94-345d-46f7-8acf-019f2f7dc777": {
+   "name": "Morzine Town Hall",
+   "description": "The Morzine Town Hall and all of its council services."
+  },
+  "63d25175-c007-40f0-93c8-fe82213d8236": {
+   "name": "Medical center",
+   "description": "The medical center brings together a multidisciplinary team of healthcare professionals - GPs, nurses, physiotherapists and others - who work together to provide coordinated care."
+  },
+  "75752653-59c0-4515-a3fd-173c9ee57f49": {
+   "name": "Maison Tavernier Boulangerie Patisserie",
+   "description": "Baker since 1954. You will find in our establishment a large choice of breads, pastries and a coffee corner. Our bread specialty is Chablinette. Professional customer delivery is possible."
+  },
+  "1316a486-583e-492c-8465-8d833ea903cc": {
+   "name": "Mathias Sport",
+   "description": "Mathias Sport, your ski and bike store, right in the center of Morzine, 100m from the Pleney ski lifts, the ESF school and 300m from the Super Morzine gondola."
+  },
+  "ec3c412e-3223-4396-a44d-419c94e348d6": {
+   "name": "M'Cimes V.T.C",
+   "description": "Our chauffered van service answer all your requirements. Our driver expertise offers comfort and safety. M'Cimes is your transport for individual and professional, use long and short distances with customized service."
+  },
+  "7e2bc538-a83f-4e7b-93b2-f4e40d268e67": {
+   "name": "MINT Snowboard School",
+   "description": "MINT Snowboarding is an award winning snowboard specialised school, established in 2006, offering premium snowboard instruction for all levels, disciplines and ages."
+  },
+  "d1f98ab4-7714-4940-b930-fc33c6370fc7": {
+   "name": "MMA Insurance",
+   "description": "Bienvenue au cabinet d'assurances Pascal BIANCOTTO, Agent Général MMA à Morzine."
+  },
+  "3c72c430-1c54-4668-bf35-fe60d724c230": {
+   "name": "Mobile Mountain Massage",
+   "description": "A friendly, professional massage service offering a selection of massage types and durations. They combine perfectly with other alpine activities and are available at your home, in your accommodation or in our relaxation rooms."
+  },
+  "93ad3b2b-dd93-4a31-bfd0-ccff28b7bbbe": {
+   "name": "More Mountain Chalets and Apartments",
+   "description": "Laid Back Luxury in the Alps! All the high standards, with a relaxed home from home feel and top service with bells on!"
+  },
+  "92f0368f-9dfb-4e16-b0da-cc245fc658d1": {
+   "name": "Morzine-Avoriaz Ski-Joëring",
+   "description": "Ski Joering in Avoriaz: skiing while being pulled by a horse, combining the love of skiing and horseback riding. Beginners or guided rides for a unique experience."
+  },
+  "0e47076f-f5fb-4b57-a379-eee510a715c2": {
+   "name": "Morzine Avoriaz Ski School",
+   "description": "Our trio of mountain enthusiasts, in winter and summer alike, is at your service for ski lessons suitable for all ages and all levels."
+  },
+  "42e0c355-68b3-4815-8a36-7b5dd906e064": {
+   "name": "Morzine Chiropratique",
+   "description": "Morzine Chiropractic offers many treatment options for all kinds of injuries.Relief from pain and dysfunction of the joints or muscles, in all parts of the body. Detection, correction, and back to fitness as soon as possible."
+  },
+  "045a938a-8edc-4f1a-a173-d012ff6bbb8b": {
+   "name": "Morzine Immobilier",
+   "description": "Morzine Immobilier, an estate agent in Morzine specialised in the sale and rental of properties in the Alps ski resorts, and especially in the portes du Soleil area."
+  },
+  "ce22b06d-c2da-42e1-9aee-3b45de27e49c": {
+   "name": "Morzine Massage",
+   "description": "Morzine Massage offers: Deep Tissue, Relaxation and Hot Stone Massage and Reflexology. We are a mobile massage service coming to your chalet or apartment with the massage couch and expertise. We also have a treatment room at The Hive 14 Route d'Avoriaz"
+  },
+  "91c73115-1548-4810-971c-147836f46841": {
+   "name": "Morzine Réservation",
+   "description": "Morzine Réservation offers different types of accommodation, classified according to a general rating system. Hotels, chalets, apartments, holiday centres, guest houses."
+  },
+  "88aa8d2c-e624-4298-a08b-1ff4e485ca7f": {
+   "name": "Morzine Ski Chalets",
+   "description": "Welcome to Morzine Ski Chalets, a boutique chalet company based in the heart of Morzine. We provide a unique range of luxury chalets and apartments with a 5 star service."
+  },
+  "22a70e9b-2645-4589-91dd-97fdacfb5491": {
+   "name": "Morz'na Garage",
+   "description": "Car garage/RENAULT agent/all-make repairs/NEV and used car sales and advice/French and foreign vehicle registration service"
+  },
+  "ff9683a1-ce26-4302-b18b-0287c4a08ff1": {
+   "name": "Morz'na Sport - Ski Républic",
+   "description": "Ski and Mountain enthusiasts, welcome to your Ski Républic store."
+  },
+  "6962ad87-0490-4668-99f0-53c99dc16072": {
+   "name": "Morz'Net",
+   "description": "Morz'net cleaning services company"
+  },
+  "aa90e94a-b716-4cab-905c-94e65d8b5152": {
+   "name": "Motiv Oxygène",
+   "description": "Motiv Oxygène is a communications and advertising agency."
+  },
+  "0cd14e43-4630-4b1e-976b-747f8aa312e9": {
+   "name": "Muriel – World Energetics",
+   "description": "I offer you different energetic massages for a moment of well-being and gentleness ideal for recharging your batteries during your vacation in my cosy space in the center of Morzine."
+  },
+  "53c51255-15b2-4510-b453-8d087882e39a": {
+   "name": "Nature et Compagnie",
+   "description": "In Morzine town centre, large choice of gifts and souvenirs for the whole family."
+  },
+  "5d454783-954a-47ce-bad2-80e900523b36": {
+   "name": "Nicolas Thibon Immobilier Morzine",
+   "description": "The Nicolas Thibon Real Estate Agency in Morzine, will be your partner throughout the year with all your real estate projects within the Portes du Soleil. From rentals, management, sales estimates to concierge services, we will accompany you all the way !"
+  },
+  "b5ff2f0b-e804-447c-bd6d-d8b6c2a1b602": {
+   "name": "Noël MARULLAZ",
+   "description": "Blacksmith"
+  },
+  "b17ff6e5-83a4-4353-8855-2058b9b9ee49": {
+   "name": "Nyon estate",
+   "description": "The Pointe de Nyon leisure area is dedicated to skiing, contemplation and discovery of the mountain, its inhabitants and their activities."
+  },
+  "8a8321fe-2e9a-493a-8622-3c8f9207b872": {
+   "name": "Avoriaz 1800 Tourist Office",
+   "description": "Do you need information? Our team of dedicated individuals will be delighted to provide information about the resort and help you find the events or activities that best meet your needs."
+  },
+  "3207dabc-e857-4d2b-a3b7-ab7de6817cde": {
+   "name": "Morzine Tourist Office",
+   "description": "The Morzine Tourist Office welcomes you a pleasant and spacious environment."
+  },
+  "7e53a0f1-5bd3-4d93-ae9c-80b983b06031": {
+   "name": "Notarial Office – Novalps",
+   "description": "Solicitor - Public Notary"
+  },
+  "dd37e46b-bb55-46e4-8039-68abc2856142": {
+   "name": "Car park - Joux Plane",
+   "description": "Underground parking under the ESF Piou-Piou club"
+  },
+  "b60af2b1-c9f9-47b9-9d65-972ca7b3906f": {
+   "name": "Car park - Le Bourg",
+   "description": "Underground parking lot located beneath the Sainte Marie private school next to the church"
+  },
+  "aefdede0-eff7-4b71-b53c-da0d562e54f4": {
+   "name": "Car park - Les Lans",
+   "description": "The Lans parking lot is located on the route des ardoisières just before Les Prodains."
+  },
+  "f7f97bcc-dba4-459d-aa32-99b65a1a45cc": {
+   "name": "Car park - Les Prodains",
+   "description": "The Prodains car park is the main access point to the Prodains Express cable car. It offers a parking solution suitable both for day visitors and for holidaymakers staying several days in Avoriaz."
+  },
+  "77aed946-637a-4d9c-9ed1-2716ce89d8e9": {
+   "name": "Car park - Tourist office",
+   "description": "Underground parking lot under the Tourist Office square"
+  },
+  "69acc811-95b9-4867-b7f2-1c47e45557b0": {
+   "name": "Car park - Palais des Sports",
+   "description": "Outdoor parking in front of the Palais des Sports"
+  },
+  "730daa9f-d0ec-4016-be40-82eb6bc41a22": {
+   "name": "Car park - Post Office Square",
+   "description": "Outdoor parking on Place de la Poste. Parking prohibited on Wednesday mornings due to market."
+  },
+  "4c734a01-0df8-4ed7-8696-1ef8c8afa7b8": {
+   "name": "Car park - Skate Park",
+   "description": "Outdoor parking near the skate park and tennis courts"
+  },
+  "d67b744c-a93f-417b-94e3-0f436a29cde9": {
+   "name": "Paroisse Saint Guérin en Vallée d'Aulps",
+   "description": "Parish"
+  },
+  "e776a9f8-de4c-42ff-a846-8bebaced9c44": {
+   "name": "Pharmacie du Bourg",
+   "description": "The Pharmacie du Bourg is located next to the Church and the Town Hall of Morzine. Our team welcomes you with good humor to bring you the best advice and services."
+  },
+  "9e5541f7-0f85-41e1-859e-073eef483804": {
+   "name": "Philippe MOURET",
+   "description": "Philippe MOURET, heating systems, sanitary, and metalworks company."
+  },
+  "542dee7d-5b8e-4770-8b1d-26fdd2a6aefe": {
+   "name": "The Meuniers Fish Farm",
+   "description": "The Meuniers fish farm produces rainbow trout, brown Fario and Commune trout, Fontaire salmon and char (deep lake fish). All are sold on site: living and whole, or prepared, in fresh fillets, smoked, sliced, etc."
+  },
+  "ba5fc261-eee4-47d8-a3f7-9813ba13f03c": {
+   "name": "Pleney Sports",
+   "description": "Book your ski equipment in advance for your next stay in Morzine, right in the heart of the Portes du Soleil!"
+  },
+  "370f1d5d-a24b-42b2-af4e-fbb3b4949c19": {
+   "name": "National Police Station",
+   "description": "Morzine Municipal Police"
+  },
+  "09377948-2ea2-4f52-a24c-37acb5dfe177": {
+   "name": "Post Office",
+   "description": "Post Office Morzine"
+  },
+  "77099ec3-f913-48ff-81c3-e4e713792945": {
+   "name": "Morzine Pottery",
+   "description": "Gérard, the potter of Morzine, welcomes you to his workshop-boutique in an old mountain chalet atmosphere."
+  },
+  "639e0f6d-894c-42b1-953a-4f9afe83367b": {
+   "name": "Prodains Sports",
+   "description": "Sport 2000 Prodains Sports: ski equipment rental for all levels and ages, with well-maintained gear and personalized advice from expert staff."
+  },
+  "d215549a-66a6-46b3-a36c-ca6e2ffbaddc": {
+   "name": "Promocash",
+   "description": "For food industry professionals (hotel, bar, restaurant, organised groups), as well as associations, the Promocash store will certainly satisfy you in terms choice, quality and price."
+  },
+  "a5a333b2-fdff-4c12-8b3b-b99df10246f7": {
+   "name": "Promoteam",
+   "description": "PROMOTEAM Builder of dreams in the Alps. High-end property developer in the French Alps."
+  },
+  "34836d9d-14f8-4750-bea2-d7b21e3bc245": {
+   "name": "Pulse Activity",
+   "description": "A one-of-a-kind company of fun and delirious animations."
+  },
+  "7febb1e1-747b-4c73-b07d-6ba70501361a": {
+   "name": "Pulse Activity - Seminar",
+   "description": "A one-of-a-kind company of fun and delirious animations."
+  },
+  "de161db1-6f77-48e8-9460-b82d3aab92cb": {
+   "name": "Pure Morzine",
+   "description": "Enjoy unique and relaxing mountain holidays with Pure Morzine, a local, family-run property management specialist. With a stunning collection of self-catered chalets and apartments, we’ll ensure you enjoy a stress-free Alpine break in total comfort."
+  },
+  "daa3db69-2e9e-4a37-b02d-24ceecec87b3": {
+   "name": "Quincaillerie Mechoud",
+   "description": "In a mountain chalet in the heart of Morzine, MECHOUD hardware offers a wide range of products."
+  },
+  "f1feb71e-3e78-454e-bb72-e7ee9325a6b9": {
+   "name": "Reach 4 the Alps",
+   "description": "Luxury chalets for 8 to 15 people. Ideally located in Morzine centre. A choice of self catered or half board accommodation. Sauna and outdoor hot tub."
+  },
+  "f5eb4369-e4f7-4ba9-8adc-e9742054f557": {
+   "name": "Relief La Montagne à l'Authentique",
+   "description": "Mountain Guide"
+  },
+  "66a5888d-8bbf-449c-9459-692ddcee0f4e": {
+   "name": "RE/MAX Lacoutete Immobilier",
+   "description": "Number 1 for property sales in the world Welcome to Morzine! Founded in 1987 in the heart of Morzine, our agency is the area specialist in all luxury and high end listings in the valley."
+  },
+  "9da7417d-fd7e-4aaa-9a89-3dcaed003c1a": {
+   "name": "The Bibli'Aulps Network",
+   "description": "The Libraries' network of the Aulps valley (including Morzine and Les Gets)"
+  },
+  "b61b1a0e-f317-4f9a-97a9-4c53e35cfe5a": {
+   "name": "SARL Elevation Alps",
+   "description": "Our serviced chalets in Morzine allow you to create a tailor-made stay by adding the services you need."
+  },
+  "56b0db5d-b72a-4acf-bf18-1ada4daa3c5b": {
+   "name": "SAS B.E.T Berger",
+   "description": "Consulting Engineers for Mechanical and Building Services Design Technical Electrical Studies (high and low currents), Plumbing, Heating, Ventilation and air conditioning investigations Thermal Studies"
+  },
+  "ebc5e1da-e1cf-4610-86c9-b3a2d3e09c11": {
+   "name": "Savoie Fourrures",
+   "description": "Family business founded in 1979, SAVOIE FOURRURES works hard for the satisfacttion of its clientele."
+  },
+  "c3dd4459-b82c-4c9c-adab-11a75d4612df": {
+   "name": "SCM Kinedelweiss - Espace Bien-être",
+   "description": "Wellness Center"
+  },
+  "12c5f531-06eb-4402-9f10-ed2037ef40c0": {
+   "name": "SCP Centre Médical de Morzine",
+   "description": "General Medicine, Radiology and Traumatology. Practitioners on site : Dr Vouillon Charles Dr Pasty Simon Dr Guiberteau Julien Dr Pierron Nelsie"
+  },
+  "0427f9f4-091d-42b2-8be3-7fb6c1a1ee8d": {
+   "name": "SELARL Marullaz Architectures DPLG",
+   "description": "Should your project be the construction of a chalet, a trade, a tourism equipment, a collective, a hotel or a renovation, the Marullaz Architectures cabinet is listening to your needs and concretizes your envies."
+  },
+  "ed47e498-318f-4a2a-8430-2b20bee8f4fb": {
+   "name": "Sherpa Morzine",
+   "description": "With 35 years' experience and a cooperative spirit, Sherpa is the specialist mountain food retailer."
+  },
+  "98095bd0-3bf4-4f1a-baaf-d3e1454d4c64": {
+   "name": "Signature d'Intérieur",
+   "description": "Your interior designer in Morzine"
+  },
+  "624e81fc-feb6-42c0-82b3-7bb675c0ac40": {
+   "name": "Simply Morzine",
+   "description": "Established in 1995, Simply Morzine are THE original Morzine specialists in winter and summer seasons for both flexible short breaks and full weekly holidays."
+  },
+  "5ca6cb22-0cc1-42d6-b33a-bd365a7868f3": {
+   "name": "Ski Club Morzine Avoriaz",
+   "description": "Managed by a 12-strong board of directors, the ski club has 222 members and 607 licensees. Supervision is provided by a 17-strong team headed by a general manager."
+  },
+  "05e01236-a70f-4fca-91bb-2d4bbdcad33c": {
+   "name": "Ski-Lifts",
+   "description": "Ski-Lifts offers pre-booked airport transfers from airports such as Geneva, Grenoble, Lyon and Chambéry, as well as from train stations to Les Gets."
+  },
+  "6d3e9220-9985-4434-b6d0-2e7ae125740e": {
+   "name": "Skiidy Gonzales",
+   "description": "Skiidy Gonzales offers shared and private door-to-door transfers between Geneva Airport and Morzine-Avoriaz during the winter and summer seasons."
+  },
+  "d1ffe282-1320-460b-9290-ddd0f81791c8": {
+   "name": "Skiology",
+   "description": "\"Imagine stepping out of your door and being just moments from the slopes."
+  },
+  "b68625c0-05cb-4701-94a4-b266ade73547": {
+   "name": "Snow and Trek",
+   "description": "Snow and Trek have been operating in Morzine since 2002 and specialise in quality , self-catered apartments and chalets, in central Morzine . Stays from 3/4 nights to a whole season. Chalet Poppy B+B"
+  },
+  "9bc1dd0c-91b0-4bad-8734-5ddc77a5b095": {
+   "name": "SNOWTRIBE Ski & Snowboard - Antoine Tricou",
+   "description": "From snowplough, we cater for a diverse range of needs and look forward to sharing this beautiful resort with you. See our website below to discover the Tribe."
+  },
+  "9296017c-d760-41c2-9ce0-accf10ff54d7": {
+   "name": "Spar",
+   "description": "Minimarket right in the center of Morzine, 50 meters away from the Tourist Office."
+  },
+  "94abe50e-17e2-46c0-93dd-19780df06139": {
+   "name": "Star-Ski Sports Shop",
+   "description": "Star-Ski is proud to offer a wide range of mountain sports products."
+  },
+  "11e38356-8d58-4eea-bd4e-90a6b006c9e7": {
+   "name": "Studio Polly – Photographe",
+   "description": "Professional photography and videography – portraits, events, tourism"
+  },
+  "61d2a8bc-ec17-4002-a4b7-366fded54e4a": {
+   "name": "Synergie Ski Academy",
+   "description": "Synergie Ski Academy is specialised in private ski lessons which are offered by the hour, half-day or full day. Our innovative approach to teaching, video corrections, reliability and great professionalism set us apart."
+  },
+  "f4df5ac3-25e8-472f-b32d-22c855698fa1": {
+   "name": "Taxi n°2 - Activ'Taxi",
+   "description": "Mr and Mrs Richard Trombert run a Morzine-based taxi service to all destinations."
+  },
+  "dde3bab9-bcaf-4718-b111-926aad9f78bd": {
+   "name": "Taxi n°4 - Taxi Lionel Trombert",
+   "description": "Lionel Trombert, your Morzine-Avoriaz taxi service, can take you anywhere, including to the airport or train station. Can also provide assisted medical transportation."
+  },
+  "8c099091-6024-4522-89b6-02789eef358c": {
+   "name": "Taxi n°9 - Arnaud Landais",
+   "description": "Taxi VTC at your service 7J/7 for you transfers to the resorts of Morzine - Avoriaz. Vehicle VW Caravelle (4x4) - Leather Seats. 1 to 8 people."
+  },
+  "64c77bf2-c6c3-4586-96a7-35ee61293572": {
+   "name": "T.G Ski",
+   "description": "We offer a collection of stunning catered ski chalets in Morzine and Meribel, focused on creating beautiful experiences for our guests."
+  },
+  "a49889c4-ec6e-4e8c-83a2-47267c194229": {
+   "name": "The Boutique Chalet Company",
+   "description": "The Boutique Chalet Company is a luxury ski chalet operator providing unforgettable, tailor-made ski holidays in the French Alps."
+  },
+  "39b36b36-960b-4c52-8fd3-a3b3384933f7": {
+   "name": "The Snow Institute",
+   "description": "The Snow Institute is a well established British run Ski School based in Morzine, Les Gets and Avoriaz. TSI has been operating in resort for over 17yrs, this means that we have got a wealth of experience and knowledge of the area"
+  },
+  "7c410cd9-b6f4-48d0-85bb-53eb83b56716": {
+   "name": "Public Toilets – Coulet Lift",
+   "description": "Public Toilets – Coulet Lift (Lower Station)"
+  },
+  "dd7a4b6a-5f06-434d-b6b6-20f799b03851": {
+   "name": "Public Toilets – Avenue de Joux Plane",
+   "description": "Public Toilets – Avenue de Joux Plane (next to the Piou-Piou area)"
+  },
+  "e94da3d7-165b-4dda-a240-7998bdf3aa86": {
+   "name": "Public Toilets – Tourist Office",
+   "description": "Public Toilets – Tourist Office Square (at the back of the square)"
+  },
+  "46414cee-35ed-4e14-8316-b9737903d0d8": {
+   "name": "Public Toilets – Dérêches Park",
+   "description": "Public Toilets – Dérêches Park (next to the Equestrian Centre)"
+  },
+  "e4330850-2732-434e-988c-53f2a4677e1c": {
+   "name": "Public Toilets – Post Office Square",
+   "description": "Public Toilets – Post Office Square"
+  },
+  "ca0bd6b4-4bde-4806-826d-96d09cbbb5ee": {
+   "name": "TOTAL MOUNTAIN",
+   "description": "Total Mountain offers vacation chalets and apartments for rent in Morzine and the surrounding area. The company also provides property management services for owners."
+  },
+  "3796ee0b-7e57-4288-aa71-87f4b4ecf8f6": {
+   "name": "Tralala",
+   "description": "The boutique for glamorous and elegant \"indulgences\" with a selection of clothing, scarves, bags, jewellery and accessories."
+  },
+  "3f5d43b3-aa99-4a6e-9f53-95b1fa139105": {
+   "name": "Treeline Chalets",
+   "description": "Treeline Chalets is an award-winning independent chalet company offering a carefully curated collection of catered and self-catered chalets and apartments in Morzine."
+  },
+  "d6a10412-3630-4ec3-8209-8f455f238082": {
+   "name": "Voiron Matériaux",
+   "description": "Voiron Materiaux, a member of the \"Tout Faire Materiaux\" group has everything you need for large-scale building works, from insulation right through to the detailing. Equipment and vehicle hire, hardware, tiles, paints…"
+  },
+  "036a1564-5285-49b4-938c-aa08494bdf37": {
+   "name": "WineNot ?",
+   "description": "Your wine shop in Morzine! Wines, beer and spirit."
+  },
+  "684802d6-7f33-44bb-a5ff-6151346bca81": {
+   "name": "Woody",
+   "description": "Located in the heart of the Vallée d'Aulps, WOODY is a new-generation indoor leisure complex combining activities, dining and entertainment in one place."
+  },
+  "6dc6b0a8-6fc2-46e1-9631-139f39e83b4c": {
+   "name": "Yellovelo",
+   "description": "Yellovelo, road cycling specialist. Qualified and certified road cycling guide, coach and trainer. All ride abilities, all routes!"
+  },
+  "19ee167f-41a3-4294-8e2e-18c82bdd8355": {
+   "name": "Yves Tavernier Sports",
+   "description": "Welcome to the Yves Tavernier Sports shop. Located in the heart of the resort of Morzine, directly across from the Tourist Office, a short distance from both the Pleney and Super Morzine Cable Car stations."
+  },
+  "5f1224d1-1a22-4d89-8de7-4e7a14ee3322": {
+   "name": "Artes Tourisme- Village Vacances -Le Chablais**",
+   "description": "Full- and half-board vacation village with heated outdoor pool, ski room, entertainment room, bar. Daytime and evening entertainment."
+  },
+  "ad58895d-888d-4a82-9137-998f65ba1ee3": {
+   "name": "Bulles des Mines d'Or",
+   "description": "Indulge yourself a unique and unusual experience... In the heart of Les Mines d'Or in Morzine, share a romantic night under a sky full of stars, in one of our transparent bubble lodge restled in a panoramic view of surrounding mountains."
+  },
+  "223b1c07-04b0-489a-929b-e03741c97ed3": {
+   "name": "L'Escalade Holiday Centre",
+   "description": "With its great location at the heart of the Portes du Soleil, hosts Laetitia and Richard offer excellent summer and winter holiday options for young groups of skiers and adventure, with sports classes too..."
+  },
+  "914c5425-e5e0-43ab-b419-20e769181737": {
+   "name": "Chalet Hôtel Bel'Alpe",
+   "description": "This charming little hotel will welcome you in a cozy atmosphere, with its warm lounges in winter and its sunny terrace in summer."
+  },
+  "b5561f99-98c5-4edf-96bd-8c7e02906762": {
+   "name": "Chalet Hotel \"La Clef des Champs\"",
+   "description": "Family hotel at the foot of the Morzine-Les Gets slopes in winter and in the edge of meadows in summer. Semi-gastronomic restaurant combining regional speciality and creation."
+  },
+  "85a061a9-9c59-4049-ab71-1a406cc81993": {
+   "name": "GARANCE Hotel & Spa",
+   "description": "In December 2026, a new property from the Mont-Blanc Collection group. This historic village hotel is currently undergoing a major renovation that preserves its architectural identity."
+  },
+  "2fe70949-6200-4d08-8670-7e0a717657d9": {
+   "name": "Hameau des Prodains hôtel et appartement",
+   "description": "At the foot of the slopes in winter, in the heart of nature in summer. Family-run chalet-hotel with gourmet restaurant, lively après-ski, spa, heated indoor pool, sauna and fitness center."
+  },
+  "29490fb4-1521-4d14-a787-7e94cdc5cf5c": {
+   "name": "Hideout Hostel",
+   "description": "Modern, functional en-suite rooms, in a central location"
+  },
+  "bb3ca71a-2f15-4ada-b6d7-77c78aee050f": {
+   "name": "Alpen Roc hotel",
+   "description": "The Hotel Restaurant Alpen Roc in Morzine Avoriaz, Haute-Savoie, offers fully-equipped rooms and apartments with gardens and summer swimming pools for hiking and skiing, in the heart of the magnificent \"Portes du Soleil\" ski area."
+  },
+  "e094ccec-bf9f-4b30-944e-6d99e3032532": {
+   "name": "Hôtel Alpina",
+   "description": "Hotel with restaurant situated at Les Bois Venants, south side of Morzine at 200m from the Super-Morzine skilifts and Avoriaz, near the shops, activities, sport hall and start of the walks."
+  },
+  "a3376453-4d0a-40b6-886e-75673e90e755": {
+   "name": "Hotel Au Coin du Feu / Chilly Powder",
+   "description": "4-star hotel with restaurant (16 bedrooms) Very beautiful hotel located at the bottom of the Prodains cable car and Avoriaz slopes"
+  },
+  "bb73bf96-1a5f-426a-8019-a259d0d6fe18": {
+   "name": "Chalet Philibert Hotel",
+   "description": "Be charmed, the Philibert Hotel is a beautiful Savoyard hotel that enjoys some of the best views in Morzine from its position high above the town center but close to the action as bus stop less of 40m or 15mn from Tourist Office."
+  },
+  "1bc78728-34b4-453a-a2ef-9868115eeb71": {
+   "name": "Hotel les Champs Fleuris",
+   "description": "Large Savoyard chalet, ideally located at the foot of the slopes and ski lifts. 200 m from town center, restaurant, swimming pool, tennis court, sauna, hamman."
+  },
+  "9983fa8a-da83-4c2b-a0bb-680c224af5a3": {
+   "name": "Hotel Coutettaz",
+   "description": "Authentic, restful, and most of all welcoming, Hotel Coutettaz offers an experience you simply cannot find elsewhere. The team does everything possible to make your stay, family or business event, an exceptional moment."
+  },
+  "99b222b6-6ac4-4265-a176-b3c8bb632250": {
+   "name": "Hotel du Lac",
+   "description": "The Hôtel du Lac sits in a haven of peace on the shores of Lake Montriond, close to the world-renowned mountain resort of Avoriaz and the village of Morzine."
+  },
+  "fc6ecef7-f0fb-40a3-83d8-b5c552d23d39": {
+   "name": "Hotel Fleur des Neiges",
+   "description": "Located 300m from the super-Morzine lifts Heated outside pool, sauna, game room Tv in rooms, WIFI all around Parking, elevator"
+  },
+  "6fbef92b-23bf-43eb-a602-6c31a8e0bfd6": {
+   "name": "Hermine Blanche Hotel",
+   "description": "Typical Hotel from Haute Savoie Beautiful view on Morzine’s slopes and town"
+  },
+  "3e53b019-1328-4ee3-9910-da0d4d8f72c7": {
+   "name": "Igloo hotel",
+   "description": "The Hotel Igloo ***, located in the heart of Morzine, offers comfortable rooms or studios with breakfast service and daily cleaning, for holidays in complete freedom."
+  },
+  "7a91bb0e-191d-457e-ae54-f83b83f4279d": {
+   "name": "Hotel la Bergerie",
+   "description": "Situated in the centre of Morzine. La Bergerie is more than a hotel! This is a family who welcome you and propose in its savoyard chalet the services of a 4-star hotel and the home's independence."
+  },
+  "1769a92b-14a0-4c03-99ce-2d27ed19479c": {
+   "name": "Hotel la Chaumière",
+   "description": "Situated in a quiet place at the bottom of the slope of Pleney Nyon return."
+  },
+  "9ef35463-77b5-4ed5-9861-81cb9f0f968f": {
+   "name": "Hotel Le Concorde",
+   "description": "Hôtel Le Concorde in Morzine offers a warm and friendly setting for your stay with family or friends. Equipped with a swimming pool heated to 26°C and free parking, our establishment welcomes pets and dogs."
+  },
+  "154d8f75-7ff3-4b9c-b1c3-0e39347a49b7": {
+   "name": "Hotel Le Crêt",
+   "description": "3-star hotel-club (101 rooms) with restaurant. Hotel Le Crêt welcomes individuals, families and groups all year round in a warm, club atmosphere."
+  },
+  "fd687186-74a6-4e91-9805-985a5c3c6357": {
+   "name": "Hôtel Le Grand Tétras",
+   "description": "Located a minute awayfrom the town center, in a quiet area of Morzine, our hotel with its unique view welcomes you summer and winter on half board or breakfast basis. The hotel provides its customers with a private car park, tv lounge, ski room, free wifi, cocktail bar and restaurant facilities."
+  },
+  "231ffddf-4535-42d2-bcc8-2818ec508678": {
+   "name": "Hotel Le Petit Dru",
+   "description": "Situated in te heart of Morzine, near the townhall and church place."
+  },
+  "d6e5bf93-a829-49b6-8f08-c05aec90ea0d": {
+   "name": "Le Samoyède Hotel",
+   "description": "Spend exquisite moments in this famous hotel in Morzine."
+  },
+  "84212fe8-5cc7-4d84-858a-8c16e23302f1": {
+   "name": "Hotel le Soly",
+   "description": "Discover a Savoyard chalet combining tradition, charm and friendliness, ideal for all your holidays with friends and family, the time of your ski holidays or summer."
+  },
+  "48a467b1-b26a-4852-926f-a15037c3333f": {
+   "name": "Hôtel Le Sporting",
+   "description": "Typical Savoyard chalet with swimming pool, hammam, sauna and beautician center. Sporty and friendly atmosphere. Excellent home-made French typical restaurant."
+  },
+  "b77255b8-c9be-488d-ad83-b19333b1f2a7": {
+   "name": "Hotel le Tremplin",
+   "description": "Open year-round, the Hôtel Le Tremplin is your home away from home in the mountains, in the heart of Morzine."
+  },
+  "62f05323-51c3-4713-97b1-4677f38e582e": {
+   "name": "Hotel L'Equipe",
+   "description": "In the center of Morzine, down the slopes & at the start of the skilifts of Le Pléney."
+  },
+  "e5eb22f0-20c2-4bc5-9ecf-cd9b28830c8c": {
+   "name": "Hotel les Bruyères",
+   "description": "3 stars hotel (22 bedrooms)"
+  },
+  "8ecb551e-4f25-44a7-975c-4a972f7fe7f8": {
+   "name": "Hôtel Les Côtes, Appartements et Chalets",
+   "description": "Hotel Les Côtes is located 500 meters from the Super-Morzine lift and 5 min walk to the church place. It combines the comfort of a 3 star hotel and the independency of a self-catered accommodation with numerous leisure facilities for free. Run by the Family Marullaz since 1951, it is the perfect spot for your next Morzine Holidays!"
+  },
+  "8597f753-25bd-4576-aaf3-e6c6136b3cc5": {
+   "name": "Hôtel les Fleurs",
+   "description": "Family-friendly hotel enjoying a peaceful setting at the entrance to Morzine. Relaxed atmosphere, summer pool and free shuttles summer and winter to the foot of the slopes."
+  },
+  "62ee31a7-3252-4257-840c-4af3410ec8e1": {
+   "name": "Hotel Les Lans",
+   "description": "Family-run hotel at the foot of the Avoriaz slopes. At Hôtel Les Lans, we combine traditional comfort with modern amenities to meet our guests' needs, while offering a convenient and enjoyable experience."
+  },
+  "e2711a38-7ec6-4c8e-92e6-01f518e7d9e7": {
+   "name": "Névé hotel",
+   "description": "A charming hotel, welcome to Chalet Hôtel Névé in Morzine. With 37 comfortably-equipped rooms linked by elevator."
+  },
+  "31c874ec-f61d-4d42-8397-ce976c96957d": {
+   "name": "Hôtel & Spa Le Dahu",
+   "description": "On the sunniest side of Morzine with a panoramic view of the village, 400 m from shops, ski lifts and activities, the Heu family welcomes you in the warmth of wood and the comfort of a large mountain chalet."
+  },
+  "9cd78741-4e8f-4502-af20-ea428cde7e0c": {
+   "name": "Hôtel & Spa \"Neige et Roc\"",
+   "description": "Located in Les Prodains, at the bottom of Avoriaz's cable car, at the foot of the slopes. 4 km from the centre of Morzine."
+  },
+  "f849b7c2-35db-4a89-82a7-324e794fcf7c": {
+   "name": "Le Gros Colas",
+   "description": "Typical Morzine chalet in the heart of the village, 200m from the Super Morzine ski lifts. Comfortable rooms with full-equiped bathroom facilities."
+  },
+  "edb67694-73b9-4649-958f-77ac7a408175": {
+   "name": "Le PasSionNant",
+   "description": "Le PasSionNant is located in Morzine, 41 km from the Evian Resort Golf Club. It features a terrace, restaurant, bar and free private parking."
+  },
+  "b6d32627-fdec-4c92-a34b-3efa554e8e1e": {
+   "name": "Les Embrunes",
+   "description": "Summer and winter alike, the \"Les Embrunes\" vacation center welcomes you to Morzine/Avoriaz."
+  },
+  "ed456b69-a98e-4683-b41a-e65c8c844b80": {
+   "name": "Les Mazots des Fées",
+   "description": "Comfortable rooms and cosy Mazôts, for an atypical accommodation."
+  },
+  "ba2a5cd1-5f40-4e35-8fb4-889fdc206fbd": {
+   "name": "Bostan mountain refuge",
+   "description": "Above Samoëns and isolated in the mountains, the Bostan refuge is the ideal place to welcome hikers for a short break or for the night. Accommodation and catering in the mountains. Home and local products. Pleasure for the eyes and taste buds. ."
+  },
+  "3d7abf47-8be2-40b4-86ea-b79c22227cf8": {
+   "name": "Golèse mountain refuge",
+   "description": "The mountain hut is situated at the Col de la Golèse in the middle of an alpine meadow. It offers a wonderful panorama on the south side overlooking the Giffre valley and Samoëns and on Morzine and Manche valley on the north side."
+  },
+  "a7445c13-43b3-463e-83f4-3b772ed36637": {
+   "name": "Résidence du Téléphérique d'Avoriaz",
+   "description": "1-star Tourist Accommodation with 52 apartements located at the bottom of the Prodains Cable car (Access to Avoriaz) and at 4 km from Morzine center."
+  },
+  "f79e2cd1-87ed-4f42-b9d8-e94689985ac0": {
+   "name": "Résidence Frond'Neige",
+   "description": "The Résidence Frond'Neige **** is a charming Savoyard chalet located at the foot of the Pléney slopes and in the center of the resort. Ideally located next to the Pléney cable car and just a few meters from shops and restaurants, everything is within easy walking distance."
+  },
+  "74f9cc78-a5f2-4e35-8e49-3fdbc840cb0b": {
+   "name": "Residence l'Aiglon",
+   "description": "Ideally located in the heart of the traditional Savoyard village of Morzine, L'Aiglon is a magnificent \"tourism residence\" with 12 x 4* self-contained apartments."
+  },
+  "0f50e40a-ab7e-4660-a389-f1404f576158": {
+   "name": "Village Club Miléade l'Hauturière",
+   "description": "The Village Club *** Miléade enjoys an exceptional location in the heart of the village. With full-board accommodation, you'll enjoy a vacation rich in experiences and tailored to every member of the family."
+  },
+  "cc539f27-4492-4ab5-93fd-8caf45f853a5": {
+   "name": "Villages clubs du Soleil - Le Florimontane",
+   "description": "All-inclusive stays for families, individuals and groups."
+  },
+  "250ee403-7511-47a8-850b-7fd01503bb1a": {
+   "name": "Gold Mines Lake walk - Snowshoe trail",
+   "description": "Starting from the Erigné car park in front of Morzine, this route leads to the Mines d'Or lake and the Fréterolle chalets, as far as the Chardonnière torrent. Return along the Dranse de la Manche."
+  },
+  "f3c6bed1-f949-4bf6-9a2a-c7a1934e7544": {
+   "name": "Col de la Golèse via the refuge",
+   "description": "Set off for a beautiful escapade in the heart of the alpine pastures with this accessible hike to the La Golèse refuge."
+  },
+  "0ab795d2-a178-477d-a49b-3c1823c11be6": {
+   "name": "CRETES DE ZORE",
+   "description": ""
+  },
+  "bc49b57b-32ac-41a3-bf4c-d4b8d7f32f7d": {
+   "name": "From l'Erigné to Chardonnière",
+   "description": "Start from l’Erigné in the Manche Valley, at the end of the snow-cleared part of the road. Follow the cross-country ski tracks that go up via the bridge to Charny."
+  },
+  "48c534db-5b43-4e84-9abc-1faf08bd5d2f": {
+   "name": "From l'Erigné to Fréterolles",
+   "description": "Set off from l’Erigné in the Manche Valley at the end of the snow-cleared part of the road. Follow the cross-country ski tracks that go up via the bridge to Charny."
+  },
+  "0f5996a6-40d1-4c18-a3e0-47bfc5210999": {
+   "name": "From Pléney to Chavannes",
+   "description": "Start by going up in the Pléney cable-car (access fee). At the exit of the gondola, climb on the left to join the groomed piste reserved for walkers next to the beginners area, pass the orientation table under the Belvédère chairlift to reach the Vaffieu restaurant."
+  },
+  "92f10152-9e8f-43e1-bb32-44c8ceaa3f8e": {
+   "name": "Le Vanné ski touring route",
+   "description": "Beautiful panoramic view at the summit over the Chablais mountains (especially stunning at sunset). Departure from the village of Lindarets. Arrival at the top of the Lindarets Ridge via the Brochaux."
+  },
+  "64b2a63b-a7d3-4eb4-b559-56c72d3b1e24": {
+   "name": "Les Jordières ski touring itinerary",
+   "description": "Walk through the Crot forest. Departure at the base of the Prodains cable car, arrival at the top of the Prodains cable car."
+  },
+  "859b27f1-6ba2-48b4-bf6b-7217267d3284": {
+   "name": "Treasure hunt",
+   "description": "Fan of track game? The Morzine Tourist Office has set up a free virtual treasure hunt to explore the village and its heritage in an interactive way."
+  },
+  "1f28031f-c00f-432a-b232-29cbf3927118": {
+   "name": "Montriond lake to Ardent",
+   "description": "This route is possible on foot or with snowshoes. All walkers will enjoy taking the open lakeside path, since it is groomed and easier to walk along."
+  },
+  "9c9fe9af-8e25-45ae-a8ee-5cf07a954bf1": {
+   "name": "Le Pleney on snowshoes",
+   "description": "This walk offers magnificent panoramic views over the Morzine and Manche valleys, the Plateau de Nyon and Avoriaz."
+  },
+  "64205dca-9fcc-4eb3-b52b-c5f3b9ea1b47": {
+   "name": "Fox trail",
+   "description": "A nature walk along the Dranse river following the former Alpine trail to Nyon. Looking out for foxes along the way which are native to this valley. In the winter this path can also be used for showshoeing"
+  },
+  "dab93f59-db9e-41da-a677-92fa3d54939f": {
+   "name": "Nature Trail and Fox Watching - snowshoe trail",
+   "description": "Start from the church and cross over the old bridge, go below the road via the metal bridge and to the first information board."
+  },
+  "23b61511-24eb-43fe-90e8-0df46b5d1118": {
+   "name": "The peaks of Super Morzine and the belvedere of the lake",
+   "description": "From Avoriaz, head for the Falaise district. Pass between the Malinka and Saskia residences, head towards Le Proclou, over the golf course and up to the Col de la Joux Verte."
+  },
+  "497bcb2d-697a-4288-b245-9a417891b9ba": {
+   "name": "Orienteering race",
+   "description": "From the starting point near the swimming pool entrance, there is no defined circuit, simply find the 20 tags (posts with clips) within a set time. Maps are available at the Morzine Tourist Office, the Palais des Sports."
+  },
+  "84672cb3-d010-4eb4-9ccc-ebee20c83686": {
+   "name": "Walk in Dérêches Park",
+   "description": "Tucked away in the heart of Morzine, the Parc des Dérêches walk offers a natural interlude through the seasons. Running alongside the River Dranse, this peaceful stroll appeals to families and sports enthusiasts alike."
+  },
+  "9be6bc5d-f31b-47fd-8fd5-d2b53c963987": {
+   "name": "Cross-country skiing at Pléney-Chavannes",
+   "description": "The Pléney-Chavannes sector offers a hilly circuit over approximately 4,5km with a double track preparation for cross-country skiers.The technical nature of this route makes it ideal for cross-country training."
+  },
+  "61b3ace4-b2b9-4c9c-ba91-df6c540dd43f": {
+   "name": "Cross-country skiing in vallée de la Manche - col de Coux-Paradis",
+   "description": "The route from Nyon from l’Erigné is suitable for everyone. Access by car or free shuttle (N or E circuits, “telepherique de Nyon” stop)."
+  },
+  "180455cf-1cf3-4015-b0df-ae7979d95c3c": {
+   "name": "Tête de Bostan from Morzine",
+   "description": "Set out to conquer an iconic peak in the Chablais Mountains: the Tête de Bostan via the Col (2,406 m)."
+  },
+  "2d4b68e8-be17-470f-9830-d6a8eca0e194": {
+   "name": "The Stash",
+   "description": "Situated in the middle of a large expanse of un-groomed snow, it is ideal for trying out wide turns in powder snow. These slopes wind in and out of the trees in the Lindaret forest and are punctuated with hidden wooden obstacles all around the circuit."
+  },
+  "b55bc64e-568d-4f6d-8797-f0d8ef974c62": {
+   "name": "TOUR DU LAC MOUILLE AU BLÉ",
+   "description": ""
+  },
+  "c71c991b-29e3-48e0-baac-3ca83d299690": {
+   "name": "Boucle bleue - Chavannes",
+   "description": ""
+  },
+  "dd5da8a4-9da8-4509-a7ec-e6d82c2992df": {
+   "name": "Boucle bleue - Mont Chéry",
+   "description": ""
+  },
+  "7d1e5ea1-4f65-411f-af57-b7c005df36bc": {
+   "name": "Boucle du refuge de Chardonnière",
+   "description": ""
+  },
+  "141e4cb2-d74b-4cc8-9bd5-f22e849a9cf8": {
+   "name": "Boucle noire - Mont Chéry",
+   "description": ""
+  },
+  "1c23bd38-3534-4864-a52a-8deb536e234b": {
+   "name": "Boucle rouge - Chavannes",
+   "description": ""
+  },
+  "a961da67-422b-4ad8-ac39-8d2b5c35b7ba": {
+   "name": "Boucle rouge - Mont Chéry",
+   "description": ""
+  },
+  "fe676b2e-9976-46ec-afc3-e730c4b7a207": {
+   "name": "Boucle verte - Chavannes",
+   "description": ""
+  },
+  "7dc1f74f-f7ca-44f5-b9f3-c294ad8f087c": {
+   "name": "Bout du Lac - Albertans",
+   "description": ""
+  },
+  "29f4398a-7bbf-486c-b6a3-b8931768dbeb": {
+   "name": "La bleue",
+   "description": ""
+  },
+  "54851e83-1784-4536-893d-a3d716324c00": {
+   "name": "La rouge",
+   "description": ""
+  },
+  "f008e7b7-f0c7-4372-b83e-1d018216f923": {
+   "name": "La verte",
+   "description": ""
+  },
+  "42a2e023-22fd-4c73-a99e-31bc972dc302": {
+   "name": "Abeille",
+   "description": ""
+  },
+  "00c69009-a567-456f-a536-6e9f2a8c7396": {
+   "name": "ABRICOTINE",
+   "description": ""
+  },
+  "7b9c76a6-6f17-41d9-9a33-1b71c3741f78": {
+   "name": "Accès domaine skide fond",
+   "description": ""
+  },
+  "bef10171-2390-4837-9b7e-91042f2066d5": {
+   "name": "Accès Eagle Park",
+   "description": ""
+  },
+  "dda3ae99-b701-4923-bb3a-6175c3e2f06c": {
+   "name": "Accès Ecole",
+   "description": ""
+  },
+  "3a01a952-f090-4eae-a774-16a9d112164f": {
+   "name": "accès Pré-Favre",
+   "description": ""
+  },
+  "6c9c2f0e-44e1-4d42-9aad-1ec81de05200": {
+   "name": "Accès TS Chéry Nord",
+   "description": ""
+  },
+  "62efe0a3-c5af-4883-b7ee-52c0eb25f7d5": {
+   "name": "ALLER CHAVANETTE",
+   "description": ""
+  },
+  "c1a1d4e9-3bd6-48b4-8717-00323c52eb2c": {
+   "name": "ALPAGES",
+   "description": ""
+  },
+  "64c11839-accd-45e0-a6d9-59d6011e23f3": {
+   "name": "AMBRESALLES",
+   "description": ""
+  },
+  "c8b1865b-4137-4e62-b602-c2f1d821b884": {
+   "name": "ARETE DES INTRETS",
+   "description": ""
+  },
+  "294adeba-50b9-4419-9e39-b8c8fe49edbf": {
+   "name": "ARNICA",
+   "description": ""
+  },
+  "aedcb931-38b3-46fc-bf2e-c360d82717ae": {
+   "name": "Bellemouille",
+   "description": ""
+  },
+  "d4afc719-c3d0-4e00-8506-f21d5f75bacc": {
+   "name": "BLANCHOTS",
+   "description": ""
+  },
+  "a1c46cc2-f145-481c-8b67-ef051f6fa930": {
+   "name": "BLEUE CHAVANETTE",
+   "description": ""
+  },
+  "f23b74c5-36ad-4834-9c9e-31b2b217f979": {
+   "name": "BLEUE D'ARARE",
+   "description": ""
+  },
+  "0af60f01-7041-4ea3-9735-34d95214f7aa": {
+   "name": "BLEUE DU LAC",
+   "description": ""
+  },
+  "0c19c977-6798-4fb4-9401-a566ec08ad86": {
+   "name": "BLEUET",
+   "description": ""
+  },
+  "c107d729-7385-4c54-b827-899a6ce3b95d": {
+   "name": "BLUE VELVET",
+   "description": ""
+  },
+  "39c5a22f-01cb-4fb4-a536-16e95d83f568": {
+   "name": "Boarder Déborah Anthonioz",
+   "description": ""
+  },
+  "99d730eb-dfc1-4fe3-9378-7fb8a5707eb2": {
+   "name": "Boardercross de Nyon",
+   "description": ""
+  },
+  "0556b282-e70d-4be6-99de-aef8ff3f6cb5": {
+   "name": "BOULEVARD SKIEURS",
+   "description": ""
+  },
+  "d031efb3-2b2c-4e7e-a490-dc37edd656e4": {
+   "name": "BOUQUETIN",
+   "description": ""
+  },
+  "8863749e-cccd-4bf0-a628-0292195188ee": {
+   "name": "BRUYERE",
+   "description": ""
+  },
+  "cacf3c37-254b-4fa3-9873-9773881f7b98": {
+   "name": "CABRI",
+   "description": ""
+  },
+  "598c66ea-47fa-479d-a66f-88c92bad482a": {
+   "name": "CAMPANULE",
+   "description": ""
+  },
+  "cf85141e-d5ef-465f-b9a1-8a6c533d118e": {
+   "name": "CASCADE",
+   "description": ""
+  },
+  "ecb02f87-0b85-4f45-b770-68404f53621e": {
+   "name": "CHAMOIS",
+   "description": ""
+  },
+  "d75bf465-bcba-410a-8572-4ceed7ba2c67": {
+   "name": "Champ de ski plateau 2",
+   "description": ""
+  },
+  "07fb8884-6f5b-44b3-bebd-84b5ebfd26fd": {
+   "name": "CHAMP SKI BARMETTES",
+   "description": ""
+  },
+  "46aec7d9-1414-4741-a3db-a258fcbbf497": {
+   "name": "CHAMP SKI PLATEAU",
+   "description": ""
+  },
+  "09609b1b-94b1-4b68-b472-dffdeb68f932": {
+   "name": "CHARDON BLEU",
+   "description": ""
+  },
+  "65cb3ad0-6d61-46a9-a471-e862477d7a45": {
+   "name": "CHAUX FLEURIE",
+   "description": ""
+  },
+  "1b7749b3-8427-43ab-8475-d93c8827d1b2": {
+   "name": "CHEVREUIL",
+   "description": ""
+  },
+  "61d7d409-5bb4-4f46-839e-cb994a89a22a": {
+   "name": "COMBE A FLORET",
+   "description": ""
+  },
+  "523bfd5c-3f44-49e3-9dab-42417bd0d841": {
+   "name": "COMBE DU MACHON",
+   "description": ""
+  },
+  "5d80ce2d-a28c-447a-9082-f94aab81a556": {
+   "name": "COMBETTE",
+   "description": ""
+  },
+  "47d5b831-9f3e-4e19-a638-f7f96dfc0194": {
+   "name": "Corbeau",
+   "description": ""
+  },
+  "7123a1a8-7a61-4dde-8366-ea0114ac4e07": {
+   "name": "COUPE DU MONDE",
+   "description": ""
+  },
+  "a9045d97-5fac-4c33-9235-bb9e241bb14d": {
+   "name": "Coutalays",
+   "description": ""
+  },
+  "b159a2dd-cb2d-4a72-a995-1bdd5e0ea732": {
+   "name": "COVAGNES",
+   "description": ""
+  },
+  "9a326ea1-f925-4fcf-b677-156163960db6": {
+   "name": "CREUX DE LA NEIGE",
+   "description": ""
+  },
+  "f1afb742-233e-4bef-bef3-e5b0c96d0398": {
+   "name": "CROCUS",
+   "description": ""
+  },
+  "d8a0fa50-5356-438b-922c-6b2df473b680": {
+   "name": "CROZATS SNOWCROSS",
+   "description": ""
+  },
+  "2b4c4072-c3cd-413b-8329-8635ca8e1509": {
+   "name": "CUBORE MONTRIOND",
+   "description": ""
+  },
+  "76c68802-89ff-464f-8b9d-8960d4a609be": {
+   "name": "CYCLAMEN",
+   "description": ""
+  },
+  "77d5f7fc-8700-4504-8007-efec40a5558f": {
+   "name": "Daguet",
+   "description": ""
+  },
+  "32f69c2a-d0e3-4207-9605-fdc0dd81d69d": {
+   "name": "Daim",
+   "description": ""
+  },
+  "ea413f9c-14cb-4492-bc52-12c1b35090f3": {
+   "name": "Des Albertans Jusqu'à Ardent",
+   "description": ""
+  },
+  "388bf3e8-6605-491b-9e71-8f3b9a087626": {
+   "name": "DROMONTS",
+   "description": ""
+  },
+  "11028925-1157-44e7-a3a1-2bc818d8f2e4": {
+   "name": "Du Lac Aux Albertans",
+   "description": ""
+  },
+  "b49981f2-28e0-4639-8369-e9f1af98a80f": {
+   "name": "Eagle Park",
+   "description": ""
+  },
+  "f3c6062f-186d-4711-b80b-bb7480ebc885": {
+   "name": "EGLANTINE",
+   "description": ""
+  },
+  "23744548-60d0-478d-a02c-373c8776e0f0": {
+   "name": "EPERVIER",
+   "description": ""
+  },
+  "c2424b7c-d8ef-4710-a111-9c293c55b459": {
+   "name": "ESF Plateau",
+   "description": ""
+  },
+  "5a392de0-0d25-42d6-b37c-b81528dddec2": {
+   "name": "FENERETS",
+   "description": ""
+  },
+  "7ccfa92b-91e0-49ac-b115-39bbf36946cf": {
+   "name": "FORNET",
+   "description": ""
+  },
+  "016c9e7e-3011-439b-a994-1c26f902f945": {
+   "name": "FOUGERE",
+   "description": ""
+  },
+  "22e5b2f7-ce96-41ea-90b0-1884c3eb93ea": {
+   "name": "Fouine",
+   "description": ""
+  },
+  "60b3482a-1be9-4201-8992-313420aabf05": {
+   "name": "Front de neige du Mas Verjus",
+   "description": ""
+  },
+  "9a8439c6-835d-4f7a-98a6-4a7dc4802cc1": {
+   "name": "Front de neige Pleney bas",
+   "description": ""
+  },
+  "c95e0a0a-ad76-4992-9186-1159f8adc3d2": {
+   "name": "FRONTALIERE SNOWCROSS",
+   "description": ""
+  },
+  "b4260f5a-520b-44f3-a158-f57eaf33349b": {
+   "name": "GAZELLE",
+   "description": ""
+  },
+  "21c35498-2e55-4089-9c65-d7e18f087e95": {
+   "name": "GENTIANE",
+   "description": ""
+  },
+  "e1dceadd-0464-41fe-ba11-2b7e4575110d": {
+   "name": "GRAND PLAN",
+   "description": ""
+  },
+  "658d430c-cedb-4b30-9612-e923a6ecee57": {
+   "name": "Grand Plan",
+   "description": ""
+  },
+  "64c93c09-b638-49d0-ae10-6bb984fb89b6": {
+   "name": "Grand Plan variante",
+   "description": ""
+  },
+  "112e51ec-9d99-441c-98cb-d933c53f22bd": {
+   "name": "Grand pré",
+   "description": ""
+  },
+  "f0001efc-fb52-4a83-91cc-b2de29ae71fb": {
+   "name": "Grizzli",
+   "description": ""
+  },
+  "b52733c3-70a4-4bc5-a503-cf4b55f14c16": {
+   "name": "Hermine",
+   "description": ""
+  },
+  "421e23b6-ff2a-4053-9d66-e576f5544426": {
+   "name": "Jardin ESF",
+   "description": ""
+  },
+  "f3d72bad-cd95-4e2c-b040-7c6ee50108d4": {
+   "name": "JEAN VUARNET",
+   "description": ""
+  },
+  "54004740-8a30-49d0-8adf-16729171ff9f": {
+   "name": "Jonction Bleuet",
+   "description": ""
+  },
+  "f9b10ec3-4df5-4a09-8eb9-c28f38a63c62": {
+   "name": "Jonction Séraussaix",
+   "description": ""
+  },
+  "e785b00a-4eba-4347-b9eb-0f05b4c9d23c": {
+   "name": "Lonction Zore",
+   "description": ""
+  },
+  "32dadef5-e528-4493-8f18-525c1f837505": {
+   "name": "L'Alpage",
+   "description": ""
+  },
+  "71be0e2a-23a3-4fee-80b5-335ac5310e79": {
+   "name": "La Chouette",
+   "description": ""
+  },
+  "56f57a7d-0e2f-488b-97f4-ce38f90e59a1": {
+   "name": "La Combe",
+   "description": ""
+  },
+  "fc5570e4-5a32-4557-a369-da3bf30ba694": {
+   "name": "Lac Intret",
+   "description": ""
+  },
+  "cc7e9809-bc6a-446a-83ed-711ea88f5460": {
+   "name": "L'Aigle Noir",
+   "description": ""
+  },
+  "c2a875a3-5bd6-41ad-9fa4-5918e4225c25": {
+   "name": "L'Aigle Rouge",
+   "description": ""
+  },
+  "2ef70977-7102-4fc1-8905-4a3b6a962ede": {
+   "name": "LANCHES",
+   "description": ""
+  },
+  "aab53c14-7525-4451-8324-21f394cff84a": {
+   "name": "Le Bouchet",
+   "description": ""
+  },
+  "b1f5b742-cf94-4705-8050-e6724b940611": {
+   "name": "Le Chamois",
+   "description": ""
+  },
+  "78b0b5e9-5f5b-4622-8568-667aae4de23f": {
+   "name": "LE CROT",
+   "description": ""
+  },
+  "ee8f8eb6-6211-4476-a88c-11de6fdceba8": {
+   "name": "Le Lièvre Partie Haute",
+   "description": ""
+  },
+  "5dcd82d6-d772-42ef-8d23-b695a63a495d": {
+   "name": "LE Q'MONT",
+   "description": ""
+  },
+  "d4be1bf2-fda2-4355-bfd8-7e4568aaef69": {
+   "name": "Le Stade",
+   "description": ""
+  },
+  "f2946cce-53bc-4a05-84c3-eb8ce72b8cb6": {
+   "name": "Le Tétras",
+   "description": ""
+  },
+  "9e21cd50-5ee8-4e89-a53c-341d2b0af5fc": {
+   "name": "LECHERETTE",
+   "description": ""
+  },
+  "53eeb493-c832-46a8-b628-3c7ae35727eb": {
+   "name": "Les Blanchots",
+   "description": ""
+  },
+  "de5aaab0-254f-4704-bb4e-747372b25d0d": {
+   "name": "Les Chevrelles",
+   "description": ""
+  },
+  "55d379b5-bc46-43c7-88fe-556ad3c8c140": {
+   "name": "Les Choucas",
+   "description": ""
+  },
+  "bc11d0ed-c80b-4885-b711-8c60ae650b22": {
+   "name": "Les Crêts de Zore",
+   "description": ""
+  },
+  "6587f4fc-4e17-4b33-811d-65220e71500d": {
+   "name": "Les Creux",
+   "description": ""
+  },
+  "0ef7ae3b-d106-40b6-9cee-7f060cb838b3": {
+   "name": "Les Dromonts",
+   "description": ""
+  },
+  "1b4c5dd4-96a9-4950-bb75-8ddede100fa3": {
+   "name": "Les Freux",
+   "description": ""
+  },
+  "868589c8-e4d4-4f3d-9cae-1a07b3b94d4b": {
+   "name": "LES GERNES",
+   "description": ""
+  },
+  "310959c5-a028-4f3b-9764-c07b2d696d58": {
+   "name": "Les Granges",
+   "description": ""
+  },
+  "d43975f9-88de-42ad-a8aa-a3693974bea1": {
+   "name": "Les Lanches",
+   "description": ""
+  },
+  "4f2f8be2-7171-49b2-8156-530a2e70ff11": {
+   "name": "Les Maisons de Zore",
+   "description": ""
+  },
+  "915fe888-b18a-4c3b-869b-458604d2de19": {
+   "name": "Les Paquerages",
+   "description": ""
+  },
+  "8ad6e7cb-ddf7-4c01-a6f2-af754d688bc9": {
+   "name": "Les Poireaux",
+   "description": ""
+  },
+  "547fc6c9-afee-4896-a3cd-10d2d5d9de3a": {
+   "name": "Les Raverettes",
+   "description": ""
+  },
+  "0e5c6781-f7df-4d5b-a033-a2aa9a723120": {
+   "name": "LES TREMBLES",
+   "description": ""
+  },
+  "d056dc1b-fcc0-40da-82ac-25c47d12f9f5": {
+   "name": "L'Eterlou",
+   "description": ""
+  },
+  "7b60db36-47ed-439e-8f00-8b9807bd0ac1": {
+   "name": "LIEVRE",
+   "description": ""
+  },
+  "c8afe85d-a0de-434b-9a87-f0bb90c7ae95": {
+   "name": "MARMOTTE",
+   "description": ""
+  },
+  "4b29ed8e-2a0b-4b2a-8bdc-bef671065e5e": {
+   "name": "MARMOTTE SNOWCROSS",
+   "description": ""
+  },
+  "49d2db2f-7a1b-42e0-a65e-0bc3e83c8aab": {
+   "name": "MELEZES",
+   "description": ""
+  },
+  "021e6427-bd12-4d56-a4a5-d6f7dbb228aa": {
+   "name": "Mini Boarder Vidéo",
+   "description": ""
+  },
+  "64f95f50-e316-4356-8c0e-e0739fb4b227": {
+   "name": "MOUFLON",
+   "description": ""
+  },
+  "6db6a8ad-a00c-454f-8b15-53165f62cd0a": {
+   "name": "Mur du Fornet",
+   "description": ""
+  },
+  "c3bf4817-bca7-4721-aa96-26d6cbd1e60f": {
+   "name": "Mur Patenaille",
+   "description": ""
+  },
+  "be6a857e-040a-45f0-9b8a-199d050f549a": {
+   "name": "MYRTILLES",
+   "description": ""
+  },
+  "ec64e4d2-a601-480e-aab3-a3fba1952c46": {
+   "name": "Nabor",
+   "description": ""
+  },
+  "daec4607-1e9d-4714-ba8e-8a4a9a580e44": {
+   "name": "Olympique Partie Haute",
+   "description": ""
+  },
+  "305e8ebb-ed13-4b83-871c-7208325e7a7e": {
+   "name": "ORCHIS",
+   "description": ""
+  },
+  "2aa9c9b8-c08c-4f73-a8e2-28a613b2beed": {
+   "name": "OURSON",
+   "description": ""
+  },
+  "729b7b16-bc63-44cb-b1f7-a3b81e0d7e1b": {
+   "name": "Parallèle chronométré Chéry",
+   "description": ""
+  },
+  "621ae72d-66d6-41c1-a7c1-d0946510d570": {
+   "name": "PARCHETS",
+   "description": ""
+  },
+  "fe6c17b1-fba2-4007-8d89-11230e81b15a": {
+   "name": "PATENAILLE",
+   "description": ""
+  },
+  "f2eb1ac9-5c5e-49ed-aa5d-3136e24f9ef3": {
+   "name": "PERCE-NEIGE",
+   "description": ""
+  },
+  "ee299491-76eb-4237-8d57-a80a0371dff9": {
+   "name": "Pinguin Park",
+   "description": ""
+  },
+  "afc50f39-2e1d-468b-b1e0-04fe52468c30": {
+   "name": "PISTE 64",
+   "description": ""
+  },
+  "c915fd48-10c1-48cd-aa09-146b5c919f28": {
+   "name": "Piste B",
+   "description": ""
+  },
+  "cd998929-2d72-4883-ad2e-5a311fc8e953": {
+   "name": "Piste des Indiens",
+   "description": ""
+  },
+  "1b2e1c7d-c1c6-4fdf-a911-5a193c1e1997": {
+   "name": "Piste des Trappeurs",
+   "description": ""
+  },
+  "c7695004-151e-45e1-8b0c-7f16f7865f5d": {
+   "name": "Piste les Cowboys",
+   "description": ""
+  },
+  "99aae596-7a32-45fa-a96a-36b08d5329ee": {
+   "name": "Plateau de Nyon",
+   "description": ""
+  },
+  "c1c21aca-2eea-42cd-ad59-e93d8df2cd2c": {
+   "name": "Plateau des Chavannes",
+   "description": ""
+  },
+  "1748bbfa-7e1a-4a8b-a7c0-8b1604a196bd": {
+   "name": "PROCLOU 1 GLISSE",
+   "description": ""
+  },
+  "5a735dad-9cab-4e13-b3d6-c565db017464": {
+   "name": "Proclou verte",
+   "description": ""
+  },
+  "e7f19fe9-1ecf-450e-94fa-7cca50f93de8": {
+   "name": "Prodains",
+   "description": ""
+  },
+  "17139510-f599-4dab-8d5e-98a93723a9fe": {
+   "name": "Promenade du Renard",
+   "description": ""
+  },
+  "f621979c-4ded-4a07-8a96-7a998c0a1b31": {
+   "name": "PSCHOTT SNOWCROSS",
+   "description": ""
+  },
+  "0792edb7-d07a-4f74-ad9a-e72748c98993": {
+   "name": "REINE DES PRES",
+   "description": ""
+  },
+  "5bc1e137-304b-49f2-b353-1a447dc385ca": {
+   "name": "Renard",
+   "description": ""
+  },
+  "a0171f4e-72ec-4ce1-bbdb-d8455cdc78fe": {
+   "name": "Renard",
+   "description": ""
+  },
+  "3b5a6f81-df3f-4e7b-8e5b-e7ed62003534": {
+   "name": "RENARDIERE",
+   "description": ""
+  },
+  "59f5c1fe-782c-4f35-84bf-9d5edf0384f5": {
+   "name": "RETOUR CHAVANETTE",
+   "description": ""
+  },
+  "8aa24a2d-ff15-4ad7-b1f4-36c996f22782": {
+   "name": "Retour des Nants",
+   "description": ""
+  },
+  "2ba84af7-970a-4ad3-bc98-3d3cf419a6a1": {
+   "name": "Retour Parking Ecole",
+   "description": ""
+  },
+  "0ba3ad32-ac32-41b1-bfe3-aa6a1d5c73df": {
+   "name": "Retour Parking Encrenaz",
+   "description": ""
+  },
+  "b9d35d38-5001-4aa5-a76c-c7d32dc67df3": {
+   "name": "RHODOS",
+   "description": ""
+  },
+  "b1c8e79a-9faf-4d9d-8167-501a3edd74c5": {
+   "name": "Rhodos",
+   "description": ""
+  },
+  "8c29b32c-40c8-4eee-9d2c-a9ebff96b257": {
+   "name": "Route retour Lièvre",
+   "description": ""
+  },
+  "d4dcf2d8-3749-4066-86ab-c8f193c7892a": {
+   "name": "SAPINETTE",
+   "description": ""
+  },
+  "7ce678ff-e930-4b99-82d6-9e185a08e180": {
+   "name": "SAUTENAILLES",
+   "description": ""
+  },
+  "e57dd9c6-83be-4039-8187-1043e481beb8": {
+   "name": "Sentier de raquettes",
+   "description": ""
+  },
+  "daaa7160-8226-4f6d-97fb-ff514c969f46": {
+   "name": "Séraussaix",
+   "description": ""
+  },
+  "19594dd9-f7dc-486e-a545-c60572eac521": {
+   "name": "SNOWPARK ARARE",
+   "description": ""
+  },
+  "9ecd1b47-73a4-498b-bb67-6c3189f4a945": {
+   "name": "SNOWPARK CHAPELLE",
+   "description": ""
+  },
+  "1a1a561a-776f-48e3-9a2f-aa83d7b18785": {
+   "name": "SNOWPARK LIL STASH",
+   "description": ""
+  },
+  "db4d0909-c0e9-4bc4-ba4c-56819f729021": {
+   "name": "SNOWPARK STASH",
+   "description": ""
+  },
+  "4113effd-6533-45db-ab2f-f660e93df05b": {
+   "name": "Snowpark des Chavannes",
+   "description": ""
+  },
+  "fd9d1ba2-149f-41fe-bebd-1c2bb512056d": {
+   "name": "Stade Carry",
+   "description": ""
+  },
+  "94b67b7e-7954-4586-9fb4-d1bd86707ca8": {
+   "name": "STADE D'ARARE",
+   "description": ""
+  },
+  "70fe2362-7382-4868-9736-7b573b2ee586": {
+   "name": "Stade de la combe",
+   "description": ""
+  },
+  "91d40bff-ee87-4b0a-b0e6-0eb0d678c626": {
+   "name": "Stade de la pointe",
+   "description": ""
+  },
+  "b0a7df87-e0d3-45b7-9374-da5bd4efebaf": {
+   "name": "Stade du Ranfoilly",
+   "description": ""
+  },
+  "c3325f82-326b-4411-8ab7-3a905b7885ce": {
+   "name": "STADE FRANCOIS DIDES",
+   "description": ""
+  },
+  "1c5b2cf4-fcdd-4796-b816-245d55ff06d9": {
+   "name": "Stade Grande Ourse",
+   "description": ""
+  },
+  "891acb3b-aa60-400f-93d4-8782f1b19c03": {
+   "name": "Stade",
+   "description": ""
+  },
+  "b35dd0d0-1e3c-4262-867e-80cabffc54c6": {
+   "name": "STADE TETE AUX BOEUFS",
+   "description": ""
+  },
+  "fbf8da3d-082d-4ccf-afd2-b03b6a77f1c2": {
+   "name": "TANNES",
+   "description": ""
+  },
+  "44b42fad-a513-486d-9ec2-03c84ebdba71": {
+   "name": "TETRAS",
+   "description": ""
+  },
+  "82163ede-6247-45dd-bbc5-a49ce0b7bbcc": {
+   "name": "The Stash sous le Télésiège",
+   "description": ""
+  },
+  "95636597-cb68-42f9-82ac-7169d1ded9d8": {
+   "name": "Tour du lac",
+   "description": ""
+  },
+  "c79b3646-c373-45fa-9418-0d784e6aa618": {
+   "name": "TRASHERS",
+   "description": ""
+  },
+  "71394b74-c556-40a8-af32-65023a649242": {
+   "name": "TULIPE",
+   "description": ""
+  },
+  "bc3c46c7-81d3-4511-a29f-b0f1635be1a8": {
+   "name": "VAINEUVE",
+   "description": ""
+  },
+  "1c17bc6c-b9d1-4937-aa58-baab60ddfff1": {
+   "name": "Variante Cuboré",
+   "description": ""
+  },
+  "33251712-347b-4e8f-82d9-269540cfe284": {
+   "name": "Variante Tetras",
+   "description": ""
+  },
+  "ff65101e-0f45-40fd-9f2d-5bd4861a2dbe": {
+   "name": "VAUTNA",
+   "description": ""
+  },
+  "2fed19d9-7a4a-4eaa-b831-a66c02e0901a": {
+   "name": "Vautna Bas",
+   "description": ""
+  },
+  "cfc09fb4-2157-4fa1-be39-54f786640cba": {
+   "name": "VIEUX CHENE",
+   "description": ""
+  },
+  "192c73ae-8b74-4c4b-b21e-2f1f63f29262": {
+   "name": "Village des Enfants",
+   "description": ""
+  },
+  "09d59a1c-9f75-49cd-b8f4-ff796257a567": {
+   "name": "Village des Lindarets",
+   "description": ""
+  },
+  "d5aff7ba-d69d-4096-b01d-b1ee554ffca5": {
+   "name": "VIOLETTE",
+   "description": ""
+  },
+  "08e9f8d5-0c71-4afa-8a5d-69535135fd23": {
+   "name": "VOROSSES",
+   "description": ""
+  },
+  "9ca427d9-87e4-4c32-8fa6-2f4be97f9c71": {
+   "name": "YETI",
+   "description": ""
+  },
+  "ae9639fe-92a6-404e-b7af-cbdaa2c4f76c": {
+   "name": "Zone de bosses Chavannes",
+   "description": ""
+  },
+  "86285e67-c50d-46c1-b047-0762ec811157": {
+   "name": "Zone de Speed Riding",
+   "description": ""
+  },
+  "a26d209d-6fe9-46f1-8c87-e2f16b29648c": {
+   "name": "Zone Débutants",
+   "description": ""
+  },
+  "99a80c6d-7adf-415b-8034-7bdb52c16f78": {
+   "name": "ZORE",
+   "description": ""
+  },
+  "d7b2c130-7a97-47a7-8713-9ce175bb3b98": {
+   "name": "La Cascade des Délices",
+   "description": "In 2021, former restaurateurs Christel and Gilles are embarking on a new adventure : The Cascade des délices food truck."
+  },
+  "67d00bf1-a29b-4783-ae6a-abd5a871ebba": {
+   "name": "La Ferme de Seraussaix",
+   "description": "In our store, we offer a range of products, including cheeses and cured meats made from pigs raised on the farm. Our farm sells only products from its own production (milk, cheese, charcuterie, terrines)."
+  },
+  "5cb8be9d-192e-4021-863f-0532d6fa9794": {
+   "name": "La Fruitière de Morzine - L'Alpage",
+   "description": "Established since 1983 on the Route de la Plagne near the center of Morzine, we are affineurs of local cheeses and manufacturers of fresh produce."
+  },
+  "65fedb45-42e7-437b-8c4d-64326bdc5fcc": {
+   "name": "Meuniers fish farm",
+   "description": "Visit the fish farm for a closer look at what they do and to learn about the fish in our mountain lakes and streams: arctic char and faro trout. You’ll also see rainbow trout and brook trout."
+  },
+  "d132b84d-0464-4768-8bd4-c0fc676b1a71": {
+   "name": "Atray",
+   "description": ""
+  },
+  "cd690d7f-cb6e-4782-b0ba-9c475bf1be53": {
+   "name": "Château",
+   "description": ""
+  },
+  "6fc87068-dede-4ef4-985b-c86e93f54a6e": {
+   "name": "Cuboré",
+   "description": ""
+  },
+  "c19cbf52-7a71-4156-abf0-3c4aae2f00da": {
+   "name": "FIL-NEIGE EBAUDS",
+   "description": ""
+  },
+  "812fae02-a655-4f95-84de-e0aaeb395fc2": {
+   "name": "Fil neige ESF",
+   "description": ""
+  },
+  "0ed2f9b5-0a4f-4b42-beee-b3cebd702328": {
+   "name": "Nyon",
+   "description": ""
+  },
+  "e89998c8-0d26-4e04-85b9-f22c1d95fe3f": {
+   "name": "Rosta",
+   "description": ""
+  },
+  "ffc6fea0-f614-4454-9b05-aa117c63edfa": {
+   "name": "Stade",
+   "description": ""
+  },
+  "dd79b258-0cbf-4f41-a8d2-9c5911ea8f85": {
+   "name": "TAPIS CHAVANNES",
+   "description": ""
+  },
+  "e92c2eab-2690-4689-8571-0ee84198c55d": {
+   "name": "Tapis de l'Aiglon",
+   "description": ""
+  },
+  "b2b374b8-765f-45e0-926a-31dcbbf89200": {
+   "name": "Tapis de Nabor",
+   "description": ""
+  },
+  "c98b731d-3356-4074-9bd1-45f898972a57": {
+   "name": "TAPIS PLATAIS",
+   "description": ""
+  },
+  "e0d6b3ac-8d94-424f-bc68-8e533ab12e65": {
+   "name": "Tapis Viking",
+   "description": ""
+  },
+  "1e57c0c2-ba97-4d88-8820-da04712a847d": {
+   "name": "TC CHAVANNES",
+   "description": ""
+  },
+  "f6ba97ce-7e79-4416-9697-c9f998625747": {
+   "name": "TC CHERY",
+   "description": ""
+  },
+  "84f8c194-a05b-4695-a4e4-287cfd830eec": {
+   "name": "TC du Pleney",
+   "description": ""
+  },
+  "7a92722e-ab57-414f-bfa5-dd5197dfcb90": {
+   "name": "TD4 CHOUCAS",
+   "description": ""
+  },
+  "2a22eb52-b381-4030-ae48-4642e2a20bc5": {
+   "name": "TD4 LINDARETS",
+   "description": ""
+  },
+  "4a9ba904-1308-413b-9a85-b7f78743f6f2": {
+   "name": "TD4 MOSSETTES",
+   "description": ""
+  },
+  "3258df18-19ee-4c15-b92f-c52d985647be": {
+   "name": "TD4 ZORE",
+   "description": ""
+  },
+  "7067b702-7dd5-4ea2-b279-fd98a1b8b3a8": {
+   "name": "TD6 BROCHAUX",
+   "description": ""
+  },
+  "208a3919-95be-43a5-9993-6ddd76df9d83": {
+   "name": "TD6 CASES",
+   "description": ""
+  },
+  "6f6fc708-c148-4466-a1bc-d51fcb93cf77": {
+   "name": "TD6 CHAUX FLEURIE",
+   "description": ""
+  },
+  "88118b6c-f60d-419b-9fd0-e7e409997f0a": {
+   "name": "TD6 FORNET",
+   "description": ""
+  },
+  "8f969652-039b-4e91-9145-1e60ac9e78d4": {
+   "name": "TD6 GRANDES COMBES",
+   "description": ""
+  },
+  "7ab067e8-ee4d-4e36-81d5-b060b15fc1eb": {
+   "name": "TD6 LAC-INTRETS",
+   "description": ""
+  },
+  "037549dc-d415-4d5f-b901-271a0f3c7f0c": {
+   "name": "TD6 LECHERE",
+   "description": ""
+  },
+  "f31b1fb6-c7ed-4133-94b8-0f50a2e86edb": {
+   "name": "TD6 PROCLOU",
+   "description": ""
+  },
+  "5be952cc-d3ce-421b-8c34-ac202ec3c4fc": {
+   "name": "TD6 PROLAYS",
+   "description": ""
+  },
+  "9161ee35-9551-4dab-b4d0-b837e52d6def": {
+   "name": "TD6 SERAUSSAIX",
+   "description": ""
+  },
+  "8a8faff1-b935-4a37-b259-e2fad1b9f279": {
+   "name": "Telecorde ESF",
+   "description": ""
+  },
+  "5ecc0072-0ea5-455c-91a0-f7503c24afc6": {
+   "name": "TELECORDE MOUILLE AU BLE",
+   "description": ""
+  },
+  "7164ae5b-b9cc-4768-aa19-ac562e14df0b": {
+   "name": "TK ARARE 2",
+   "description": ""
+  },
+  "210e9469-296b-407c-9954-c3adf46b2111": {
+   "name": "TK ARARE1",
+   "description": ""
+  },
+  "367cffa8-c7d3-4875-83c6-c670a6a4b49b": {
+   "name": "TK BARMETTES",
+   "description": ""
+  },
+  "95ad1c57-9e94-425c-91be-84f03fd66e4d": {
+   "name": "TK BARON",
+   "description": ""
+  },
+  "9a709967-0232-46e8-b7ee-3be35cbcf906": {
+   "name": "TK Bouchet",
+   "description": ""
+  },
+  "55097a4d-eb5a-4a27-af08-6205cf80668a": {
+   "name": "TK BOULE DE GOMME",
+   "description": ""
+  },
+  "8ecdc473-5dd4-47bb-b81f-9f451fc3989e": {
+   "name": "TK CHAPELLE",
+   "description": ""
+  },
+  "5bc77624-3487-4d0b-a16d-42f60e27646f": {
+   "name": "TK CHAVANETTE 1",
+   "description": ""
+  },
+  "96a11fb6-c9bb-4fe6-bea1-72cfbc5f9172": {
+   "name": "TK CHAVANETTE 2",
+   "description": ""
+  },
+  "d7516be3-25fb-42d1-a278-0961b5d091aa": {
+   "name": "TK DES TRASHERS",
+   "description": ""
+  },
+  "91057292-8b97-4cbc-bf20-cd850b7cde75": {
+   "name": "TK DROMONTS 1",
+   "description": ""
+  },
+  "a458c268-0c78-4e9a-ac20-be48d3c1131a": {
+   "name": "TK DROMONTS 2",
+   "description": ""
+  },
+  "bad349f5-871d-41ed-ac9b-3cd72c274a66": {
+   "name": "TK du Poireau 1",
+   "description": ""
+  },
+  "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57": {
+   "name": "TK du Poireau 2",
+   "description": ""
+  },
+  "6033546a-5176-4396-82bf-6e3ec2965a53": {
+   "name": "TK ECOLES 1",
+   "description": ""
+  },
+  "26d505bd-77c1-43a4-a909-063461f998eb": {
+   "name": "TK ECOLES 2",
+   "description": ""
+  },
+  "9e67f09e-6bea-49c1-acb0-1c6c74ddf90e": {
+   "name": "TK GRAND CRY",
+   "description": ""
+  },
+  "f0b2901b-0a7c-4471-8901-3daa46884bb8": {
+   "name": "TK Mas Verjus",
+   "description": ""
+  },
+  "e5e7fc7b-deb6-4742-a78c-9bfb395ef37a": {
+   "name": "TK MOUILLE AU ROI",
+   "description": ""
+  },
+  "e8d49818-1a9f-4374-b4a6-d204612592d5": {
+   "name": "TK PRODAINS",
+   "description": ""
+  },
+  "be2b1556-8654-41e2-98d4-ce011ceda440": {
+   "name": "TK SUPER CHERY",
+   "description": ""
+  },
+  "100deaba-f014-4c15-a43c-2c7adb813aa0": {
+   "name": "TK TETE DES CRETS",
+   "description": ""
+  },
+  "5e4dc15e-d8c1-4bff-9af0-ba4ca8ba5e1d": {
+   "name": "TK TURCHE",
+   "description": ""
+  },
+  "34a57bf8-6e20-4a99-8b39-6de62db3dcae": {
+   "name": "TK VIEUX CHENE",
+   "description": ""
+  },
+  "7f410e5d-c2b1-4237-aa74-4aa110f21b82": {
+   "name": "TLC ARDENT",
+   "description": ""
+  },
+  "f85582f0-b2a2-4041-b4a9-ed4dab746ff5": {
+   "name": "TLC SUPER",
+   "description": ""
+  },
+  "5af639a6-aeff-449a-9f1d-7c8664586209": {
+   "name": "TPH PRODAINS 3S",
+   "description": ""
+  },
+  "0c9f9b1f-0e29-49a0-8d69-1de8b48954a9": {
+   "name": "Troncs express",
+   "description": ""
+  },
+  "5f28c346-ed6c-4dc7-910d-ca9ae62efc3e": {
+   "name": "TS CHERY NORD",
+   "description": ""
+  },
+  "ff2a2d94-9ef9-4c24-a22e-dc091074d281": {
+   "name": "TS CROIX",
+   "description": ""
+  },
+  "e3055de8-21c5-4837-9c4b-5519509c025c": {
+   "name": "TS de la Crusaz",
+   "description": ""
+  },
+  "7c248ef6-e29e-425e-b5be-d8c6c1592788": {
+   "name": "TS de Nabor",
+   "description": ""
+  },
+  "1295ad30-3445-47bb-9de2-93486a4d439f": {
+   "name": "TS des Fys",
+   "description": ""
+  },
+  "f1f0271e-a63f-43a9-bd82-f78423bccb99": {
+   "name": "TS des Mouilles",
+   "description": ""
+  },
+  "6e602043-da88-41ec-9217-9ba0b0eef216": {
+   "name": "TS des Raverettes",
+   "description": ""
+  },
+  "4c0705d8-8e78-4b1c-b832-f0e021a7eb03": {
+   "name": "TS du Pré Favre",
+   "description": ""
+  },
+  "12d63246-74c6-46d9-823e-44df7d5d67a6": {
+   "name": "TS FOLLIETS DU GOLF",
+   "description": ""
+  },
+  "93088529-92ba-48cd-971c-723e1320d13a": {
+   "name": "TS GRANDE OURSE",
+   "description": ""
+  },
+  "6c1b6dab-381b-42e1-8f2d-df45830949b7": {
+   "name": "TS Les Têtes",
+   "description": ""
+  },
+  "974c57c9-3f15-4085-82ef-883d24b43800": {
+   "name": "TS PLANEYS",
+   "description": ""
+  },
+  "7513c239-d377-4294-97f2-2fcd4b8bc56f": {
+   "name": "TS POINTE",
+   "description": ""
+  },
+  "16dfff57-de1d-41fe-9d5f-61289d6fb2e6": {
+   "name": "TS Pointe de Nyon",
+   "description": ""
+  },
+  "e0545736-33bc-4971-b12e-e2fa30f05147": {
+   "name": "TS3 CUBORE MONTRIOND",
+   "description": ""
+  },
+  "a1857d0a-54e0-4729-a2d3-55d2ce669bc5": {
+   "name": "TS3 CUBORE MORZINE",
+   "description": ""
+  },
+  "a2c4d46c-bb31-40d9-a105-abc6a5730598": {
+   "name": "TS3 PLATEAU",
+   "description": ""
+  },
+  "746eb496-ccd9-469b-a0c6-cc706de4f777": {
+   "name": "TS6 TOUR",
+   "description": ""
+  },
+  "0cef71a4-8274-4aeb-a20a-489f2589af18": {
+   "name": "TSD Belvédère",
+   "description": ""
+  },
+  "d0530cf0-d2ef-4beb-bd66-db97772a0b2f": {
+   "name": "TSD Chamossière",
+   "description": ""
+  },
+  "80690d93-9a0f-47cd-a881-d9d7546c0769": {
+   "name": "TSD CHAVANNES EXPRESS",
+   "description": ""
+  },
+  "3068fc5f-712e-456f-a2fa-cbb6ee022c00": {
+   "name": "TSD GRAINS D'OR EXPRESS",
+   "description": ""
+  },
+  "68fe1fa9-c9e7-49b8-abe4-4c5a93a07c12": {
+   "name": "TSD la Charniaz",
+   "description": ""
+  },
+  "3ec5c9ac-8d1f-4abd-a9a1-3edd48a4b5aa": {
+   "name": "TSD NAUCHETS EXPRESS",
+   "description": ""
+  },
+  "053fddc1-64b0-4596-96f8-1bfa4ace2c83": {
+   "name": "TSD PERRIERES EXPRESS",
+   "description": ""
+  },
+  "1b44f151-04e7-4d15-9acf-531de2eb9367": {
+   "name": "TSD RANFOILLY EXPRESS",
+   "description": ""
+  },
+  "b8dd5af4-7b9e-4e3f-aa36-5088c8936e47": {
+   "name": "TSD STADE",
+   "description": ""
+  },
+  "a29739bb-7dc9-4c85-a5c0-acb36825bd7d": {
+   "name": "Restaurant Action Sport",
+   "description": "Action Sport - Ski rider & Café burger will welcome you from breakfast to breakfast, until the time of the aperitif."
+  },
+  "6088ec18-e6ae-4c2b-8a53-b1d554d1f5cd": {
+   "name": "Alpen Resto",
+   "description": "Restaurant Alpen Resto welcome you for lunch and diner in summer and diner only in winter in a renew chalet."
+  },
+  "4aa4b9a1-e0df-4b01-abd1-49cdaac3c505": {
+   "name": "Alpine Lounge",
+   "description": "A traditional restaurant in the heart of the village, with a wide choice of dishes offering excellent value for money. Grilled meats and pizzas made in-house by our Italian pizzaiolo. Heated terrace and bar."
+  },
+  "f406cbe0-d882-4f3d-acd9-083e73a9cfab": {
+   "name": "Au Bon Coin (Burger Place)",
+   "description": "Located at the foot of the slopes and in the heart of the resort, this family restaurant welcomes you every day from breakfast to dinner, including afternoon snacks and aperitifs."
+  },
+  "9e5ae642-ab6f-43c2-b3df-97216cebc727": {
+   "name": "Au P'tit Casse Croûte",
+   "description": "Your new gourmet sandwich & Piadina shop in Morzine."
+  },
+  "d4d81803-f592-4e83-b90a-3777b502de72": {
+   "name": "Bertine",
+   "description": "In the heart of Le Névé, the Bertine restaurant welcomes you every day for breakfast and dinner."
+  },
+  "125edf70-b8fa-4a36-8c55-54c7c70ec041": {
+   "name": "Chez Nannon",
+   "description": "Situated high up, at 1537m, The Baud family, commonly known as \"Nannon\", welcomes you in their Alpage chalet."
+  },
+  "d6efe9a9-7d1d-40aa-a078-75231b901c5d": {
+   "name": "Take away creperie \"Chez Seb\"",
+   "description": "Buckwheat pancakes and galettes, homemade pasta. Takeaway only."
+  },
+  "761a3f59-6893-44ed-8d30-79b1292d0472": {
+   "name": "Crêperie \"Chez Martine\"",
+   "description": "Take-away"
+  },
+  "478074b1-d3c8-4ef7-9dd6-ebf4c5bc709b": {
+   "name": "GUSTO e Basta !",
+   "description": "A pizzeria restaurant with Italian influences!"
+  },
+  "3386469b-7f02-4118-bbdc-f6564ee04193": {
+   "name": "Hideout Restaurant",
+   "description": "The Hideout Inn is renowned for the dishes served in its restaurant"
+  },
+  "6910265b-fdef-44b0-8d17-e310105599b4": {
+   "name": "La Cendrée",
+   "description": "Our mountain bistro \"La Cendrée\" welcomes you every day in winter for breakfast, lunch and après-ski, offering typical French-Swiss Alpine dishes and wines, as well as aperitif platters."
+  },
+  "feadfd8b-b420-49ad-9e8e-f711cdb7af6f": {
+   "name": "La Chamade",
+   "description": "This gourmet restaurant give the seasonal regional products an advantage."
+  },
+  "0a6b51ad-944d-415d-8925-88917660fe50": {
+   "name": "La Chaudanne",
+   "description": "In a warm setting, the restaurant offers quality traditional cuisine and local specialties."
+  },
+  "68414e95-3ce6-4acc-a0d2-fd20cf93e4cd": {
+   "name": "La Crapahute",
+   "description": "Chalet restaurant located at the end of La Vallée de la Manche, just a few minutes' walk from Lac des Mines d'Or, ideal for a short break after a good walk. The restaurant welcomes you summer and winter alike, and offers a variety of dishes. Home cooking."
+  },
+  "3cc6576d-5e0f-42f4-92d7-60144b60454d": {
+   "name": "La Flamme",
+   "description": "La Flamme, a restaurant offering traditional specialties and French cuisine, warmly welcomes you during the summer and winter seasons."
+  },
+  "5fab7e6a-4c8e-4545-8b6b-8ec39440a786": {
+   "name": "La Grange",
+   "description": "Gourmet and local French cuisine in the heart of Morzine."
+  },
+  "12194be0-5120-4363-882f-1e29168b490e": {
+   "name": "La Hutte",
+   "description": "At La Hutte Morzine, experience unforgettable moments with DJ sets several times a week, a lively après-ski, tasty food and live sports!"
+  },
+  "a538c902-b26b-4a8b-ac6f-340171aabc52": {
+   "name": "La P'tite Pause",
+   "description": "The snack bar \"La P'tite Pause\" in Morzine offers simple, gourmet snacks, both savory and sweet, to eat in or take away!"
+  },
+  "f56b2c1b-fc76-4ced-b6b4-814414092768": {
+   "name": "L'Alpage du Crôt",
+   "description": "L'Alpage du Crôt is located on the edge of the Crôt piste in Avoriaz. We offer light meals outside (crêpes, sandwiches, soups, pasta, etc.) and more elaborate dishes inside (traditional tartiflette, fondues, burgers, etc.)."
+  },
+  "92542b69-da8f-423d-8bce-664a0f398caa": {
+   "name": "L'arrêt d'Bus",
+   "description": "L'Arrêt d'Bus is a friendly restaurant in Morzine, offering generous, gourmet cuisine in a warm atmosphere."
+  },
+  "a0406749-9e4a-489d-821e-552676ef047d": {
+   "name": "L'Avalanche",
+   "description": "This small family restaurant has a cosy and warm atmosphere and offers home cooking with fresh products. Specialities and suggestions on the slate according to the seasons."
+  },
+  "2776dd77-dce7-4864-92a9-a0b5fa66fd45": {
+   "name": "Le Clin d'oeil",
+   "description": "A taste of South-West France cuisine in the Alps! Kristel and Jean-Noel offer a friendly welcome and invite you to try out some South-West specialties, as well as local ones."
+  },
+  "a9fda8e5-4e00-4031-8b1b-9076cec91700": {
+   "name": "Le Colibri",
+   "description": "Le Colibri, your cafe bistro in Morzine, to get a coffee and many more things. Whether you are with friends or family, came and join us in our cosy restaurant to taste some delicious homemade food (with some gluten free meals option) and pastries."
+  },
+  "8f478eae-584d-4a49-8671-3e6470649144": {
+   "name": "Le Comptoir des Halles",
+   "description": "Le Comptoir is an invitation to enjoy every moment of the day in a warm and friendly setting in the heart of Morzine."
+  },
+  "ef05dbb7-2423-4e57-b4f1-c8c316f24249": {
+   "name": "Le Coup de Coeur",
+   "description": "Wine and tapas bar in the heart of Morzine. From coffee and croissants in the morning to a last drink on the terrace, enjoy inventive tapas, homemade pizzas and a carefully selected wine list in a warm and elegant atmosphere."
+  },
+  "4894868e-bce7-46af-a584-1954994b7985": {
+   "name": "Le Grand Pré",
+   "description": "Come and try our menu, in a warm setting in the heart of the Morzine ski domain."
+  },
+  "cd3ef10f-cc4e-4d53-9ff3-21a17b35dd83": {
+   "name": "Le Grand Rocher",
+   "description": "Mountain Snack-Bar-Creperie with sunny terrace and room heated over a wood fire. View of Morzine and its peaks."
+  },
+  "af51a9d4-d432-4bc5-8aed-da17f3a684e3": {
+   "name": "Le Nabor",
+   "description": "Family-run chalet since 1974 at the summit of Le Pléney, 200m after the arrival of the cable cars. Home-made mountain cuisine. Specialities: homemade quiche, vegetarian dishes."
+  },
+  "2d07cd27-71c3-4637-8c8e-d495be85fa4b": {
+   "name": "Le PaSsionNant",
+   "description": "Come and discover the new Le Passionnant restaurant!"
+  },
+  "e57eed45-a678-4473-9815-046200d41586": {
+   "name": "Le Petit D - The Dahu Restaurant",
+   "description": "The Restaurant du Dahu offers traditional, carefully prepared cuisine creatively reinterpreted by a passionate young chef."
+  },
+  "afafd53d-1892-4694-82d2-77b8e985e468": {
+   "name": "Le Petit Q",
+   "description": "Seafood bar A seafood bar... A la montage! 🐟 📍It's at Chalet Le Petit Q, right in the heart of Morzine."
+  },
+  "bb819f18-bb00-4e2b-93e3-c5320c845d48": {
+   "name": "Le Resto - Les bulles des Mines d'or",
+   "description": "Discover Resto des Bulles in Morzine, by the Mines d’Or lake. Cozy and welcoming, it serves fondues, raclettes, and local specialties, all in a magical setting with breathtaking mountain views."
+  },
+  "a18bf85d-1565-4c4f-bbd6-038b8471af71": {
+   "name": "Le Vaffieu",
+   "description": "Chalet restaurant ideally located in a quiet spot at the top of Pleney, next to the arrival of the Belvedere chairlift. All day sunny terrace. Large choice of homemade dishes prepared with fresh local produce."
+  },
+  "72f66db8-b31b-41ab-820f-a204aa1e2302": {
+   "name": "Les 2 Criquets",
+   "description": "Sunny terrace, traditional cuisine, Savoyard specialties and sandwiches."
+  },
+  "cefc85f2-508f-4cc2-bede-c0c6c3b72812": {
+   "name": "Les Halles",
+   "description": "At Les Halles, you can meet up with friends, family or between two runs! In a warm and friendly atmosphere, our brasserie welcomes you to the heart of Morzine to enjoy generous, home-cooked cuisine."
+  },
+  "437b6997-614e-4d9f-b68e-0bce8801e60c": {
+   "name": "Les Mouilles",
+   "description": "In winter, we are located in the heart of the Morzine-Les Gets ski area from TS les Mouilles (accessible by ski, snowboard and telemark....)."
+  },
+  "a504f136-5d4e-41bd-9c45-14382c440a36": {
+   "name": "L'Etale",
+   "description": "Morzine's friendliest and most fun place to eat, open non-stop. Top-quality catering and a \"huge\" choice!"
+  },
+  "fb4962d5-89b6-491d-ba17-a34445f1417d": {
+   "name": "L'Improviste",
+   "description": "Friendly and warm pizzeria-bistro located close to the Church of Morzine."
+  },
+  "757e19fd-f66a-4cc2-9480-ebd7368a7b52": {
+   "name": "Ô Chalet",
+   "description": "You'll find the best burgers in Morzine, waiting for you Ô Chalet !"
+  },
+  "f0ee48bf-68bf-4f1f-b9ba-380c1cc3dea2": {
+   "name": "Pif Paf",
+   "description": "Welcome to Pif Paf, your gourmet bistro and crêperie, nestled in the heart of Morzine. Here, gastronomy blends with conviviality to offer you a delightful experience."
+  },
+  "ad2d9b71-9865-44cc-b9af-98b009d3468b": {
+   "name": "Chez Flo",
+   "description": "Chez Flo welcomes you on its sunny terraces or around its lively circular bar. Discover a varied mountain-style cuisine: tartiflettes, meat dishes, fish, pasta, and cheese specialties. Ski-in, ski-out access! Closed in the evening."
+  },
+  "e2391984-117b-4952-bd22-7dcd21ffd09c": {
+   "name": "Restaurant at the Hôtel du Lac",
+   "description": "The restaurant « Hôtel du Lac » offers, for lunch and dinner, a pleasant time with great food. The chef’s cooking, made with exceptional products, will delight everyone, young and old alike."
+  },
+  "1fe51f42-340c-480a-b1fd-1862d48053f8": {
+   "name": "Le Tremplin Restaurant",
+   "description": "Located at the foot of the Pleney slopes, Le Tremplin Restaurant welcomes you every day, all year round, from morning to night."
+  },
+  "c38404f4-898a-444e-b49f-27d9756b188d": {
+   "name": "Restaurant Les Prodains",
+   "description": "Very calm setting, located in the middle of nature. The owner, Pascal Premat, prepares local specialties and creates an interesting cuisine with a hint of Savoie. Jocelyne is your attentive host."
+  },
+  "fddadfb6-79ce-498f-90a1-0fc0caba9581": {
+   "name": "Snack Le Pleney - Les Portes du Soleil",
+   "description": "Restaurant located at the top of the Pleney cablecar. Self service, daily specials and crêpes."
+  },
+  "7cf0d3d3-69fa-43b5-be3e-148b2727d349": {
+   "name": "E-VTT sur neige avec Evolution 2",
+   "description": ""
+  },
+  "341b4aa2-af7b-4393-aa05-bc262958215c": {
+   "name": "Les Bezières",
+   "description": ""
+  },
+  "8f626a10-3539-4519-91b1-ebe9c768e2aa": {
+   "name": "Morzine traîneaux",
+   "description": ""
+  },
+  "03fb7b56-0735-432b-aeb2-253c612b69b0": {
+   "name": "Place du Village",
+   "description": ""
+  },
+  "fdc1a58d-7d91-467c-a266-5998ca8eaa97": {
+   "name": "Télésiège de Séraussaix",
+   "description": ""
+  },
+  "cabfb5a3-19fa-4f9f-aafe-1d91fc8402d8": {
+   "name": "Terrain de pétanque de Morzine",
+   "description": ""
+  },
+  "7d0c8a04-c50a-4074-bfe6-8d022da07d5c": {
+   "name": "Solide Café",
+   "description": ""
+  },
+  "1f82625f-ba84-421c-ad1c-1c2d46a2e778": {
+   "name": "Alptitude",
+   "description": ""
+  },
+  "60abfdfe-755c-47f3-ac3f-d6e23600f23e": {
+   "name": "Fromagerie du Noyer",
+   "description": ""
+  },
+  "51fb256c-474b-4eb0-b55b-fed131f00170": {
+   "name": "Hibou Alpes",
+   "description": ""
+  },
+  "3dc2afcd-75b5-457f-a94f-8cb4db22f757": {
+   "name": "Last Van Standing",
+   "description": ""
+  },
+  "ad247ea5-0438-4cd8-850e-7cba6ea34a92": {
+   "name": "Les Epis du Roc",
+   "description": ""
+  },
+  "1e0de612-c7b2-482a-bb5b-fdfcfad972e4": {
+   "name": "MB Ski Snowboard and Outdoor Experiences - Marco Barcellari",
+   "description": ""
+  },
+  "7dbee004-d5b7-40d8-ab62-6ec237f56a41": {
+   "name": "Woodlands Chalets",
+   "description": ""
+  },
+  "f19146a8-9fa4-4d20-864a-8e467b2c8300": {
+   "name": "Col de cou en Hiver",
+   "description": ""
+  },
+  "b643f00d-e373-4f81-8385-bb7ea448f421": {
+   "name": "La Montée des Chavannes",
+   "description": ""
+  },
+  "8dd4a7ac-5a68-4d4f-928e-bf2bd1548a41": {
+   "name": "La Montée du Chéry",
+   "description": ""
+  },
+  "ff73cda8-5d20-4344-97b9-107f18d38390": {
+   "name": "La Montée du Nord",
+   "description": ""
+  },
+  "85849ebf-c321-4fc8-92d7-3a2833c72cd6": {
+   "name": "Le sentier du renard - Piste de ski de fond",
+   "description": ""
+  },
+  "49b87477-90bd-4bcd-9d5c-9dd36b4bd4e0": {
+   "name": "Les Balcons du Chéry",
+   "description": ""
+  },
+  "7dccf760-197d-4b12-ae59-c9cc4d4dab41": {
+   "name": "Les Crêtes de Zore - piste de ski de fond",
+   "description": ""
+  },
+  "bf77aa60-3df7-4b29-84d0-a70af17440eb": {
+   "name": "Pointe de Ratti",
+   "description": ""
+  },
+  "ef95955b-607b-4ec0-8ad6-2d0c55529798": {
+   "name": "La bleue",
+   "description": ""
+  },
+  "ab3042af-7ff9-4d12-9428-0f2032cf17d6": {
+   "name": "La Rouge",
+   "description": ""
+  },
+  "f7a312b3-7596-4235-9e9c-ee2a55648691": {
+   "name": "La verte",
+   "description": ""
+  }
+ },
+ "categories": {
+  "Accommodation": "Accommodation",
+  "Chambrehote": "Bed and breakfast",
+  "Cycling": "Cycling",
+  "Fashion_accessories": "Fashion and accessories",
+  "Hiking": "Hiking",
+  "Hotel": "Hotel",
+  "Parapente": "Paragliding",
+  "Sledging": "Sledging",
+  "Sportsnautiques": "Nautical sports",
+  "Walk": "Walk",
+  "alpin_skiing": "Alpin skiing",
+  "associations": "Associations",
+  "bank": "Bank",
+  "bar": "Bar",
+  "biathlon": "Biathlon",
+  "bowling": "Bowling",
+  "brasserie": "Brasserie",
+  "cable_car": "Cable car",
+  "car_park": "Car park",
+  "carpet_ski_lift": "Carpet",
+  "caterer": "Caterer",
+  "chairlift": "Chairlift",
+  "cinema": "Cinema",
+  "city_hall": "City Hall",
+  "collective_accommodation": "Collective accommodation",
+  "communication": "Communication",
+  "communication_agency": "Communication agency",
+  "cord_lift": "Cord lift",
+  "crafts": "Crafts",
+  "craftsman": "Craftsman",
+  "craftsmanship": "Craftsmanship",
+  "creperie": "Creperie",
+  "cross_country_skiing": "Cross country skiing",
+  "dentist": "Dentist",
+  "diy_decoration": "DIY and decoration",
+  "doctor": "Doctor",
+  "education": "Education",
+  "equipments": "Equipments",
+  "escape_game": "Escape Game",
+  "excursion": "Excursion",
+  "fast_food": "Fast food",
+  "financial_insurance": "Finance and insurance",
+  "fishing": "Fishing",
+  "food": "Food",
+  "food_court": "Food court",
+  "foreign_specialities": "Foreign specialities",
+  "french_bowls": "French bowls",
+  "gastronomy": "Gastronomy",
+  "gondola_lift": "Gondola",
+  "handisport": "",
+  "health": "Health",
+  "helicopter": "Helicopter",
+  "high_altitude_restaurant": "Altitude restaurant",
+  "history": "History",
+  "hockey": "Hockey",
+  "holiday_resort": "Holiday resort",
+  "horse_riding": "Horse riding",
+  "ice_skating": "Ice skating",
+  "lake": "Lake",
+  "laser_game": "Laser game",
+  "library": "Library",
+  "local_producer": "Local producer",
+  "local_product": "Local products",
+  "massage": "Massage",
+  "mechanic": "Mechanic",
+  "municipal_services": "Municipal services",
+  "nordic_ski_advanced": "Advanced",
+  "nordic_ski_easy": "Easy",
+  "nordic_ski_intermediate": "Intermediate",
+  "nordic_ski_novice": "Novice",
+  "nursery": "Nursery",
+  "pharmacy": "Pharmacy",
+  "pizza": "Pizza",
+  "plane_first_flight": "Plane first plane",
+  "playground": "Playground",
+  "police": "Police",
+  "post_office": "Post office",
+  "practical_services": "Practical services",
+  "public_service": "Public service",
+  "real_estate": "Real estate",
+  "recreational_activities": "Recreational activities",
+  "serviced_chalets": "",
+  "shelter": "Shelter",
+  "ski": "Ski",
+  "ski_advanced": "Ski advanced",
+  "ski_easy": "Ski easy",
+  "ski_intermediate": "Intermediate",
+  "ski_novice": "Novice",
+  "ski_touring": "Ski touring",
+  "snowboard": "Snowboard",
+  "snowmobile": "Snowmobile",
+  "snowshoeing": "Snowshoeing",
+  "spa": "Spa",
+  "sport_shop": "Sport shop",
+  "sports_clubs": "Sports clubs",
+  "store": "Store",
+  "supermarket": "Supermarket",
+  "surface_lift": "Surface lift",
+  "swimmingpool": "Swimming Pool",
+  "tobacco_press": "tobacco and press",
+  "toilets": "Toilets",
+  "tourism_residence": "Toursim residence",
+  "tourist_transport": "Tourist transport",
+  "touristboard": "Tourist board",
+  "traditional_cooking": "Traditional cooking",
+  "trail_running": "Trail running",
+  "transport_company": "Transport company",
+  "travel_agency": "Travel agency",
+  "unusual_accommodation": "Insolite",
+  "wellness": "Wellness",
+  "yoga": "Yoga"
+ },
+ "families": {
+  "accommodations": "Accommodations",
+  "activities": "Activities",
+  "activity_routes": "routes",
+  "bars": "Bars",
+  "nordic_ski_trail": "",
+  "producers": "Producers",
+  "rental_accommodation": "Rental Accommodations",
+  "restaurants": "Restaurants",
+  "shops_and_services": "Shops and services",
+  "ski_lift": "Ski lifts",
+  "ski_trail": "Ski trails",
+  "stops": "Stops"
+ }
+}
