@@ -46,7 +46,10 @@
     "nordic": "Nordic ski trail (dashed)",
     "route": "Snowshoe and walking route",
     "lift": "Lift",
-    "closed": "Grey: closed now"
+    "closed": "Grey: closed now",
+    "lookTitle": "Map style",
+    "lookWinter": "Winter",
+    "lookRegular": "Regular"
   },
   "live": {
     "open": "Open",

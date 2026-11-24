@@ -44,8 +44,11 @@
     on: null,                  // layers switched on (set from DEFAULT_ON below)
     query: '',
     selected: null,
-    terrain: true
+    terrain: true,
+    look: 'winter'             // map style: 'winter' (snowy) or 'regular' (natural colours)
   };
+  const LOOK_KEY = 'morzine-map-look';
+  try { if (localStorage.getItem(LOOK_KEY) === 'regular') state.look = 'regular'; } catch (e) { /* private mode */ }
 
   function defaultSeason() {
     const d = new Date(), m = d.getMonth() + 1, day = d.getDate();
@@ -380,7 +383,8 @@
   function matches(r, q) { return !q || q.split(/\s+/).every((w) => r.p.search.includes(w)); }
 
   function refresh() {
-    BASEMAP.applySeason(map, state.season);
+    // Same tiles either way (so both styles work offline): only the colours change.
+    BASEMAP.applySeason(map, state.look === 'regular' ? 'summer' : 'winter');
     const vis = visibleRecords();
     const lines = vis.filter((r) => r.isLine), pts = vis.filter((r) => !r.isLine);
     if (map.getSource('trails')) {
@@ -605,6 +609,19 @@
   document.getElementById('btnLegend').addEventListener('click', (e) => {
     legend.hidden = !legend.hidden; e.currentTarget.setAttribute('aria-pressed', String(!legend.hidden));
   });
+
+  // Map style switch inside the legend: snowy winter look or regular natural colours.
+  const lookSeg = document.getElementById('lookSeg');
+  const renderLook = () => lookSeg.querySelectorAll('button')
+    .forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.look === state.look)));
+  lookSeg.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-look]'); if (!b || b.dataset.look === state.look) return;
+    state.look = b.dataset.look;
+    try { localStorage.setItem(LOOK_KEY, state.look); } catch (err) { /* fine */ }
+    renderLook();
+    BASEMAP.applySeason(map, state.look === 'regular' ? 'summer' : 'winter');
+  });
+  renderLook();
 
   const toastEl = document.getElementById('toast');
   function toast(msg) {
