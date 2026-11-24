@@ -45,7 +45,19 @@
     "advanced": "Black: difficult",
     "nordic": "Nordic ski trail (dashed)",
     "route": "Snowshoe and walking route",
-    "lift": "Lift"
+    "lift": "Lift",
+    "closed": "Grey: closed now"
+  },
+  "live": {
+    "open": "Open",
+    "closed": "Closed",
+    "offseason": "Closed for the season",
+    "soon": "Opening soon",
+    "delayed": "Opening delayed",
+    "stopped": "Stopped for now",
+    "updated": "Updated {time}",
+    "pill": "Lift status {time}",
+    "legend": "Live status, updated {time}. Green: under 10 minutes old. Yellow: under an hour. Red: older."
   },
   "footer": { "office": "Morzine Tourist Office" },
   "offline": {

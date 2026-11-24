@@ -196,6 +196,25 @@ button { cursor: pointer; }
 }
 @media (max-width: 760px) { .offline { margin-inline-start: 0; inset-block-start: calc(70px + env(safe-area-inset-top)); } }
 
+/* ---------- live status ---------- */
+:root { --closed: #a3acb5; --fresh: #1f9d55; --stale: #e0a800; --old: #d93025; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--ink-3); flex: none; }
+.fresh .dot { background: var(--fresh); } .stale .dot { background: var(--stale); } .old .dot { background: var(--old); }
+.live-pill {
+  position: absolute; z-index: 2; inset-block-start: 16px; inset-inline-end: calc(var(--panel-w) + 16px);
+  display: flex; align-items: center; gap: 7px; border: 0; border-radius: 999px; padding: 7px 12px;
+  background: var(--bg); box-shadow: var(--shadow); font-size: 12px; font-weight: 600;
+}
+.live-pill.stale { color: #8a6500; } .live-pill.old { color: var(--old); }
+.legend-live { margin: 10px 0 0; font-size: 12px; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+.live-row { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 13px; }
+.live-row .st { font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--bg-2); }
+.live-row .st.open { background: #e3f5ea; color: #136c3a; }
+.live-row .st.closed, .live-row .st.offseason, .live-row .st.stopped { background: #eef0f2; color: #4a5866; }
+.live-row .st.soon, .live-row .st.delayed { background: #fff4d6; color: #7a5a00; }
+.live-row .upd { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+.live-row .upd.stale { color: #8a6500; } .live-row .upd.old { color: var(--old); }
+
 /* "You are here" dot */
 .me { width: 18px; height: 18px; border-radius: 50%; background: #1a73e8; border: 3px solid #fff;
       box-shadow: 0 0 0 7px rgba(26,115,232,.22), 0 1px 4px rgba(0,0,0,.3); }
@@ -242,7 +261,8 @@ button { cursor: pointer; }
     inset-inline-start: 50%; transform: translateX(-50%); height: 40px; padding: 6px 12px;
     background: rgba(255,255,255,.92); border-radius: 12px; box-shadow: var(--shadow);
   }
-  .offline { inset-block-start: calc(62px + env(safe-area-inset-top)); }
+  .offline { inset-block-start: calc(104px + env(safe-area-inset-top)); }
+  .live-pill { inset-inline-end: 12px; inset-block-start: calc(56px + env(safe-area-inset-top)); }
   .maplibregl-ctrl-bottom-left .maplibregl-ctrl-group { display: none; }   /* zoom buttons: pinch instead */
   .maplibregl-popup { display: none; }                                      /* no hover on touch */
   .maplibregl-ctrl-scale { display: none; }

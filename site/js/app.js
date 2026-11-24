@@ -32,6 +32,7 @@
   // Piste colours as on the original site.
   const DIFF_COLOR = { novice: '#66BE58', easy: '#1B65D4', intermediate: '#E11C1C', advanced: '#111111' };
   const LIFT_COLOR = '#60666C';
+  const CLOSED_COLOR = '#a3acb5';   // lifts and pistes closed right now (live status)
 
   // Layers shown when the map opens, per season; the others start switched off.
   const DEFAULT_ON = { winter: ['pistes', 'lifts'], summer: ['lifts', 'mtb'] };
@@ -140,7 +141,7 @@
   const isPhone = window.matchMedia('(max-width: 760px)').matches;
   const map = new maplibregl.Map({
     container: 'map', style: BASE_STYLE, ...START, minZoom: 11,
-    maxPitch: 80, maxBounds: BOUNDS, hash: 'view', attributionControl: false,
+    maxPitch: 75, maxZoom: 17.5, maxBounds: BOUNDS, hash: 'view', attributionControl: false,
     pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
     canvasContextAttributes: { antialias: !isPhone }
   });
@@ -148,6 +149,7 @@
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-left');
   map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), isPhone ? 'top-right' : 'bottom-left');
   document.getElementById('map').setAttribute('aria-label', t('map.label'));
+  if (qs.has('debug')) window.map = map;   // for testing in the browser console
 
   // Draw marker images when a layer first needs them.
   map.on('styleimagemissing', (e) => {
@@ -195,9 +197,11 @@
       return ['interpolate', ['exponential', 1.5], ['zoom'], 11, c(0.55), 14, c(1), 17, c(2.4)];
     };
     const diffColor = ['get', 'color'];
-    const notLift = ['!', ['get', 'isLift']];
+    // Live status: lines closed right now are drawn by one grey dashed layer ('closed-lines').
+    const open = ['!', ['boolean', ['get', 'closed'], false]];
+    const notLift = ['all', ['!', ['get', 'isLift']], open];
 
-    addSki({ id: 'trail-casing', type: 'line', source: 'trails', filter: notLift,
+    addSki({ id: 'trail-casing', type: 'line', source: 'trails', filter: ['!', ['get', 'isLift']],
       layout: { 'line-cap': 'round', 'line-join': 'round' },
       paint: { 'line-color': '#ffffff', 'line-opacity': 0.85, 'line-width': width(4) } });
     addSki({ id: 'trail-selected', type: 'line', source: 'trails', filter: ['==', ['get', 'id'], ''],
@@ -225,9 +229,12 @@
       paint: { 'line-color': diffColor, 'line-width': hoverWidth(2.2, 3.4) } });
     addSki({ id: 'lifts-casing', type: 'line', source: 'trails', filter: ['get', 'isLift'],
       paint: { 'line-color': '#ffffff', 'line-opacity': 0.8, 'line-width': width(4) } });
-    addSki({ id: 'lifts', type: 'line', source: 'trails', filter: ['get', 'isLift'],
+    addSki({ id: 'lifts', type: 'line', source: 'trails', filter: ['all', ['get', 'isLift'], open],
       paint: { 'line-color': LIFT_COLOR,
         'line-width': hoverWidth(2, 3.4) } });
+    addSki({ id: 'closed-lines', type: 'line', source: 'trails', filter: ['boolean', ['get', 'closed'], false],
+      layout: { 'line-join': 'round' },
+      paint: { 'line-color': CLOSED_COLOR, 'line-width': hoverWidth(2, 3.2), 'line-dasharray': [1.6, 1.3] } });
     addSki({ id: 'lift-ends', type: 'circle', source: 'lift-ends', minzoom: 13,
       paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 13, 2.5, 16, 5], 'circle-color': LIFT_COLOR,
         'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1.5 } });
@@ -237,7 +244,7 @@
         'text-size': ['interpolate', ['linear'], ['zoom'], 13, 10.5, 16, 13], 'text-max-angle': 35,
         'symbol-spacing': 280, 'text-padding': 2
       },
-      paint: { 'text-color': diffColor,
+      paint: { 'text-color': ['case', ['boolean', ['get', 'closed'], false], '#7c8894', diffColor],
         'text-halo-color': '#ffffff', 'text-halo-width': 1.6 } });
 
     // --- points of interest: coloured dots when zoomed out (as on the original), icons when zoomed in
@@ -263,10 +270,99 @@
     'poi-icons');
 
     bindMapEvents();
+    keepCameraAboveGround();
     refresh();
     map.once('idle', () => { if (!state.query && !state.selected) renderList(); });
     if (qs.get('id') && byId[qs.get('id')]) openDetail(qs.get('id'), true);
+    LIVE.start(applyLive);
   });
+
+  /** The camera must never go into the mountain. After every move, look at the ground under the
+   *  camera and on the first stretch of its line of sight; if the camera is not at least MARGIN
+   *  above all of it, step back (zoom out) and check again. */
+  function keepCameraAboveGround() {
+    const tr = map.transform;
+    if (!tr || !tr.getCameraLngLat || !tr.getCameraAltitude) return;
+    const MARGIN = 80;   // metres (exaggerated terrain)
+    let fixing = false;
+    const highestGround = () => {
+      const cam = tr.getCameraLngLat(), c = map.getCenter();
+      let top = -Infinity;
+      for (const k of [0, 0.15, 0.3]) {   // under the camera, then towards the centre of the view
+        const h = map.queryTerrainElevation([cam.lng + (c.lng - cam.lng) * k, cam.lat + (c.lat - cam.lat) * k]);
+        if (h !== null && h !== undefined) top = Math.max(top, h);
+      }
+      return top;
+    };
+    map.on('move', () => {
+      if (fixing || !state.terrain || !map.getTerrain()) return;
+      fixing = true;
+      try {
+        for (let i = 0; i < 6; i++) {
+          const ground = highestGround();
+          if (!isFinite(ground)) break;
+          const cam = tr.getCameraAltitude(), centre = tr.elevation || 0;
+          const above = cam - centre, needed = ground + MARGIN - centre;
+          if (cam >= ground + MARGIN || above <= 0) break;
+          // The camera's height above the centre doubles for each zoom level out.
+          map.jumpTo({ zoom: map.getZoom() - Math.log2(Math.max(needed, above * 1.1) / above) - 0.05 });
+        }
+      } finally { fixing = false; }
+    });
+  }
+
+  // ------------------------------------------------------------------ live lift/piste status
+  const CLOSED_KINDS = new Set(['closed', 'offseason', 'stopped']);
+  const livePill = document.getElementById('livePill');
+  const legendLive = document.getElementById('legendLive');
+  const hhmm = (ms) => {
+    const d = new Date(ms), now = new Date();
+    const time = d.toLocaleTimeString(I18N.lang, { hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+    return d.toDateString() === now.toDateString() ? time
+      : `${d.toLocaleDateString(I18N.lang, { weekday: 'short', day: 'numeric', month: 'short' })} ${time}`;
+  };
+
+  /** New status arrived (or the saved one at start): recolour lines, update pill, legend, card. */
+  function applyLive() {
+    let changed = false;
+    for (const r of all) {
+      if (!r.isLine) continue;
+      const k = LIVE.kind(r.p.id);
+      const closed = CLOSED_KINDS.has(k);
+      if (r.p.live !== k || r.p.closed !== closed) { r.p.live = k; r.p.closed = closed; changed = true; }
+    }
+    if (changed && map.getSource('trails')) refresh();
+    renderLiveTime();
+    if (state.selected) renderLiveRow(byId[state.selected]);
+  }
+
+  /** Time of the last update, coloured green (under 10 min), yellow (under 1 h) or red. */
+  function renderLiveTime() {
+    const f = LIVE.freshness();
+    if (!f) return;
+    const time = hhmm(LIVE.fetchedAt);
+    livePill.hidden = false;
+    livePill.className = `live-pill ${f}`;
+    livePill.querySelector('span').textContent = t('live.pill', { time });
+    legendLive.hidden = false;
+    legendLive.className = `legend-live ${f}`;
+    legendLive.innerHTML = `<i class="dot"></i><span>${esc(t('live.legend', { time }))}</span>`;
+  }
+  setInterval(() => { renderLiveTime(); if (state.selected) renderLiveRow(byId[state.selected]); }, 60 * 1000);
+  livePill.addEventListener('click', () => document.getElementById('btnLegend').click());
+
+  function renderLiveRow(r) {
+    const row = document.getElementById('dLive');
+    const k = r && r.isLine ? LIVE.kind(r.p.id) : null;
+    if (!k || k === 'none' || !LIVE.fetchedAt) { row.hidden = true; return; }
+    const f = LIVE.freshness();
+    const st = row.querySelector('.st');
+    st.className = `st ${k}`; st.textContent = t(`live.${k}`);
+    const upd = row.querySelector('.upd');
+    upd.className = `upd ${f}`;
+    upd.querySelector('span').textContent = t('live.updated', { time: hhmm(LIVE.fetchedAt) });
+    row.hidden = false;
+  }
 
   const emptyFC = () => ({ type: 'FeatureCollection', features: [] });
 
@@ -389,6 +485,7 @@
     const d = document.getElementById('dDesc');
     d.textContent = it.description || t('detail.noDescription');
     d.classList.toggle('empty', !it.description);
+    renderLiveRow(r);
     const facts = [];
     if (p.area) facts.push([t('detail.area'), p.area]);
     if (r.isLine && p.length) {
@@ -443,7 +540,7 @@
   // ------------------------------------------------------------------ map events
   function bindMapEvents() {
     const hoverPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 14, maxWidth: '260px' });
-    const interactive = ['poi-icons', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'trail-labels'];
+    const interactive = ['poi-icons', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'closed-lines', 'trail-labels'];
     let hovered = null;
 
     map.on('mousemove', (e) => {

@@ -29,6 +29,22 @@ phones are the main target.
 | `cold_storage/site_texts/` | The original French texts, and labels in Italian, German and Dutch. Not published. |
 | `cache/` | Downloaded raw responses. Not in git; can be rebuilt. |
 
+## Publishing
+
+In Settings → Pages, set Source to **GitHub Actions**. Every push to `main` then publishes
+`site/` at https://ophirmil12.github.io/morzine-map/ through `.github/workflows/pages.yml`.
+If Source is left on "Deploy from a branch", the root `index.html` forwards visitors to `site/`.
+
+## Live lift and piste status
+
+`site/js/live.js` reads ResaLocal's real-time API, which the tourist office agreed to. It makes
+one request of about 5 KB (`/api/v1/groups/uuids/by-status?groups=morzine,avoriaz,lesgets`):
+
+- **When:** when the page opens, then every 5 minutes while the page is on screen.
+- **Without signal:** the last answer is kept on the phone and shown with its time. The time is
+  green when under 10 minutes old, yellow under an hour, and red when older.
+- **On the map:** closed lifts and pistes are drawn grey and dashed.
+
 ## Update the data
 
     python tools/fetch_site_data.py      # runs, lifts, places and texts from explore.morzine.com

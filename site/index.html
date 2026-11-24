@@ -35,8 +35,13 @@
     <li><i class="sw dashed" style="--c:var(--piste-easy)"></i><span data-i18n="legend.nordic"></span></li>
     <li><i class="sw dotted" style="--c:var(--route)"></i><span data-i18n="legend.route"></span></li>
     <li><i class="sw lift"></i><span data-i18n="legend.lift"></span></li>
+    <li><i class="sw" style="--c:var(--closed)"></i><span data-i18n="legend.closed"></span></li>
   </ul>
+  <p class="legend-live" id="legendLive" hidden></p>
 </div>
+
+<!-- live lift/piste status: time of the last update, coloured by how recent it is -->
+<button class="live-pill" id="livePill" type="button" hidden><i class="dot"></i><span></span></button>
 
 <!-- side panel / bottom sheet -->
 <aside class="panel" id="panel">
@@ -79,6 +84,7 @@
         <p class="kind" id="dKind"></p>
       </div>
     </div>
+    <p class="live-row" id="dLive" hidden><span class="st"></span><span class="upd"><i class="dot"></i><span></span></span></p>
     <p class="desc" id="dDesc"></p>
     <dl class="facts" id="dFacts"></dl>
     <button class="primary" id="dZoom" type="button"><span class="ms">zoom_in_map</span><span data-i18n="detail.showOnMap"></span></button>
@@ -96,6 +102,7 @@
 <script src="js/basemap.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/icons.js"></script>
+<script src="js/live.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@
  *
  * Bump VERSION to throw away every cached app file (tiles are kept).
  */
-const VERSION = 'v3';
+const VERSION = 'v4';
 const APP_CACHE = `app-${VERSION}`;
 const TILE_CACHE = 'tiles-v1';
 const LIB_CACHE = 'libs-v1';
@@ -28,7 +28,7 @@ const BASEMAP_ZOOMS = [8, 14];   // OpenFreeMap vector tiles stop at 14; the map
 // Stored on install. Icons are added from assets/icons/index.json.
 const APP_FILES = [
   './', 'index.html', 'css/app.css', 'sw.js',
-  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/app.js',
+  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/live.js', 'js/app.js',
   'style/base.json', 'i18n/languages.json', 'i18n/en.json',
   'data/trails.json', 'data/pois.json', 'data/categories.json', 'data/content/en.json',
   'assets/logo.svg', 'assets/icons/index.json', 'tiles/dem/metadata.json'
