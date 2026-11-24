@@ -59,6 +59,8 @@
     "delayed": "Opening delayed",
     "stopped": "Stopped for now",
     "updated": "Updated {time}",
+    "ignored": "Live status off: all runs and lifts in normal colours",
+    "restored": "Live status on",
     "pill": "Lift status {time}",
     "legend": "Live status, updated {time}. Green: under 10 minutes old. Yellow: under an hour. Red: older."
   },

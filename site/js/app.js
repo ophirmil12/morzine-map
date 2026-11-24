@@ -325,13 +325,34 @@
       : `${d.toLocaleDateString(I18N.lang, { weekday: 'short', day: 'numeric', month: 'short' })} ${time}`;
   };
 
+  // Hidden switch: 5 taps in a row on the Morzine logo ignores live status (normal colours, no
+  // status pill or badge). Another 5 taps brings it back. Not saved: a reload starts with it on.
+  let ignoreLive = false;
+  (function logoTaps() {
+    const TAPS = 5, GAP_MS = 1500;
+    let count = 0, last = 0;
+    document.querySelectorAll('.map-logo, .brand-logo').forEach((logo) => {
+      logo.style.touchAction = 'manipulation';   // no double-tap zoom eating taps
+      logo.addEventListener('click', () => {
+        const now = Date.now();
+        count = now - last < GAP_MS ? count + 1 : 1;
+        last = now;
+        if (count < TAPS) return;
+        count = 0;
+        ignoreLive = !ignoreLive;
+        applyLive();
+        toast(t(ignoreLive ? 'live.ignored' : 'live.restored'));
+      });
+    });
+  })();
+
   /** New status arrived (or the saved one at start): recolour lines, update pill, legend, card. */
   function applyLive() {
     let changed = false;
     for (const r of all) {
       if (!r.isLine) continue;
       const k = LIVE.kind(r.p.id);
-      const closed = CLOSED_KINDS.has(k);
+      const closed = !ignoreLive && CLOSED_KINDS.has(k);
       if (r.p.live !== k || r.p.closed !== closed) { r.p.live = k; r.p.closed = closed; changed = true; }
     }
     if (changed && map.getSource('trails')) refresh();
@@ -342,6 +363,7 @@
   /** Time of the last update, coloured green (under 10 min), yellow (under 1 h) or red. */
   function renderLiveTime() {
     const f = LIVE.freshness();
+    if (ignoreLive) { livePill.hidden = true; legendLive.hidden = true; return; }
     if (!f) return;
     const time = hhmm(LIVE.fetchedAt);
     livePill.hidden = false;
@@ -357,7 +379,7 @@
   function renderLiveRow(r) {
     const row = document.getElementById('dLive');
     const k = r && r.isLine ? LIVE.kind(r.p.id) : null;
-    if (!k || k === 'none' || !LIVE.fetchedAt) { row.hidden = true; return; }
+    if (ignoreLive || !k || k === 'none' || !LIVE.fetchedAt) { row.hidden = true; return; }
     const f = LIVE.freshness();
     const st = row.querySelector('.st');
     st.className = `st ${k}`; st.textContent = t(`live.${k}`);
