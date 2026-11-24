@@ -678,6 +678,8 @@
     if (mode !== 'full' && active && active.id === 'search') active.blur();   // close the keyboard
   }
   if (isPhone) {
+    // Phones: the legend button sits at the bottom, in the search row.
+    document.getElementById('searchRow').appendChild(document.getElementById('btnLegend'));
     setSheet('peek');
     window.addEventListener('resize', () => setSheet(sheetMode));
     document.getElementById('search').addEventListener('focus', () => setSheet('full'));

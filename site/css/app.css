@@ -110,6 +110,9 @@ button { cursor: pointer; }
   display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 12px;
   padding: 10px 12px; background: var(--bg);
 }
+.search-row { display: flex; gap: 8px; align-items: center; }
+.search-row .search { flex: 1; min-width: 0; }
+.search-row .tool { flex: none; width: 46px; height: 46px; box-shadow: none; border: 1px solid var(--line); }
 .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(11, 92, 173, .15); }
 .search .ms { color: var(--ink-3); }
 .search input { border: 0; outline: 0; flex: 1; min-width: 0; font-size: 15px; background: transparent; }
@@ -253,7 +256,8 @@ button { cursor: pointer; }
   .results li button { padding: 11px 6px; }
   .map-tools { inset-block-start: calc(12px + env(safe-area-inset-top)); inset-inline-start: 12px; }
   .tool { width: 48px; height: 48px; }
-  .legend { inset-inline-start: 70px; inset-block-start: calc(12px + env(safe-area-inset-top)); }
+  /* legend opens just above the sheet, next to its button in the search row */
+  .legend { inset-inline-start: 12px; inset-inline-end: 12px; inset-block-start: auto; inset-block-end: calc(var(--sheet-h, 74px) + 10px); z-index: 4; }
   .toast { margin-inline-start: 0; inset-block-end: calc(var(--sheet-h, 74px) + 16px); }
   .panel-foot { display: none; }
   .map-logo {

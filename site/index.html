@@ -35,7 +35,7 @@
     <li><i class="sw dashed" style="--c:var(--piste-easy)"></i><span data-i18n="legend.nordic"></span></li>
     <li><i class="sw dotted" style="--c:var(--route)"></i><span data-i18n="legend.route"></span></li>
     <li><i class="sw lift"></i><span data-i18n="legend.lift"></span></li>
-    <li><i class="sw" style="--c:var(--closed)"></i><span data-i18n="legend.closed"></span></li>
+    <li><i class="sw dashed" style="--c:var(--closed)"></i><span data-i18n="legend.closed"></span></li>
   </ul>
   <p class="legend-live" id="legendLive" hidden></p>
 </div>
@@ -65,9 +65,12 @@
 
   <!-- list view -->
   <section class="view" id="listView">
-    <div class="search">
-      <span class="ms">search</span>
-      <input id="search" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder">
+    <div class="search-row" id="searchRow">
+      <div class="search">
+        <span class="ms">search</span>
+        <input id="search" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder">
+      </div>
+      <!-- on phones the legend button moves here (js/app.js) -->
     </div>
     <div class="chips" id="chips" role="group"></div>
     <div class="count" id="count"></div>
