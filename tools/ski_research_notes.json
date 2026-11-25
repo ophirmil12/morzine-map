@@ -1,5 +1,5 @@
 {
- "_about": "Hand-checked facts for tools/research_ski_descriptions.py. Keys are family:name (or family:name@resort). Lift 'rmnet' is the remontees-mecaniques.net sheet of the same lift. 'note' replaces the automatic second sentence, 'lead' the first. An empty note drops the second sentence, to leave room for the opening hours from data_src/lift_hours_2027.json. Every note must come from the listed sources or from our geometry.",
+ "_about": "Hand-checked facts for tools/research_ski_descriptions.py. Keys are family:name (or family:name@resort). Lift 'rmnet' is the remontees-mecaniques.net sheet of the same lift. 'note' replaces the automatic second sentence, 'lead' the first. An empty note drops the second sentence, to leave room for the opening hours from data_src/lift_hours_2027.json. A lift 'lead' takes {L} length, {B} bottom, {T} top and {R} ride time from the facts, so numbers live only in data_src/ski_facts_verified.json or the map. Every note must come from the listed sources or from our geometry.",
  "ski_lift:TPH PRODAINS 3S": {
   "rmnet": "reportage-3s-prodains-express-poma-5845.html",
   "kind": "3S gondola with 35-person cabins",
@@ -10,7 +10,7 @@
   ],
   "display": "Prodains Express",
   "place": "Les Prodains",
-  "lead": "This 3S gondola climbs 1.6 km from Les Prodains to Avoriaz in 4 min."
+  "lead": "This 3S gondola climbs {L} from Prodains to Avoriaz in {R}."
  },
  "ski_lift:TK ARARE1": {
   "rmnet": "reportage-tkd-d-arare-i-ii-poma-6295.html"
@@ -109,7 +109,7 @@
    "https://en.valleedaulps.com/ardent-gondola-lift.html"
   ],
   "place": "Ardent",
-  "lead": "This gondola climbs 1.4 km from Ardent, in Montriond, to Les Lindarets in 4 min."
+  "lead": "This gondola climbs {L} from Ardent to Les Lindarets in {R}."
  },
  "ski_lift:TLC SUPER": {
   "kind": "gondola",
@@ -120,11 +120,11 @@
   ],
   "display": "Super Morzine",
   "place": "Morzine",
-  "lead": "This gondola climbs 1.5 km from central Morzine to Super Morzine in 6 min."
+  "lead": "This gondola climbs from central Morzine to Super Morzine in {R}."
  },
  "ski_lift:Nyon": {
   "note": "",
-  "lead": "This cable car climbs 1.1 km from the valley at 1,040 m to the Plateau de Nyon at 1,410 m in about 3 min."
+  "lead": "This cable car climbs {L} from the valley at {B} to the Plateau de Nyon at {T} in {R}."
  },
  "ski_lift:TC CHAVANNES": {
   "rmnet": "reportage-tcd6-des-chavannes-poma-3921.html",
@@ -186,13 +186,9 @@
   "rmnet": "reportage-tsd8-de-la-rosta-poma-9344.html",
   "seats": 8,
   "detachable": true,
-  "ride": {
-   "min": 2,
-   "source": "web"
-  },
   "note": "It opened in December 2025 and is the first 8-seat chairlift in Les Gets.",
   "sources": [
-   "https://www.lesgets.com/en/?p=78366"
+   "https://pass.lesgets.com/en/new-rosta-chairlift"
   ]
  },
  "ski_lift:TS PLANEYS": {
@@ -227,7 +223,7 @@
    "https://www.openstreetmap.org/way/96366493",
    "https://en.morzine-avoriaz.com/nyon-winter-experiences/"
   ],
-  "lead": "This 3-seat chairlift climbs 1.5 km from 1,410 m to 1,960 m in 10 min."
+  "lead": "This 3-seat chairlift climbs {L} from {B} to {T} in {R}."
  },
  "ski_lift:TC du Pleney": {
   "rmnet": "reportage-tcd10-du-pleney-poma-5429.html",
@@ -237,7 +233,7 @@
    "https://www.haute-savoie-tourisme.org/loisirs/divers/telepheriques-touristiques/68305-telecabine-du-pleney"
   ],
   "place": "Morzine village",
-  "lead": "This gondola with 10-person cabins climbs 1.4 km from Morzine village to the Pleney at 1,480 m in 4 min."
+  "lead": "This gondola with 10-person cabins climbs {L} from Morzine village to the Pleney at {T} in {R}."
  },
  "ski_lift:TK des Poireaux 1": {
   "rmnet": "reportage-tkd-des-poireaux-1-2-poma-4917.html"

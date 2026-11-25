@@ -58,10 +58,6 @@ button { cursor: pointer; }
 /* No transition on the north arrow: it is set on every frame of a turn already, and a transition
    lagged behind and spun a full circle the wrong way when the bearing wrapped from 180 to -180. */
 
-/* map credits, last line of the legend (the map itself has no "i" button) */
-.legend-credits { margin: 10px 0 0; padding-top: 8px; border-top: 1px solid var(--line); font-size: 11px; line-height: 1.45; color: var(--ink-3); }
-.legend-credits a { color: inherit; }
-
 /* vertical km scale under the map buttons: a thin bar with end and middle ticks */
 .vscale {
   align-self: center; display: flex; flex-direction: column; align-items: center; gap: 4px;

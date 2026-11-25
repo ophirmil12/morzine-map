@@ -15,6 +15,10 @@ Inputs
                                                      (ride times, styles, parks), with sources
   data_src/lift_hours_2027.json                      lift opening hours for winter 2026-27, read by
                                                      hand from the operators' timetables
+  data_src/ski_facts_verified.json                   lengths, altitudes, ride times and seats from
+                                                     published sources. They beat the map values.
+                                                     A fact still taken from our map is marked
+                                                     length_source / alt_source "map" in the output.
 Every download is cached in cache/ski_research/, so a rerun needs no network.
 Standard library plus Pillow and numpy.
 """
@@ -37,6 +41,9 @@ DEM = os.path.join(ROOT, "site", "tiles", "dem", "14")
 NOTES = os.path.join(ROOT, "tools", "ski_research_notes.json")
 OUT = os.path.join(ROOT, "data_src", "ski_descriptions_en.json")
 HOURS = os.path.join(ROOT, "data_src", "lift_hours_2027.json")
+# Facts read by hand from published sources (lift sheets, operator and resort pages). They win
+# over anything derived from our map lines and elevation model.
+VERIFIED = os.path.join(ROOT, "data_src", "ski_facts_verified.json")
 BASE_JSON = os.path.join(CACHE, "base.json")
 OSM_JSON = os.path.join(CACHE, "osm_match.json")
 UA = "morzine-map-research/1.0 (static ski map rebuild)"
@@ -403,7 +410,9 @@ def ride_text(minutes, real):
     secs = int(round(minutes * 60 / 5.0) * 5)
     if minutes < 3 and secs % 60:
         return f"{secs // 60} min {secs % 60} s"
-    return f"{int(round(minutes))} min"
+    if minutes < 10 and secs % 60 == 30:
+        return f"{secs // 60} min 30 s"  # a published 4 min 30 s should not become 4 or 5 min
+    return f"{int(math.floor(minutes + 0.5))} min"
 
 
 def parse_minutes(s):
@@ -503,6 +512,10 @@ def stage_write():
     rm = load_json(os.path.join(CACHE, "rmnet_lifts.json"))
     notes = load_json(NOTES)
     hours = load_json(HOURS)["lifts"] if os.path.exists(HOURS) else {}
+    verified = load_json(VERIFIED) if os.path.exists(VERIFIED) else {}
+
+    def vfacts(i):
+        return verified.get(i, {}).get("facts", {})
     trails = {f["properties"]["id"]: f["geometry"]["coordinates"][0]
               for f in load_json(os.path.join(ROOT, "site", "data", "trails.json"))["features"]}
     osm_geom = {}
@@ -548,11 +561,12 @@ def stage_write():
         if n.get("kind"):
             return n["short_kind"] if short and n.get("short_kind") else n["kind"]
         code = (r["lift"] or {}).get("type_code") or r["category"]
-        seats = n.get("seats") or (r["lift"] or {}).get("capacity")
+        v = vfacts(r["id"])
+        seats = v.get("seats") or n.get("seats") or (r["lift"] or {}).get("capacity")
         if code in ("detachable_chairlift", "chairlift"):
             if short:
                 return "chairlift"
-            det = "detachable " if code == "detachable_chairlift" or n.get("detachable") else ""
+            det = "detachable " if code == "detachable_chairlift" or n.get("detachable") or v.get("detachable") else ""
             return f"{seats}-seat {det}chairlift" if seats and seats > 1 else f"{det}chairlift"
         if code == "gondola_lift":
             return "gondola" if short or not seats else f"gondola with {seats}-person cabins"
@@ -584,10 +598,18 @@ def stage_write():
             n = lf["note"]
             line = lf["line"]
             lfacts = line_facts(line, "ski_lift")
-            facts["length_m"] = length_fact(lfacts["slope_m"])
-            facts["bottom_m"] = round10(lfacts["bottom_m"])
-            facts["top_m"] = round10(lfacts["top_m"])
+            v = vfacts(i)
+            # Published values first. Map values only where no source gives one.
+            length = v.get("length_m", lfacts["slope_m"])
+            bottom, top = (v["bottom_m"], v["top_m"]) if "top_m" in v else (lfacts["bottom_m"], lfacts["top_m"])
+            facts["length_m"] = length_fact(length)
+            facts["length_source"] = v.get("length_source", "map")
+            facts["bottom_m"] = round10(bottom)
+            facts["top_m"] = round10(top)
+            facts["alt_source"] = v.get("alt_source", "map")
             facts["lift_type"] = kind(lf)
+            if verified.get(i):
+                sources.extend(s for s in verified[i]["sources"] if s not in sources)
             m = osm.get(i) if osm.get(i, {}).get("ok") else None
             if m:
                 sources.append(OSM_URL + m["osm_id"])
@@ -600,7 +622,9 @@ def stage_write():
             if rmrec:
                 sources.append(rmrec["url"])
             ride, src = None, None
-            if n.get("ride"):
+            if v.get("ride_min"):
+                ride, src = v["ride_min"], v["ride_min_source"]
+            elif n.get("ride"):
                 ride, src = n["ride"]["min"], n["ride"]["source"]
             elif rmrec and any(k.startswith(("Temps de trajet", "Durée")) for k in rmrec["sheet"]):
                 k = next(k for k in rmrec["sheet"] if k.startswith(("Temps de trajet", "Durée")))
@@ -612,18 +636,20 @@ def stage_write():
                 if n.get("detachable"):
                     code = "detachable_chairlift"
                 speed, extra = TYPICAL.get(code, (3.0, 0))
-                if rmrec:
-                    for k, v in rmrec["sheet"].items():
+                if v.get("speed_ms"):
+                    speed = v["speed_ms"]
+                elif rmrec:
+                    for k, val in rmrec["sheet"].items():
                         if k.startswith("Vitesse"):
                             try:
-                                speed = float(v.split()[0].replace(",", "."))
+                                speed = float(val.split()[0].replace(",", "."))
                             except (ValueError, IndexError):
                                 pass
-                ride, src = (lfacts["slope_m"] / speed + extra) / 60, "estimate"
+                ride, src = (length / speed + extra) / 60, "estimate"
             if ride is not None:
                 facts["ride_min"] = round(ride, 1)
                 facts["ride_min_source"] = src
-            stats[src or "none"] += 1
+            stats[src or "none"] = stats.get(src or "none", 0) + 1
             for s in n.get("sources", []):
                 if s not in sources:
                     sources.append(s)
@@ -643,15 +669,26 @@ def stage_write():
             # Sentence 1: what it is, how long, from where to where, how long it takes.
             k = facts["lift_type"]
             rt = ride_text(ride, src != "estimate") if ride is not None else None
-            if round10(lfacts["top_m"]) - round10(lfacts["bottom_m"]) < 20:
-                s1 = f"This {k} is {fmt_len(lfacts['slope_m'])} long, at about {fmt_alt(lfacts['bottom_m'])}"
+            if rt and v.get("ride_text") and src == v.get("ride_min_source"):
+                rt = v["ride_text"]  # e.g. 'under 3 min', as the operator words it
+            # A published vertical rise beats the difference of two rounded altitudes.
+            rise = round10(v["rise_m"]) if "rise_m" in v else round10(top) - round10(bottom)
+            facts["rise_m"] = rise
+            if rise < 20:
+                s1 = f"This {k} is {fmt_len(length)} long, at about {fmt_alt(bottom)}"
                 s1 += f", and the ride takes {rt}." if rt else "."
+            elif rise < 0.12 * length:
+                # Long and nearly flat (e.g. Belvedere: 960 m, +80 m): say so, or it reads like a mistake.
+                s1 = (f"This {k} runs {fmt_len(length)} and climbs only {fmt_alt(rise)},"
+                      f" to {fmt_alt(top)}")
+                s1 += f", in {rt}." if rt else "."
             else:
-                s1 = (f"This {k} climbs {fmt_len(lfacts['slope_m'])} from {fmt_alt(lfacts['bottom_m'])}"
-                      f" to {fmt_alt(lfacts['top_m'])}")
+                s1 = (f"This {k} climbs {fmt_len(length)} from {fmt_alt(bottom)}"
+                      f" to {fmt_alt(top)}")
                 s1 += f" in {rt}." if rt else "."
             if n.get("lead"):
-                s1 = n["lead"]
+                # Hand leads take the numbers from the facts: {L} length, {B} bottom, {T} top, {R} ride.
+                s1 = n["lead"].format(L=fmt_len(length), B=fmt_alt(bottom), T=fmt_alt(top), R=rt or "")
             # Sentence 2: hand note, or the runs that start at the top.
             if n.get("note") is not None:
                 s2 = n["note"]
@@ -682,19 +719,25 @@ def stage_write():
             n = p["note"]
             line = trails[i]
             lfacts = line_facts(line, "ski_trail")
-            facts["length_m"] = length_fact(lfacts["slope_m"])
-            facts["top_m"] = round10(lfacts["top_m"])
-            facts["bottom_m"] = round10(lfacts["bottom_m"])
+            v = vfacts(i)
+            # Published values first (resort piste pages). Map values only where none exists.
+            length = v.get("length_m", lfacts["slope_m"])
+            top, bottom = (v["top_m"], v["bottom_m"]) if "top_m" in v else (lfacts["top_m"], lfacts["bottom_m"])
+            facts["length_m"] = length_fact(length)
+            facts["length_source"] = v.get("length_source", "map")
+            facts["top_m"] = round10(top)
+            facts["bottom_m"] = round10(bottom)
+            facts["alt_source"] = v.get("alt_source", "map")
             if n.get("park"):
                 facts["park"] = True
             cat = r["category"]
             m = osm.get(i) if osm.get(i, {}).get("ok") else None
             if m and plain(m.get("osm_name")) == plain(r["name"]):
                 sources.append(OSM_URL + m["osm_id"])
-            for s in n.get("sources", []):
+            for s in n.get("sources", []) + verified.get(i, {}).get("sources", []):
                 if s not in sources:
                     sources.append(s)
-            L, T, B = fmt_len(lfacts["slope_m"]), fmt_alt(lfacts["top_m"]), fmt_alt(lfacts["bottom_m"])
+            L, T, B = fmt_len(length), fmt_alt(top), fmt_alt(bottom)
             if cat == "snowshoeing":
                 if p["loop"]:
                     s1 = f"This snowshoe trail is a {L} loop between {B} and {T}."
@@ -702,7 +745,7 @@ def stage_write():
                     s1 = f"This snowshoe trail runs {L} between {B} and {T}."
             elif cat in COLOUR:
                 c = COLOUR[cat]
-                if round10(lfacts["top_m"]) - round10(lfacts["bottom_m"]) < 30:
+                if round10(top) - round10(bottom) < 30:
                     s1 = f"This {c} run is {L} long and almost flat, at about {T}."
                 else:
                     s1 = f"This {c} run drops from {T} to {B} over {L}."
@@ -721,6 +764,8 @@ def stage_write():
                 import unicodedata
                 ascii_name = unicodedata.normalize("NFKD", r["name"]).encode("ascii", "ignore").decode().lower()
                 preds = list(n.get("preds", []))
+                if v.get("feature") and v["feature"] not in preds and not n.get("extra"):
+                    preds.insert(0, v["feature"])  # e.g. 'has moguls', from the resort's piste page
                 if re.match(r"(acces|jonction|lonction|aller|retour|route retour)", ascii_name):
                     preds.append("is a link run")
                 m_osm = osm.get(i)
@@ -728,8 +773,13 @@ def stage_write():
                         and m_osm["tags"].get("piste:grooming") == "backcountry" and cat in COLOUR):
                     preds.append("is usually left ungroomed")
                 style = n.get("style")
-                if style is None and cat in COLOUR and lfacts["top_m"] - lfacts["bottom_m"] >= 30:
+                if style is None and cat in COLOUR and top - bottom >= 30:
+                    # Published average and maximum slopes (Les Gets pages) beat our 100 m DEM window.
                     st, mn = p["steep"], p["mean"]
+                    if "max_slope_pct" in v:
+                        st = v["max_slope_pct"] / 100
+                    if "avg_slope_pct" in v:
+                        mn = v["avg_slope_pct"] / 100
                     if mn < 0.07:
                         style = "is mostly flat"
                     elif st < 0.22:
@@ -749,7 +799,7 @@ def stage_write():
                 a = None if n.get("no_from") or not top_lifts else lift_ref(top_lifts[0])
                 b = None if n.get("no_to") or not bot_lifts else lift_ref(bot_lifts[0])
                 place = lifts[bot_lifts[0]]["note"].get("place") if bot_lifts and not n.get("no_to") else None
-                if place and lfacts["top_m"] - lfacts["bottom_m"] >= 100:
+                if place and top - bottom >= 100:
                     b = place
                 else:
                     place = None

@@ -79,9 +79,9 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   - The bottom panel can shrink to almost nothing.
   - The search box, share button and legend button sit in one row at the bottom.
 - The legend closes when the user touches anything else. It has no nordic or snowshoe rows.
-- There is no "i" credits button on the map. Credits are the last line of the legend, and in full
-  on the terms page. The OpenStreetMap credit must stay reachable from the map: that is a licence
-  requirement.
+- There is no "i" credits button on the map and no credits line in the legend (the owner's choice,
+  to save space). The full credits are on the terms page (`site/terms/`). Note: the OpenStreetMap
+  licence asks for its credit to be reachable from the map. This was raised and the owner decided.
 - **Hidden settings:** 5 taps on the Morzine logo open a box with two switches. Both turn off at
   midnight, French time:
   - "ignore live lift status"

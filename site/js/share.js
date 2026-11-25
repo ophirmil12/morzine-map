@@ -179,7 +179,6 @@ const SHARE = (() => {
     n.hidden = !(active && others.length);
     n.textContent = n.hidden ? '' : String(others.length);
     $('shareSwitch').checked = on;
-    $('shareHours').classList.toggle('warn', on && !active);
 
     const src = map && map.getSource('friends'); if (!src) return;
     const now = Date.now();

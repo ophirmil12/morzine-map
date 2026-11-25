@@ -33,8 +33,6 @@
 .sw-row input { width: 18px; height: 18px; accent-color: #7c3aed; margin: 0; }
 .legend-share .share-name { font-size: 12px; color: var(--ink-2); }
 .legend-share .share-name input { font-size: 16px; padding: 7px 10px; }   /* 16px: iPhones do not zoom in */
-.share-hours { margin: 0; font-size: 12px; color: var(--ink-3); }
-.share-hours.warn { color: #8a6500; }
 
 /* hidden settings box (5 taps on the logo) */
 .secret {

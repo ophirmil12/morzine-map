@@ -1,0 +1,3284 @@
+{
+ "_about": "Facts checked against published sources, read by hand on 2026-11-25. tools/research_ski_descriptions.py prefers these over values derived from our map lines and elevation model. Lengths are inclined (along the cable or slope) unless length_kind says otherwise. Altitudes in metres. Values not listed here stay map estimates and are marked length_source/alt_source 'map' in data_src/ski_descriptions_en.json.",
+ "cd690d7f-cb6e-4782-b0ba-9c475bf1be53": {
+  "name": "Château",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 418,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1130,
+   "top_m": 1252,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 122,
+   "ride_min": 2.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.3,
+   "capacity_pph": 900,
+   "year": 1989,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-chateau-poma-5048.html"
+  ],
+  "notes": "Kept mainly as a backup for the Perrières Express."
+ },
+ "55097a4d-eb5a-4a27-af08-6205cf80668a": {
+  "name": "TK BOULE DE GOMME",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 347,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1170,
+   "top_m": 1236,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 66,
+   "ride_min": 1.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.9,
+   "capacity_pph": 720,
+   "year": 2010,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-boule-de-gomme-poma-4987.html"
+  ],
+  "notes": ""
+ },
+ "1e57c0c2-ba97-4d88-8820-da04712a847d": {
+  "name": "TC CHAVANNES",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "length_m": 1529,
+   "length_kind": "line",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1172,
+   "top_m": 1490,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 317,
+   "ride_min": 6.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 1200,
+   "year": 2010,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tcd6-des-chavannes-poma-3921.html"
+  ],
+  "notes": "Ride time was a speed estimate (5.5 min). The sheet and OSM both give 6 min 30 s."
+ },
+ "5f28c346-ed6c-4dc7-910d-ca9ae62efc3e": {
+  "name": "TS CHERY NORD",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 1188,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1406,
+   "top_m": 1814,
+   "alt_source": "remontees-mecaniques.net station markers",
+   "rise_m": 408,
+   "ride_min": 8.62,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.3,
+   "capacity_pph": 2000,
+   "year": 1986,
+   "builder": "Skirail"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-du-chery-nord-skirail-282.html"
+  ],
+  "notes": "Altitudes from the station markers of the same page. They match the 408 m vertical."
+ },
+ "ff2a2d94-9ef9-4c24-a22e-dc091074d281": {
+  "name": "TS CROIX",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 747,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1487,
+   "top_m": 1600,
+   "alt_source": "remontees-mecaniques.net station markers",
+   "rise_m": 130,
+   "ride_min": 5.67,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.2,
+   "capacity_pph": 2400,
+   "year": 2000,
+   "builder": "Skirail"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-de-la-croix-skirail-5957.html"
+  ],
+  "notes": "Altitudes from the station markers. They differ by 113 m while the sheet gives 130 m vertical."
+ },
+ "12d63246-74c6-46d9-823e-44df7d5d67a6": {
+  "name": "TS FOLLIETS DU GOLF",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 884,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1362,
+   "top_m": 1551,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 189,
+   "ride_min": 4.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.5,
+   "capacity_pph": 1630,
+   "year": 1998,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-folliets-poma-5010.html"
+  ],
+  "notes": ""
+ },
+ "9e67f09e-6bea-49c1-acb0-1c6c74ddf90e": {
+  "name": "TK GRAND CRY",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 309,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1500,
+   "top_m": 1562,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 62,
+   "ride_min": 1.72,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.0,
+   "capacity_pph": 800,
+   "year": 1978,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-grand-cry-montaz-mautino-7904.html"
+  ],
+  "notes": "Horizontal length 302 m."
+ },
+ "80690d93-9a0f-47cd-a881-d9d7546c0769": {
+  "name": "TSD CHAVANNES EXPRESS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 2425,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1168,
+   "top_m": 1618,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 450,
+   "ride_min": 8.15,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2003,
+   "builder": "Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-les-chavannes-express-leitner-216.html"
+  ],
+  "notes": "Horizontal length 2,378 m."
+ },
+ "3ec5c9ac-8d1f-4abd-a9a1-3edd48a4b5aa": {
+  "name": "TSD NAUCHETS EXPRESS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 973,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1391,
+   "top_m": 1664,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 273,
+   "ride_min": 3.37,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2002,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-les-nauchets-express-poma-4798.html"
+  ],
+  "notes": ""
+ },
+ "f6ba97ce-7e79-4416-9697-c9f998625747": {
+  "name": "TC CHERY",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "length_m": 1094,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1168,
+   "top_m": 1526,
+   "alt_source": "remontees-mecaniques.net station markers",
+   "rise_m": 374,
+   "ride_min": 4.57,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 4.0,
+   "capacity_pph": 1200,
+   "year": 1980,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tcd6-du-mont-chery-montaz-mautino-392.html"
+  ],
+  "notes": "The sheet gives no altitudes. The station markers differ by 358 m while the sheet gives 374 m vertical. OSM tags the top at 1,535 m."
+ },
+ "e5e7fc7b-deb6-4742-a78c-9bfb395ef37a": {
+  "name": "TK MOUILLE AU ROI",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 468,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1488,
+   "top_m": 1597,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 109,
+   "ride_min": 3.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.54,
+   "capacity_pph": 600,
+   "year": 1970,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-mouille-au-roy-montaz-mautino-4994.html"
+  ],
+  "notes": "Spelt Mouille au Roy by remontees-mecaniques.net and OSM."
+ },
+ "053fddc1-64b0-4596-96f8-1bfa4ace2c83": {
+  "name": "TSD PERRIERES EXPRESS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1685,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1143,
+   "top_m": 1537,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 394,
+   "speed_ms": 5.0,
+   "capacity_pph": 2400,
+   "year": 2003,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-perrieres-express-poma-9445.html"
+  ],
+  "notes": "The sheet labels the 1,685 m line length 'Longueur du dénivelé'. Vertical is top minus bottom. No published ride time."
+ },
+ "974c57c9-3f15-4085-82ef-883d24b43800": {
+  "name": "TS PLANEYS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 2,
+   "length_m": 1047,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1380,
+   "top_m": 1737,
+   "alt_source": "remontees-mecaniques.net station markers",
+   "rise_m": 380,
+   "ride_min": 7.58,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.3,
+   "capacity_pph": 1200,
+   "year": 1982,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf2-des-planeys-montaz-mautino-3007.html"
+  ],
+  "notes": "A 2-seat chairlift (TSF2) on remontees-mecaniques.net and OSM. The office data says 3 seats."
+ },
+ "1b44f151-04e7-4d15-9acf-531de2eb9367": {
+  "name": "TSD RANFOILLY EXPRESS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1762,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1391,
+   "top_m": 1813,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 421,
+   "speed_ms": 6.0,
+   "capacity_pph": 3300,
+   "year": 2017,
+   "builder": "Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-ranfoilly-leitner-6946.html"
+  ],
+  "notes": "Horizontal length 1,743 m. OSM gives 6:30 and 1,818 m, the figures of the old 4-seat lift it replaced in 2017, so its ride time is not used."
+ },
+ "e89998c8-0d26-4e04-85b9-f22c1d95fe3f": {
+  "name": "Rosta",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 8,
+   "detachable": true,
+   "length_m": 847,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1397,
+   "top_m": 1668,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 271,
+   "ride_min": 3.0,
+   "ride_min_source": "operator",
+   "ride_text": "under 3 min",
+   "speed_ms": 6.0,
+   "capacity_pph": 3640,
+   "year": 2025,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd8-de-la-rosta-poma-9344.html",
+   "https://pass.lesgets.com/en/new-rosta-chairlift"
+  ],
+  "notes": "Operator: 'under 3 minutes' at 6 m/s. The old note said 2 min. The office data says 4 seats, it has 8."
+ },
+ "ffc6fea0-f614-4454-9b05-aa117c63edfa": {
+  "name": "Stade",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 168,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1160,
+   "top_m": 1201,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 41,
+   "ride_min": 1.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.57,
+   "capacity_pph": 900,
+   "year": 1970,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-stade-montaz-mautino-4999.html"
+  ],
+  "notes": ""
+ },
+ "100deaba-f014-4c15-a43c-2c7adb813aa0": {
+  "name": "TK TETE DES CRETS",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 1350,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1488,
+   "top_m": 1658,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 170,
+   "ride_min": 7.0,
+   "ride_min_source": "osm",
+   "speed_ms": 3.7,
+   "capacity_pph": 900,
+   "year": 1962,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-tete-des-crets-montaz-mautino-4910.html",
+   "https://www.openstreetmap.org/way/203618751"
+  ],
+  "notes": "Horizontal length 1,310 m. Ride time from OSM (no time on the sheet)."
+ },
+ "5e4dc15e-d8c1-4bff-9af0-ba4ca8ba5e1d": {
+  "name": "TK TURCHE",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 1200,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1211,
+   "top_m": 1540,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 329,
+   "ride_min": 5.67,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.52,
+   "capacity_pph": 700,
+   "year": 1972,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-turche-poma-2244.html"
+  ],
+  "notes": "The station markers on the same page say 1,226 m and 1,502 m. The sheet values are used."
+ },
+ "34a57bf8-6e20-4a99-8b39-6de62db3dcae": {
+  "name": "TK VIEUX CHENE",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 275,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1190,
+   "top_m": 1245,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 55,
+   "ride_min": 2.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.92,
+   "capacity_pph": 825,
+   "year": 1966,
+   "builder": "Montaz Mautino"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-vieux-chene-montaz-mautino-7869.html"
+  ],
+  "notes": ""
+ },
+ "7513c239-d377-4294-97f2-2fcd4b8bc56f": {
+  "name": "TSD POINTE DU CHERY",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1031,
+   "length_kind": "inclined, from 988 m horizontal and 293 m vertical",
+   "length_source": "operator",
+   "bottom_m": 1525,
+   "top_m": 1818,
+   "alt_source": "top: arrival of the old Pointe drag lift (1,818 m), bottom: top minus vertical",
+   "rise_m": 293,
+   "speed_ms": 5.0,
+   "capacity_pph": 2000,
+   "year": 2026,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-pointe-du-chery-montaz-mautino-7114.html"
+  ],
+  "notes": "SoleGets: 6 seats, 988 m horizontal, 293 m vertical, 2,000 p/h, 5 m/s, Poma. It ends where the Pointe drag lift ended (1,818 m on remontees-mecaniques.net). The office data says 4 seats. No published ride time."
+ },
+ "16dfff57-de1d-41fe-9d5f-61289d6fb2e6": {
+  "name": "TS Pointe de Nyon",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 3,
+   "length_m": 1500,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1413,
+   "top_m": 1957,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 544,
+   "ride_min": 10.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.5,
+   "capacity_pph": 1170,
+   "year": 1990,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-de-la-pointe-de-nyon-poma-4996.html"
+  ],
+  "notes": ""
+ },
+ "c19cbf52-7a71-4156-abf0-3c4aae2f00da": {
+  "name": "FIL-NEIGE EBAUDS",
+  "family": "ski_lift",
+  "facts": {
+   "ride_min": 1.66,
+   "ride_min_source": "osm"
+  },
+  "sources": [
+   "https://www.openstreetmap.org/way/1450703362"
+  ],
+  "notes": "remontees-mecaniques.net lists a TKD des Ebauds with no data. Ride time from OSM."
+ },
+ "0ed2f9b5-0a4f-4b42-beee-b3cebd702328": {
+  "name": "Nyon",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 35,
+   "length_m": 1085,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net forum and lift-world.info",
+   "bottom_m": 1022,
+   "top_m": 1423,
+   "alt_source": "remontees-mecaniques.net forum (2006)",
+   "rise_m": 401,
+   "speed_ms": 9.4,
+   "capacity_pph": 550,
+   "year": 1960,
+   "builder": "Applevage"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/forums/index.php?showtopic=1494",
+   "https://lift-world.info/en/lifts/9732/datas.htm"
+  ],
+  "notes": "Both sites block scripted access. The figures were read through search-engine extracts. Forum: 1,022 m to 1,423 m, 401 m, 1,085 m, 9.4 m/s. lift-world: 1,027 m to 1,420 m, 1,085 m, 9.4 m/s, 550 p/h, 35-person cabins, Applevage 1960. No published ride time."
+ },
+ "84f8c194-a05b-4695-a4e4-287cfd830eec": {
+  "name": "TC du Pleney",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 10,
+   "detachable": true,
+   "length_m": 1399,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 989,
+   "top_m": 1501,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 512,
+   "ride_min": 3.88,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 6.0,
+   "capacity_pph": 3000,
+   "year": 2013,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tcd10-du-pleney-poma-5429.html"
+  ],
+  "notes": "Horizontal length 1,333 m. The old lead said the top is at 1,480 m."
+ },
+ "bad349f5-871d-41ed-ac9b-3cd72c274a66": {
+  "name": "TK des Poireaux 1",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 200,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1420,
+   "top_m": 1477,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 57,
+   "ride_min": 1.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.0,
+   "capacity_pph": 900,
+   "year": 1977,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html"
+  ],
+  "notes": ""
+ },
+ "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57": {
+  "name": "TK des Poireaux 2",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 200,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1420,
+   "top_m": 1477,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 57,
+   "ride_min": 1.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.0,
+   "capacity_pph": 800,
+   "year": 1977,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html"
+  ],
+  "notes": "One sheet for both lifts, 900 and 800 p/h."
+ },
+ "6c1b6dab-381b-42e1-8f2d-df45830949b7": {
+  "name": "TS Les Têtes",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 1251,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1321,
+   "top_m": 1651,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 330,
+   "ride_min": 10.0,
+   "ride_min_source": "osm",
+   "speed_ms": 2.5,
+   "capacity_pph": 2208,
+   "year": 2001,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-tetes-poma-5026.html",
+   "https://www.openstreetmap.org/way/32310310"
+  ],
+  "notes": "Ride time from OSM. At 2.5 m/s the line alone takes about 8 min 20 s."
+ },
+ "e3055de8-21c5-4837-9c4b-5519509c025c": {
+  "name": "TS de la Crusaz",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 851,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 993,
+   "top_m": 1309,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 316,
+   "ride_min": 7.0,
+   "ride_min_source": "osm",
+   "speed_ms": 2.3,
+   "capacity_pph": 2400,
+   "year": 1989,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-de-la-crusaz-poma-9153.html",
+   "https://www.openstreetmap.org/way/30627383"
+  ],
+  "notes": "Mid station at 1,150 m. The sheet's text says the ride lasts about 12 min, which does not fit 851 m at 2.3 m/s (about 6 min). OSM says 7:00 and is used. OSM length 938 m."
+ },
+ "1295ad30-3445-47bb-9de2-93486a4d439f": {
+  "name": "TS des Fys",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 3,
+   "length_m": 1237,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1160,
+   "top_m": 1563,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 403,
+   "ride_min": 10.75,
+   "ride_min_source": "osm",
+   "speed_ms": 2.5,
+   "capacity_pph": 1350,
+   "year": 1984,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-des-fys-poma-9449.html",
+   "https://www.openstreetmap.org/way/32310365"
+  ],
+  "notes": "The station marker on the same page puts the top at 1,536 m. Ride time from OSM (10:45)."
+ },
+ "f1f0271e-a63f-43a9-bd82-f78423bccb99": {
+  "name": "TS des Mouilles",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 736,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1290,
+   "top_m": 1504,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 214,
+   "ride_min": 4.92,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.5,
+   "capacity_pph": 2400,
+   "year": 2000,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-mouilles-poma-5091.html"
+  ],
+  "notes": "OSM says 6:00. The sheet's 4 min 55 s is used."
+ },
+ "6e602043-da88-41ec-9217-9ba0b0eef216": {
+  "name": "TS des Raverettes",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 654,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1415,
+   "top_m": 1540,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 125,
+   "speed_ms": 2.3,
+   "capacity_pph": 1800,
+   "year": 2006,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-raverettes-poma-9417.html"
+  ],
+  "notes": "Horizontal length 641 m. No published ride time."
+ },
+ "4c0705d8-8e78-4b1c-b832-f0e021a7eb03": {
+  "name": "TS du Pré Favre",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "length_m": 890,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1161,
+   "top_m": 1418,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 257,
+   "ride_min": 7.5,
+   "ride_min_source": "osm",
+   "speed_ms": 2.0,
+   "capacity_pph": 1470,
+   "year": 1986,
+   "builder": "Skirail"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-du-pre-favre-skirail-9457.html",
+   "https://www.openstreetmap.org/way/32425250"
+  ],
+  "notes": "Ride time from OSM (7:30), which fits 890 m at 2 m/s."
+ },
+ "0cef71a4-8274-4aeb-a20a-489f2589af18": {
+  "name": "TSD Belvédère",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 959,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1475,
+   "top_m": 1551,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 76,
+   "ride_min": 3.33,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 2800,
+   "year": 2021,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-belvedere-poma-7881.html"
+  ],
+  "notes": "OSM station nodes agree: 1,475 m and 1,551 m, 3:20."
+ },
+ "d0530cf0-d2ef-4beb-bd66-db97772a0b2f": {
+  "name": "TSD Chamossière",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "bottom_m": 1480,
+   "top_m": 1985,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 505,
+   "ride_min": 6.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 2100,
+   "year": 2010,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-chamossiere-poma-4071.html"
+  ],
+  "notes": "The sheet gives 1,922 m, but its own station markers are 1,212 m apart on the map, which with 505 m of vertical means about 1,310 m. The length stays a map value until a source settles it. OSM length 1,057 m and vertical 387 m belong to the old 3-seat lift."
+ },
+ "68fe1fa9-c9e7-49b8-abe4-4c5a93a07c12": {
+  "name": "TSD la Charniaz",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1684,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1321,
+   "top_m": 1674,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 353,
+   "ride_min": 5.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2003,
+   "builder": "Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-charniaz-leitner-76.html"
+  ],
+  "notes": ""
+ },
+ "0c9f9b1f-0e29-49a0-8d69-1de8b48954a9": {
+  "name": "Troncs express",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 765,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1324,
+   "top_m": 1589,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 265,
+   "ride_min": 2.31,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 2400,
+   "year": 2012,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-les-troncs-express-poma-4656.html"
+  ],
+  "notes": "Sheet: '2.31 minutes', which fits 765 m at 5.5 m/s. OSM says 4:15."
+ },
+ "7c248ef6-e29e-425e-b5be-d8c6c1592788": {
+  "name": "TS de Nabor",
+  "family": "ski_lift",
+  "facts": {},
+  "sources": [],
+  "notes": "remontees-mecaniques.net lists a TSF4 de Nabor (Poma, 2005) with no figures."
+ },
+ "f0b2901b-0a7c-4471-8901-3daa46884bb8": {
+  "name": "TK Mas Verjus",
+  "family": "ski_lift",
+  "facts": {},
+  "sources": [],
+  "notes": "remontees-mecaniques.net lists a TKD du Mas Vergus (Montaz Mautino, 1972) with no figures."
+ },
+ "9a709967-0232-46e8-b7ee-3be35cbcf906": {
+  "name": "TK Bouchet",
+  "family": "ski_lift",
+  "facts": {},
+  "sources": [],
+  "notes": "remontees-mecaniques.net lists a TKD du Bouchet (Montaz Mautino, 1971) with no figures."
+ },
+ "7a92722e-ab57-414f-bfa5-dd5197dfcb90": {
+  "name": "TD4 CHOUCAS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "detachable": true,
+   "length_m": 1323,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1812,
+   "top_m": 2162,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 350,
+   "ride_min": 5.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 2400,
+   "year": 1998,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-du-choucas-poma-2962.html"
+  ],
+  "notes": ""
+ },
+ "2a22eb52-b381-4030-ae48-4642e2a20bc5": {
+  "name": "TD4 LINDARETS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "detachable": true,
+   "length_m": 1245,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1495,
+   "top_m": 1874,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 379,
+   "ride_min": 4.0,
+   "ride_min_source": "osm",
+   "speed_ms": 4.6,
+   "capacity_pph": 2400,
+   "year": 1995,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-lindarets-poma-5469.html",
+   "https://www.openstreetmap.org/way/24916417"
+  ],
+  "notes": ""
+ },
+ "4a9ba904-1308-413b-9a85-b7f78743f6f2": {
+  "name": "TD4 MOSSETTES",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "detachable": true,
+   "length_m": 2376,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1579,
+   "top_m": 2260,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 669,
+   "ride_min": 8.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 2400,
+   "year": 1993,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-mossettes-poma-5392.html"
+  ],
+  "notes": "The sheet gives 669 m vertical although its altitudes differ by 681 m."
+ },
+ "3258df18-19ee-4c15-b92f-c52d985647be": {
+  "name": "TD4 ZORE",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 4,
+   "detachable": true,
+   "length_m": 1299,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1452,
+   "top_m": 1756,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 304,
+   "ride_min": 4.5,
+   "ride_min_source": "osm",
+   "speed_ms": 5.0,
+   "capacity_pph": 2400,
+   "year": 2003,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-de-zore-poma-5395.html",
+   "https://www.openstreetmap.org/way/30352096"
+  ],
+  "notes": ""
+ },
+ "7067b702-7dd5-4ea2-b279-fd98a1b8b3a8": {
+  "name": "TD6 BROCHAUX",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 979,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1581,
+   "top_m": 1994,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 413,
+   "ride_min": 3.0,
+   "ride_min_source": "osm",
+   "speed_ms": 5.5,
+   "capacity_pph": 3000,
+   "year": 2015,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-brochaux-poma-5785.html",
+   "https://www.openstreetmap.org/way/30170411"
+  ],
+  "notes": ""
+ },
+ "208a3919-95be-43a5-9993-6ddd76df9d83": {
+  "name": "TD6 CASES",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 2065,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1718,
+   "top_m": 2160,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 442,
+   "ride_min": 7.0,
+   "ride_min_source": "osm",
+   "speed_ms": 5.0,
+   "capacity_pph": 2500,
+   "year": 2019,
+   "builder": "Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-cases-leitner-7367.html",
+   "https://www.openstreetmap.org/way/750062609"
+  ],
+  "notes": ""
+ },
+ "6f6fc708-c148-4466-a1bc-d51fcb93cf77": {
+  "name": "TD6 CHAUX FLEURIE",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1131,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1503,
+   "top_m": 1900,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 397,
+   "ride_min": 3.75,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2006,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-chaux-fleurie-poma-8575.html"
+  ],
+  "notes": ""
+ },
+ "88118b6c-f60d-419b-9fd0-e7e409997f0a": {
+  "name": "TD6 FORNET",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1603,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1815,
+   "top_m": 2225,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 410,
+   "ride_min": 5.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2004,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-fornet-poma-2950.html"
+  ],
+  "notes": "OSM says 6:00. The sheet's 5 min is used."
+ },
+ "8f969652-039b-4e91-9145-1e60ac9e78d4": {
+  "name": "TD6 GRANDES COMBES",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1930,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1500,
+   "top_m": 2203,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 703,
+   "ride_min": 6.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 2650,
+   "year": 2007,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-grandes-combes-poma-2361.html"
+  ],
+  "notes": ""
+ },
+ "7ab067e8-ee4d-4e36-81d5-b060b15fc1eb": {
+  "name": "TD6 LAC-INTRETS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1883,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1739,
+   "top_m": 2233,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 494,
+   "ride_min": 5.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 6.0,
+   "capacity_pph": 3000,
+   "year": 2023,
+   "builder": "Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-lac-intrets-leitner-8570.html"
+  ],
+  "notes": "The station markers on the same page say 1,750 m and 2,183 m. The sheet values are used."
+ },
+ "037549dc-d415-4d5f-b901-271a0f3c7f0c": {
+  "name": "TD6 LECHERE",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1743,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1497,
+   "top_m": 1732,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 235,
+   "ride_min": 5.33,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 2700,
+   "year": 2019,
+   "builder": "MND Bartholet"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-lechere-mnd-ropeways-bartholet-8573.html"
+  ],
+  "notes": "OSM length 1,029 m and vertical 106 m belong to the old lift."
+ },
+ "f31b1fb6-c7ed-4133-94b8-0f50a2e86edb": {
+  "name": "TD6 PROCLOU",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1634,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1636,
+   "top_m": 1873,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 237,
+   "ride_min": 5.2,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 3200,
+   "year": 2014,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-proclou-poma-5410.html"
+  ],
+  "notes": ""
+ },
+ "5be952cc-d3ce-421b-8c34-ac202ec3c4fc": {
+  "name": "TD6 PROLAYS",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1490,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1496,
+   "top_m": 1910,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 414,
+   "ride_min": 5.0,
+   "ride_min_source": "osm",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 2001,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-prolays-poma-5470.html",
+   "https://www.openstreetmap.org/way/8215733"
+  ],
+  "notes": ""
+ },
+ "9161ee35-9551-4dab-b4d0-b837e52d6def": {
+  "name": "TD6 SERAUSSAIX",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 1024,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1636,
+   "top_m": 1773,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 137,
+   "ride_min": 3.33,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 5.5,
+   "capacity_pph": 2600,
+   "year": 2014,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-seraussaix-poma-5416.html"
+  ],
+  "notes": ""
+ },
+ "210e9469-296b-407c-9954-c3adf46b2111": {
+  "name": "TK ARARE1",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 868,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1939,
+   "top_m": 2171,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 232,
+   "speed_ms": 4.5,
+   "capacity_pph": 825,
+   "year": 1970,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html"
+  ],
+  "notes": "First column of the shared sheet. No ride time."
+ },
+ "7164ae5b-b9cc-4768-aa19-ac562e14df0b": {
+  "name": "TK ARARE 2",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 848,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1939,
+   "top_m": 2171,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 232,
+   "speed_ms": 3.5,
+   "capacity_pph": 750,
+   "year": 1971,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html"
+  ],
+  "notes": "Second column of the shared sheet. No ride time."
+ },
+ "367cffa8-c7d3-4875-83c6-c670a6a4b49b": {
+  "name": "TK BARMETTES",
+  "family": "ski_lift",
+  "facts": {
+   "bottom_m": 1502,
+   "top_m": 1533,
+   "alt_source": "remontees-mecaniques.net station markers",
+   "rise_m": 34,
+   "ride_min": 2.0,
+   "ride_min_source": "osm",
+   "speed_ms": 2.55,
+   "capacity_pph": 900,
+   "year": 1991,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-barmettes-poma-4261.html",
+   "https://www.openstreetmap.org/way/317027261"
+  ],
+  "notes": "The sheet gives no length."
+ },
+ "95ad1c57-9e94-425c-91be-84f03fd66e4d": {
+  "name": "TK BARON",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 423,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1650,
+   "top_m": 1739,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 89,
+   "ride_min": 2.25,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.53,
+   "capacity_pph": 900,
+   "year": 1987,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-baron-poma-546.html"
+  ],
+  "notes": ""
+ },
+ "8ecdc473-5dd4-47bb-b81f-9f451fc3989e": {
+  "name": "TK CHAPELLE",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 337,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1820,
+   "top_m": 1874,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 54,
+   "ride_min": 1.92,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.14,
+   "capacity_pph": 820,
+   "year": 1979,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-chapelle-poma-8572.html"
+  ],
+  "notes": ""
+ },
+ "5bc77624-3487-4d0b-a16d-42f60e27646f": {
+  "name": "TK CHAVANETTE 1",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 1463,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1812,
+   "top_m": 2151,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 339,
+   "ride_min": 7.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.5,
+   "capacity_pph": 700,
+   "year": 1968,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+  ],
+  "notes": "The sheet gives 346 m vertical. The altitudes differ by 339 m."
+ },
+ "96a11fb6-c9bb-4fe6-bea1-72cfbc5f9172": {
+  "name": "TK CHAVANETTE 2",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 1463,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1812,
+   "top_m": 2151,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 339,
+   "ride_min": 7.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 3.75,
+   "capacity_pph": 900,
+   "year": 1974,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+  ],
+  "notes": ""
+ },
+ "91057292-8b97-4cbc-bf20-cd850b7cde75": {
+  "name": "TK DROMONTS 1",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 419,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1802,
+   "top_m": 1828,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 26,
+   "speed_ms": 2.5,
+   "capacity_pph": 410,
+   "year": 1972,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+  ],
+  "notes": ""
+ },
+ "a458c268-0c78-4e9a-ac20-be48d3c1131a": {
+  "name": "TK DROMONTS 2",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 421,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1802,
+   "top_m": 1828,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 26,
+   "speed_ms": 2.5,
+   "capacity_pph": 410,
+   "year": 1974,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+  ],
+  "notes": ""
+ },
+ "6033546a-5176-4396-82bf-6e3ec2965a53": {
+  "name": "TK ECOLES 1",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 176,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1819,
+   "top_m": 1847,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 28,
+   "ride_min": 2.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 2.52,
+   "capacity_pph": 600,
+   "year": 1974,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html"
+  ],
+  "notes": ""
+ },
+ "26d505bd-77c1-43a4-a909-063461f998eb": {
+  "name": "TK ECOLES 2",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 182,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1819,
+   "top_m": 1847,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 28,
+   "ride_min": 2.0,
+   "ride_min_source": "osm",
+   "speed_ms": 2.34,
+   "capacity_pph": 600,
+   "year": 1989,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html",
+   "https://www.openstreetmap.org/way/317027023"
+  ],
+  "notes": ""
+ },
+ "e8d49818-1a9f-4374-b4a6-d204612592d5": {
+  "name": "TK PRODAINS",
+  "family": "ski_lift",
+  "facts": {
+   "length_m": 143,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1173,
+   "top_m": 1192,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 21,
+   "ride_min": 1.25,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 1.96,
+   "capacity_pph": 705,
+   "year": 2013,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-des-prodains-poma-5117.html"
+  ],
+  "notes": ""
+ },
+ "7f410e5d-c2b1-4237-aa74-4aa110f21b82": {
+  "name": "TLC ARDENT",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 9,
+   "length_m": 1452,
+   "length_kind": "line",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1208,
+   "top_m": 1507,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 298,
+   "ride_min": 4.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 6.0,
+   "capacity_pph": 2200,
+   "year": 2010,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tcd9-d-ardent-poma-3809.html"
+  ],
+  "notes": "9-person cabins on the sheet and OSM. The office data says 8."
+ },
+ "f85582f0-b2a2-4041-b4a9-ed4dab746ff5": {
+  "name": "TLC SUPER",
+  "family": "ski_lift",
+  "facts": {
+   "ride_min": 5.5,
+   "ride_min_source": "osm",
+   "year": 1987,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-de-zore-poma-5395.html",
+   "https://www.openstreetmap.org/way/53165460"
+  ],
+  "notes": "remontees-mecaniques.net lists a TCD6 de Super-Morzine (Poma, 1987) with no sheet. Its Zore page puts the top station near 1,460 m. OSM: 6-person cabins, 5.5 min. The office data says 8 seats, and the same page says the cabins were replaced in 2002, when capacity rose from 1,200 to 1,800 p/h. The seat count is left out. Length and altitudes stay map values, so the text gives no length."
+ },
+ "5af639a6-aeff-449a-9f1d-7c8664586209": {
+  "name": "TPH PRODAINS 3S",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 35,
+   "length_m": 1571,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1182,
+   "top_m": 1758,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 576,
+   "ride_min": 4.5,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 7.0,
+   "capacity_pph": 2000,
+   "year": 2013,
+   "builder": "Poma and Leitner"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-3s-prodains-express-poma-leitner-5845.html",
+   "https://explore.avoriaz.com/en/activities/les-prodains-cable-car"
+  ],
+  "notes": "Horizontal length 1,462 m. Avoriaz says 'in less than 5 minutes'."
+ },
+ "a2c4d46c-bb31-40d9-a105-abc6a5730598": {
+  "name": "TS3 PLATEAU",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 3,
+   "length_m": 722,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1771,
+   "top_m": 1835,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 64,
+   "ride_min": 4.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "capacity_pph": 1200,
+   "year": 1982,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-du-plateau-poma-5860.html"
+  ],
+  "notes": ""
+ },
+ "746eb496-ccd9-469b-a0c6-cc706de4f777": {
+  "name": "TS6 TOUR",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 774,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1725,
+   "top_m": 1901,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 176,
+   "ride_min": 3.0,
+   "ride_min_source": "remontees-mecaniques.net",
+   "speed_ms": 4.0,
+   "capacity_pph": 3000,
+   "year": 1993,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-tour-poma-2895.html"
+  ],
+  "notes": ""
+ },
+ "b8dd5af4-7b9e-4e3f-aa36-5088c8936e47": {
+  "name": "TSD STADE",
+  "family": "ski_lift",
+  "facts": {
+   "seats": 6,
+   "detachable": true,
+   "length_m": 772,
+   "length_kind": "inclined",
+   "length_source": "remontees-mecaniques.net",
+   "bottom_m": 1738,
+   "top_m": 1935,
+   "alt_source": "remontees-mecaniques.net",
+   "rise_m": 197,
+   "ride_min": 5.0,
+   "ride_min_source": "osm",
+   "speed_ms": 5.0,
+   "capacity_pph": 3000,
+   "year": 1998,
+   "builder": "Poma"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-stade-poma-5603.html",
+   "https://www.openstreetmap.org/way/24916412"
+  ],
+  "notes": "Ride time from OSM. At 5 m/s the line alone takes about 2 min 40 s."
+ },
+ "e0545736-33bc-4971-b12e-e2fa30f05147": {
+  "name": "TS3 CUBORE MONTRIOND",
+  "family": "ski_lift",
+  "facts": {
+   "ride_min": 4.0,
+   "ride_min_source": "osm"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-de-cubore-poma-613.html",
+   "https://www.openstreetmap.org/way/29285756"
+  ],
+  "notes": "One 3-seat chairlift (1975) with a mid station, serving both sides. The sheet gives 963 m and 161 m for the whole line, so each side keeps map values."
+ },
+ "a1857d0a-54e0-4729-a2d3-55d2ce669bc5": {
+  "name": "TS3 CUBORE MORZINE",
+  "family": "ski_lift",
+  "facts": {
+   "ride_min": 3.0,
+   "ride_min_source": "osm"
+  },
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-de-cubore-poma-613.html",
+   "https://www.openstreetmap.org/way/29285752"
+  ],
+  "notes": "See Cuboré Montriond."
+ },
+ "6fc87068-dede-4ef4-985b-c86e93f54a6e": {
+  "name": "Cuboré",
+  "family": "ski_lift",
+  "facts": {
+   "ride_min": 3.33,
+   "ride_min_source": "osm"
+  },
+  "sources": [
+   "https://www.openstreetmap.org/way/29283989"
+  ],
+  "notes": "remontees-mecaniques.net mentions a TKE de Cuboré with no page. Ride time from OSM."
+ },
+ "d7516be3-25fb-42d1-a278-0961b5d091aa": {
+  "name": "TK DES TRASHERS",
+  "family": "ski_lift",
+  "facts": {},
+  "sources": [],
+  "notes": "remontees-mecaniques.net lists a TKE des Trashers (Poma, 1995) with no figures."
+ },
+ "64c11839-accd-45e0-a6d9-59d6011e23f3": {
+  "name": "AMBRESALLES",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1016,
+   "top_m": 1657,
+   "bottom_m": 1405,
+   "drop_m": 250,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 25,
+   "max_slope_pct": 38
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/ambresalle"
+  ],
+  "notes": ""
+ },
+ "294adeba-50b9-4419-9e39-b8c8fe49edbf": {
+  "name": "ARNICA",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 687,
+   "top_m": 1710,
+   "bottom_m": 1535,
+   "drop_m": 178,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 26,
+   "max_slope_pct": 55
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/arnica"
+  ],
+  "notes": ""
+ },
+ "d031efb3-2b2c-4e7e-a490-dc37edd656e4": {
+  "name": "BOUQUETIN",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 920,
+   "top_m": 1746,
+   "bottom_m": 1392,
+   "drop_m": 335,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 40,
+   "max_slope_pct": 69
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/bouquetin"
+  ],
+  "notes": ""
+ },
+ "8863749e-cccd-4bf0-a628-0292195188ee": {
+  "name": "BRUYERE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 3483,
+   "top_m": 1612,
+   "bottom_m": 1167,
+   "drop_m": 450,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 13,
+   "max_slope_pct": 34
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/bruyere"
+  ],
+  "notes": ""
+ },
+ "598c66ea-47fa-479d-a66f-88c92bad482a": {
+  "name": "CAMPANULE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 742,
+   "top_m": 1627,
+   "bottom_m": 1440,
+   "drop_m": 187,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 26,
+   "max_slope_pct": 34.76
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/campanule"
+  ],
+  "notes": ""
+ },
+ "ecb02f87-0b85-4f45-b770-68404f53621e": {
+  "name": "CHAMOIS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 2767,
+   "top_m": 1816,
+   "bottom_m": 1162,
+   "drop_m": 654,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 26,
+   "max_slope_pct": 43
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/chamois"
+  ],
+  "notes": ""
+ },
+ "09609b1b-94b1-4b68-b472-dffdeb68f932": {
+  "name": "CHARDON BLEU",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1354,
+   "top_m": 1470,
+   "bottom_m": 1370,
+   "drop_m": 100,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 7,
+   "max_slope_pct": 28
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/chardon-bleu"
+  ],
+  "notes": ""
+ },
+ "1b7749b3-8427-43ab-8475-d93c8827d1b2": {
+  "name": "CHEVREUIL",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1015,
+   "top_m": 1808,
+   "bottom_m": 1411,
+   "drop_m": 355,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 38,
+   "max_slope_pct": 53.6,
+   "feature": "has moguls"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/chevreuil"
+  ],
+  "notes": ""
+ },
+ "f1afb742-233e-4bef-bef3-e5b0c96d0398": {
+  "name": "CROCUS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 828,
+   "top_m": 1550,
+   "bottom_m": 1430,
+   "drop_m": 115,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 13,
+   "max_slope_pct": 36
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/crocus"
+  ],
+  "notes": "Header 0.808 km vs text 828 m."
+ },
+ "76c68802-89ff-464f-8b9d-8960d4a609be": {
+  "name": "CYCLAMEN",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1920,
+   "top_m": 1650,
+   "bottom_m": 1320,
+   "drop_m": 326,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 17
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/cyclamen"
+  ],
+  "notes": ""
+ },
+ "f3c6062f-186d-4711-b80b-bb7480ebc885": {
+  "name": "EGLANTINE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 785,
+   "top_m": 1640,
+   "bottom_m": 1428,
+   "drop_m": 220,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 30,
+   "max_slope_pct": 33.24
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/eglantine"
+  ],
+  "notes": ""
+ },
+ "23744548-60d0-478d-a02c-373c8776e0f0": {
+  "name": "EPERVIER",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 800,
+   "top_m": 1811,
+   "bottom_m": 1612,
+   "drop_m": 200,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 25,
+   "max_slope_pct": 35
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/epervier"
+  ],
+  "notes": ""
+ },
+ "5a392de0-0d25-42d6-b37c-b81528dddec2": {
+  "name": "FENERETS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1078,
+   "top_m": 1670,
+   "bottom_m": 1405,
+   "drop_m": 265,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 26,
+   "max_slope_pct": 44.5
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/fenerets"
+  ],
+  "notes": ""
+ },
+ "016c9e7e-3011-439b-a994-1c26f902f945": {
+  "name": "FOUGERE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 500,
+   "top_m": 1592,
+   "bottom_m": 1489,
+   "drop_m": 100,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 20,
+   "max_slope_pct": 29.87
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/fougere"
+  ],
+  "notes": ""
+ },
+ "b4260f5a-520b-44f3-a158-f57eaf33349b": {
+  "name": "GAZELLE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1107,
+   "top_m": 1529,
+   "bottom_m": 1192,
+   "drop_m": 340,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 33,
+   "max_slope_pct": 63.25,
+   "feature": "hosted World Cup races from 1974 to 1981"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/gazelle"
+  ],
+  "notes": ""
+ },
+ "21c35498-2e55-4089-9c65-d7e18f087e95": {
+  "name": "GENTIANE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 4564,
+   "top_m": 1810,
+   "bottom_m": 1169,
+   "drop_m": 640,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 14,
+   "max_slope_pct": 39.8
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/gentiane"
+  ],
+  "notes": ""
+ },
+ "7b60db36-47ed-439e-8f00-8b9807bd0ac1": {
+  "name": "LIEVRE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1614,
+   "top_m": 1745,
+   "bottom_m": 1371,
+   "drop_m": 375,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 25,
+   "max_slope_pct": 39
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/lievre"
+  ],
+  "notes": ""
+ },
+ "c8afe85d-a0de-434b-9a87-f0bb90c7ae95": {
+  "name": "MARMOTTE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1682,
+   "top_m": 1814,
+   "bottom_m": 1410,
+   "drop_m": 400,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 26,
+   "max_slope_pct": 45
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/marmotte"
+  ],
+  "notes": ""
+ },
+ "64f95f50-e316-4356-8c0e-e0739fb4b227": {
+  "name": "MOUFLON",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1371,
+   "top_m": 1811,
+   "bottom_m": 1410,
+   "drop_m": 400,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 32,
+   "max_slope_pct": 47,
+   "feature": "has moguls"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/mouflon"
+  ],
+  "notes": ""
+ },
+ "be6a857e-040a-45f0-9b8a-199d050f549a": {
+  "name": "MYRTILLES",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 670,
+   "top_m": 1620,
+   "bottom_m": 1392,
+   "drop_m": 230,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 37,
+   "max_slope_pct": 59.7
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/myrtille"
+  ],
+  "notes": "Header 0.65 km vs text 670 m. Live-status page spells it MYRTILLES."
+ },
+ "305e8ebb-ed13-4b83-871c-7208325e7a7e": {
+  "name": "ORCHIS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 910,
+   "top_m": 1470,
+   "bottom_m": 1250,
+   "drop_m": 220,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 24,
+   "max_slope_pct": 45,
+   "feature": "is the only red run down to the village"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/orchis"
+  ],
+  "notes": ""
+ },
+ "2aa9c9b8-c08c-4f73-a8e2-28a613b2beed": {
+  "name": "OURSON",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 960,
+   "top_m": 1744,
+   "bottom_m": 1533,
+   "drop_m": 215,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 23,
+   "max_slope_pct": 32.8
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/ourson"
+  ],
+  "notes": ""
+ },
+ "729b7b16-bc63-44cb-b1f7-a3b81e0d7e1b": {
+  "name": "Parallèle chronométré Chéry",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 335,
+   "top_m": 1730,
+   "bottom_m": 1648,
+   "drop_m": 82,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 25
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/parallele-chronometre-chery"
+  ],
+  "notes": "Level: the page says blue, the office data red. The map keeps the office colour."
+ },
+ "afc50f39-2e1d-468b-b1e0-04fe52468c30": {
+  "name": "PISTE 64",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 992,
+   "top_m": 1600,
+   "bottom_m": 1491,
+   "drop_m": 105,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "green",
+   "avg_slope_pct": 10,
+   "max_slope_pct": 20.8
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/piste-64"
+  ],
+  "notes": ""
+ },
+ "c7695004-151e-45e1-8b0c-7f16f7865f5d": {
+  "name": "Piste les Cowboys",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 647,
+   "top_m": 1563,
+   "bottom_m": 1494,
+   "drop_m": 69,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "green",
+   "avg_slope_pct": 11
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/piste-des-cowboys"
+  ],
+  "notes": "Level: the page says green, the office data blue. The map keeps the office colour."
+ },
+ "cd998929-2d72-4883-ad2e-5a311fc8e953": {
+  "name": "Piste des Indiens",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 445,
+   "top_m": 1562,
+   "bottom_m": 1516,
+   "drop_m": 46,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "green",
+   "avg_slope_pct": 10
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/piste-des-indiens"
+  ],
+  "notes": ""
+ },
+ "0792edb7-d07a-4f74-ad9a-e72748c98993": {
+  "name": "REINE DES PRES",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1685,
+   "top_m": 1660,
+   "bottom_m": 1403,
+   "drop_m": 260,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 16,
+   "max_slope_pct": 32.5
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/reine-des-pres"
+  ],
+  "notes": ""
+ },
+ "3b5a6f81-df3f-4e7b-8e5b-e7ed62003534": {
+  "name": "RENARDIERE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 2258,
+   "top_m": 1657,
+   "bottom_m": 1391,
+   "drop_m": 270,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 13,
+   "max_slope_pct": 37
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/renardiere"
+  ],
+  "notes": "Header prints \"2258km\" (typo); text says 2258 m. Drop 270 m in text vs -269 m in header."
+ },
+ "b1c8e79a-9faf-4d9d-8167-501a3edd74c5": {
+  "name": "Rhodos",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1102,
+   "top_m": 1653,
+   "bottom_m": 1388,
+   "drop_m": 265,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 25,
+   "max_slope_pct": 31.2,
+   "feature": "has a slalom stadium beside it"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/rhodos"
+  ],
+  "notes": "The office data has a second, shorter line with this name. It keeps map values."
+ },
+ "7ce678ff-e930-4b99-82d6-9e185a08e180": {
+  "name": "SAUTENAILLES",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1369,
+   "top_m": 1710,
+   "bottom_m": 1406,
+   "drop_m": 300,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 23,
+   "max_slope_pct": 45.7
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/sautenailles"
+  ],
+  "notes": ""
+ },
+ "4113effd-6533-45db-ab2f-f660e93df05b": {
+  "name": "Snowpark des Chavannes",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 201,
+   "top_m": 1551,
+   "bottom_m": 1522,
+   "drop_m": 29,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "green",
+   "avg_slope_pct": 15
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/snowpark-des-chavannes"
+  ],
+  "notes": "Level: the page says green, the office data blue. The map keeps the office colour."
+ },
+ "71394b74-c556-40a8-af32-65023a649242": {
+  "name": "TULIPE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1937,
+   "top_m": 1811,
+   "bottom_m": 1393,
+   "drop_m": 420,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "red",
+   "avg_slope_pct": 22,
+   "max_slope_pct": 41
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/tulipe"
+  ],
+  "notes": "Level: the page says red, the office data blue. The map keeps the office colour. Itinerary text says \"Difficulte : Rouge\", but its header and the live-status page give level \"Moyen\" (= blue)."
+ },
+ "cfc09fb4-2157-4fa1-be39-54f786640cba": {
+  "name": "VIEUX CHENE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 338,
+   "top_m": 1225,
+   "bottom_m": 1167,
+   "drop_m": 60,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 17,
+   "max_slope_pct": 37.3
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/vieux-chene"
+  ],
+  "notes": ""
+ },
+ "d5aff7ba-d69d-4096-b01d-b1ee554ffca5": {
+  "name": "VIOLETTE",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1335,
+   "top_m": 1600,
+   "bottom_m": 1395,
+   "drop_m": 210,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 16,
+   "max_slope_pct": 21.6
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/violette"
+  ],
+  "notes": ""
+ },
+ "08e9f8d5-0c71-4afa-8a5d-69535135fd23": {
+  "name": "VOROSSES",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1365,
+   "top_m": 1515,
+   "bottom_m": 1207,
+   "drop_m": 310,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "blue",
+   "avg_slope_pct": 23,
+   "max_slope_pct": 30.6
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/vorosses"
+  ],
+  "notes": ""
+ },
+ "9ca427d9-87e4-4c32-8fa6-2f4be97f9c71": {
+  "name": "YETI",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 832,
+   "top_m": 1660,
+   "bottom_m": 1397,
+   "drop_m": 260,
+   "length_source": "explore.lesgets.com",
+   "alt_source": "explore.lesgets.com",
+   "level_source_says": "black",
+   "avg_slope_pct": 33,
+   "max_slope_pct": 45,
+   "feature": "has moguls"
+  },
+  "sources": [
+   "https://explore.lesgets.com/fr/itineraires/yeti"
+  ],
+  "notes": ""
+ },
+ "d8a0fa50-5356-438b-922c-6b2df473b680": {
+  "name": "CROZATS SNOWCROSS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 3122,
+   "length_source": "www.avoriaz.com",
+   "feature": "ungroomed snowcross",
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.avoriaz.com/en/winter-activities/freestyle---freeride/snowcross/",
+   "https://www.skipass-avoriaz.com/en/winter/domain/avoriaz-snowcross",
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": "skipass-avoriaz.com says 3.12 km."
+ },
+ "c95e0a0a-ad76-4992-9186-1159f8adc3d2": {
+  "name": "FRONTALIERE SNOWCROSS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1150,
+   "length_source": "www.avoriaz.com",
+   "feature": "ungroomed snowcross",
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.avoriaz.com/en/winter-activities/freestyle---freeride/snowcross/",
+   "https://www.skipass-avoriaz.com/en/winter/domain/avoriaz-snowcross",
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "4b29ed8e-2a0b-4b2a-8bdc-bef671065e5e": {
+  "name": "MARMOTTE SNOWCROSS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 2080,
+   "length_source": "www.avoriaz.com",
+   "feature": "ungroomed snowcross",
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.avoriaz.com/en/winter-activities/freestyle---freeride/snowcross/",
+   "https://www.skipass-avoriaz.com/en/winter/domain/avoriaz-snowcross",
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": "skipass-avoriaz.com says 2 km."
+ },
+ "f621979c-4ded-4a07-8a96-7a998c0a1b31": {
+  "name": "PSCHOTT SNOWCROSS",
+  "family": "ski_trail",
+  "facts": {
+   "length_m": 1250,
+   "length_source": "www.skipass-avoriaz.com",
+   "feature": "ungroomed snowcross",
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.skipass-avoriaz.com/en/winter/domain/avoriaz-snowcross",
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "42a2e023-22fd-4c73-a99e-31bc972dc302": {
+  "name": "Abeille",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "00c69009-a567-456f-a536-6e9f2a8c7396": {
+  "name": "ABRICOTINE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "62efe0a3-c5af-4883-b7ee-52c0eb25f7d5": {
+  "name": "ALLER CHAVANETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "c1a1d4e9-3bd6-48b4-8717-00323c52eb2c": {
+  "name": "ALPAGES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "c8b1865b-4137-4e62-b602-c2f1d821b884": {
+  "name": "ARETE DES INTRETS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "aedcb931-38b3-46fc-bf2e-c360d82717ae": {
+  "name": "Bellemouille",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "d4afc719-c3d0-4e00-8506-f21d5f75bacc": {
+  "name": "BLANCHOTS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "a1c46cc2-f145-481c-8b67-ef051f6fa930": {
+  "name": "BLEUE CHAVANETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "f23b74c5-36ad-4834-9c9e-31b2b217f979": {
+  "name": "BLEUE D'ARARE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "0af60f01-7041-4ea3-9735-34d95214f7aa": {
+  "name": "BLEUE DU LAC",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "c107d729-7385-4c54-b827-899a6ce3b95d": {
+  "name": "BLUE VELVET",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "99d730eb-dfc1-4fe3-9378-7fb8a5707eb2": {
+  "name": "Boardercross de Nyon",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "0556b282-e70d-4be6-99de-aef8ff3f6cb5": {
+  "name": "BOULEVARD SKIEURS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "cf85141e-d5ef-465f-b9a1-8a6c533d118e": {
+  "name": "CASCADE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "46aec7d9-1414-4741-a3db-a258fcbbf497": {
+  "name": "CHAMP SKI PLATEAU",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "65cb3ad0-6d61-46a9-a471-e862477d7a45": {
+  "name": "CHAUX FLEURIE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "61d7d409-5bb4-4f46-839e-cb994a89a22a": {
+  "name": "COMBE A FLORET",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "523bfd5c-3f44-49e3-9dab-42417bd0d841": {
+  "name": "COMBE DU MACHON",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "5d80ce2d-a28c-447a-9082-f94aab81a556": {
+  "name": "COMBETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "47d5b831-9f3e-4e19-a638-f7f96dfc0194": {
+  "name": "Corbeau",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "7123a1a8-7a61-4dde-8366-ea0114ac4e07": {
+  "name": "COUPE DU MONDE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "b159a2dd-cb2d-4a72-a995-1bdd5e0ea732": {
+  "name": "COVAGNES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "9a326ea1-f925-4fcf-b677-156163960db6": {
+  "name": "CREUX DE LA NEIGE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "2b4c4072-c3cd-413b-8329-8635ca8e1509": {
+  "name": "CUBORE MONTRIOND",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "77d5f7fc-8700-4504-8007-efec40a5558f": {
+  "name": "Daguet",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "32f69c2a-d0e3-4207-9605-fdc0dd81d69d": {
+  "name": "Daim",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "388bf3e8-6605-491b-9e71-8f3b9a087626": {
+  "name": "DROMONTS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "7ccfa92b-91e0-49ac-b115-39bbf36946cf": {
+  "name": "FORNET",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "22e5b2f7-ce96-41ea-90b0-1884c3eb93ea": {
+  "name": "Fouine",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "e1dceadd-0464-41fe-ba11-2b7e4575110d": {
+  "name": "GRAND PLAN",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "658d430c-cedb-4b30-9612-e923a6ecee57": {
+  "name": "Grand Plan",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "f0001efc-fb52-4a83-91cc-b2de29ae71fb": {
+  "name": "Grizzli",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "b52733c3-70a4-4bc5-a503-cf4b55f14c16": {
+  "name": "Hermine",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "f3d72bad-cd95-4e2c-b040-7c6ee50108d4": {
+  "name": "JEAN VUARNET",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "71be0e2a-23a3-4fee-80b5-335ac5310e79": {
+  "name": "La Chouette",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "56f57a7d-0e2f-488b-97f4-ce38f90e59a1": {
+  "name": "La Combe",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "cc7e9809-bc6a-446a-83ed-711ea88f5460": {
+  "name": "L'Aigle Noir",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "c2a875a3-5bd6-41ad-9fa4-5918e4225c25": {
+  "name": "L'Aigle Rouge",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "2ef70977-7102-4fc1-8905-4a3b6a962ede": {
+  "name": "LANCHES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "aab53c14-7525-4451-8324-21f394cff84a": {
+  "name": "Le Bouchet",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "b1f5b742-cf94-4705-8050-e6724b940611": {
+  "name": "Le Chamois",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "78b0b5e9-5f5b-4622-8568-667aae4de23f": {
+  "name": "LE CROT",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "ee8f8eb6-6211-4476-a88c-11de6fdceba8": {
+  "name": "Le Lièvre Partie Haute",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "5dcd82d6-d772-42ef-8d23-b695a63a495d": {
+  "name": "LE Q'MONT",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "d4be1bf2-fda2-4355-bfd8-7e4568aaef69": {
+  "name": "Le Stade",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "f2946cce-53bc-4a05-84c3-eb8ce72b8cb6": {
+  "name": "Le Tétras",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "9e21cd50-5ee8-4e89-a53c-341d2b0af5fc": {
+  "name": "LECHERETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "53eeb493-c832-46a8-b628-3c7ae35727eb": {
+  "name": "Les Blanchots",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "de5aaab0-254f-4704-bb4e-747372b25d0d": {
+  "name": "Les Chevrelles",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "55d379b5-bc46-43c7-88fe-556ad3c8c140": {
+  "name": "Les Choucas",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "6587f4fc-4e17-4b33-811d-65220e71500d": {
+  "name": "Les Creux",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "1b4c5dd4-96a9-4950-bb75-8ddede100fa3": {
+  "name": "Les Freux",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "868589c8-e4d4-4f3d-9cae-1a07b3b94d4b": {
+  "name": "LES GERNES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "310959c5-a028-4f3b-9764-c07b2d696d58": {
+  "name": "Les Granges",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "d43975f9-88de-42ad-a8aa-a3693974bea1": {
+  "name": "Les Lanches",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "915fe888-b18a-4c3b-869b-458604d2de19": {
+  "name": "Les Paquerages",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "8ad6e7cb-ddf7-4c01-a6f2-af754d688bc9": {
+  "name": "Les Poireaux",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "547fc6c9-afee-4896-a3cd-10d2d5d9de3a": {
+  "name": "Les Raverettes",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "d056dc1b-fcc0-40da-82ac-25c47d12f9f5": {
+  "name": "L'Eterlou",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "49d2db2f-7a1b-42e0-a65e-0bc3e83c8aab": {
+  "name": "MELEZES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "ec64e4d2-a601-480e-aab3-a3fba1952c46": {
+  "name": "Nabor",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "daec4607-1e9d-4714-ba8e-8a4a9a580e44": {
+  "name": "Olympique Partie Haute",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "black"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "621ae72d-66d6-41c1-a7c1-d0946510d570": {
+  "name": "PARCHETS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "fe6c17b1-fba2-4007-8d89-11230e81b15a": {
+  "name": "PATENAILLE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "a0171f4e-72ec-4ce1-bbdb-d8455cdc78fe": {
+  "name": "Renard",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": "Level: portesdusoleil.com says blue, the office data red. The map keeps the office colour."
+ },
+ "59f5c1fe-782c-4f35-84bf-9d5edf0384f5": {
+  "name": "RETOUR CHAVANETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "8aa24a2d-ff15-4ad7-b1f4-36c996f22782": {
+  "name": "Retour des Nants",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/morzine/"
+  ],
+  "notes": ""
+ },
+ "d4dcf2d8-3749-4066-86ab-c8f193c7892a": {
+  "name": "SAPINETTE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "daaa7160-8226-4f6d-97fb-ff514c969f46": {
+  "name": "Séraussaix",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": "Level: portesdusoleil.com says green, the office data blue. The map keeps the office colour."
+ },
+ "94b67b7e-7954-4586-9fb4-d1bd86707ca8": {
+  "name": "STADE D'ARARE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "c3325f82-326b-4411-8ab7-3a905b7885ce": {
+  "name": "STADE FRANCOIS DIDES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "b35dd0d0-1e3c-4262-867e-80cabffc54c6": {
+  "name": "STADE TETE AUX BOEUFS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "fbf8da3d-082d-4ccf-afd2-b03b6a77f1c2": {
+  "name": "TANNES",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "44b42fad-a513-486d-9ec2-03c84ebdba71": {
+  "name": "TETRAS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "c79b3646-c373-45fa-9418-0d784e6aa618": {
+  "name": "TRASHERS",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "green"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "bc3c46c7-81d3-4511-a29f-b0f1635be1a8": {
+  "name": "VAINEUVE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "ff65101e-0f45-40fd-9f2d-5bd4861a2dbe": {
+  "name": "VAUTNA",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "red"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ },
+ "99a80c6d-7adf-415b-8034-7bdb52c16f78": {
+  "name": "ZORE",
+  "family": "ski_trail",
+  "facts": {
+   "level_source_says": "blue"
+  },
+  "sources": [
+   "https://www.portesdusoleil.com/en-hiver/pistes-et-remontees-mecaniques/avoriaz1800/"
+  ],
+  "notes": ""
+ }
+}

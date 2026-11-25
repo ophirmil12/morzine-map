@@ -17,8 +17,8 @@
   const SHADE_MAXZOOM = 13;
   // The elevation tiles exist only for this box: never ask for tiles outside it (towards the horizon).
   const DEM_BOUNDS = [6.56, 46.09, 6.89, 46.26];
-  // Map credits are not drawn on the map (no "i" button, to save space). They are in a line at the
-  // bottom of the legend (index.html, .legend-credits) and in full on the terms page (terms/).
+  // Map credits are not shown on the map or in the legend (owner's choice, to save space).
+  // They are in full on the terms page (terms/).
   const EXAGGERATION = 1.35;
   const LIST_LIMIT = 150;
 
