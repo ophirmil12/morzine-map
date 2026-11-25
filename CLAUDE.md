@@ -21,6 +21,7 @@ whether it costs work on every frame, every move or every minute. If it does, fi
 - No polling faster than what exists today:
   - live lift status: once on load, then every 5 minutes, only while the page is visible
   - location sharing: one request every 3 minutes, which both sends and receives, only while visible
+  - mountain weather (`site/js/weather.js`): one request every 30 minutes, only while visible
 - Never send requests for areas outside the map. Tile sources with limited coverage need `bounds`
   (see `DEM_BOUNDS` in `site/js/app.js` and the contours source in `site/js/basemap.js`).
 - No analytics, trackers, ads or third-party widgets.
@@ -85,6 +86,11 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   midnight, French time:
   - "ignore live lift status"
   - "location sharing after hours"
+- **Mountain weather:** a small chip in the top-right corner with an icon, the temperature and ⛰️.
+  It shows the top of the slopes (Avoriaz, 1,800 m): Météo-France forecasts through Open-Meteo.
+- **Lifts:** grey direction arrows and grey name labels along the lines.
+- **Home screen:** `site/manifest.webmanifest` (Android) and the apple-* tags in `index.html`
+  (iPhone), named "Morzine Map", skier icon on the logo navy. `tools/make_app_icons.py` redraws the icons.
 - **Live status colours:** closed lines are grey and dashed. The update time is green under 10
   minutes, yellow under 30, red when older. If the status cannot be loaded, the map works as before.
 
@@ -112,6 +118,9 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   - `ski_descriptions_en.json`: piste and lift texts
   - `ski_fixes_2027.json`: lift and piste changes for winter 2026-27
   - `custom_places.json`: places not in the office data (the House), each family its own layer
+  - `lift_bottoms.json`: bottom station of each lift (made by `tools/lift_bottoms.py` from the
+    elevation data). Lift lines are turned to run bottom to top, so the direction arrows point up.
+    Nearly flat carpets and rope tows are marked `flat` and get no arrows.
 - **Winter only for now.** English only for now. French texts are kept in `cold_storage/`.
 
 ## Text

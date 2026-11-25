@@ -13,6 +13,8 @@ Inputs
                                                      (resort, lift type and seat count)
   tools/ski_research_notes.json                      facts gathered by hand from the web
                                                      (ride times, styles, parks), with sources
+  data_src/lift_hours_2027.json                      lift opening hours for winter 2026-27, read by
+                                                     hand from the operators' timetables
 Every download is cached in cache/ski_research/, so a rerun needs no network.
 Standard library plus Pillow and numpy.
 """
@@ -34,6 +36,7 @@ CACHE = os.path.join(ROOT, "cache", "ski_research")
 DEM = os.path.join(ROOT, "site", "tiles", "dem", "14")
 NOTES = os.path.join(ROOT, "tools", "ski_research_notes.json")
 OUT = os.path.join(ROOT, "data_src", "ski_descriptions_en.json")
+HOURS = os.path.join(ROOT, "data_src", "lift_hours_2027.json")
 BASE_JSON = os.path.join(CACHE, "base.json")
 OSM_JSON = os.path.join(CACHE, "osm_match.json")
 UA = "morzine-map-research/1.0 (static ski map rebuild)"
@@ -439,11 +442,67 @@ def grade_stats(line):
             "loop": metres(*line[0], *line[-1]) < 60}
 
 
+MONTHS = ("January", "February", "March", "April", "May", "June", "July", "August", "September",
+          "October", "November", "December")
+MAX_LIFT_WORDS = 38  # whole lift description with its hours sentence
+MAX_WORDS = 30       # target for the automatic second sentence when there are no hours
+
+
+def hm(t):
+    """'08:45' -> '8:45', '00:00' -> '0:00'."""
+    h, m = t.split(":")
+    return f"{int(h)}:{m}"
+
+
+def day_month(iso):
+    """'2027-02-06' -> '6 February'."""
+    _, m, d = iso.split("-")
+    return f"{int(d)} {MONTHS[int(m) - 1]}"
+
+
+def period_clause(periods, key):
+    """Changes after the first period, e.g. ', or 17:15 from 6 February to 5 March'."""
+    runs = []
+    for p in periods:
+        if runs and runs[-1]["v"] == p[key]:
+            runs[-1]["to"] = p["to"]
+        else:
+            runs.append({"v": p[key], "from": p["from"], "to": p["to"]})
+    if len(runs) == 1:
+        return ""
+    if len(runs) == 2:
+        return f", or {hm(runs[1]['v'])} from {day_month(runs[1]['from'])}"
+    if len(runs) == 3 and runs[2]["v"] == runs[0]["v"]:
+        r = runs[1]
+        return f", or {hm(r['v'])} from {day_month(r['from'])} to {day_month(r['to'])}"
+    return ", " + " and ".join(f"{hm(r['v'])} from {day_month(r['from'])}" for r in runs[1:])
+
+
+def hours_text(h):
+    """A short sentence with a lift's opening hours, or '' when they are unknown.
+    Last rides down (gondolas, cable car) stay in the hours file unless a hand 'text' gives them."""
+    if not h:
+        return ""
+    if h.get("text"):
+        return h["text"]
+    if not h.get("open"):
+        return ""
+    o = hm(h["open"])
+    if h.get("open_school_holidays"):
+        o += f" ({hm(h['open_school_holidays'])} in school holidays)"
+    if "close" in h:
+        per = h.get("periods") or [{"from": "", "to": "", "close": h["close"]}]
+        return f"Open daily from {o} to {hm(per[0]['close'])}{period_clause(per, 'close')}."
+    per = h.get("periods") or [{"from": "", "to": "", "last_up": h["last_up"]}]
+    return f"Open daily from {o}, last ride up at {hm(per[0]['last_up'])}{period_clause(per, 'last_up')}."
+
+
 def stage_write():
     base = load_json(BASE_JSON)
     osm = load_json(OSM_JSON)
     rm = load_json(os.path.join(CACHE, "rmnet_lifts.json"))
     notes = load_json(NOTES)
+    hours = load_json(HOURS)["lifts"] if os.path.exists(HOURS) else {}
     trails = {f["properties"]["id"]: f["geometry"]["coordinates"][0]
               for f in load_json(os.path.join(ROOT, "site", "data", "trails.json"))["features"]}
     osm_geom = {}
@@ -516,6 +575,7 @@ def stage_write():
 
     out = {}
     stats = {"osm": 0, "web": 0, "estimate": 0, "none": 0}
+    hours_stats = {}
     for i, r in sorted(base.items(), key=lambda kv: (kv[1]["family"], kv[1]["name"])):
         sources = []
         facts = {}
@@ -567,6 +627,19 @@ def stage_write():
             for s in n.get("sources", []):
                 if s not in sources:
                     sources.append(s)
+            # Last sentence: opening hours for the season, from data_src/lift_hours_2027.json.
+            h = hours.get(i, {})
+            s3 = hours_text(h)
+            if s3:
+                facts["hours"] = {k: h[k] for k in ("open", "open_school_holidays", "close", "last_up") if k in h}
+                facts["hours_basis"] = h["basis"]
+                for s in h.get("sources", []):
+                    if s not in sources:
+                        sources.append(s)
+                hours_stats[h["basis"]] = hours_stats.get(h["basis"], 0) + 1
+            else:
+                hours_stats["none"] = hours_stats.get("none", 0) + 1
+            limit = MAX_LIFT_WORDS - len(s3.split()) if s3 else MAX_WORDS
             # Sentence 1: what it is, how long, from where to where, how long it takes.
             k = facts["lift_type"]
             rt = ride_text(ride, src != "estimate") if ride is not None else None
@@ -600,10 +673,10 @@ def stage_write():
                     if len(names) >= cut:
                         cand = (f"From the top you can ski down {names[0]}." if cut == 1 else
                                 f"From the top you can ski down {names[0]} or {names[1]}.")
-                        if len((s1 + " " + cand).split()) <= 30:
+                        if len((s1 + " " + cand).split()) <= limit:
                             s2 = cand
                             break
-            desc = " ".join(x for x in (s1, s2) if x)
+            desc = " ".join(x for x in (s1, s2, s3) if x)
         else:
             p = pistes[i]
             n = p["note"]
@@ -710,6 +783,7 @@ def stage_write():
     save_json(out, OUT, indent=1)
     print("wrote", len(out), "entries ->", OUT)
     print("lift ride time sources:", stats)
+    print("lift hours basis:", hours_stats)
     check_style(out)
 
 
@@ -722,7 +796,8 @@ def check_style(out):
         problems = []
         if re.search("[–—;]", d):
             problems.append("dash/semicolon")
-        if len(d.split()) > 32:
+        cap = MAX_LIFT_WORDS if "hours" in e["facts"] else 32
+        if len(d.split()) > cap:
             problems.append(f"{len(d.split())} words")
         if re.search(r"\bnot\b.*\bit's\b", d, re.I):
             problems.append("not X it's Y")

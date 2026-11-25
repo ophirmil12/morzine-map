@@ -261,7 +261,35 @@
     addSki({ id: 'lift-ends', type: 'circle', source: 'lift-ends', minzoom: 13,
       paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 13, 2.5, 16, 5], 'circle-color': LIFT_COLOR,
         'circle-stroke-color': '#ffffff', 'circle-stroke-width': 1.5 } });
+    // Lift direction arrows: lift lines run from bottom to top (tools/lift_bottoms.py), so a chevron
+    // pointing along the line points up the lift. Nearly flat carpets and rope tows get none.
+    (function addLiftArrowImage() {
+      const r = Math.min(window.devicePixelRatio || 1, 2), size = 16, px = size * r;
+      const cv = document.createElement('canvas'); cv.width = cv.height = px;
+      const c = cv.getContext('2d'); c.scale(r, r); c.lineCap = 'round'; c.lineJoin = 'round';
+      const chevron = () => { c.beginPath(); c.moveTo(5, 3.5); c.lineTo(11, 8); c.lineTo(5, 12.5); };
+      c.strokeStyle = '#ffffff'; c.lineWidth = 5; chevron(); c.stroke();
+      c.strokeStyle = LIFT_COLOR; c.lineWidth = 2.4; chevron(); c.stroke();
+      map.addImage('lift-arrow', c.getImageData(0, 0, px, px), { pixelRatio: r });
+    })();
+    addSki({ id: 'lift-arrows', type: 'symbol', source: 'trails', minzoom: 13.6,
+      filter: ['all', ['boolean', ['get', 'isLift'], false], ['!', ['boolean', ['get', 'flat'], false]]],
+      layout: { 'symbol-placement': 'line', 'symbol-spacing': 110, 'icon-image': 'lift-arrow',
+        'icon-size': ['interpolate', ['linear'], ['zoom'], 13.6, 0.8, 16, 1.15],
+        'icon-allow-overlap': true, 'icon-ignore-placement': true,
+        'icon-rotation-alignment': 'map', 'icon-pitch-alignment': 'map' } });
+    // Lift names along the lines, in grey (lighter grey when the lift is closed).
+    addSki({ id: 'lift-labels', type: 'symbol', source: 'trails', minzoom: 13.2,
+      filter: ['boolean', ['get', 'isLift'], false],
+      layout: {
+        'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Bold'],
+        'text-size': ['interpolate', ['linear'], ['zoom'], 13, 10, 16, 12.5], 'text-max-angle': 30,
+        'symbol-spacing': 300, 'text-padding': 2, 'text-offset': [0, -0.75]
+      },
+      paint: { 'text-color': ['case', ['boolean', ['get', 'closed'], false], '#9aa3ad', '#5f6770'],
+        'text-halo-color': '#ffffff', 'text-halo-width': 1.6 } });
     addSki({ id: 'trail-labels', type: 'symbol', source: 'trails', minzoom: 13.2,
+      filter: ['!', ['boolean', ['get', 'isLift'], false]],
       layout: {
         'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Bold'],
         'text-size': ['interpolate', ['linear'], ['zoom'], 13, 10.5, 16, 13], 'text-max-angle': 35,
@@ -301,7 +329,8 @@
     map.once('idle', () => { if (!state.query && !state.selected) renderList(); });
     if (qs.get('id') && byId[qs.get('id')]) openDetail(qs.get('id'), true);
     LIVE.start(applyLive);
-    SHARE.init(map, { t, toast });   // live location sharing (hidden until the Worker is deployed)
+    SHARE.init(map, { t, toast });
+    WEATHER.init({ toast });   // mountain weather chip, top-right   // live location sharing (hidden until the Worker is deployed)
   });
 
   /** The camera must never go into the mountain. MapLibre calls transformCameraUpdate on every
@@ -646,7 +675,7 @@
   // ------------------------------------------------------------------ map events
   function bindMapEvents() {
     const hoverPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 14, maxWidth: '260px' });
-    const interactive = ['poi-icons', 'poi-home', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'closed-lines', 'trail-labels'];
+    const interactive = ['poi-icons', 'poi-home', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'closed-lines', 'trail-labels', 'lift-labels'];
     let hovered = null;
 
     map.on('mousemove', (e) => {
@@ -791,7 +820,9 @@
   function sheetHeights() {
     const vh = window.innerHeight;
     searchH = document.querySelector('.search').offsetHeight || searchH;   // measured while visible
-    const peek = grab.offsetHeight + searchH + 10;
+    // + the iPhone home-bar inset (panel padding-bottom), so the search row is never squeezed
+    const inset = parseFloat(getComputedStyle(panel).paddingBottom) || 0;
+    const peek = grab.offsetHeight + searchH + 10 + inset;
     return { peek, half: Math.round(vh * 0.45), full: Math.round(vh * 0.9) };
   }
   function applySheetHeight(h) {

@@ -50,6 +50,10 @@ def main():
         body = m.group(1)
         names |= set(re.findall(r"'([a-z0-9_]+)'", body))               # values (and quoted keys)
         names |= set(re.findall(r"(?:^|[\s,{])([a-z0-9_]+):", body))    # bare keys
+    # weather icons (js/weather.js, WEATHER_ICON table)
+    m = re.search(r"WEATHER_ICON\s*=\s*\[(.*?)\];", read(os.path.join(SITE, "js", "weather.js")), re.S)
+    if m:
+        names |= set(re.findall(r"'([a-z0-9_]+)'", m.group(1)))
     cats = json.loads(read(os.path.join(SITE, "data", "categories.json")))
     for group in cats.values():
         for v in group.values():

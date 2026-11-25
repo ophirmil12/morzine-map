@@ -235,8 +235,16 @@ button { cursor: pointer; }
 :root { --closed: #a3acb5; --fresh: #1f9d55; --stale: #e0a800; --old: #d93025; }
 .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--ink-3); flex: none; }
 .fresh .dot { background: var(--fresh); } .stale .dot { background: var(--stale); } .old .dot { background: var(--old); }
-.live-pill {
+/* mountain weather chip (js/weather.js), top-right corner; the lift status pill sits below it */
+.weather {
   position: absolute; z-index: 2; inset-block-start: 16px; inset-inline-end: calc(var(--panel-w) + 16px);
+  display: flex; align-items: center; gap: 4px; border: 0; border-radius: 999px; padding: 6px 11px 6px 9px;
+  background: var(--bg); box-shadow: var(--shadow); font-size: 15px; font-weight: 700; color: var(--ink);
+}
+.weather .ms { font-size: 21px; color: var(--ink-2); }
+.weather .mtn { font-size: 14px; line-height: 1; }
+.live-pill {
+  position: absolute; z-index: 2; inset-block-start: 62px; inset-inline-end: calc(var(--panel-w) + 16px);
   display: flex; align-items: center; gap: 7px; border: 0; border-radius: 999px; padding: 7px 12px;
   background: var(--bg); box-shadow: var(--shadow); font-size: 12px; font-weight: 600;
 }
@@ -299,6 +307,7 @@ button { cursor: pointer; }
   }
   .offline { inset-block-start: calc(104px + env(safe-area-inset-top)); }
   .live-pill { inset-inline-end: 12px; inset-block-start: calc(56px + env(safe-area-inset-top)); }
+  .weather { inset-inline-end: 12px; inset-block-start: calc(15px + env(safe-area-inset-top)); padding: 5px 10px 5px 8px; font-size: 14px; }
   .maplibregl-ctrl-bottom-left .maplibregl-ctrl-group { display: none; }   /* zoom buttons: pinch instead */
   .maplibregl-popup { display: none; }                                      /* no hover on touch */
 }

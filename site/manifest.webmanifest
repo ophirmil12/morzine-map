@@ -1,0 +1,33 @@
+{
+ "name": "Morzine Map",
+ "short_name": "Morzine Map",
+ "description": "3D map of Morzine, Les Gets and Avoriaz: ski runs, lifts and places.",
+ "id": "./",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#ffffff",
+ "theme_color": "#252f46",
+ "lang": "en",
+ "icons": [
+  {
+   "src": "assets/app/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/app/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/app/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

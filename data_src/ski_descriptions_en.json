@@ -17,17 +17,23 @@
  },
  "6fc87068-dede-4ef4-985b-c86e93f54a6e": {
   "name": "Cuboré",
-  "description": "This drag lift climbs 440 m from 1,970 m to 2,110 m in 3 min.",
+  "description": "This drag lift climbs 440 m from 1,970 m to 2,110 m in 3 min. Lifts in the Chavanette sector take their last riders up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 440,
    "bottom_m": 1970,
    "top_m": 2110,
    "lift_type": "drag lift",
    "ride_min": 3.3,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "last_up": "16:00"
+   },
+   "hours_basis": "sector"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/29283989"
+   "https://www.openstreetmap.org/way/29283989",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "c19cbf52-7a71-4156-abf0-3c4aae2f00da": {
@@ -60,17 +66,23 @@
  },
  "0ed2f9b5-0a4f-4b42-beee-b3cebd702328": {
   "name": "Nyon",
-  "description": "This cable car climbs 1.1 km from 1,040 m to 1,410 m in about 3 min. It runs up from the valley to the Plateau de Nyon.",
+  "description": "This cable car climbs 1.1 km from the valley at 1,040 m to the Plateau de Nyon at 1,410 m in about 3 min. Open daily from 9:00 to 16:30, or 16:45 from 6 February to 5 March.",
   "facts": {
    "length_m": 1100,
    "bottom_m": 1040,
    "top_m": 1410,
    "lift_type": "cable car",
    "ride_min": 2.7,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "close": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/32425248"
+   "https://www.openstreetmap.org/way/32425248",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e89998c8-0d26-4e04-85b9-f22c1d95fe3f": {
@@ -170,243 +182,348 @@
  },
  "84f8c194-a05b-4695-a4e4-287cfd830eec": {
   "name": "TC du Pleney",
-  "description": "This gondola with 10-person cabins climbs 1.4 km from 980 m to 1,480 m in 4 min. It lifts you from Morzine village to the Pleney.",
+  "description": "This gondola with 10-person cabins climbs 1.4 km from Morzine village to the Pleney at 1,480 m in 4 min. Open daily from 8:45 (8:30 in school holidays) to 16:45, or 17:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 1400,
    "bottom_m": 980,
    "top_m": 1480,
    "lift_type": "gondola with 10-person cabins",
    "ride_min": 3.9,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "08:45",
+    "open_school_holidays": "08:30",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30752181",
    "https://www.remontees-mecaniques.net/bdd/reportage-tcd10-du-pleney-poma-5429.html",
-   "https://www.haute-savoie-tourisme.org/loisirs/divers/telepheriques-touristiques/68305-telecabine-du-pleney"
+   "https://www.haute-savoie-tourisme.org/loisirs/divers/telepheriques-touristiques/68305-telecabine-du-pleney",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "7a92722e-ab57-414f-bfa5-dd5197dfcb90": {
   "name": "TD4 CHOUCAS",
-  "description": "This 4-seat detachable chairlift climbs 1.3 km from 1,800 m to 2,140 m in 5 min. From the top you can ski down Blanchots or Alpages.",
+  "description": "This 4-seat detachable chairlift climbs 1.3 km from 1,800 m to 2,140 m in 5 min. From the top you can ski down Blanchots. Open daily from 9:00, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 1300,
    "bottom_m": 1800,
    "top_m": 2140,
    "lift_type": "4-seat detachable chairlift",
    "ride_min": 5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916409",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-du-choucas-poma-2962.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-du-choucas-poma-2962.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "2a22eb52-b381-4030-ae48-4642e2a20bc5": {
   "name": "TD4 LINDARETS",
-  "description": "This 4-seat detachable chairlift climbs 1.2 km from 1,500 m to 1,850 m in 4 min. From the top you can ski down Snowpark Chapelle or Proclou verte.",
+  "description": "This 4-seat detachable chairlift climbs 1.2 km from 1,500 m to 1,850 m in 4 min. Open daily from 9:00, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 1200,
    "bottom_m": 1500,
    "top_m": 1850,
    "lift_type": "4-seat detachable chairlift",
    "ride_min": 4.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916417",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-lindarets-poma-5469.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-lindarets-poma-5469.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "4a9ba904-1308-413b-9a85-b7f78743f6f2": {
   "name": "TD4 MOSSETTES",
-  "description": "This 4-seat detachable chairlift climbs 2.3 km from 1,590 m to 2,230 m in 8 min. From the top you can ski down Abricotine or Frontaliere Snowcross.",
+  "description": "This 4-seat detachable chairlift climbs 2.3 km from 1,590 m to 2,230 m in 8 min. From the top you can ski down Abricotine. Open daily from 9:15, last ride up at 16:30, or 16:45 from 6 February.",
   "facts": {
    "length_m": 2300,
    "bottom_m": 1590,
    "top_m": 2230,
    "lift_type": "4-seat detachable chairlift",
    "ride_min": 8.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:15",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/8216510",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-mossettes-poma-5392.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-des-mossettes-poma-5392.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "3258df18-19ee-4c15-b92f-c52d985647be": {
   "name": "TD4 ZORE",
-  "description": "This 4-seat detachable chairlift climbs 1.3 km from 1,450 m to 1,740 m in 4 min. From the top you can ski down Zore or Jonction Séraussaix.",
+  "description": "This 4-seat detachable chairlift climbs 1.3 km from 1,450 m to 1,740 m in 4 min. From the top you can ski down Zore. Open daily from 8:45, last ride up at 16:30, or 17:00 from 6 February.",
   "facts": {
    "length_m": 1300,
    "bottom_m": 1450,
    "top_m": 1740,
    "lift_type": "4-seat detachable chairlift",
    "ride_min": 4.5,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "08:45",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30352096",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-de-zore-poma-5395.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd4-de-zore-poma-5395.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "7067b702-7dd5-4ea2-b279-fd98a1b8b3a8": {
   "name": "TD6 BROCHAUX",
-  "description": "This 6-seat detachable chairlift climbs 990 m from 1,590 m to 1,990 m in 3 min. From the top you can ski down Blue Velvet.",
+  "description": "This 6-seat detachable chairlift climbs 990 m from 1,590 m to 1,990 m in 3 min. Open daily from 9:00, last ride up at 16:30, or 17:00 from 6 February.",
   "facts": {
    "length_m": 990,
    "bottom_m": 1590,
    "top_m": 1990,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 3.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30170411",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-brochaux-poma-5785.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-brochaux-poma-5785.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "208a3919-95be-43a5-9993-6ddd76df9d83": {
   "name": "TD6 CASES",
-  "description": "This 6-seat detachable chairlift climbs 2.1 km from 1,720 m to 2,140 m in 7 min. From the top you can ski down Vautna.",
+  "description": "This 6-seat detachable chairlift climbs 2.1 km from 1,720 m to 2,140 m in 7 min. From the top you can ski down Vautna. Open daily from 9:00, last ride up at 16:15, or 16:30 from 6 February.",
   "facts": {
    "length_m": 2100,
    "bottom_m": 1720,
    "top_m": 2140,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 7.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/750062609",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-cases-leitner-7367.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-cases-leitner-7367.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "6f6fc708-c148-4466-a1bc-d51fcb93cf77": {
   "name": "TD6 CHAUX FLEURIE",
-  "description": "This 6-seat detachable chairlift climbs 1.1 km from 1,500 m to 1,900 m in 4 min. From the top you can ski down Chaux Fleurie or Grand Plan.",
+  "description": "This 6-seat detachable chairlift climbs 1.1 km from 1,500 m to 1,900 m in 4 min. Open daily from 9:00, last ride up at 16:30, or 17:00 from 6 February.",
   "facts": {
    "length_m": 1100,
    "bottom_m": 1500,
    "top_m": 1900,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 3.8,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916433",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-chaux-fleurie-poma-8575.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-chaux-fleurie-poma-8575.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "88118b6c-f60d-419b-9fd0-e7e409997f0a": {
   "name": "TD6 FORNET",
-  "description": "This 6-seat detachable chairlift climbs 1.6 km from 1,810 m to 2,190 m in 5 min. From the top you can ski down Fornet or Pschott Snowcross.",
+  "description": "This 6-seat detachable chairlift climbs 1.6 km from 1,810 m to 2,190 m in 5 min. From the top you can ski down Fornet. Open daily from 9:15, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 1600,
    "bottom_m": 1810,
    "top_m": 2190,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916410",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-fornet-poma-2950.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-fornet-poma-2950.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "8f969652-039b-4e91-9145-1e60ac9e78d4": {
   "name": "TD6 GRANDES COMBES",
-  "description": "This 6-seat detachable chairlift climbs 1.9 km from 1,510 m to 2,190 m in 6 min. From the top you can ski down Jean Vuarnet or Bleue d'Arare.",
+  "description": "This 6-seat detachable chairlift climbs 1.9 km from 1,510 m to 2,190 m in 6 min. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 1900,
    "bottom_m": 1510,
    "top_m": 2190,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 6.0,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916425",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-grandes-combes-poma-2361.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-grandes-combes-poma-2361.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "7ab067e8-ee4d-4e36-81d5-b060b15fc1eb": {
   "name": "TD6 LAC-INTRETS",
-  "description": "This 6-seat detachable chairlift climbs 1.9 km from 1,740 m to 2,200 m in 6 min. From the top you can ski down Lac Intret or Creux de la Neige.",
+  "description": "This 6-seat detachable chairlift climbs 1.9 km from 1,740 m to 2,200 m in 6 min. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 1900,
    "bottom_m": 1740,
    "top_m": 2200,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/1183443459",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-lac-intrets-leitner-8570.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-lac-intrets-leitner-8570.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "037549dc-d415-4d5f-b901-271a0f3c7f0c": {
   "name": "TD6 LECHERE",
-  "description": "This 6-seat detachable chairlift climbs 1.7 km from 1,510 m to 1,730 m in 5 min. From the top you can ski down Lecherette.",
+  "description": "This 6-seat detachable chairlift climbs 1.7 km from 1,510 m to 1,730 m in 5 min. From the top you can ski down Lecherette. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 1700,
    "bottom_m": 1510,
    "top_m": 1730,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.3,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/29287970",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-lechere-mnd-ropeways-bartholet-8573.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-lechere-mnd-ropeways-bartholet-8573.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "f31b1fb6-c7ed-4133-94b8-0f50a2e86edb": {
   "name": "TD6 PROCLOU",
-  "description": "This 6-seat detachable chairlift climbs 1.6 km from 1,640 m to 1,850 m in 5 min. From the top you can ski down Proclou verte.",
+  "description": "This 6-seat detachable chairlift climbs 1.6 km from 1,640 m to 1,850 m in 5 min. Open daily from 8:45, last ride up at 17:00, or 17:15 from 6 February.",
   "facts": {
    "length_m": 1600,
    "bottom_m": 1640,
    "top_m": 1850,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.2,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "08:45",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916421",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-proclou-poma-5410.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-proclou-poma-5410.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "5be952cc-d3ce-421b-8c34-ac202ec3c4fc": {
   "name": "TD6 PROLAYS",
-  "description": "This 6-seat detachable chairlift climbs 1.5 km from 1,510 m to 1,930 m in 5 min. From the top you can ski down Sapinette.",
+  "description": "This 6-seat detachable chairlift climbs 1.5 km from 1,510 m to 1,930 m in 5 min. From the top you can ski down Sapinette. Open daily from 9:30, last ride up at 17:00, or 17:30 from 6 February.",
   "facts": {
    "length_m": 1500,
    "bottom_m": 1510,
    "top_m": 1930,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:30",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/8215733",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-prolays-poma-5470.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-prolays-poma-5470.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "9161ee35-9551-4dab-b4d0-b837e52d6def": {
   "name": "TD6 SERAUSSAIX",
-  "description": "This 6-seat detachable chairlift climbs 1.0 km from 1,650 m to 1,760 m in 3 min. From the top you can ski down Le Q'Mont or Séraussaix.",
+  "description": "This 6-seat detachable chairlift climbs 1.0 km from 1,650 m to 1,760 m in 3 min. Open daily from 9:00, last ride up at 16:30, or 17:00 from 6 February.",
   "facts": {
    "length_m": 1000,
    "bottom_m": 1650,
    "top_m": 1760,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 3.3,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916420",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-seraussaix-poma-5416.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-seraussaix-poma-5416.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "5ecc0072-0ea5-455c-91a0-f7503c24afc6": {
@@ -426,66 +543,94 @@
  },
  "7164ae5b-b9cc-4768-aa19-ac562e14df0b": {
   "name": "TK ARARE 2",
-  "description": "This drag lift climbs 830 m from 1,930 m to 2,140 m in about 5 min. From the top you can ski down Snowpark Arare or Bleue du Lac.",
+  "description": "This drag lift climbs 830 m from 1,930 m to 2,140 m in about 5 min. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 830,
    "bottom_m": 1930,
    "top_m": 2140,
    "lift_type": "drag lift",
    "ride_min": 4.6,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/750062606",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "210e9469-296b-407c-9954-c3adf46b2111": {
   "name": "TK ARARE1",
-  "description": "This drag lift climbs 840 m from 1,930 m to 2,150 m in about 5 min. From the top you can ski down Snowpark Arare or Bleue du Lac.",
+  "description": "This drag lift climbs 840 m from 1,930 m to 2,150 m in about 5 min. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 840,
    "bottom_m": 1930,
    "top_m": 2150,
    "lift_type": "drag lift",
    "ride_min": 4.7,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/317027562",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-d-arare-i-ii-poma-6295.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "367cffa8-c7d3-4875-83c6-c670a6a4b49b": {
   "name": "TK BARMETTES",
-  "description": "This drag lift climbs 250 m from 1,500 m to 1,530 m in 2 min. From the top you can ski down Champ Ski Barmettes.",
+  "description": "This drag lift climbs 250 m from 1,500 m to 1,530 m in 2 min. Open daily from 9:00, last ride up at 16:45, or 17:00 from 6 February.",
   "facts": {
    "length_m": 250,
    "bottom_m": 1500,
    "top_m": 1530,
    "lift_type": "drag lift",
    "ride_min": 2.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/317027261",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-barmettes-poma-4261.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-barmettes-poma-4261.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "95ad1c57-9e94-425c-91be-84f03fd66e4d": {
   "name": "TK BARON",
-  "description": "This drag lift climbs 420 m from 1,660 m to 1,740 m in 2 min 15 s. From the top you can ski down Lonction Zore or Les Gernes.",
+  "description": "This drag lift climbs 420 m from 1,660 m to 1,740 m in 2 min 15 s. Open daily from 9:00, last ride up at 16:15, or 16:45 from 6 February.",
   "facts": {
    "length_m": 420,
    "bottom_m": 1660,
    "top_m": 1740,
    "lift_type": "drag lift",
    "ride_min": 2.2,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30351719",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-baron-poma-546.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-du-baron-poma-546.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "55097a4d-eb5a-4a27-af08-6205cf80668a": {
@@ -506,144 +651,208 @@
  },
  "9a709967-0232-46e8-b7ee-3be35cbcf906": {
   "name": "TK Bouchet",
-  "description": "This drag lift climbs 190 m from 990 m to 1,040 m in about 1 min. From the top you can ski down Le Bouchet.",
+  "description": "This drag lift climbs 190 m from 990 m to 1,040 m in about 1 min. From the top you can ski down Le Bouchet. Open daily from 9:00 to 16:00.",
   "facts": {
    "length_m": 190,
    "bottom_m": 990,
    "top_m": 1040,
    "lift_type": "drag lift",
    "ride_min": 1.1,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "close": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/295651443"
+   "https://www.openstreetmap.org/way/295651443",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "8ecdc473-5dd4-47bb-b81f-9f451fc3989e": {
   "name": "TK CHAPELLE",
-  "description": "This drag lift climbs 330 m from 1,820 m to 1,840 m in 1 min 55 s. From the top you can ski down Snowpark Chapelle or Proclou verte.",
+  "description": "This drag lift climbs 330 m from 1,820 m to 1,840 m in 1 min 55 s. Open daily from 9:00, last ride up at 16:45, or 17:15 from 6 February.",
   "facts": {
    "length_m": 330,
    "bottom_m": 1820,
    "top_m": 1840,
    "lift_type": "drag lift",
    "ride_min": 1.9,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30353221",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-chapelle-poma-8572.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-la-chapelle-poma-8572.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "5bc77624-3487-4d0b-a16d-42f60e27646f": {
   "name": "TK CHAVANETTE 1",
-  "description": "This drag lift climbs 1.5 km from 1,800 m to 2,140 m in 7 min. From the top you can ski down Bleue Chavanette or Lanches.",
+  "description": "This drag lift climbs 1.5 km from 1,800 m to 2,140 m in 7 min. From the top you can ski down Bleue Chavanette. Open daily from 9:00, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 1500,
    "bottom_m": 1800,
    "top_m": 2140,
    "lift_type": "drag lift",
    "ride_min": 7,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30482077",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "96a11fb6-c9bb-4fe6-bea1-72cfbc5f9172": {
   "name": "TK CHAVANETTE 2",
-  "description": "This drag lift climbs 1.5 km from 1,800 m to 2,140 m in 7 min. From the top you can ski down Bleue Chavanette or Lanches.",
+  "description": "This drag lift climbs 1.5 km from 1,800 m to 2,140 m in 7 min. From the top you can ski down Bleue Chavanette. Open daily from 9:00, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 1500,
    "bottom_m": 1800,
    "top_m": 2140,
    "lift_type": "drag lift",
    "ride_min": 7,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916408",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-chavanette-i-ii-poma-5859.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "d7516be3-25fb-42d1-a278-0961b5d091aa": {
   "name": "TK DES TRASHERS",
-  "description": "This drag lift is 180 m long, at about 1,790 m, and the ride takes about 1 min. From the top you can ski down Trashers.",
+  "description": "This drag lift is 180 m long, at about 1,790 m, and the ride takes about 1 min. Open daily from 9:00, last ride up at 16:30, or 17:00 from 6 February.",
   "facts": {
    "length_m": 180,
    "bottom_m": 1790,
    "top_m": 1800,
    "lift_type": "drag lift",
    "ride_min": 1.0,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "last_up": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/30353553"
+   "https://www.openstreetmap.org/way/30353553",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "91057292-8b97-4cbc-bf20-cd850b7cde75": {
   "name": "TK DROMONTS 1",
-  "description": "This drag lift climbs 410 m from 1,810 m to 1,830 m in about 2 min. From the top you can ski down Boulevard Skieurs or Les Dromonts.",
+  "description": "This drag lift climbs 410 m from 1,810 m to 1,830 m in about 2 min. Open daily from 8:45 (8:30 in school holidays), last ride up at 17:15, or 17:45 from 6 February.",
   "facts": {
    "length_m": 410,
    "bottom_m": 1810,
    "top_m": 1830,
    "lift_type": "drag lift",
    "ride_min": 2.3,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "08:45",
+    "open_school_holidays": "08:30",
+    "last_up": "17:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/317027129",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "a458c268-0c78-4e9a-ac20-be48d3c1131a": {
   "name": "TK DROMONTS 2",
-  "description": "This drag lift climbs 400 m from 1,810 m to 1,830 m in about 2 min. From the top you can ski down Les Dromonts or Boulevard Skieurs.",
+  "description": "This drag lift climbs 400 m from 1,810 m to 1,830 m in about 2 min. Open daily from 8:45 (8:30 in school holidays), last ride up at 17:15, or 17:45 from 6 February.",
   "facts": {
    "length_m": 400,
    "bottom_m": 1810,
    "top_m": 1830,
    "lift_type": "drag lift",
    "ride_min": 2.2,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "08:45",
+    "open_school_holidays": "08:30",
+    "last_up": "17:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30685905",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-dromonts-i-ii-poma-7252.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "6033546a-5176-4396-82bf-6e3ec2965a53": {
   "name": "TK ECOLES 1",
-  "description": "This drag lift climbs 230 m from 1,820 m to 1,850 m in 2 min. From the top you can ski down Champ Ski Plateau.",
+  "description": "This drag lift climbs 230 m from 1,820 m to 1,850 m in 2 min. Open daily from 9:00, last ride up at 17:00, or 17:30 from 6 February.",
   "facts": {
    "length_m": 230,
    "bottom_m": 1820,
    "top_m": 1850,
    "lift_type": "drag lift",
    "ride_min": 2.0,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30353157",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "26d505bd-77c1-43a4-a909-063461f998eb": {
   "name": "TK ECOLES 2",
-  "description": "This drag lift climbs 230 m from 1,820 m to 1,850 m in 2 min. From the top you can ski down Champ de ski plateau 2.",
+  "description": "This drag lift climbs 230 m from 1,820 m to 1,850 m in 2 min. Open daily from 9:00, last ride up at 17:00, or 17:30 from 6 February.",
   "facts": {
    "length_m": 230,
    "bottom_m": 1820,
    "top_m": 1850,
    "lift_type": "drag lift",
    "ride_min": 2.0,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:00",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/317027023",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-ecole-i-ii-poma-5136.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "9e67f09e-6bea-49c1-acb0-1c6c74ddf90e": {
@@ -680,33 +889,46 @@
  },
  "f0b2901b-0a7c-4471-8901-3daa46884bb8": {
   "name": "TK Mas Verjus",
-  "description": "This drag lift climbs 120 m from 980 m to 1,010 m in about 1 min. From the top you can ski down Front de neige du Mas Verjus.",
+  "description": "This drag lift climbs 120 m from 980 m to 1,010 m in about 1 min. From the top you can ski down Front de neige du Mas Verjus or Le Bouchet. Open daily from 8:45 to 16:00.",
   "facts": {
    "length_m": 120,
    "bottom_m": 980,
    "top_m": 1010,
    "lift_type": "drag lift",
    "ride_min": 0.7,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "08:45",
+    "close": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/295651444"
+   "https://www.openstreetmap.org/way/295651444",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e8d49818-1a9f-4374-b4a6-d204612592d5": {
   "name": "TK PRODAINS",
-  "description": "This drag lift climbs 150 m from 1,170 m to 1,190 m in 1 min 15 s. From the top you can ski down Prodains.",
+  "description": "This drag lift climbs 150 m from 1,170 m to 1,190 m in 1 min 15 s. Open daily from 8:30, last ride up at 12:00. In school holidays it is 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 150,
    "bottom_m": 1170,
    "top_m": 1190,
    "lift_type": "drag lift",
    "ride_min": 1.2,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "08:30",
+    "last_up": "12:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/362159135",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-des-prodains-poma-5117.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkf-des-prodains-poma-5117.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "100deaba-f014-4c15-a43c-2c7adb813aa0": {
@@ -759,85 +981,118 @@
  },
  "bad349f5-871d-41ed-ac9b-3cd72c274a66": {
   "name": "TK des Poireaux 1",
-  "description": "This drag lift climbs 260 m from 1,420 m to 1,470 m in 1 min 30 s. From the top you can ski down Eagle Park or Les Poireaux.",
+  "description": "This drag lift climbs 260 m from 1,420 m to 1,470 m in 1 min 30 s. Open daily from 9:15 to 16:45, or 17:00 from 6 February to 5 March.",
   "facts": {
    "length_m": 260,
    "bottom_m": 1420,
    "top_m": 1470,
    "lift_type": "drag lift",
    "ride_min": 1.5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/280176511",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57": {
   "name": "TK des Poireaux 2",
-  "description": "This drag lift climbs 260 m from 1,420 m to 1,470 m in 1 min 30 s. From the top you can ski down Eagle Park or Les Poireaux.",
+  "description": "This drag lift climbs 260 m from 1,420 m to 1,470 m in 1 min 30 s. Open daily from 9:15 to 16:45, or 17:00 from 6 February to 5 March.",
   "facts": {
    "length_m": 260,
    "bottom_m": 1420,
    "top_m": 1470,
    "lift_type": "drag lift",
    "ride_min": 1.5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/280176510",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "7f410e5d-c2b1-4237-aa74-4aa110f21b82": {
   "name": "TLC ARDENT",
-  "description": "This gondola with 9-person cabins climbs 1.4 km from 1,210 m to 1,520 m in 4 min. It links the hamlet of Ardent in Montriond with Les Lindarets.",
+  "description": "This gondola climbs 1.4 km from Ardent, in Montriond, to Les Lindarets in 4 min. Open daily from 8:45. The last ride up is at 17:00 and down at 17:15, both 15 minutes later from 6 February.",
   "facts": {
    "length_m": 1400,
    "bottom_m": 1210,
    "top_m": 1520,
    "lift_type": "gondola with 9-person cabins",
    "ride_min": 4.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "08:45",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/446569623",
    "https://www.remontees-mecaniques.net/bdd/reportage-tcd9-d-ardent-poma-3809.html",
-   "https://en.valleedaulps.com/ardent-gondola-lift.html"
+   "https://en.valleedaulps.com/ardent-gondola-lift.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "f85582f0-b2a2-4041-b4a9-ed4dab746ff5": {
   "name": "TLC SUPER",
-  "description": "This gondola climbs 1.5 km from 960 m to 1,460 m in 6 min. It runs from central Morzine to Super Morzine, where the Zore chairlift continues to Avoriaz.",
+  "description": "This gondola climbs 1.5 km from central Morzine to Super Morzine in 6 min. Open daily from 8:30, last ride up at 16:15, or 16:45 from 6 February. Until 5 February the last ride down is at 17:15.",
   "facts": {
    "length_m": 1500,
    "bottom_m": 960,
    "top_m": 1460,
    "lift_type": "gondola",
    "ride_min": 5.5,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "08:30",
+    "last_up": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/53165460",
    "https://en.morzine-avoriaz.com/equipment/super-morzine-gondola/",
-   "https://www.remontees-mecaniques.net/bdd/station-morzine-super-morzine-923.html"
+   "https://www.remontees-mecaniques.net/bdd/station-morzine-super-morzine-923.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "5af639a6-aeff-449a-9f1d-7c8664586209": {
   "name": "TPH PRODAINS 3S",
-  "description": "This 3S gondola with 35-person cabins climbs 1.6 km from 1,190 m to 1,740 m in 4 min. It links Les Prodains, in the valley, with Avoriaz.",
+  "description": "This 3S gondola climbs 1.6 km from Les Prodains to Avoriaz in 4 min. Open daily from 8:45, last ride up at 17:15, or 17:45 from 6 February. It keeps running for walkers until 21:00 or later.",
   "facts": {
    "length_m": 1600,
    "bottom_m": 1190,
    "top_m": 1740,
    "lift_type": "3S gondola with 35-person cabins",
    "ride_min": 4.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "08:45",
+    "last_up": "17:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/225288644",
    "https://www.remontees-mecaniques.net/bdd/reportage-3s-prodains-express-poma-leitner-5845.html",
-   "https://explore.avoriaz.com/en/activities/les-prodains-cable-car"
+   "https://explore.avoriaz.com/en/activities/les-prodains-cable-car",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "5f28c346-ed6c-4dc7-910d-ca9ae62efc3e": {
@@ -890,18 +1145,24 @@
  },
  "6c1b6dab-381b-42e1-8f2d-df45830949b7": {
   "name": "TS Les Têtes",
-  "description": "This 4-seat chairlift climbs 1.2 km from 1,330 m to 1,640 m in 10 min. From the top you can ski down Les Freux or Les Blanchots.",
+  "description": "This 4-seat chairlift climbs 1.2 km from 1,330 m to 1,640 m in 10 min. From the top you can ski down Les Freux. Open daily from 9:15 to 16:00, or 16:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 1200,
    "bottom_m": 1330,
    "top_m": 1640,
    "lift_type": "4-seat chairlift",
    "ride_min": 10.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:15",
+    "close": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/32310310",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-tetes-poma-5026.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-tetes-poma-5026.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "974c57c9-3f15-4085-82ef-883d24b43800": {
@@ -922,192 +1183,271 @@
  },
  "16dfff57-de1d-41fe-9d5f-61289d6fb2e6": {
   "name": "TS Pointe de Nyon",
-  "description": "This 3-seat chairlift climbs 1.5 km from 1,410 m to 1,960 m in 10 min. It serves the Pointe de Nyon and the Pas de l'Aigle footbridge at 2,019 m.",
+  "description": "This 3-seat chairlift climbs 1.5 km from 1,410 m to 1,960 m in 10 min. It serves the Pas de l'Aigle footbridge. Open daily from 9:15 to 16:15, or 16:45 from 6 February to 5 March.",
   "facts": {
    "length_m": 1500,
    "bottom_m": 1420,
    "top_m": 1930,
    "lift_type": "3-seat chairlift",
    "ride_min": 10.0,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "close": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/96366493",
    "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-de-la-pointe-de-nyon-poma-4996.html",
-   "https://en.morzine-avoriaz.com/nyon-winter-experiences/"
+   "https://en.morzine-avoriaz.com/nyon-winter-experiences/",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "7c248ef6-e29e-425e-b5be-d8c6c1592788": {
   "name": "TS de Nabor",
-  "description": "This 4-seat chairlift climbs 510 m from 1,470 m to 1,530 m in about 4 min. From the top you can ski down Zone Débutants or Pinguin Park.",
+  "description": "This 4-seat chairlift climbs 510 m from 1,470 m to 1,530 m in about 4 min. Open daily from 9:00 (8:45 in school holidays) to 16:30, or 17:00 from 6 February to 5 March.",
   "facts": {
    "length_m": 510,
    "bottom_m": 1470,
    "top_m": 1530,
    "lift_type": "4-seat chairlift",
    "ride_min": 3.7,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "open_school_holidays": "08:45",
+    "close": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/286275367"
+   "https://www.openstreetmap.org/way/286275367",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e3055de8-21c5-4837-9c4b-5519509c025c": {
   "name": "TS de la Crusaz",
-  "description": "This 4-seat chairlift climbs 910 m from 980 m to 1,310 m in 7 min. From the top you can ski down Daim.",
+  "description": "This 4-seat chairlift climbs 910 m from 980 m to 1,310 m in 7 min. It runs only in school holidays, never on Saturdays, from 9:00 to 12:30 and 13:30 to 15:30.",
   "facts": {
    "length_m": 910,
    "bottom_m": 980,
    "top_m": 1310,
    "lift_type": "4-seat chairlift",
    "ride_min": 7.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "close": "15:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30627383",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-de-la-crusaz-poma-9153.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-de-la-crusaz-poma-9153.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "1295ad30-3445-47bb-9de2-93486a4d439f": {
   "name": "TS des Fys",
-  "description": "This 3-seat chairlift climbs 1.2 km from 1,160 m to 1,540 m in 11 min. From the top you can ski down Les Granges or Nabor.",
+  "description": "This 3-seat chairlift climbs 1.2 km from 1,160 m to 1,540 m in 11 min. From the top you can ski down Les Granges. Open daily from 9:30 to 16:45, or 17:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 1200,
    "bottom_m": 1160,
    "top_m": 1540,
    "lift_type": "3-seat chairlift",
    "ride_min": 10.8,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:30",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/32310365",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-des-fys-poma-9449.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-des-fys-poma-9449.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "f1f0271e-a63f-43a9-bd82-f78423bccb99": {
   "name": "TS des Mouilles",
-  "description": "This 4-seat chairlift climbs 730 m from 1,290 m to 1,490 m in 6 min. From the top you can ski down Piste B or Daguet.",
+  "description": "This 4-seat chairlift climbs 730 m from 1,290 m to 1,490 m in 6 min. Open daily from 9:00 (8:45 in school holidays) to 16:45, or 17:00 from 6 February to 5 March.",
   "facts": {
    "length_m": 730,
    "bottom_m": 1290,
    "top_m": 1490,
    "lift_type": "4-seat chairlift",
    "ride_min": 6.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "open_school_holidays": "08:45",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30751809",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-mouilles-poma-5091.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-mouilles-poma-5091.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "6e602043-da88-41ec-9217-9ba0b0eef216": {
   "name": "TS des Raverettes",
-  "description": "This 4-seat chairlift climbs 650 m from 1,420 m to 1,520 m in about 5 min. From the top you can ski down Accès Eagle Park or Coutalays.",
+  "description": "This 4-seat chairlift climbs 650 m from 1,420 m to 1,520 m in about 5 min. Open daily from 9:15 to 16:30, or 16:45 from 6 February to 5 March.",
   "facts": {
    "length_m": 650,
    "bottom_m": 1420,
    "top_m": 1520,
    "lift_type": "4-seat chairlift",
    "ride_min": 4.7,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:15",
+    "close": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/32312982",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-raverettes-poma-9417.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-des-raverettes-poma-9417.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "4c0705d8-8e78-4b1c-b832-f0e021a7eb03": {
   "name": "TS du Pré Favre",
-  "description": "This 4-seat chairlift climbs 880 m from 1,170 m to 1,420 m in 8 min. From the top you can ski down Le Lièvre Partie Haute or Le Chamois.",
+  "description": "This 4-seat chairlift climbs 880 m from 1,170 m to 1,420 m in 8 min. Open daily from 9:15 to 16:00, or 16:30 from 6 February to 5 March.",
   "facts": {
    "length_m": 880,
    "bottom_m": 1170,
    "top_m": 1420,
    "lift_type": "4-seat chairlift",
    "ride_min": 7.5,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:15",
+    "close": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/32425250",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-du-pre-favre-skirail-9457.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-du-pre-favre-skirail-9457.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e0545736-33bc-4971-b12e-e2fa30f05147": {
   "name": "TS3 CUBORE MONTRIOND",
-  "description": "This 3-seat chairlift climbs 520 m from 2,030 m to 2,190 m in 4 min. From the top you can ski down Patenaille or Cuboré Montriond.",
+  "description": "This 3-seat chairlift climbs 520 m from 2,030 m to 2,190 m in 4 min. From the top you can ski down Patenaille. Open daily from 9:15, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 520,
    "bottom_m": 2030,
    "top_m": 2190,
    "lift_type": "3-seat chairlift",
    "ride_min": 4.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:15",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/29285756"
+   "https://www.openstreetmap.org/way/29285756",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "a1857d0a-54e0-4729-a2d3-55d2ce669bc5": {
   "name": "TS3 CUBORE MORZINE",
-  "description": "This 3-seat chairlift climbs 400 m from 2,050 m to 2,190 m in 3 min. From the top you can ski down Patenaille or Cuboré Montriond.",
+  "description": "This 3-seat chairlift climbs 400 m from 2,050 m to 2,190 m in 3 min. From the top you can ski down Patenaille. Open daily from 9:15, last ride up at 16:00, or 16:30 from 6 February.",
   "facts": {
    "length_m": 400,
    "bottom_m": 2050,
    "top_m": 2190,
    "lift_type": "3-seat chairlift",
    "ride_min": 3.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:15",
+    "last_up": "16:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/29285752"
+   "https://www.openstreetmap.org/way/29285752",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "a2c4d46c-bb31-40d9-a105-abc6a5730598": {
   "name": "TS3 PLATEAU",
-  "description": "This 3-seat chairlift climbs 730 m from 1,760 m to 1,830 m in 4 min. From the top you can ski down ESF Plateau or Boulevard Skieurs.",
+  "description": "This 3-seat chairlift climbs 730 m from 1,760 m to 1,830 m in 4 min. Open daily from 8:45 (8:30 in school holidays), last ride up at 17:00, or 17:30 from 6 February.",
   "facts": {
    "length_m": 730,
    "bottom_m": 1760,
    "top_m": 1830,
    "lift_type": "3-seat chairlift",
    "ride_min": 4.0,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "08:45",
+    "open_school_holidays": "08:30",
+    "last_up": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30610172",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-du-plateau-poma-5860.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-du-plateau-poma-5860.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "746eb496-ccd9-469b-a0c6-cc706de4f777": {
   "name": "TS6 TOUR",
-  "description": "This 6-seat detachable chairlift climbs 760 m from 1,750 m to 1,890 m in 3 min.",
+  "description": "This 6-seat detachable chairlift climbs 760 m from 1,750 m to 1,890 m in 3 min. Open daily from 8:45, last ride up at 16:45, or 17:20 from 6 February.",
   "facts": {
    "length_m": 760,
    "bottom_m": 1750,
    "top_m": 1890,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 3,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "08:45",
+    "last_up": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/29287623",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-tour-poma-2895.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-tour-poma-2895.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "0cef71a4-8274-4aeb-a20a-489f2589af18": {
   "name": "TSD Belvédère",
-  "description": "This 6-seat detachable chairlift climbs 960 m from 1,460 m to 1,540 m in 3 min. From the top you can ski down Nabor or Les Granges.",
+  "description": "This 6-seat detachable chairlift climbs 960 m from 1,460 m to 1,540 m in 3 min. From the top you can ski down Nabor. Open daily from 9:00 to 16:45, or 17:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 960,
    "bottom_m": 1460,
    "top_m": 1540,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 3.3,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "09:00",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30626081",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-belvedere-poma-7881.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-belvedere-poma-7881.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "80690d93-9a0f-47cd-a881-d9d7546c0769": {
@@ -1128,18 +1468,24 @@
  },
  "d0530cf0-d2ef-4beb-bd66-db97772a0b2f": {
   "name": "TSD Chamossière",
-  "description": "This 6-seat detachable chairlift climbs 1.3 km from 1,490 m to 1,960 m in 6 min. From the top you can ski down Cabri or Les Creux.",
+  "description": "This 6-seat detachable chairlift climbs 1.3 km from 1,490 m to 1,960 m in 6 min. From the top you can ski down Cabri. Open daily from 9:30 to 16:15, or 16:30 from 6 February to 5 March.",
   "facts": {
    "length_m": 1300,
    "bottom_m": 1490,
    "top_m": 1960,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 6.5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:30",
+    "close": "16:15"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/32344730",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-chamossiere-poma-4071.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-chamossiere-poma-4071.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "3ec5c9ac-8d1f-4abd-a9a1-3edd48a4b5aa": {
@@ -1209,79 +1555,112 @@
  },
  "b8dd5af4-7b9e-4e3f-aa36-5088c8936e47": {
   "name": "TSD STADE",
-  "description": "This 6-seat detachable chairlift climbs 790 m from 1,750 m to 1,930 m in 5 min. From the top you can ski down Aller Chavanette.",
+  "description": "This 6-seat detachable chairlift climbs 790 m from 1,750 m to 1,930 m in 5 min. Open daily from 8:50, last ride up at 16:45, or 17:15 from 6 February.",
   "facts": {
    "length_m": 790,
    "bottom_m": 1750,
    "top_m": 1930,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.0,
-   "ride_min_source": "osm"
+   "ride_min_source": "osm",
+   "hours": {
+    "open": "08:50",
+    "last_up": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/24916412",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-stade-poma-5603.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-du-stade-poma-5603.html",
+   "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+   "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
   ]
  },
  "68fe1fa9-c9e7-49b8-abe4-4c5a93a07c12": {
   "name": "TSD la Charniaz",
-  "description": "This 6-seat detachable chairlift climbs 1.7 km from 1,330 m to 1,650 m in 6 min. From the top you can ski down Fenerêts or Les Chevrelles.",
+  "description": "This 6-seat detachable chairlift climbs 1.7 km from 1,330 m to 1,650 m in 6 min. From the top you can ski down Fenerêts. Open daily from 9:15 to 16:45, or 17:00 from 6 February to 5 March.",
   "facts": {
    "length_m": 1700,
    "bottom_m": 1330,
    "top_m": 1650,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 5.5,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/30626904",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-charniaz-leitner-76.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-de-la-charniaz-leitner-76.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e0d6b3ac-8d94-424f-bc68-8e533ab12e65": {
   "name": "Tapis Viking",
-  "description": "This moving carpet climbs 190 m from 1,500 m to 1,530 m in about 4 min. From the top you can ski down Zone Débutants or Pinguin Park.",
+  "description": "This moving carpet climbs 190 m from 1,500 m to 1,530 m in about 4 min. Open daily from 9:00 (8:45 in school holidays) to 16:30, 17:15 from 6 February and 16:45 from 6 March.",
   "facts": {
    "length_m": 190,
    "bottom_m": 1500,
    "top_m": 1530,
    "lift_type": "moving carpet",
    "ride_min": 4.5,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "open_school_holidays": "08:45",
+    "close": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/317254092"
+   "https://www.openstreetmap.org/way/317254092",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "b2b374b8-765f-45e0-926a-31dcbbf89200": {
   "name": "Tapis de Nabor",
-  "description": "This moving carpet is 140 m long, at about 1,490 m, and the ride takes about 3 min. From the top you can ski down Piste B or Renard.",
+  "description": "This moving carpet is 140 m long, at about 1,490 m, and the ride takes about 3 min. Open daily from 9:00 (8:45 in school holidays) to 16:45, or 17:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 140,
    "bottom_m": 1490,
    "top_m": 1500,
    "lift_type": "moving carpet",
    "ride_min": 3.2,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:00",
+    "open_school_holidays": "08:45",
+    "close": "16:45"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/1499143812"
+   "https://www.openstreetmap.org/way/1499143812",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "e92c2eab-2690-4689-8571-0ee84198c55d": {
   "name": "Tapis de l'Aiglon",
-  "description": "This moving carpet is 60 m long, at about 1,420 m, and the ride takes about 1 min. From the top you can ski down La Chouette or Le Chamois.",
+  "description": "This moving carpet is 60 m long, at about 1,420 m, and the ride takes about 1 min. Open daily from 9:15 to 16:30, or 16:45 from 6 February to 5 March.",
   "facts": {
    "length_m": 60,
    "bottom_m": 1420,
    "top_m": 1420,
    "lift_type": "moving carpet",
    "ride_min": 1.5,
-   "ride_min_source": "estimate"
+   "ride_min_source": "estimate",
+   "hours": {
+    "open": "09:15",
+    "close": "16:30"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
-   "https://www.openstreetmap.org/way/1308902671"
+   "https://www.openstreetmap.org/way/1308902671",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "8a8faff1-b935-4a37-b259-e2fad1b9f279": {
@@ -1299,18 +1678,24 @@
  },
  "0c9f9b1f-0e29-49a0-8d69-1de8b48954a9": {
   "name": "Troncs express",
-  "description": "This 6-seat detachable chairlift climbs 780 m from 1,330 m to 1,590 m in 2 min 20 s. From the top you can ski down Les Raverettes.",
+  "description": "This 6-seat detachable chairlift climbs 780 m from 1,330 m to 1,590 m in 2 min 20 s. Open daily from 9:15 to 17:00, or 17:15 from 6 February to 5 March.",
   "facts": {
    "length_m": 780,
    "bottom_m": 1330,
    "top_m": 1590,
    "lift_type": "6-seat detachable chairlift",
    "ride_min": 2.3,
-   "ride_min_source": "web"
+   "ride_min_source": "web",
+   "hours": {
+    "open": "09:15",
+    "close": "17:00"
+   },
+   "hours_basis": "lift"
   },
   "sources": [
    "https://www.openstreetmap.org/way/771016803",
-   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-les-troncs-express-poma-4656.html"
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-les-troncs-express-poma-4656.html",
+   "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
   ]
  },
  "00c69009-a567-456f-a536-6e9f2a8c7396": {

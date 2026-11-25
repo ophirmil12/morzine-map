@@ -63,7 +63,8 @@
     "lookTitle": "Map style",
     "lookWinter": "Winter",
     "lookRegular": "Regular",
-    "credits": "Map data:"
+    "credits": "Map data:",
+    "weatherCredits": "Weather:"
   },
   "live": {
     "open": "Open",
@@ -115,5 +116,9 @@
     "ignoreLive": "Ignore live lift status",
     "afterHours": "Location sharing after hours",
     "note": "Both switch off at midnight."
+  },
+  "weather": {
+    "label": "Weather at the top of the slopes (Avoriaz, 1,800 m): {temp}°C, updated {time}",
+    "about": "Weather at the top of the slopes, Avoriaz 1,800 m, from Météo-France. Updated {time}."
   }
 }

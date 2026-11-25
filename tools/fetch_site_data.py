@@ -360,6 +360,28 @@ def main():
                                                     "description": p["description"].get(lang, "")}
         print("custom places:", len(cp["places"]))
 
+    # Lift lines run from the bottom station to the top, so the map's direction arrows point up.
+    # Bottom stations come from the elevation data (tools/lift_bottoms.py). Nearly flat lifts
+    # (carpets, rope tows) are marked "flat" and get no arrows.
+    lb_path = os.path.join(ROOT, "data_src", "lift_bottoms.json")
+    if os.path.exists(lb_path):
+        with open(lb_path, encoding="utf-8") as fh:
+            lb = json.load(fh)
+        flat, turned = set(lb.get("flat", [])), 0
+        for f in trails:
+            p = f["properties"]
+            if p["id"] in flat:
+                p["flat"] = True
+            bottom = lb["bottoms"].get(p["id"])
+            if not bottom:
+                continue
+            parts = f["geometry"]["coordinates"]
+            dist = lambda q: (q[0] - bottom[0]) ** 2 + (q[1] - bottom[1]) ** 2
+            if dist(parts[-1][-1]) < dist(parts[0][0]):
+                f["geometry"]["coordinates"] = [part[::-1] for part in parts[::-1]]
+                turned += 1
+        print(f"lift lines turned to run bottom to top: {turned}, flat: {len(flat)}")
+
     used_cats = {f["properties"]["category"] for f in trails + pois}
     used_fams = {f["properties"]["family"] for f in trails + pois}
     meta = {"categories": {}, "families": {}}

@@ -1,0 +1,1773 @@
+{
+ "_about": "Opening hours of every ski lift for winter 2026-27, read by hand from the lift operators' timetables. tools/research_ski_descriptions.py adds an hours sentence from them to each lift description. open: first ride. close: time the lift stops (Morzine timetable). last_up: last ride up (Avoriaz timetable). open_school_holidays: earlier first ride in school holidays. periods: the closing times by date range. text: hand-written hours sentence used instead of the generated one. basis: lift (the lift's own timetable row), sector (a rule shared by every lift of its sector) or null (no hours known). Local French time.",
+ "season": {
+  "winter": "2026-27",
+  "checked": "2026-11-25",
+  "avoriaz": {
+   "pre_opening": [
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "open": "2026-12-11",
+   "close": "2027-04-18",
+   "timetable_change": "2027-02-06",
+   "note": "Pre-opening weekend of 28 and 29 November 2026 on part of the area (Arare and Chavanette, according to Portes du Soleil). Two timetables: 11 December 2026 to 5 February 2027, then from 6 February 2027.",
+   "sources": [
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/",
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://en.portesdusoleil.com/in-winter/openings-slopes-and-lifts/"
+   ]
+  },
+  "morzine": {
+   "open": "2026-12-19",
+   "close": "2027-04-04",
+   "school_holidays": [
+    [
+     "2026-12-19",
+     "2027-01-01"
+    ],
+    [
+     "2027-02-06",
+     "2027-03-05"
+    ]
+   ],
+   "closing_periods": [
+    [
+     "2026-12-19",
+     "2027-02-05"
+    ],
+    [
+     "2027-02-06",
+     "2027-03-05"
+    ],
+    [
+     "2027-03-06",
+     "2027-04-04"
+    ]
+   ],
+   "note": "Pleney and Nyon-Chamossière sectors. Opening times differ in and out of school holidays, closing times in three periods.",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "les_gets": {
+   "partial_open": "2026-12-12",
+   "open": "2026-12-19",
+   "close": "2027-04-11",
+   "note": "Partial opening on 12 December if there is enough natural snow. Some lifts may close earlier at the end of the season. The 2026-27 lift timetable is not published yet.",
+   "sources": [
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/"
+   ]
+  },
+  "portes_du_soleil": {
+   "open": "2026-12-19",
+   "close": "2027-04-18",
+   "note": "Portes du Soleil gives 19 December 2026 for the whole linked area, the Avoriaz site gives 20 December 2026.",
+   "sources": [
+    "https://en.portesdusoleil.com/in-winter/openings-slopes-and-lifts/",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  }
+ },
+ "lifts": {
+  "cd690d7f-cb6e-4782-b0ba-9c475bf1be53": {
+   "name": "Château",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "6fc87068-dede-4ef4-985b-c86e93f54a6e": {
+   "name": "Cuboré",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "This drag lift is not in the Avoriaz lift operator's 2026-27 timetable. Every Chavanette sector lift there takes its last riders up at 16:00, then 16:30 from 6 February, so that sector rule is used. First rides in the sector are at 9:00 or 9:15, so no opening time is given.",
+   "text": "Lifts in the Chavanette sector take their last riders up at 16:00, or 16:30 from 6 February.",
+   "basis": "sector",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "812fae02-a655-4f95-84de-e0aaeb395fc2": {
+   "name": "Fil neige ESF",
+   "note": "ESF ski school rope tow at Les Lindarets. It is not in the Avoriaz lift operator's 2026-27 timetable, and the lifts around it keep different hours, so no sector rule applies.",
+   "basis": null,
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf"
+   ]
+  },
+  "c19cbf52-7a71-4156-abf0-3c4aae2f00da": {
+   "name": "FIL-NEIGE EBAUDS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "0ed2f9b5-0a4f-4b42-beee-b3cebd702328": {
+   "name": "Nyon",
+   "open": "09:00",
+   "close": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:30",
+     "last_down": "17:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:45",
+     "last_down": "17:30"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:30",
+     "last_down": "17:15"
+    }
+   ],
+   "note": "Rows 'Téléphérique Nyon Montée' and 'Descente' of the Morzine lift operator's 2026-27 timetable. close is the last ride up, last_down the last ride down.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "e89998c8-0d26-4e04-85b9-f22c1d95fe3f": {
+   "name": "Rosta",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "ffc6fea0-f614-4454-9b05-aa117c63edfa": {
+   "name": "Stade",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "dd79b258-0cbf-4f41-a8d2-9c5911ea8f85": {
+   "name": "TAPIS CHAVANNES",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "e92c2eab-2690-4689-8571-0ee84198c55d": {
+   "name": "Tapis de l'Aiglon",
+   "open": "09:15",
+   "close": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:30"
+    }
+   ],
+   "note": "Row 'Tapis de l'Aiglon' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "b2b374b8-765f-45e0-926a-31dcbbf89200": {
+   "name": "Tapis de Nabor",
+   "open": "09:00",
+   "open_school_holidays": "08:45",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Tapis Nabor' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "c98b731d-3356-4074-9bd1-45f898972a57": {
+   "name": "TAPIS PLATAIS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "e0d6b3ac-8d94-424f-bc68-8e533ab12e65": {
+   "name": "Tapis Viking",
+   "open": "09:00",
+   "open_school_holidays": "08:45",
+   "close": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Tapis Viking' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "1e57c0c2-ba97-4d88-8820-da04712a847d": {
+   "name": "TC CHAVANNES",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "f6ba97ce-7e79-4416-9697-c9f998625747": {
+   "name": "TC CHERY",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "84f8c194-a05b-4695-a4e4-287cfd830eec": {
+   "name": "TC du Pleney",
+   "open": "08:45",
+   "open_school_holidays": "08:30",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45",
+     "last_down": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15",
+     "last_down": "17:30"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45",
+     "last_down": "17:00"
+    }
+   ],
+   "note": "Rows 'Télécabine Pleney Montée' and 'Descente' of the Morzine lift operator's 2026-27 timetable. close is the last ride up, last_down the last ride down.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "7a92722e-ab57-414f-bfa5-dd5197dfcb90": {
+   "name": "TD4 CHOUCAS",
+   "open": "09:00",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège du Choucas' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "2a22eb52-b381-4030-ae48-4642e2a20bc5": {
+   "name": "TD4 LINDARETS",
+   "open": "09:00",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Lindarets' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "4a9ba904-1308-413b-9a85-b7f78743f6f2": {
+   "name": "TD4 MOSSETTES",
+   "open": "09:15",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Mossettes' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "3258df18-19ee-4c15-b92f-c52d985647be": {
+   "name": "TD4 ZORE",
+   "open": "08:45",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Télésiège Zore' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "7067b702-7dd5-4ea2-b279-fd98a1b8b3a8": {
+   "name": "TD6 BROCHAUX",
+   "open": "09:00",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Télésiège Brochaux' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "208a3919-95be-43a5-9993-6ddd76df9d83": {
+   "name": "TD6 CASES",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Cases' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "6f6fc708-c148-4466-a1bc-d51fcb93cf77": {
+   "name": "TD6 CHAUX FLEURIE",
+   "open": "09:00",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Télésiège Chaux-Fleurie' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "88118b6c-f60d-419b-9fd0-e7e409997f0a": {
+   "name": "TD6 FORNET",
+   "open": "09:15",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège du Fornet' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "8f969652-039b-4e91-9145-1e60ac9e78d4": {
+   "name": "TD6 GRANDES COMBES",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Grandes Combes' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "7ab067e8-ee4d-4e36-81d5-b060b15fc1eb": {
+   "name": "TD6 LAC-INTRETS",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Lac-Intrêts' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "037549dc-d415-4d5f-b901-271a0f3c7f0c": {
+   "name": "TD6 LECHERE",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Léchère' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "f31b1fb6-c7ed-4133-94b8-0f50a2e86edb": {
+   "name": "TD6 PROCLOU",
+   "open": "08:45",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:15"
+    }
+   ],
+   "note": "Row 'Télésiège Proclou' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "5be952cc-d3ce-421b-8c34-ac202ec3c4fc": {
+   "name": "TD6 PROLAYS",
+   "open": "09:30",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:30"
+    }
+   ],
+   "note": "Row 'Télésiège Prolays' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "9161ee35-9551-4dab-b4d0-b837e52d6def": {
+   "name": "TD6 SERAUSSAIX",
+   "open": "09:00",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Télésiège Séraussaix' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "8a8faff1-b935-4a37-b259-e2fad1b9f279": {
+   "name": "Telecorde ESF",
+   "note": "ESF ski school rope tow on the Avoriaz plateau. It is not in the Avoriaz lift operator's 2026-27 timetable, and the plateau lifts keep different hours, so no sector rule applies.",
+   "basis": null,
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf"
+   ]
+  },
+  "5ecc0072-0ea5-455c-91a0-f7503c24afc6": {
+   "name": "TELECORDE MOUILLE AU BLE",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "7164ae5b-b9cc-4768-aa19-ac562e14df0b": {
+   "name": "TK ARARE 2",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Téléskis Arare (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "210e9469-296b-407c-9954-c3adf46b2111": {
+   "name": "TK ARARE1",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Téléskis Arare (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "367cffa8-c7d3-4875-83c6-c670a6a4b49b": {
+   "name": "TK BARMETTES",
+   "open": "09:00",
+   "last_up": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Téléski Barmettes' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "95ad1c57-9e94-425c-91be-84f03fd66e4d": {
+   "name": "TK BARON",
+   "open": "09:00",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "note": "Row 'Téléski Baron' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "9a709967-0232-46e8-b7ee-3be35cbcf906": {
+   "name": "TK Bouchet",
+   "open": "09:00",
+   "close": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:00"
+    }
+   ],
+   "note": "Row 'Téléski Bouchet' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "55097a4d-eb5a-4a27-af08-6205cf80668a": {
+   "name": "TK BOULE DE GOMME",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "8ecdc473-5dd4-47bb-b81f-9f451fc3989e": {
+   "name": "TK CHAPELLE",
+   "open": "09:00",
+   "last_up": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:15"
+    }
+   ],
+   "note": "Row 'Téléski Chapelle' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "5bc77624-3487-4d0b-a16d-42f60e27646f": {
+   "name": "TK CHAVANETTE 1",
+   "open": "09:00",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Téléskis Chavanette (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "96a11fb6-c9bb-4fe6-bea1-72cfbc5f9172": {
+   "name": "TK CHAVANETTE 2",
+   "open": "09:00",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Téléskis Chavanette (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "bad349f5-871d-41ed-ac9b-3cd72c274a66": {
+   "name": "TK des Poireaux 1",
+   "open": "09:15",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Téléski Poireaux' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57": {
+   "name": "TK des Poireaux 2",
+   "open": "09:15",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Téléski Poireaux' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "d7516be3-25fb-42d1-a278-0961b5d091aa": {
+   "name": "TK DES TRASHERS",
+   "open": "09:00",
+   "last_up": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:00"
+    }
+   ],
+   "note": "Row 'Téléski Trashers' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "91057292-8b97-4cbc-bf20-cd850b7cde75": {
+   "name": "TK DROMONTS 1",
+   "open": "08:45",
+   "open_school_holidays": "08:30",
+   "last_up": "17:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:45"
+    }
+   ],
+   "note": "Row 'Téléskis Dromonts (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "a458c268-0c78-4e9a-ac20-be48d3c1131a": {
+   "name": "TK DROMONTS 2",
+   "open": "08:45",
+   "open_school_holidays": "08:30",
+   "last_up": "17:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:45"
+    }
+   ],
+   "note": "Row 'Téléskis Dromonts (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "6033546a-5176-4396-82bf-6e3ec2965a53": {
+   "name": "TK ECOLES 1",
+   "open": "09:00",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:30"
+    }
+   ],
+   "note": "Row 'Téléskis École (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "26d505bd-77c1-43a4-a909-063461f998eb": {
+   "name": "TK ECOLES 2",
+   "open": "09:00",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:30"
+    }
+   ],
+   "note": "Row 'Téléskis École (D/G)' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "9e67f09e-6bea-49c1-acb0-1c6c74ddf90e": {
+   "name": "TK GRAND CRY",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "f0b2901b-0a7c-4471-8901-3daa46884bb8": {
+   "name": "TK Mas Verjus",
+   "open": "08:45",
+   "close": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:00"
+    }
+   ],
+   "note": "Row 'Téléski Mas Verjus' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "e5e7fc7b-deb6-4742-a78c-9bfb395ef37a": {
+   "name": "TK MOUILLE AU ROI",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "e8d49818-1a9f-4374-b4a6-d204612592d5": {
+   "name": "TK PRODAINS",
+   "open": "08:30",
+   "last_up": "12:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "12:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "12:00"
+    }
+   ],
+   "school_holidays": {
+    "last_up": "16:00",
+    "periods": [
+     {
+      "from": "2026-12-11",
+      "to": "2027-02-05",
+      "last_up": "16:00"
+     },
+     {
+      "from": "2027-02-06",
+      "to": "2027-04-18",
+      "last_up": "16:30"
+     }
+    ]
+   },
+   "note": "Rows 'Téléski Prodains (vacances)' and 'Téléski Prodains (hors vacances)' of the Avoriaz lift operator's 2026-27 timetable. Outside school holidays the last ride up is at noon.",
+   "text": "Open daily from 8:30, last ride up at 12:00. In school holidays it is 16:00, or 16:30 from 6 February.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "100deaba-f014-4c15-a43c-2c7adb813aa0": {
+   "name": "TK TETE DES CRETS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "5e4dc15e-d8c1-4bff-9af0-ba4ca8ba5e1d": {
+   "name": "TK TURCHE",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "34a57bf8-6e20-4a99-8b39-6de62db3dcae": {
+   "name": "TK VIEUX CHENE",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "7f410e5d-c2b1-4237-aa74-4aa110f21b82": {
+   "name": "TLC ARDENT",
+   "open": "08:45",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:15"
+    }
+   ],
+   "last_down": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "time": "17:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "time": "17:30"
+    }
+   ],
+   "note": "Row 'Télécabine Ardent' of the Avoriaz lift operator's 2026-27 timetable, with last rides up and down.",
+   "text": "Open daily from 8:45. The last ride up is at 17:00 and down at 17:15, both 15 minutes later from 6 February.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "f85582f0-b2a2-4041-b4a9-ed4dab746ff5": {
+   "name": "TLC SUPER",
+   "open": "08:30",
+   "last_up": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:45"
+    }
+   ],
+   "last_down_to_morzine": {
+    "from": "2026-12-11",
+    "to": "2027-02-05",
+    "time": "17:15"
+   },
+   "note": "Row 'Télécabine Super-Morzine' of the Avoriaz lift operator's 2026-27 timetable. It gives the last ride back down to Morzine (17:15) for the first period only.",
+   "text": "Open daily from 8:30, last ride up at 16:15, or 16:45 from 6 February. Until 5 February the last ride down is at 17:15.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "5af639a6-aeff-449a-9f1d-7c8664586209": {
+   "name": "TPH PRODAINS 3S",
+   "open": "08:45",
+   "last_up": "17:15",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:45"
+    }
+   ],
+   "pedestrians": {
+    "open": "07:00",
+    "last_up": {
+     "sun": "22:00",
+     "mon-thu": "21:00",
+     "fri-sat": "00:00"
+    }
+   },
+   "note": "Rows 'Téléphérique Prodains Express' and 'Résidents / piétons' of the Avoriaz lift operator's 2026-27 timetable. Skiers ride from 8:45. Residents and walkers ride from 7:00 until 21:00 Monday to Thursday, 22:00 on Sunday and midnight on Friday and Saturday.",
+   "text": "Open daily from 8:45, last ride up at 17:15, or 17:45 from 6 February. It keeps running for walkers until 21:00 or later.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "0c9f9b1f-0e29-49a0-8d69-1de8b48954a9": {
+   "name": "Troncs express",
+   "open": "09:15",
+   "close": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "17:00"
+    }
+   ],
+   "note": "Row 'Télésiège Tronc express' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "5f28c346-ed6c-4dc7-910d-ca9ae62efc3e": {
+   "name": "TS CHERY NORD",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "ff2a2d94-9ef9-4c24-a22e-dc091074d281": {
+   "name": "TS CROIX",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "e3055de8-21c5-4837-9c4b-5519509c025c": {
+   "name": "TS de la Crusaz",
+   "open": "09:00",
+   "close": "15:30",
+   "lunch_break": [
+    "12:30",
+    "13:30"
+   ],
+   "runs": "school holidays only, not on Saturdays",
+   "note": "Row 'Télésiège Crusaz' and note 3 of the Morzine lift operator's 2026-27 timetable: 9:00 to 12:30 and 13:30 to 15:30 in school holidays, closed outside them and on Saturdays. The note dates the Christmas run 26 December 2026 to 1 January 2027, but its February dates (Sunday 15 February to Friday 6 March 2026) are last winter's.",
+   "text": "It runs only in school holidays, never on Saturdays, from 9:00 to 12:30 and 13:30 to 15:30.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "7c248ef6-e29e-425e-b5be-d8c6c1592788": {
+   "name": "TS de Nabor",
+   "open": "09:00",
+   "open_school_holidays": "08:45",
+   "close": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Nabor' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "1295ad30-3445-47bb-9de2-93486a4d439f": {
+   "name": "TS des Fys",
+   "open": "09:30",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Fys' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "f1f0271e-a63f-43a9-bd82-f78423bccb99": {
+   "name": "TS des Mouilles",
+   "open": "09:00",
+   "open_school_holidays": "08:45",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Mouilles' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "6e602043-da88-41ec-9217-9ba0b0eef216": {
+   "name": "TS des Raverettes",
+   "open": "09:15",
+   "close": "16:30",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Raverettes' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "4c0705d8-8e78-4b1c-b832-f0e021a7eb03": {
+   "name": "TS du Pré Favre",
+   "open": "09:15",
+   "close": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:00"
+    }
+   ],
+   "note": "Row 'Télésiège Pré Favre' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "12d63246-74c6-46d9-823e-44df7d5d67a6": {
+   "name": "TS FOLLIETS DU GOLF",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "6c1b6dab-381b-42e1-8f2d-df45830949b7": {
+   "name": "TS Les Têtes",
+   "open": "09:15",
+   "close": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:00"
+    }
+   ],
+   "note": "Row 'Télésiège Têtes' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "974c57c9-3f15-4085-82ef-883d24b43800": {
+   "name": "TS PLANEYS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "16dfff57-de1d-41fe-9d5f-61289d6fb2e6": {
+   "name": "TS Pointe de Nyon",
+   "open": "09:15",
+   "close": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:15"
+    }
+   ],
+   "note": "Row 'Télésiège Pointe de Nyon' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "e0545736-33bc-4971-b12e-e2fa30f05147": {
+   "name": "TS3 CUBORE MONTRIOND",
+   "open": "09:15",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Cuboré' of the Avoriaz lift operator's 2026-27 timetable. The timetable has one Cuboré chairlift and our data has two, so both get its times.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "a1857d0a-54e0-4729-a2d3-55d2ce669bc5": {
+   "name": "TS3 CUBORE MORZINE",
+   "open": "09:15",
+   "last_up": "16:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "16:30"
+    }
+   ],
+   "note": "Row 'Télésiège Cuboré' of the Avoriaz lift operator's 2026-27 timetable. The timetable has one Cuboré chairlift and our data has two, so both get its times.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "a2c4d46c-bb31-40d9-a105-abc6a5730598": {
+   "name": "TS3 PLATEAU",
+   "open": "08:45",
+   "open_school_holidays": "08:30",
+   "last_up": "17:00",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "17:00"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:30"
+    }
+   ],
+   "note": "Row 'Télésiège du Plateau' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "746eb496-ccd9-469b-a0c6-cc706de4f777": {
+   "name": "TS6 TOUR",
+   "open": "08:45",
+   "last_up": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:20"
+    }
+   ],
+   "note": "Row 'Télésiège du Tour' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  },
+  "0cef71a4-8274-4aeb-a20a-489f2589af18": {
+   "name": "TSD Belvédère",
+   "open": "09:00",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:15"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Belvédère' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "d0530cf0-d2ef-4beb-bd66-db97772a0b2f": {
+   "name": "TSD Chamossière",
+   "open": "09:30",
+   "close": "16:15",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:15"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "16:30"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:15"
+    }
+   ],
+   "note": "Row 'Télésiège Chamossière express' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "80690d93-9a0f-47cd-a881-d9d7546c0769": {
+   "name": "TSD CHAVANNES EXPRESS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "68fe1fa9-c9e7-49b8-abe4-4c5a93a07c12": {
+   "name": "TSD la Charniaz",
+   "open": "09:15",
+   "close": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-19",
+     "to": "2027-02-05",
+     "close": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-03-05",
+     "close": "17:00"
+    },
+    {
+     "from": "2027-03-06",
+     "to": "2027-04-04",
+     "close": "16:45"
+    }
+   ],
+   "note": "Row 'Télésiège Charniaz express' of the Morzine lift operator's 2026-27 timetable. open is the first ride, close the time the lift stops.",
+   "basis": "lift",
+   "sources": [
+    "https://www.ski-morzine.com/hiver/le-domaine-en-detail/horaires-douverture-caisses-et-rm/"
+   ]
+  },
+  "3ec5c9ac-8d1f-4abd-a9a1-3edd48a4b5aa": {
+   "name": "TSD NAUCHETS EXPRESS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "053fddc1-64b0-4596-96f8-1bfa4ace2c83": {
+   "name": "TSD PERRIERES EXPRESS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "7513c239-d377-4294-97f2-2fcd4b8bc56f": {
+   "name": "TSD POINTE DU CHERY",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "1b44f151-04e7-4d15-9acf-531de2eb9367": {
+   "name": "TSD RANFOILLY EXPRESS",
+   "note": "SoleGets has not published its 2026-27 lift timetable yet. On 25 November 2026 its hours page still shows the 2025-26 times, so no hours are given. Check again before the 19 December 2026 opening.",
+   "basis": null,
+   "sources": [
+    "https://pass.lesgets.com/ouvertures-horaires-hiver/",
+    "https://solegets.com/2026/04/24/hiver-2026-2027-les-dates-douverture-du-domaine-skiable-des-gets/",
+    "https://pass.lesgets.com/wp-content/uploads/2025/12/Horaires-RM-Les-Gets-Morzine-2025-2026-1.pdf"
+   ]
+  },
+  "b8dd5af4-7b9e-4e3f-aa36-5088c8936e47": {
+   "name": "TSD STADE",
+   "open": "08:50",
+   "last_up": "16:45",
+   "periods": [
+    {
+     "from": "2026-12-11",
+     "to": "2027-02-05",
+     "last_up": "16:45"
+    },
+    {
+     "from": "2027-02-06",
+     "to": "2027-04-18",
+     "last_up": "17:15"
+    }
+   ],
+   "note": "Row 'Télésiège du Stade' of the Avoriaz lift operator's 2026-27 timetable. open is the first ride, last_up the last ride up.",
+   "basis": "lift",
+   "sources": [
+    "https://backoffice.avoriaz.com/wp-content/uploads/2026/11/Horaires-RM-Avoriaz-2027.pdf",
+    "https://www.avoriaz.com/en/winter-activities/ski-et-snow/ski-area-opening-hours-and-times/"
+   ]
+  }
+ }
+}

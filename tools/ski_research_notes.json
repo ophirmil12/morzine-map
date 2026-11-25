@@ -1,15 +1,16 @@
 {
- "_about": "Hand-checked facts for tools/research_ski_descriptions.py. Keys are family:name (or family:name@resort). Lift 'rmnet' is the remontees-mecaniques.net sheet of the same lift. 'note' replaces the automatic second sentence, 'lead' the first. Every note must come from the listed sources or from our geometry.",
+ "_about": "Hand-checked facts for tools/research_ski_descriptions.py. Keys are family:name (or family:name@resort). Lift 'rmnet' is the remontees-mecaniques.net sheet of the same lift. 'note' replaces the automatic second sentence, 'lead' the first. An empty note drops the second sentence, to leave room for the opening hours from data_src/lift_hours_2027.json. Every note must come from the listed sources or from our geometry.",
  "ski_lift:TPH PRODAINS 3S": {
   "rmnet": "reportage-3s-prodains-express-poma-5845.html",
   "kind": "3S gondola with 35-person cabins",
   "short_kind": "3S gondola",
-  "note": "It links Les Prodains, in the valley, with Avoriaz.",
+  "note": "",
   "sources": [
    "https://explore.avoriaz.com/en/activities/les-prodains-cable-car"
   ],
   "display": "Prodains Express",
-  "place": "Les Prodains"
+  "place": "Les Prodains",
+  "lead": "This 3S gondola climbs 1.6 km from Les Prodains to Avoriaz in 4 min."
  },
  "ski_lift:TK ARARE1": {
   "rmnet": "reportage-tkd-d-arare-i-ii-poma-6295.html"
@@ -103,24 +104,27 @@
  "ski_lift:TLC ARDENT": {
   "rmnet": "reportage-tcd9-d-ardent-poma-3809.html",
   "seats": 9,
-  "note": "It links the hamlet of Ardent in Montriond with Les Lindarets.",
+  "note": "",
   "sources": [
    "https://en.valleedaulps.com/ardent-gondola-lift.html"
   ],
-  "place": "Ardent"
+  "place": "Ardent",
+  "lead": "This gondola climbs 1.4 km from Ardent, in Montriond, to Les Lindarets in 4 min."
  },
  "ski_lift:TLC SUPER": {
   "kind": "gondola",
-  "note": "It runs from central Morzine to Super Morzine, where the Zore chairlift continues to Avoriaz.",
+  "note": "",
   "sources": [
    "https://en.morzine-avoriaz.com/equipment/super-morzine-gondola/",
    "https://www.remontees-mecaniques.net/bdd/station-morzine-super-morzine-923.html"
   ],
   "display": "Super Morzine",
-  "place": "Morzine"
+  "place": "Morzine",
+  "lead": "This gondola climbs 1.5 km from central Morzine to Super Morzine in 6 min."
  },
  "ski_lift:Nyon": {
-  "note": "It runs up from the valley to the Plateau de Nyon."
+  "note": "",
+  "lead": "This cable car climbs 1.1 km from the valley at 1,040 m to the Plateau de Nyon at 1,410 m in about 3 min."
  },
  "ski_lift:TC CHAVANNES": {
   "rmnet": "reportage-tcd6-des-chavannes-poma-3921.html",
@@ -218,7 +222,7 @@
  "ski_lift:TS Pointe de Nyon": {
   "rmnet": "reportage-tsf3-de-la-pointe-de-nyon-poma-4996.html",
   "osm_geometry": "way/96366493",
-  "note": "It serves the Pointe de Nyon and the Pas de l'Aigle footbridge at 2,019 m.",
+  "note": "It serves the Pas de l'Aigle footbridge.",
   "sources": [
    "https://www.openstreetmap.org/way/96366493",
    "https://en.morzine-avoriaz.com/nyon-winter-experiences/"
@@ -228,11 +232,12 @@
  "ski_lift:TC du Pleney": {
   "rmnet": "reportage-tcd10-du-pleney-poma-5429.html",
   "seats": 10,
-  "note": "It lifts you from Morzine village to the Pleney.",
+  "note": "",
   "sources": [
    "https://www.haute-savoie-tourisme.org/loisirs/divers/telepheriques-touristiques/68305-telecabine-du-pleney"
   ],
-  "place": "Morzine village"
+  "place": "Morzine village",
+  "lead": "This gondola with 10-person cabins climbs 1.4 km from Morzine village to the Pleney at 1,480 m in 4 min."
  },
  "ski_lift:TK des Poireaux 1": {
   "rmnet": "reportage-tkd-des-poireaux-1-2-poma-4917.html"
