@@ -62,7 +62,8 @@
     "closed": "Grey: closed now",
     "lookTitle": "Map style",
     "lookWinter": "Winter",
-    "lookRegular": "Regular"
+    "lookRegular": "Regular",
+    "credits": "Map data:"
   },
   "live": {
     "open": "Open",

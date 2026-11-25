@@ -17,8 +17,8 @@
   const SHADE_MAXZOOM = 13;
   // The elevation tiles exist only for this box: never ask for tiles outside it (towards the horizon).
   const DEM_BOUNDS = [6.56, 46.09, 6.89, 46.26];
-  const DEM_ATTR = '<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank">Terrain: Mapzen, AWS</a>';
-  const DATA_ATTR = 'Data: Office de Tourisme de Morzine';
+  // Map credits are not drawn on the map (no "i" button, to save space). They are in a line at the
+  // bottom of the legend (index.html, .legend-credits) and in full on the terms page (terms/).
   const EXAGGERATION = 1.35;
   const LIST_LIMIT = 150;
 
@@ -152,7 +152,6 @@
     pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
     canvasContextAttributes: { antialias: !isPhone }
   });
-  map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: DATA_ATTR }), isPhone ? 'top-right' : 'bottom-left');
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-left');
   // Vertical distance scale under the map buttons. It uses the ground scale at the map centre
   // (from zoom and latitude only), so it stays steady while the camera tilts or crosses terrain.
@@ -188,11 +187,8 @@
 
 
   map.on('load', () => {
-    // Credits start folded (the "i" button opens them) so they never cover the map buttons.
-    document.querySelectorAll('.maplibregl-ctrl-attrib.maplibregl-compact-show')
-      .forEach((el) => el.classList.remove('maplibregl-compact-show'));
     // --- terrain, hillshade, sky
-    map.addSource('dem', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: DEM_MAXZOOM, bounds: DEM_BOUNDS, attribution: DEM_ATTR });
+    map.addSource('dem', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: DEM_MAXZOOM, bounds: DEM_BOUNDS });
     map.addSource('dem-shade', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: SHADE_MAXZOOM, bounds: DEM_BOUNDS });
     map.addLayer({ id: 'hillshade', type: 'hillshade', source: 'dem-shade', paint: { 'hillshade-method': 'igor' } },
       map.getLayer('hillshade-slot') ? 'hillshade-slot' : undefined);  // colours set by BASEMAP.applySeason
@@ -828,8 +824,10 @@
     if (mode !== 'full' && active && active.id === 'search') active.blur();   // close the keyboard
   }
   if (isPhone) {
-    // Phones: the legend button sits at the bottom, in the search row.
-    document.getElementById('searchRow').appendChild(document.getElementById('btnLegend'));
+    // Phones: the share-position and legend buttons sit at the bottom, in the search row.
+    const searchRow = document.getElementById('searchRow');
+    searchRow.appendChild(document.getElementById('btnShare'));
+    searchRow.appendChild(document.getElementById('btnLegend'));
     setSheet('peek', false);
     window.addEventListener('resize', () => setSheet(sheetMode, false));
     document.getElementById('search').addEventListener('focus', () => setSheet('full'));
