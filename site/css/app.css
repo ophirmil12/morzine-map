@@ -57,6 +57,29 @@ button { cursor: pointer; }
 .tool[aria-pressed="true"] { background: var(--ink); color: #fff; }
 #northIcon { transition: transform .15s linear; }
 
+/* vertical km scale under the map buttons: a thin bar with end and middle ticks */
+.vscale {
+  align-self: center; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  margin-block-start: 10px; pointer-events: none; color: var(--ink-2);
+}
+.vscale .lbl {
+  font-size: 11px; font-weight: 600; line-height: 1; white-space: nowrap;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 2px #fff;
+}
+.vscale .bar {
+  position: relative; display: block; width: 2px; height: 100px; background: currentColor;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.75); transition: height .12s linear;
+}
+.vscale .bar::before, .vscale .bar::after {
+  content: ""; position: absolute; inset-inline-start: -4px; width: 10px; height: 2px; background: currentColor;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.75);
+}
+.vscale .bar::before { inset-block-start: 0; }
+.vscale .bar::after { inset-block-end: 0; }
+.vscale .bar i {
+  position: absolute; inset-inline-start: -2px; inset-block-start: calc(50% - 1px); width: 6px; height: 2px; background: currentColor;
+}
+
 .legend {
   position: absolute; inset-block-start: 16px; inset-inline-start: 72px; z-index: 2;
   background: var(--bg); border-radius: var(--radius); box-shadow: var(--shadow);
@@ -242,10 +265,10 @@ button { cursor: pointer; }
   .panel.dragging { transition: none; }
   /* The whole top strip is the drag handle (big touch target). */
   .grab {
-    display: block; height: 22px; flex: none; cursor: grab; touch-action: none; position: relative;
+    display: block; height: 29px; flex: none; cursor: grab; touch-action: none; position: relative;
   }
   .grab::after {
-    content: ""; position: absolute; inset-inline-start: 50%; inset-block-start: 8px; transform: translateX(-50%);
+    content: ""; position: absolute; inset-inline-start: 50%; inset-block-start: 12px; transform: translateX(-50%);
     width: 40px; height: 5px; border-radius: 3px; background: #c9d1d9;
   }
   .panel-head { display: none; }            /* logo sits on the map instead (.map-logo) */
@@ -274,5 +297,4 @@ button { cursor: pointer; }
   .live-pill { inset-inline-end: 12px; inset-block-start: calc(56px + env(safe-area-inset-top)); }
   .maplibregl-ctrl-bottom-left .maplibregl-ctrl-group { display: none; }   /* zoom buttons: pinch instead */
   .maplibregl-popup { display: none; }                                      /* no hover on touch */
-  .maplibregl-ctrl-scale { display: none; }
 }

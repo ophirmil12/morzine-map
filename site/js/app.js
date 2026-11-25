@@ -150,7 +150,27 @@
   });
   map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: DATA_ATTR }), isPhone ? 'top-right' : 'bottom-left');
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-left');
-  map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), isPhone ? 'top-right' : 'bottom-left');
+  // Vertical distance scale under the map buttons. It uses the ground scale at the map centre
+  // (from zoom and latitude only), so it stays steady while the camera tilts or crosses terrain.
+  (function verticalScale() {
+    const box = document.getElementById('vscale');
+    const lbl = box.querySelector('.lbl'), bar = box.querySelector('.bar');
+    const STEPS = [20, 50, 100, 200, 500, 1000, 2000, 5000, 10000];
+    const MAX_PX = isPhone ? 96 : 120;
+    let queued = false;
+    const draw = () => {
+      queued = false;
+      const lat = map.getCenter().lat * Math.PI / 180;
+      const mpp = 40075016.686 * Math.cos(lat) / (512 * Math.pow(2, map.getZoom()));
+      let d = STEPS[0];
+      for (const s of STEPS) if (s / mpp <= MAX_PX) d = s;
+      bar.style.height = `${Math.round(d / mpp)}px`;
+      lbl.textContent = d >= 1000 ? t('units.km', { n: d / 1000 }) : t('units.m', { n: d });
+    };
+    map.on('move', () => { if (!queued) { queued = true; requestAnimationFrame(draw); } });
+    map.once('load', draw);
+    draw();
+  })();
   document.getElementById('map').setAttribute('aria-label', t('map.label'));
   if (qs.has('debug')) window.map = map;   // for testing in the browser console
 

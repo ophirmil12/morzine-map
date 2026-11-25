@@ -775,10 +775,12 @@
     ]
    ],
    "layout": {
-    "line-join": "round"
+    "line-join": "round",
+    "line-cap": "round"
    },
    "paint": {
-    "line-color": "#a5adc0",
+    "line-color": "#868d95",
+    "line-opacity": 0.9,
     "line-width": [
      "interpolate",
      [
@@ -788,15 +790,11 @@
       "zoom"
      ],
      8,
-     0.8,
-     14,
-     1.6
-    ],
-    "line-dasharray": [
-     4,
-     2,
-     1,
-     2
+     0.6,
+     13,
+     1.1,
+     17,
+     1.8
     ]
    }
   },

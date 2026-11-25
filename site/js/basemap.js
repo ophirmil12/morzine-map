@@ -43,7 +43,7 @@
       'road-major-casing':   { 'line-color': '#b9c3ce' },
       'road-minor':          { 'line-color': '#ffffff' },
       'road-major':          { 'line-color': '#ffffff' },
-      'boundary-country':    { 'line-color': '#a5adc0' },
+      'boundary-country':    { 'line-color': '#868d95' },
       // labels
       'road-label':          { 'text-color': '#7f8994', 'text-halo-color': '#ffffff' },
       'waterway-label':      { 'text-color': '#5a8db5', 'text-halo-color': '#ffffff' },
@@ -83,7 +83,7 @@
       'road-major-casing':   { 'line-color': '#c2bbad' },
       'road-minor':          { 'line-color': '#ffffff' },
       'road-major':          { 'line-color': '#ffffff' },
-      'boundary-country':    { 'line-color': '#a59cb4' },
+      'boundary-country':    { 'line-color': '#868d95' },
       'road-label':          { 'text-color': '#7d7a72', 'text-halo-color': '#ffffff' },
       'waterway-label':      { 'text-color': '#4f86b2', 'text-halo-color': '#ffffff' },
       'water-label':         { 'text-color': '#3f7aa8', 'text-halo-color': '#ffffff' },
