@@ -15,7 +15,7 @@
  *
  * Bump VERSION to throw away every cached app file (tiles are kept).
  */
-const VERSION = 'v11';
+const VERSION = 'v12';
 const APP_CACHE = `app-${VERSION}`;
 const TILE_CACHE = 'tiles-v1';
 const LIB_CACHE = 'libs-v1';
@@ -157,6 +157,9 @@ self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
+
+  // The terms page (terms/) always comes from the network and is never stored.
+  if (url.origin === self.location.origin && /\/terms(\/|\.html|$)/.test(url.pathname)) return;
 
   if (url.origin === self.location.origin) {
     if (url.pathname.includes('/tiles/') && url.pathname.endsWith('.png')) {
