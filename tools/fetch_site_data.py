@@ -14,6 +14,9 @@ Writes
   site/data/categories.json        colour and icon per category and family
   cold_storage/site_texts/         the site's French texts and the it/de/nl labels
 Events are skipped: they go out of date quickly.
+Hand-made overlays from data_src/: mountain_food.json (restaurant group),
+ski_fixes_2027.json (lifts and pistes changed since the office data, lines from OSM)
+and ski_descriptions_en.json (piste and lift texts).
 """
 import hashlib
 import json
@@ -55,7 +58,7 @@ def in_area(coords):
     return any(in_area(c) for c in coords)
 
 
-def http(url, body=None, kind="raw"):
+def http(url, body=None, kind="raw", ua=UA):
     """GET (or POST JSON) with a disk cache. Returns bytes, or None on 404."""
     key = hashlib.sha1((url + "|" + json.dumps(body, sort_keys=True)).encode()).hexdigest()
     path = os.path.join(CACHE, kind, key[:2], key)
@@ -63,7 +66,7 @@ def http(url, body=None, kind="raw"):
         with open(path, "rb") as fh:
             data = fh.read()
         return None if data == b"__404__" else data
-    headers = {"User-Agent": UA, "Accept": "application/json, text/html, */*"}
+    headers = {"User-Agent": ua, "Accept": "application/json, text/html, */*"}
     data = None
     if body is not None:
         data = json.dumps(body).encode()
@@ -180,6 +183,63 @@ def clean_text(s):
     return " ".join(str(s).split())
 
 
+OSM_API = "https://api.openstreetmap.org/api/0.6"
+# The OSM servers refuse browser-like user agents.
+OSM_UA = "morzine-map/1.0 (static ski map rebuild)"
+
+
+def osm_ways(way_ids):
+    """{way id: [[lon, lat], ...]} from the OpenStreetMap API, in the way's own node order (cached)."""
+    out = {}
+    for w in sorted(way_ids):
+        els = json.loads(http(f"{OSM_API}/way/{w}/full.json", None, "osm", ua=OSM_UA))["elements"]
+        nodes = {e["id"]: [e["lon"], e["lat"]] for e in els if e["type"] == "node"}
+        way = next(e for e in els if e["type"] == "way")
+        out[w] = [nodes[n] for n in way["nodes"]]
+    return out
+
+
+def apply_ski_fixes(fix, trails, content):
+    """Apply data_src/ski_fixes_2027.json: remove, re-draw, rename, re-categorise and add items."""
+    lines = osm_ways({e["osm_way"] for sec in ("geometry", "add") for e in fix.get(sec, [])})
+
+    def osm_line(e):
+        line = lines[e["osm_way"]][::-1] if e.get("reverse") else lines[e["osm_way"]]
+        return clean_lines({"type": "LineString", "coordinates": line})
+
+    by_id = {f["properties"]["id"]: f for f in trails}
+    missing = {e["id"] for sec in ("remove", "geometry", "category", "rename") for e in fix.get(sec, [])} - set(by_id)
+    if missing:  # the office dropped or re-keyed them: the fix is no longer needed, or must be redone
+        print("  ski fixes: ids no longer in the office data:", sorted(missing))
+    gone = {e["id"] for e in fix.get("remove", [])}
+    for e in fix.get("geometry", []):
+        if e["id"] in by_id:
+            f = by_id[e["id"]]
+            f["geometry"] = osm_line(e)
+            f["properties"]["marker"] = f["geometry"]["coordinates"][0][0]
+    for e in fix.get("category", []):
+        if e["id"] in by_id:
+            by_id[e["id"]]["properties"]["category"] = e["category"]
+    for e in fix.get("rename", []):
+        for lang in ("fr", "en"):
+            if e["id"] in content[lang]["items"]:
+                content[lang]["items"][e["id"]]["name"] = e["name"]
+    for e in fix.get("add", []):
+        geom = osm_line(e)
+        props = {"id": e["id"], "family": e["family"], "category": e["category"], "seasons": ["winter"],
+                 "area": e["area"], "marker": geom["coordinates"][0][0]}
+        trails.append({"type": "Feature", "properties": props, "geometry": geom})
+        for lang in ("fr", "en"):
+            content[lang]["items"][e["id"]] = {"name": e["name"], "description": ""}
+    trails[:] =[f for f in trails if f["properties"]["id"] not in gone]
+    for lang in ("fr", "en"):
+        for uid in gone:
+            content[lang]["items"].pop(uid, None)
+    print(f"ski fixes {fix.get('checked')}: removed {len(gone)}, re-drawn {len(fix.get('geometry', []))},"
+          f" renamed {len(fix.get('rename', []))}, re-categorised {len(fix.get('category', []))},"
+          f" added {len(fix.get('add', []))}")
+
+
 def main():
     os.makedirs(os.path.join(OUT, "content"), exist_ok=True)
 
@@ -258,6 +318,29 @@ def main():
             pois.append({"type": "Feature", "properties": props,
                          "geometry": {"type": "Point", "coordinates": it["point"]}})
 
+    # Restaurants (and food shops) up on the ski area get their own group, shown by default.
+    # The list is hand-checked: data_src/mountain_food.json says how it was chosen.
+    mf_path = os.path.join(ROOT, "data_src", "mountain_food.json")
+    if os.path.exists(mf_path):
+        with open(mf_path, encoding="utf-8") as fh:
+            mf = json.load(fh)
+        ids = {x["id"] for x in mf["places"]}
+        for f in pois:
+            if f["properties"]["id"] in ids:
+                f["properties"]["family"] = mf["family"]
+        base = fams.get("restaurants", {})
+        fams[mf["family"]] = {"code": mf["family"], "color": base.get("color"), "icon": base.get("icon"),
+                              "label": mf["label"]}
+        print("mountain food places:", sum(f["properties"]["family"] == mf["family"] for f in pois))
+
+    # The office data lags behind the ski area. Hand-checked fixes for this winter (lifts gone,
+    # wrong or moved lines, missing runs) live in data_src/ski_fixes_2027.json, with sources.
+    fix_path = os.path.join(ROOT, "data_src", "ski_fixes_2027.json")
+    if os.path.exists(fix_path):
+        with open(fix_path, encoding="utf-8") as fh:
+            fix = json.load(fh)
+        apply_ski_fixes(fix, trails, content)
+
     used_cats = {f["properties"]["category"] for f in trails + pois}
     used_fams = {f["properties"]["family"] for f in trails + pois}
     meta = {"categories": {}, "families": {}}
@@ -301,6 +384,21 @@ def main():
             untranslated[uid] = fr
         elif not cur.get("description") and fr.get("description"):
             untranslated[uid] = fr
+
+    # Pistes and lifts have no text on the site. Short descriptions researched for the map
+    # (length, altitudes, ride time...) live in data_src/ski_descriptions_en.json.
+    extra_path = os.path.join(ROOT, "data_src", "ski_descriptions_en.json")
+    if os.path.exists(extra_path):
+        with open(extra_path, encoding="utf-8") as fh:
+            extra = json.load(fh)
+        added = 0
+        for uid, rec in extra.items():
+            cur = en_block["items"].get(uid)
+            if cur is not None and not cur.get("description") and rec.get("description"):
+                cur["description"] = rec["description"]
+                untranslated.pop(uid, None)
+                added += 1
+        print("piste/lift descriptions added:", added)
     dump(en_block, "content/en.json", compact=False)
 
     # French texts and the other category labels: kept outside the site for reference.

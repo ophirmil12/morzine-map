@@ -71,11 +71,11 @@ const LIVE = (() => {
   /** 'open' | 'closed' | 'offseason' | 'soon' | 'delayed' | 'stopped' | 'none' | null (unknown id). */
   function kind(id) { const c = byId[id]; return c === undefined ? null : (KIND[c] || 'none'); }
 
-  /** 'fresh' (under 10 min), 'stale' (under an hour), 'old', or null when never loaded. */
+  /** 'fresh' (under 10 min), 'stale' (under 30 min), 'old', or null when never loaded. */
   function freshness() {
     if (!fetchedAt) return null;
     const min = (Date.now() - fetchedAt) / 60000;
-    return min < 10 ? 'fresh' : min < 60 ? 'stale' : 'old';
+    return min < 10 ? 'fresh' : min < 30 ? 'stale' : 'old';
   }
 
   return { start, kind, freshness, get fetchedAt() { return fetchedAt; }, get ids() { return byId; } };

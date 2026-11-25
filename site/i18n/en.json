@@ -1,9 +1,21 @@
 {
-  "page": { "title": "Morzine Interactive Map" },
-  "brand": { "sub": "Interactive map" },
-  "season": { "winter": "Winter", "summer": "Summer", "label": "Season" },
-  "lang": { "choose": "Language" },
-  "search": { "placeholder": "Search a run, lift or place" },
+  "page": {
+    "title": "Morzine Interactive Map"
+  },
+  "brand": {
+    "sub": "Interactive map"
+  },
+  "season": {
+    "winter": "Winter",
+    "summer": "Summer",
+    "label": "Season"
+  },
+  "lang": {
+    "choose": "Language"
+  },
+  "search": {
+    "placeholder": "Search a run, lift or place"
+  },
   "layers": {
     "pistes": "Ski runs",
     "lifts": "Lifts",
@@ -13,7 +25,10 @@
     "running": "Trail running"
   },
   "results": {
-    "count": { "one": "{n} place", "other": "{n} places" },
+    "count": {
+      "one": "{n} place",
+      "other": "{n} places"
+    },
     "more": "{n} more: zoom in or search to narrow the list",
     "none": "Nothing matches. Try another word or turn on more layers."
   },
@@ -43,8 +58,6 @@
     "easy": "Blue: easy",
     "intermediate": "Red: intermediate",
     "advanced": "Black: difficult",
-    "nordic": "Nordic ski trail (dashed)",
-    "route": "Snowshoe and walking route",
     "lift": "Lift",
     "closed": "Grey: closed now",
     "lookTitle": "Map style",
@@ -62,12 +75,44 @@
     "ignored": "Live status off: all runs and lifts in normal colours",
     "restored": "Live status on",
     "pill": "Lift status {time}",
-    "legend": "Live status, updated {time}. Green: under 10 minutes old. Yellow: under an hour. Red: older."
+    "legend": "Live status, updated {time}. Green: under 10 minutes old. Yellow: under 30 minutes. Red: older."
   },
-  "footer": { "office": "Morzine Tourist Office" },
+  "share": {
+    "button": "Share my position",
+    "title": "Share your position with other skiers?",
+    "explain": "From 6:00 to 20:00, while this map is open on your screen, your position is sent every 3 minutes and shown to other skiers who share. For safety, the last 2 days of positions are kept so they can help in an emergency, then deleted. You can switch sharing off at any time in the legend.",
+    "ok": "OK",
+    "notNow": "Not now",
+    "switch": "Share my position",
+    "nameLabel": "My name on the map",
+    "anonymous": "Skier",
+    "hours": "Location sharing works from 6:00 to 20:00.",
+    "offHours": "Location sharing works from 6:00 to 20:00.",
+    "started": "Sharing your position. Other skiers who share show in purple.",
+    "stopped": "You stopped sharing your position.",
+    "denied": "Location access is blocked, so your position cannot be shared.",
+    "outside": "Positions are shared only inside the ski area.",
+    "agoMin": "{n} min",
+    "agoHours": {
+      "one": "{n} hour",
+      "other": "{n} hours"
+    }
+  },
+  "footer": {
+    "office": "Morzine Tourist Office"
+  },
   "offline": {
     "saving": "Saving the map for offline use: {pct}%",
     "done": "Map saved. It now works without signal."
   },
-  "units": { "km": "{n} km", "m": "{n} m" }
+  "units": {
+    "km": "{n} km",
+    "m": "{n} m"
+  },
+  "secret": {
+    "title": "Hidden settings",
+    "ignoreLive": "Ignore live lift status",
+    "afterHours": "Location sharing after hours",
+    "note": "Both switch off at midnight."
+  }
 }

@@ -42,7 +42,7 @@ one request of about 5 KB (`/api/v1/groups/uuids/by-status?groups=morzine,avoria
 
 - **When:** when the page opens, then every 5 minutes while the page is on screen.
 - **Without signal:** the last answer is kept on the phone and shown with its time. The time is
-  green when under 10 minutes old, yellow under an hour, and red when older.
+  green when under 10 minutes old, yellow under 30 minutes, and red when older.
 - **On the map:** closed lifts and pistes are drawn grey and dashed.
 
 ## Update the data

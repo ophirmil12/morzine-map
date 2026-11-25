@@ -1,0 +1,46 @@
+/* Live location sharing (js/share.js): map button with a count badge, and the start dialog. */
+#btnShare { position: relative; }
+#btnShare[aria-pressed="true"] { background: #7c3aed; color: #fff; }
+#btnShare .n {
+  position: absolute; inset-block-start: -4px; inset-inline-end: -4px; min-width: 20px; height: 20px; padding: 0 5px;
+  border-radius: 10px; background: #fff; color: #5b21b6; font-size: 12px; font-weight: 700; line-height: 20px;
+  text-align: center; box-shadow: 0 1px 4px rgba(16, 32, 48, .25);
+}
+
+.share-dlg {
+  border: 0; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; width: min(92vw, 400px);
+  color: var(--ink); background: var(--bg);
+}
+.share-dlg::backdrop { background: rgba(16, 32, 48, .35); }
+.share-dlg h2 { margin: 0 0 8px; font-size: 17px; }
+.share-dlg p { margin: 0 0 14px; font-size: 14px; line-height: 1.45; color: var(--ink-2); }
+.share-name { display: grid; gap: 6px; font-size: 13px; font-weight: 600; }
+.share-name input {
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 16px; font-weight: 400;
+}
+.share-actions { display: flex; justify-content: flex-end; gap: 10px; margin-block-start: 16px; }
+.share-actions .primary { align-self: auto; background: #7c3aed; }
+.share-actions .ghost {
+  border: 1px solid var(--line); background: var(--bg); border-radius: 12px; padding: 10px 16px; font-weight: 600;
+}
+
+/* switched on, but outside sharing hours: purple outline, no fill */
+#btnShare.waiting { box-shadow: inset 0 0 0 2px #7c3aed, var(--shadow); color: #7c3aed; }
+
+/* legend: sharing switch, name, hours */
+.legend-share { margin-block-start: 10px; padding-block-start: 10px; border-block-start: 1px solid var(--line); display: grid; gap: 8px; }
+.sw-row { display: flex; align-items: center; gap: 10px; font-weight: 600; cursor: pointer; }
+.sw-row input { width: 18px; height: 18px; accent-color: #7c3aed; margin: 0; }
+.legend-share .share-name { font-size: 12px; color: var(--ink-2); }
+.legend-share .share-name input { font-size: 16px; padding: 7px 10px; }   /* 16px: iPhones do not zoom in */
+.share-hours { margin: 0; font-size: 12px; color: var(--ink-3); }
+.share-hours.warn { color: #8a6500; }
+
+/* hidden settings box (5 taps on the logo) */
+.secret {
+  position: absolute; z-index: 6; inset-block-start: calc(70px + env(safe-area-inset-top)); inset-inline-start: 50%;
+  transform: translateX(-50%); width: min(92vw, 320px); background: var(--bg); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 14px 16px; display: grid; gap: 10px; font-size: 14px;
+}
+.secret h3 { margin: 0; font-size: 13px; color: var(--ink-2); }
+.secret p { margin: 0; font-size: 12px; color: var(--ink-3); }

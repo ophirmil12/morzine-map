@@ -45,14 +45,14 @@ const ICONS = (() => {
   };
   const FAMILY_MATERIAL = {
     activities: 'local_activity', shops_and_services: 'storefront', restaurants: 'restaurant', bars: 'local_bar',
-    rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
+    mountain_restaurants: 'restaurant', rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
   };
   const FAMILY_COLOR = { nordic_ski_trail: '#1B65D4', trail_running: '#FAB333', stops: '#006FD6' };
 
   // Colour icons from the site's sprite, used on the layer chips (as on the original tabs).
   const CHIP_ICON = {
     pistes: 'ski-colored', nordic: 'nordic-skiing-colored', routes: 'figmoji-walking', mtb: 'figmoji-cycling',
-    running: 'figmoji-running', activities: 'activity', restaurants: 'restaurant', bars: 'bar',
+    running: 'figmoji-running', activities: 'activity', restaurants: 'restaurant', mountain_restaurants: 'restaurant', bars: 'bar',
     accommodations: 'accommodation-colored', rental_accommodation: 'accommodation-colored',
     shops_and_services: 'shops-and-services', producers: 'terroir', stops: 'bus-colored', lifts: 'gondola-lift'
   };

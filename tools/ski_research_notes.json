@@ -1,0 +1,505 @@
+{
+ "_about": "Hand-checked facts for tools/research_ski_descriptions.py. Keys are family:name (or family:name@resort). Lift 'rmnet' is the remontees-mecaniques.net sheet of the same lift. 'note' replaces the automatic second sentence, 'lead' the first. Every note must come from the listed sources or from our geometry.",
+ "ski_lift:TPH PRODAINS 3S": {
+  "rmnet": "reportage-3s-prodains-express-poma-5845.html",
+  "kind": "3S gondola with 35-person cabins",
+  "short_kind": "3S gondola",
+  "note": "It links Les Prodains, in the valley, with Avoriaz.",
+  "sources": [
+   "https://explore.avoriaz.com/en/activities/les-prodains-cable-car"
+  ],
+  "display": "Prodains Express",
+  "place": "Les Prodains"
+ },
+ "ski_lift:TK ARARE1": {
+  "rmnet": "reportage-tkd-d-arare-i-ii-poma-6295.html"
+ },
+ "ski_lift:TK ARARE 2": {
+  "rmnet": "reportage-tkd-d-arare-i-ii-poma-6295.html"
+ },
+ "ski_lift:TK CHAVANETTE 1": {
+  "rmnet": "reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+ },
+ "ski_lift:TK CHAVANETTE 2": {
+  "rmnet": "reportage-tkd-de-chavanette-i-ii-poma-5859.html"
+ },
+ "ski_lift:TK CHAPELLE": {
+  "rmnet": "reportage-tkd-de-la-chapelle-poma-8572.html"
+ },
+ "ski_lift:TK BARMETTES": {
+  "rmnet": "reportage-tkd-des-barmettes-poma-4261.html"
+ },
+ "ski_lift:TK DROMONTS 1": {
+  "rmnet": "reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+ },
+ "ski_lift:TK DROMONTS 2": {
+  "rmnet": "reportage-tkd-des-dromonts-i-ii-poma-7252.html"
+ },
+ "ski_lift:TK PRODAINS": {
+  "rmnet": "reportage-tkf-des-prodains-montaz-mautino-5117.html",
+  "place": "Les Prodains"
+ },
+ "ski_lift:TK ECOLES 1": {
+  "rmnet": "reportage-tkf-ecole-i-ii-poma-5136.html"
+ },
+ "ski_lift:TK ECOLES 2": {
+  "rmnet": "reportage-tkf-ecole-i-ii-poma-5136.html"
+ },
+ "ski_lift:TD4 LINDARETS": {
+  "rmnet": "reportage-tsd4-des-lindarets-poma-5469.html"
+ },
+ "ski_lift:TD4 MOSSETTES": {
+  "rmnet": "reportage-tsd4-des-mossettes-poma-5392.html"
+ },
+ "ski_lift:TD4 CHOUCAS": {
+  "rmnet": "reportage-tsd4-du-choucas-poma-2962.html"
+ },
+ "ski_lift:TD6 LAC-INTRETS": {
+  "rmnet": "reportage-tsd6-lac-intrets-poma-8570.html"
+ },
+ "ski_lift:TD6 SERAUSSAIX": {
+  "rmnet": "reportage-tsd6-de-seraussaix-poma-5416.html"
+ },
+ "ski_lift:TD6 CHAUX FLEURIE": {
+  "rmnet": "reportage-tsd6-de-la-chaux-fleurie-poma-8575.html"
+ },
+ "ski_lift:TD6 LECHERE": {
+  "rmnet": "reportage-tsd6-de-la-lechere-poma-8573.html"
+ },
+ "ski_lift:TD6 BROCHAUX": {
+  "rmnet": "reportage-tsd6-des-brochaux-poma-5785.html"
+ },
+ "ski_lift:TD6 CASES": {
+  "rmnet": "reportage-tsd6-des-cases-poma-7367.html"
+ },
+ "ski_lift:TD6 GRANDES COMBES": {
+  "rmnet": "reportage-tsd6-des-grandes-combes-poma-2361.html"
+ },
+ "ski_lift:TD6 PROLAYS": {
+  "rmnet": "reportage-tsd6-des-prolays-poma-5470.html"
+ },
+ "ski_lift:TD6 FORNET": {
+  "rmnet": "reportage-tsd6-du-fornet-poma-2950.html"
+ },
+ "ski_lift:TD6 PROCLOU": {
+  "rmnet": "reportage-tsd6-du-proclou-poma-5410.html"
+ },
+ "ski_lift:TSD STADE": {
+  "rmnet": "reportage-tsd6-du-stade-poma-5603.html"
+ },
+ "ski_lift:TS6 TOUR": {
+  "rmnet": "reportage-tsd6-du-tour-poma-2895.html",
+  "detachable": true
+ },
+ "ski_lift:TS3 PLATEAU": {
+  "rmnet": "reportage-tsf3-du-plateau-poma-5860.html"
+ },
+ "ski_lift:TK BARON": {
+  "rmnet": "reportage-tkd-du-baron-poma-546.html"
+ },
+ "ski_lift:TD4 ZORE": {
+  "rmnet": "reportage-tsd4-de-zore-poma-5395.html"
+ },
+ "ski_lift:TLC ARDENT": {
+  "rmnet": "reportage-tcd9-d-ardent-poma-3809.html",
+  "seats": 9,
+  "note": "It links the hamlet of Ardent in Montriond with Les Lindarets.",
+  "sources": [
+   "https://en.valleedaulps.com/ardent-gondola-lift.html"
+  ],
+  "place": "Ardent"
+ },
+ "ski_lift:TLC SUPER": {
+  "kind": "gondola",
+  "note": "It runs from central Morzine to Super Morzine, where the Zore chairlift continues to Avoriaz.",
+  "sources": [
+   "https://en.morzine-avoriaz.com/equipment/super-morzine-gondola/",
+   "https://www.remontees-mecaniques.net/bdd/station-morzine-super-morzine-923.html"
+  ],
+  "display": "Super Morzine",
+  "place": "Morzine"
+ },
+ "ski_lift:Nyon": {
+  "note": "It runs up from the valley to the Plateau de Nyon."
+ },
+ "ski_lift:TC CHAVANNES": {
+  "rmnet": "reportage-tcd6-des-chavannes-poma-3921.html",
+  "seats": 6,
+  "note": "It lifts you from Les Gets village to the Chavannes plateau.",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TC CHERY": {
+  "rmnet": "reportage-tcd6-du-mont-chery-montaz-mautino-392.html",
+  "note": "It lifts you from Les Gets village up Mont Chéry.",
+  "display": "Mont Chéry",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TK BOULE DE GOMME": {
+  "rmnet": "reportage-tkd-de-la-boule-de-gomme-poma-4987.html",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TK MOUILLE AU ROI": {
+  "rmnet": "reportage-tkd-de-la-mouille-au-roy-montaz-mautino-4994.html"
+ },
+ "ski_lift:TK TURCHE": {
+  "rmnet": "reportage-tkd-de-la-turche-poma-2244.html"
+ },
+ "ski_lift:TK TETE DES CRETS": {
+  "rmnet": "reportage-tkd-de-la-tete-des-crets-montaz-mautino-4910.html"
+ },
+ "ski_lift:Château": {
+  "rmnet": "reportage-tkd-du-chateau-poma-5048.html",
+  "note": "It now runs mainly as a backup for the Perrières Express chairlift.",
+  "sources": [
+   "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-des-perrieres-express-poma-9445.html"
+  ]
+ },
+ "ski_lift:TK GRAND CRY": {
+  "rmnet": "reportage-tkd-du-grand-cry-montaz-mautino-7904.html"
+ },
+ "ski_lift:Stade": {
+  "rmnet": "reportage-tkd-du-stade-montaz-mautino-4999.html",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TK VIEUX CHENE": {
+  "rmnet": "reportage-tkd-du-vieux-chene-montaz-mautino-7869.html",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TSD RANFOILLY EXPRESS": {
+  "rmnet": "reportage-tsd6-du-ranfoilly-leitner-6946.html"
+ },
+ "ski_lift:TSD CHAVANNES EXPRESS": {
+  "rmnet": "reportage-tsd6-les-chavannes-express-leitner-216.html",
+  "place": "Les Gets village"
+ },
+ "ski_lift:TSD NAUCHETS EXPRESS": {
+  "rmnet": "reportage-tsd6-les-nauchets-express-poma-4798.html"
+ },
+ "ski_lift:TSD PERRIERES EXPRESS": {
+  "rmnet": "reportage-tsd6-des-perrieres-express-poma-9445.html"
+ },
+ "ski_lift:Rosta": {
+  "rmnet": "reportage-tsd8-de-la-rosta-poma-9344.html",
+  "seats": 8,
+  "detachable": true,
+  "ride": {
+   "min": 2,
+   "source": "web"
+  },
+  "note": "It opened in December 2025 and is the first 8-seat chairlift in Les Gets.",
+  "sources": [
+   "https://www.lesgets.com/en/?p=78366"
+  ]
+ },
+ "ski_lift:TS PLANEYS": {
+  "rmnet": "reportage-tsf2-des-planeys-montaz-mautino-3007.html",
+  "seats": 2
+ },
+ "ski_lift:TS CROIX": {
+  "rmnet": "reportage-tsf4-de-la-croix-skirail-5957.html"
+ },
+ "ski_lift:TSD POINTE DU CHERY": {
+  "seats": 6,
+  "detachable": true,
+  "display": "Pointe du Chéry",
+  "note": "It opens in January 2027 and reuses the old Grains d'Or Express.",
+  "sources": [
+   "https://www.openstreetmap.org/way/1582367206",
+   "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+   "https://solegets.com/2026/11/25/remodelage-de-la-piste-de-la-renardiere/"
+  ]
+ },
+ "ski_lift:TS FOLLIETS DU GOLF": {
+  "rmnet": "reportage-tsf4-des-folliets-poma-5010.html"
+ },
+ "ski_lift:TS CHERY NORD": {
+  "rmnet": "reportage-tsf4-du-chery-nord-skirail-282.html"
+ },
+ "ski_lift:TS Pointe de Nyon": {
+  "rmnet": "reportage-tsf3-de-la-pointe-de-nyon-poma-4996.html",
+  "osm_geometry": "way/96366493",
+  "note": "It serves the Pointe de Nyon and the Pas de l'Aigle footbridge at 2,019 m.",
+  "sources": [
+   "https://www.openstreetmap.org/way/96366493",
+   "https://en.morzine-avoriaz.com/nyon-winter-experiences/"
+  ],
+  "lead": "This 3-seat chairlift climbs 1.5 km from 1,410 m to 1,960 m in 10 min."
+ },
+ "ski_lift:TC du Pleney": {
+  "rmnet": "reportage-tcd10-du-pleney-poma-5429.html",
+  "seats": 10,
+  "note": "It lifts you from Morzine village to the Pleney.",
+  "sources": [
+   "https://www.haute-savoie-tourisme.org/loisirs/divers/telepheriques-touristiques/68305-telecabine-du-pleney"
+  ],
+  "place": "Morzine village"
+ },
+ "ski_lift:TK des Poireaux 1": {
+  "rmnet": "reportage-tkd-des-poireaux-1-2-poma-4917.html"
+ },
+ "ski_lift:TK des Poireaux 2": {
+  "rmnet": "reportage-tkd-des-poireaux-1-2-poma-4917.html"
+ },
+ "ski_lift:Troncs express": {
+  "rmnet": "reportage-tsd6-les-troncs-express-leitner-4656.html",
+  "detachable": true
+ },
+ "ski_lift:TSD Chamossière": {
+  "rmnet": "reportage-tsd6-de-chamossiere-leitner-4071.html"
+ },
+ "ski_lift:TSD la Charniaz": {
+  "rmnet": "reportage-tsd6-de-la-charniaz-leitner-76.html"
+ },
+ "ski_lift:TSD Belvédère": {
+  "rmnet": "reportage-tsd6-du-belvedere-leitner-7881.html",
+  "detachable": true
+ },
+ "ski_lift:TS des Fys": {
+  "rmnet": "reportage-tsf3-des-fys-poma-9449.html"
+ },
+ "ski_lift:TS de la Crusaz": {
+  "rmnet": "reportage-tsf4-de-la-crusaz-skirail-9153.html",
+  "place": "Morzine village"
+ },
+ "ski_lift:TS des Mouilles": {
+  "rmnet": "reportage-tsf4-des-mouilles-skirail-5091.html"
+ },
+ "ski_lift:TS des Raverettes": {
+  "rmnet": "reportage-tsf4-des-raverettes-poma-9417.html"
+ },
+ "ski_lift:TS Les Têtes": {
+  "rmnet": "reportage-tsf4-des-tetes-poma-5026.html"
+ },
+ "ski_lift:TS du Pré Favre": {
+  "rmnet": "reportage-tsf4-du-pre-favre-skirail-9457.html"
+ },
+ "ski_lift:TK Mas Verjus": {
+  "place": "Morzine village"
+ },
+ "ski_lift:TK Bouchet": {
+  "place": "Morzine village"
+ },
+ "ski_lift:TS3 CUBORE MONTRIOND": {
+  "display": "Cuboré Montriond"
+ },
+ "ski_lift:TS3 CUBORE MORZINE": {
+  "display": "Cuboré Morzine"
+ },
+ "ski_lift:Fil neige ESF": {
+  "display": "ESF"
+ },
+ "ski_lift:Telecorde ESF": {
+  "display": "ESF"
+ },
+ "ski_lift:TK DES TRASHERS": {
+  "display": "Trashers"
+ },
+ "ski_trail:CROZATS SNOWCROSS": {
+  "extra": "It is an ungroomed snowcross run below the Hauts-Forts that joins the Coupe du Monde.",
+  "sources": [
+   "https://avoriaz.com/en/winter-activities/freestyle---freeride/snowcross"
+  ]
+ },
+ "ski_trail:FRONTALIERE SNOWCROSS": {
+  "extra": "It is an ungroomed snowcross run from the Swiss border, with steep narrow sections lower down.",
+  "sources": [
+   "https://avoriaz.com/en/winter-activities/freestyle---freeride/snowcross"
+  ]
+ },
+ "ski_trail:PSCHOTT SNOWCROSS": {
+  "extra": "It is an ungroomed snowcross run through natural canyons, harder than the Marmotte.",
+  "sources": [
+   "https://avoriaz.com/en/winter-activities/freestyle---freeride/snowcross"
+  ]
+ },
+ "ski_trail:MARMOTTE SNOWCROSS": {
+  "extra": "It is the gentlest of the ungroomed snowcross runs and suits anyone happy on a blue.",
+  "sources": [
+   "https://avoriaz.com/en/winter-activities/freestyle---freeride/snowcross"
+  ]
+ },
+ "ski_trail:COUPE DU MONDE": {
+  "extra": "It was built in 1974 for World Cup races, held here until 1986.",
+  "sources": [
+   "https://avoriaz.com/en/to-discover/blog/the-must-see-slopes-in-avoriaz"
+  ]
+ },
+ "ski_trail:ABRICOTINE": {
+  "extra": "It is the longest run in Avoriaz and suits all levels.",
+  "sources": [
+   "https://avoriaz.com/en/to-discover/blog/the-must-see-slopes-in-avoriaz"
+  ]
+ },
+ "ski_trail:SNOWPARK ARARE": {
+  "noun": "snowpark",
+  "park": true,
+  "where": "",
+  "extra": "Now called Nami Park, it is the park for experienced riders, with big jumps and a small half-pipe.",
+  "sources": [
+   "https://avoriaz.com/en/discover/the-essentials/arare-snowpark"
+  ]
+ },
+ "ski_trail:SNOWPARK CHAPELLE": {
+  "noun": "snowpark",
+  "park": true,
+  "extra": "It has four kicker lines from XS to L and two lines of boxes and rails.",
+  "sources": [
+   "https://avoriaz.com/en/winter-activities/ski-et-snow/freestyle-areas-and-fun-zones-in-avoriaz/",
+   "https://www.avoriaz.com/en/discover/the-essentials/chapelle-snowpark/"
+  ]
+ },
+ "ski_trail:SNOWPARK STASH": {
+  "noun": "tree park",
+  "park": true,
+  "lead": "This forest snowpark drops from {T} to {B} over {L}.",
+  "where": "",
+  "extra": "Wooden features and a snake run wind through the Lindarets forest, reached by the Prolays chairlift.",
+  "sources": [
+   "https://www.avoriaz.com/en/winter-activities/freestyle---freeride/the-stash/"
+  ]
+ },
+ "ski_trail:SNOWPARK LIL STASH": {
+  "noun": "kids' snowpark",
+  "park": true,
+  "extra": "It sits in the Proclou forest with tree huts, wobbly bridges, small jumps and boxes.",
+  "sources": [
+   "https://www.avoriaz.com/en/winter-activities/freestyle---freeride/the-lil-stash/"
+  ]
+ },
+ "ski_trail:Snowpark des Chavannes": {
+  "park": true,
+  "lead": "This snowpark drops from {T} to {B} over {L}.",
+  "where": "",
+  "extra": "It sits near the top of the Chavannes gondola, with lines from green to black.",
+  "sources": [
+   "https://www.lesgets.com/en/ski/snowpark/"
+  ]
+ },
+ "ski_trail:Eagle Park": {
+  "park": true,
+  "lead": "This snowpark drops from {T} to {B} over {L}.",
+  "where": "",
+  "extra": "It has kickers, rails and natural bumps for beginners and experienced riders.",
+  "sources": [
+   "https://en.morzine-avoriaz.com/nyon-winter-experiences/"
+  ]
+ },
+ "ski_trail:Boardercross de Nyon": {
+  "noun": "boardercross course",
+  "park": true
+ },
+ "ski_trail:Boarder Déborah Anthonioz": {
+  "park": true,
+  "extra": "It is a permanent boardercross course, reached from the Chavannes gondola by the Gentiane run.",
+  "where": "",
+  "sources": [
+   "https://www.lesgets.com/en/?p=13810"
+  ]
+ },
+ "ski_trail:Pinguin Park": {
+  "extra": "It is a fun zone with gongs, tunnels, boxes and a giant xylophone.",
+  "sources": [
+   "https://en.morzine-avoriaz.com/discover-morzine/winter/morzine-les-gets-ski-area/"
+  ]
+ },
+ "ski_trail:Zone de Speed Riding": {
+  "extra": "It is a zone set aside for speed riding, which is skiing with a small paraglider wing.",
+  "where": "",
+  "sources": [
+   "https://www.auvergnerhonealpes-tourisme.com/en/fiches/speed-riding/"
+  ]
+ },
+ "ski_trail:Zone de bosses Chavannes": {
+  "preds": [
+   "is a mogul zone"
+  ]
+ },
+ "ski_trail:Parallèle chronométré Chéry": {
+  "preds": [
+   "is a timed parallel course"
+  ]
+ },
+ "ski_trail:STADE D'ARARE": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:STADE TETE AUX BOEUFS": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:STADE FRANCOIS DIDES": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade Carry": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade du Ranfoilly": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade Grande Ourse": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade de la pointe": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade de la combe": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Le Stade": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Stade": {
+  "preds": [
+   "is a race stadium"
+  ]
+ },
+ "ski_trail:Piste des Indiens": {
+  "preds": [
+   "is part of the Mappys beginner area"
+  ]
+ },
+ "ski_trail:Piste des Trappeurs": {
+  "preds": [
+   "is part of the Mappys beginner area"
+  ]
+ },
+ "ski_trail:Piste les Cowboys": {
+  "preds": [
+   "is part of the Mappys beginner area"
+  ]
+ },
+ "ski_trail:Mini Boarder Vidéo": {
+  "preds": [
+   "is part of the Mappys beginner area"
+  ]
+ },
+ "ski_trail:Jardin ESF": {
+  "preds": [
+   "is the ESF ski school's learning area"
+  ]
+ },
+ "ski_trail:Zone Débutants": {
+  "preds": [
+   "is a beginner area"
+  ]
+ },
+ "ski_trail:Accès domaine skide fond": {
+  "note": "It leads to the cross-country ski area."
+ }
+}

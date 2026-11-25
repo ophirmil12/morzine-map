@@ -573,6 +573,10 @@
    "color": "#F44C65",
    "icon": "bar"
   },
+  "mountain_restaurants": {
+   "color": "#F44C65",
+   "icon": "restaurant"
+  },
   "nordic_ski_trail": {
    "color": null,
    "icon": null

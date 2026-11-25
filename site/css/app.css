@@ -55,7 +55,8 @@ button { cursor: pointer; }
 }
 .tool:hover { background: var(--bg-2); }
 .tool[aria-pressed="true"] { background: var(--ink); color: #fff; }
-#northIcon { transition: transform .15s linear; }
+/* No transition on the north arrow: it is set on every frame of a turn already, and a transition
+   lagged behind and spun a full circle the wrong way when the bearing wrapped from 180 to -180. */
 
 /* vertical km scale under the map buttons: a thin bar with end and middle ticks */
 .vscale {
@@ -68,7 +69,7 @@ button { cursor: pointer; }
 }
 .vscale .bar {
   position: relative; display: block; width: 2px; height: 100px; background: currentColor;
-  box-shadow: 0 0 0 1px rgba(255,255,255,.75); transition: height .12s linear;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.75);   /* no transition: the bar must match its label */
 }
 .vscale .bar::before, .vscale .bar::after {
   content: ""; position: absolute; inset-inline-start: -4px; width: 10px; height: 2px; background: currentColor;

@@ -1,0 +1,135 @@
+{
+ "_about": "Corrections to the office's piste and lift data for winter 2026-27, applied by tools/fetch_site_data.py after the download. remove: ids gone this winter. geometry: new line for an id, from an OpenStreetMap way (lifts run bottom to top, pistes top to bottom, as OSM draws them; set reverse to flip). rename and category: fixes to the office record. add: items missing from the office data, with ids osm-way-<id>. Lines are fetched once from the OpenStreetMap API and cached in cache/osm/. The marker of a re-drawn or added item goes to the start of its new line.",
+ "checked": "2026-11-25",
+ "remove": [
+  {
+   "id": "93088529-92ba-48cd-971c-723e1320d13a",
+   "name": "TS GRANDE OURSE",
+   "reason": "Ended service in 2026 and was taken down in August 2026. The new Pointe du Chéry chairlift starts where it used to start. It is not on the 2026-27 piste map.",
+   "sources": [
+    "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+    "https://www.remontees-mecaniques.net/bdd/reportage-tsf2-de-la-grande-ourse-montaz-mautino-2991.html",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "be2b1556-8654-41e2-98d4-ce011ceda440",
+   "name": "TK SUPER CHERY",
+   "reason": "Ended service in 2026. SoleGets calls its top station the former arrival and has reshaped it. It is not on the 2026-27 piste map and OSM no longer has it.",
+   "sources": [
+    "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+    "https://www.remontees-mecaniques.net/bdd/reportage-tkd-de-super-chery-montaz-mautino-2981.html",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "3068fc5f-712e-456f-a2fa-cbb6ee022c00",
+   "name": "TSD GRAINS D'OR EXPRESS",
+   "reason": "Taken down in 2026 because the 8-seat Rosta chairlift replaced it. Its parts were moved to Mont Chéry for the new Pointe du Chéry chairlift. Only La Rosta is on the 2026-27 piste map.",
+   "sources": [
+    "https://solegets.com/2026/11/25/remodelage-de-la-piste-de-la-renardiere/",
+    "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+    "https://www.remontees-mecaniques.net/bdd/reportage-tsd6-grains-d-or-express-poma-807.html",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "d132b84d-0464-4768-8bd4-c0fc676b1a71",
+   "name": "Atray",
+   "reason": "remontees-mecaniques.net gives 2025 as its last year and lists it out of service. It is missing from the 2026-27 Morzine-Les Gets piste map and from the operator's live status feed. The office should confirm.",
+   "sources": [
+    "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-d-atray-poma-5248.html",
+    "https://www.remontees-mecaniques.net/bdd/station-morzine-le-pleney-25.html",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  }
+ ],
+ "geometry": [
+  {
+   "id": "16dfff57-de1d-41fe-9d5f-61289d6fb2e6",
+   "name": "TS Pointe de Nyon",
+   "osm_way": 96366493,
+   "reason": "The office line was the old Pointe du Chéry drag lift on Mont Chéry in Les Gets. The real 3-seat chairlift runs 1.5 km from the Plateau de Nyon (1,413 m) to the Pointe de Nyon (1,957 m).",
+   "sources": [
+    "https://www.openstreetmap.org/way/96366493",
+    "https://www.remontees-mecaniques.net/bdd/reportage-tsf3-de-la-pointe-de-nyon-poma-4996.html",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "7513c239-d377-4294-97f2-2fcd4b8bc56f",
+   "name": "TS POINTE",
+   "osm_way": 1582367206,
+   "reason": "The 1984 fixed Pointe chairlift ran its last season in 2025-26. Its place is taken by the new Pointe chairlift, the Grains d'Or Express rebuilt from the old Grande Ourse start to the summit. It is a 6-seat detachable, 988 m long, opening in January 2027. The 2026-27 map shows one lift called La Pointe, and the live feed still reports this id like a working lift, so the id is kept for the new line.",
+   "sources": [
+    "https://www.openstreetmap.org/way/1582367206",
+    "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/",
+    "https://solegets.com/2026/11/25/remodelage-de-la-piste-de-la-renardiere/",
+    "https://www.remontees-mecaniques.net/bdd/reportage-tsf4-de-la-pointe-skirail-399.html",
+    "https://pass.lesgets.com/nouvelles-glisses-mont-chery/",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "3b5a6f81-df3f-4e7b-8e5b-e7ed62003534",
+   "name": "RENARDIERE",
+   "osm_way": 32344720,
+   "reason": "The office line started at the top of the Grains d'Or Express, which is gone, and that start is being returned to nature. The link to the Perrières now starts at the top of the Rosta chairlift and follows the existing track past the Pointe de la Turche, as drawn on the 2026-27 map.",
+   "sources": [
+    "https://www.openstreetmap.org/way/32344720",
+    "https://solegets.com/2026/11/25/remodelage-de-la-piste-de-la-renardiere/",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  }
+ ],
+ "rename": [
+  {
+   "id": "7513c239-d377-4294-97f2-2fcd4b8bc56f",
+   "old": "TS POINTE",
+   "name": "TSD POINTE DU CHERY",
+   "reason": "The id now stands for the new 6-seat detachable chairlift, which SoleGets calls the TSD de la Pointe du Chéry.",
+   "sources": [
+    "https://solegets.com/2026/08/13/nouveau-telesiege-de-la-pointe/"
+   ]
+  },
+  {
+   "id": "bad349f5-871d-41ed-ac9b-3cd72c274a66",
+   "old": "TK du Poireau 1",
+   "name": "TK des Poireaux 1",
+   "reason": "The lift is the Poireaux 1 drag lift on the piste map, on remontees-mecaniques.net and in OSM.",
+   "sources": [
+    "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html",
+    "https://www.openstreetmap.org/way/280176511",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  },
+  {
+   "id": "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57",
+   "old": "TK du Poireau 2",
+   "name": "TK des Poireaux 2",
+   "reason": "The lift is the Poireaux 2 drag lift on the piste map, on remontees-mecaniques.net and in OSM.",
+   "sources": [
+    "https://www.remontees-mecaniques.net/bdd/reportage-tkd-des-poireaux-1-2-poma-4917.html",
+    "https://www.openstreetmap.org/way/280176510",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf"
+   ]
+  }
+ ],
+ "category": [],
+ "add": [
+  {
+   "id": "osm-way-258907441",
+   "name": "CABRI",
+   "family": "ski_trail",
+   "category": "ski_intermediate",
+   "area": "Secteur Mont-Chéry",
+   "osm_way": 258907441,
+   "reason": "A red run from the bottom of the new Pointe du Chéry chairlift down to Les Gets village. It is on the 2026-27 piste map and in OSM but missing from the office data.",
+   "sources": [
+    "https://www.openstreetmap.org/way/258907441",
+    "https://en.morzine-avoriaz.com/app/uploads/2024/06/dlmorzine-planlegendeh2026-2027-bd.pdf",
+    "https://hautesavoiemontblanc-tourisme.com/offres/la-montee-du-chery-les-gets-fr-5884864/"
+   ]
+  }
+ ]
+}

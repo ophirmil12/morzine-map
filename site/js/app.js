@@ -8,11 +8,15 @@
   const BOUNDS = [[6.56, 46.09], [6.89, 46.26]];
   // Base map: our own style (style/base.json + js/basemap.js) on OpenFreeMap vector tiles.
   const BASE_STYLE = BASEMAP.styleUrl;
-  // Terrain: AWS Terrarium elevation tiles stored in the site (tools/download_dem.py, zoom 8-14).
+  // Terrain: AWS Terrarium elevation tiles stored in the site (tools/download_dem.py, zoom 8-13).
   // Absolute URL because MapLibre loads tiles in a web worker. sw.js keeps them cached for weeks.
   const DEM_TILES = new URL('tiles/dem/', location.href).href + '{z}/{x}/{y}.png';
-  const DEM_MAXZOOM = 14;   // 3D terrain
-  const SHADE_MAXZOOM = 13; // hillshade: zoom 14 data shows stripes on the slopes
+  // Zoom 13 for both the 3D terrain and the hillshade: same tile files (downloaded once), and 30-40%
+  // fewer elevation tiles than zoom 14 with no visible change. Zoom 14 also made hillshade stripes.
+  const DEM_MAXZOOM = 13;
+  const SHADE_MAXZOOM = 13;
+  // The elevation tiles exist only for this box: never ask for tiles outside it (towards the horizon).
+  const DEM_BOUNDS = [6.56, 46.09, 6.89, 46.26];
   const DEM_ATTR = '<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank">Terrain: Mapzen, AWS</a>';
   const DATA_ATTR = 'Data: Office de Tourisme de Morzine';
   const EXAGGERATION = 1.35;
@@ -27,7 +31,7 @@
     mtb:     { families: ['mtb_trail'], icon: 'directions_bike', color: '#c2410c' },
     running: { families: ['trail_running'], icon: 'directions_run', color: '#0f766e' }
   };
-  const POI_ORDER = ['activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
+  const POI_ORDER = ['mountain_restaurants', 'activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
     'shops_and_services', 'producers', 'stops'];
   // Piste colours as on the original site.
   const DIFF_COLOR = { novice: '#66BE58', easy: '#1B65D4', intermediate: '#E11C1C', advanced: '#111111' };
@@ -35,7 +39,7 @@
   const CLOSED_COLOR = '#a3acb5';   // lifts and pistes closed right now (live status)
 
   // Layers shown when the map opens, per season; the others start switched off.
-  const DEFAULT_ON = { winter: ['pistes', 'lifts'], summer: ['lifts', 'mtb'] };
+  const DEFAULT_ON = { winter: ['pistes', 'lifts', 'mountain_restaurants'], summer: ['lifts', 'mtb'] };
 
   // ------------------------------------------------------------------ state
   const qs = new URLSearchParams(location.search);
@@ -188,8 +192,8 @@
     document.querySelectorAll('.maplibregl-ctrl-attrib.maplibregl-compact-show')
       .forEach((el) => el.classList.remove('maplibregl-compact-show'));
     // --- terrain, hillshade, sky
-    map.addSource('dem', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: DEM_MAXZOOM, attribution: DEM_ATTR });
-    map.addSource('dem-shade', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: SHADE_MAXZOOM });
+    map.addSource('dem', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: DEM_MAXZOOM, bounds: DEM_BOUNDS, attribution: DEM_ATTR });
+    map.addSource('dem-shade', { type: 'raster-dem', tiles: [DEM_TILES], encoding: 'terrarium', tileSize: 256, minzoom: 8, maxzoom: SHADE_MAXZOOM, bounds: DEM_BOUNDS });
     map.addLayer({ id: 'hillshade', type: 'hillshade', source: 'dem-shade', paint: { 'hillshade-method': 'igor' } },
       map.getLayer('hillshade-slot') ? 'hillshade-slot' : undefined);  // colours set by BASEMAP.applySeason
     setTerrain(true);
@@ -298,18 +302,19 @@
     map.once('idle', () => { if (!state.query && !state.selected) renderList(); });
     if (qs.get('id') && byId[qs.get('id')]) openDetail(qs.get('id'), true);
     LIVE.start(applyLive);
+    SHARE.init(map, { t, toast });   // live location sharing (hidden until the Worker is deployed)
   });
 
-  /** The camera must never go into the mountain. After every move, look at the ground under the
+  /** The camera must never go into the mountain. MapLibre calls transformCameraUpdate on every
+   *  camera change (finger, mouse, animation, jump) before drawing it. Look at the ground under the
    *  camera and on the first stretch of its line of sight; if the camera is not at least MARGIN
-   *  above all of it, step back (zoom out) and check again. */
+   *  above all of it, step back (zoom out) and check again. Done here and not with a jumpTo in a
+   *  'move' handler, because a jumpTo stops any running flight or finger gesture half way. */
   function keepCameraAboveGround() {
-    const tr = map.transform;
-    if (!tr || !tr.getCameraLngLat || !tr.getCameraAltitude) return;
+    if (!map.transform || !map.transform.getCameraLngLat || !map.transform.getCameraAltitude) return;
     const MARGIN = 80;   // metres (exaggerated terrain)
-    let fixing = false;
-    const highestGround = () => {
-      const cam = tr.getCameraLngLat(), c = map.getCenter();
+    const highestGround = (tr) => {
+      const cam = tr.getCameraLngLat(), c = tr.center;
       let top = -Infinity;
       for (const k of [0, 0.15, 0.3]) {   // under the camera, then towards the centre of the view
         const h = map.queryTerrainElevation([cam.lng + (c.lng - cam.lng) * k, cam.lat + (c.lat - cam.lat) * k]);
@@ -317,21 +322,33 @@
       }
       return top;
     };
-    map.on('move', () => {
-      if (fixing || !state.terrain || !map.getTerrain()) return;
-      fixing = true;
-      try {
-        for (let i = 0; i < 6; i++) {
-          const ground = highestGround();
-          if (!isFinite(ground)) break;
-          const cam = tr.getCameraAltitude(), centre = tr.elevation || 0;
-          const above = cam - centre, needed = ground + MARGIN - centre;
-          if (cam >= ground + MARGIN || above <= 0) break;
-          // The camera's height above the centre doubles for each zoom level out.
-          map.jumpTo({ zoom: map.getZoom() - Math.log2(Math.max(needed, above * 1.1) / above) - 0.05 });
-        }
-      } finally { fixing = false; }
-    });
+    // MapLibre 5.6 works out the height of the view centre during a flight, then loses it: the flight
+    // keeps its start height, ends too close to (or too far from) a peak, and MapLibre's own
+    // below-ground check tilts the camera up on the way. Hand the height over before that check.
+    const ownCheck = map._elevateCameraIfInsideTerrain;
+    if (typeof ownCheck === 'function') {
+      map._elevateCameraIfInsideTerrain = function (tr) {
+        if (map.getTerrain() && map.isEasing()) tr.setElevation(map.transform.elevation);
+        return ownCheck.call(this, tr);
+      };
+    }
+    map.transformCameraUpdate = (tr) => {
+      if (!map.getTerrain()) return {};
+      const out = {};
+      for (let i = 0; i < 6; i++) {
+        const ground = highestGround(tr);
+        if (!isFinite(ground)) break;
+        const cam = tr.getCameraAltitude(), above = cam - tr.elevation;
+        if (cam >= ground + MARGIN || above <= 0) break;
+        // The camera's height above the centre doubles for each zoom level out.
+        tr.setZoom(tr.zoom - Math.log2(Math.max(ground + MARGIN - tr.elevation, above * 1.1) / above) - 0.05);
+        out.zoom = tr.zoom;
+      }
+      return out;
+    };
+    // MapLibre 5.6 also leaves the centre height frozen after a flight (only a finger drag frees it).
+    // Free it, so the centre stays on the ground as finer terrain tiles arrive.
+    map.on('moveend', () => { if (!map.isMoving()) map._elevationFreeze = false; });
   }
 
   // ------------------------------------------------------------------ live lift/piste status
@@ -345,10 +362,30 @@
       : `${d.toLocaleDateString(I18N.lang, { weekday: 'short', day: 'numeric', month: 'short' })} ${time}`;
   };
 
-  // Hidden switch: 5 taps in a row on the Morzine logo ignores live status (normal colours, no
-  // status pill or badge). Another 5 taps brings it back. Not saved: a reload starts with it on.
-  let ignoreLive = false;
-  (function logoTaps() {
+  // Hidden settings: 5 taps in a row on the Morzine logo open a small box with two switches,
+  // "ignore live lift status" (normal colours, no status pill or badge) and "location sharing
+  // after hours" (js/share.js). Both stay on until midnight, French time, then switch off.
+  const K_IGNORE = 'morzine-ignore-live-until';
+  const stillOn = (k) => { try { return Number(localStorage.getItem(k)) > Date.now(); } catch (e) { return false; } };
+  let ignoreLive = stillOn(K_IGNORE);
+  (function hiddenSettings() {
+    const box = document.getElementById('secretBox');
+    const optLive = document.getElementById('optIgnoreLive');
+    const optAfter = document.getElementById('optAfterHours');
+    const sync = () => { ignoreLive = stillOn(K_IGNORE); optLive.checked = ignoreLive; optAfter.checked = SHARE.afterHours(); };
+    optLive.addEventListener('change', () => {
+      try {
+        if (optLive.checked) localStorage.setItem(K_IGNORE, String(SHARE.nextMidnight()));
+        else localStorage.removeItem(K_IGNORE);
+      } catch (e) { /* private mode: works until reload */ }
+      ignoreLive = optLive.checked;
+      applyLive();
+      toast(t(ignoreLive ? 'live.ignored' : 'live.restored'));
+    });
+    optAfter.addEventListener('change', () => SHARE.setAfterHours(optAfter.checked));
+    // Midnight passed while the page was open: the switches turn themselves off.
+    setInterval(() => { const was = ignoreLive; sync(); if (was !== ignoreLive) applyLive(); }, 60 * 1000);
+
     const TAPS = 5, GAP_MS = 1500;
     let count = 0, last = 0;
     document.querySelectorAll('.map-logo, .brand-logo').forEach((logo) => {
@@ -359,11 +396,14 @@
         last = now;
         if (count < TAPS) return;
         count = 0;
-        ignoreLive = !ignoreLive;
-        applyLive();
-        toast(t(ignoreLive ? 'live.ignored' : 'live.restored'));
+        sync();
+        box.hidden = !box.hidden;
       });
     });
+    // Touching anything else closes the box.
+    document.addEventListener('pointerdown', (e) => {
+      if (!box.hidden && !box.contains(e.target) && !e.target.closest('.map-logo, .brand-logo')) box.hidden = true;
+    }, true);
   })();
 
   /** New status arrived (or the saved one at start): recolour lines, update pill, legend, card. */
@@ -412,11 +452,27 @@
   const emptyFC = () => ({ type: 'FeatureCollection', features: [] });
 
   function setTerrain(on) {
-    state.terrain = on;
     map.setTerrain(on ? { source: 'dem', exaggeration: EXAGGERATION } : null);
+    showTerrainState(on);
+  }
+  function showTerrainState(on) {
+    state.terrain = on;
     const b = document.getElementById('btn3d');
     b.setAttribute('aria-pressed', String(on));
     b.querySelector('span').textContent = on ? t('map.3d') : t('map.2d');
+  }
+
+  /** Call back once the terrain tiles in view have loaded (1.5 s at most). */
+  function whenTerrainLoaded(cb) {
+    if (map.queryTerrainElevation(map.getCenter())) return cb();   // ground under the centre known
+    let done = false, timer = null;
+    const onData = (e) => { if (e.sourceId === 'dem' && e.tile && map.isSourceLoaded('dem')) finish(); };
+    const finish = () => {
+      if (done) return;
+      done = true; clearTimeout(timer); map.off('sourcedata', onData); cb();
+    };
+    timer = setTimeout(finish, 1500);
+    map.on('sourcedata', onData);
   }
 
   // ------------------------------------------------------------------ filtering
@@ -453,7 +509,9 @@
     for (const r of all) if (inSeason(r)) count[r.p.group] = (count[r.p.group] || 0) + 1;
     const lineGroups = Object.keys(LINE_GROUPS).filter((g) => count[g]);
     const poiGroups = POI_ORDER.filter((g) => count[g]).concat(Object.keys(count).filter((g) => !LINE_GROUPS[g] && !POI_ORDER.includes(g)));
-    return { count, groups: lineGroups.concat(poiGroups) };
+    // Layers that start switched on come first, so on phones they are in view in the chip row.
+    const groups = lineGroups.concat(poiGroups), first = DEFAULT_ON[state.season] || [];
+    return { count, groups: groups.filter((g) => first.includes(g)).concat(groups.filter((g) => !first.includes(g))) };
   }
   function renderChips() {
     const { count, groups } = groupsInSeason();
@@ -557,6 +615,9 @@
   document.getElementById('back').addEventListener('click', closeDetail);
   document.getElementById('dZoom').addEventListener('click', () => state.selected && zoomTo(byId[state.selected]));
 
+  // The map's own padding (phones: the sheet). A flight's padding option replaces it, so flights
+  // pass this one and the place lands in the middle of the map left above the sheet.
+  let mapPad = { top: 0, bottom: 0, left: 0, right: 0 };
   function zoomTo(r) {
     const padding = panelPadding();
     if (r.isLine) {
@@ -565,9 +626,9 @@
       const cam = map.cameraForBounds([[r.p.bbox[0], r.p.bbox[1]], [r.p.bbox[2], r.p.bbox[3]]],
         { padding, bearing: map.getBearing() }) || {};
       const c = [(r.p.bbox[0] + r.p.bbox[2]) / 2, (r.p.bbox[1] + r.p.bbox[3]) / 2];
-      map.flyTo({ center: c, zoom: Math.min(15.5, (cam.zoom || 14) - (map.getPitch() > 20 ? 0.4 : 0)), duration: 1200 });
+      map.flyTo({ center: c, zoom: Math.min(15.5, (cam.zoom || 14) - (map.getPitch() > 20 ? 0.4 : 0)), padding: mapPad, duration: 1200 });
     }
-    else map.flyTo({ center: r.p.point, zoom: Math.max(map.getZoom(), 16), padding, duration: 1200 });
+    else map.flyTo({ center: r.p.point, zoom: Math.max(map.getZoom(), 16), padding: mapPad, duration: 1200 });
   }
   // The camera already keeps clear of the sheet (map padding), so this is only a margin.
   function panelPadding() {
@@ -641,16 +702,33 @@
     const u = new URL(location.href); u.searchParams.set('lang', langSel.value); location.href = u.toString();
   });
 
+  // 2D/3D. To 2D: tilt down with the terrain still on, then flatten it (from straight above this
+  // hardly shows). To 3D: bring the terrain back while still looking straight down, wait for its
+  // tiles, then tilt back to the last 3D tilt, so the camera rises with the ground and does not pop.
+  let toggleId = 0, pitch3d = 60;
   document.getElementById('btn3d').addEventListener('click', () => {
-    const on = !state.terrain;
-    setTerrain(on);
-    map.easeTo({ pitch: on ? 60 : 0, duration: 700 });
+    const on = !state.terrain, id = ++toggleId;
+    showTerrainState(on);
+    if (!on) {
+      if (map.getPitch() >= 20) pitch3d = map.getPitch();
+      const flatten = () => { if (id === toggleId) map.setTerrain(null); };
+      map.easeTo({ pitch: 0, duration: 700 });
+      if (map.isEasing()) map.once('moveend', flatten); else flatten();
+      return;
+    }
+    map._elevationFreeze = false;   // the centre height follows the terrain tiles as they arrive
+    if (!map.getTerrain()) setTerrain(true);
+    whenTerrainLoaded(() => { if (id === toggleId) map.easeTo({ pitch: pitch3d, duration: 700 }); });
   });
   document.getElementById('btnNorth').addEventListener('click', () => map.easeTo({ bearing: 0, duration: 600 }));
   const legend = document.getElementById('legend');
-  document.getElementById('btnLegend').addEventListener('click', (e) => {
-    legend.hidden = !legend.hidden; e.currentTarget.setAttribute('aria-pressed', String(!legend.hidden));
-  });
+  const btnLegend = document.getElementById('btnLegend');
+  const showLegend = (on) => { legend.hidden = !on; btnLegend.setAttribute('aria-pressed', String(on)); };
+  btnLegend.addEventListener('click', () => showLegend(legend.hidden));
+  // Touching anything outside the legend (map, sheet, other buttons) closes it.
+  document.addEventListener('pointerdown', (e) => {
+    if (!legend.hidden && !legend.contains(e.target) && !btnLegend.contains(e.target)) showLegend(false);
+  }, true);
 
   // Map style switch inside the legend: snowy winter look or regular natural colours.
   const lookSeg = document.getElementById('lookSeg');
@@ -721,26 +799,39 @@
     panel.style.setProperty('--sheet-h', `${h}px`);
     document.documentElement.style.setProperty('--sheet-h', `${h}px`);
   }
-  /** Keep the map's centre (and fitBounds) above the sheet. */
-  function padMap(h) {
-    const hs = sheetHeights();
-    map.setPadding({ top: 0, left: 0, right: 0, bottom: Math.min(h, hs.half) });
+  /** Keep the map's centre (and fitBounds) above the sheet. The map glides with the sheet (0.25 s,
+   *  as its CSS) instead of jumping. While the map moves (a flight, a finger) it waits for the end:
+   *  changing the padding would stop the move half way. */
+  let padWaiting = false;
+  function padMap(h, glide) {
+    mapPad = { top: 0, left: 0, right: 0, bottom: Math.min(h, sheetHeights().half) };
+    const apply = () => {
+      const p = map.getPadding();
+      if (p.top === 0 && p.left === 0 && p.right === 0 && p.bottom === mapPad.bottom) return;
+      if (map.isMoving()) {
+        if (!padWaiting) { padWaiting = true; map.once('moveend', () => { padWaiting = false; apply(); }); }
+        return;
+      }
+      if (glide) map.easeTo({ padding: mapPad, duration: 250 });
+      else map.setPadding(mapPad);
+    };
+    apply();
   }
-  function setSheet(mode) {
+  function setSheet(mode, glide = true) {
     if (!isPhone) return;
     sheetMode = mode;
     const h = sheetHeights()[mode];
     panel.classList.remove('peek', 'half', 'full'); panel.classList.add(mode);
     applySheetHeight(h);
-    padMap(h);
+    padMap(h, glide);
     const active = document.activeElement;
     if (mode !== 'full' && active && active.id === 'search') active.blur();   // close the keyboard
   }
   if (isPhone) {
     // Phones: the legend button sits at the bottom, in the search row.
     document.getElementById('searchRow').appendChild(document.getElementById('btnLegend'));
-    setSheet('peek');
-    window.addEventListener('resize', () => setSheet(sheetMode));
+    setSheet('peek', false);
+    window.addEventListener('resize', () => setSheet(sheetMode, false));
     document.getElementById('search').addEventListener('focus', () => setSheet('full'));
     (function sheetDrag() {
       let y0 = null, h0 = 0, t0 = 0, moved = false;

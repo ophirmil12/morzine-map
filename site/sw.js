@@ -15,7 +15,7 @@
  *
  * Bump VERSION to throw away every cached app file (tiles are kept).
  */
-const VERSION = 'v8';
+const VERSION = 'v11';
 const APP_CACHE = `app-${VERSION}`;
 const TILE_CACHE = 'tiles-v1';
 const LIB_CACHE = 'libs-v1';
@@ -27,8 +27,8 @@ const BASEMAP_ZOOMS = [8, 14];   // OpenFreeMap vector tiles stop at 14; the map
 
 // Stored on install. Icons are added from assets/icons/index.json.
 const APP_FILES = [
-  './', 'index.html', 'css/app.css', 'sw.js',
-  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/live.js', 'js/app.js',
+  './', 'index.html', 'css/app.css', 'css/share.css', 'sw.js',
+  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/live.js', 'js/share.js', 'js/app.js',
   'style/base.json', 'i18n/languages.json', 'i18n/en.json',
   'data/trails.json', 'data/pois.json', 'data/categories.json', 'data/content/en.json',
   'assets/logo.svg', 'assets/icons/index.json', 'tiles/dem/metadata.json'
@@ -102,7 +102,9 @@ async function saveArea() {
   try {
     const meta = await (await fetch('tiles/dem/metadata.json')).json();
     // Plain string join: new URL() would percent-encode the {z}/{x}/{y} placeholders.
-    urls.push(...areaTiles(self.registration.scope + 'tiles/dem/{z}/{x}/{y}.png', meta.minzoom, meta.maxzoom));
+    // Terrain and hillshade use zoom <= 13 (js/app.js). Zoom 14 only feeds the desktop contour
+    // lines, so it is cached when used and not saved ahead (192 tiles, about 21 MB less to download).
+    urls.push(...areaTiles(self.registration.scope + 'tiles/dem/{z}/{x}/{y}.png', meta.minzoom, Math.min(meta.maxzoom, 13)));
   } catch (e) { /* no local terrain */ }
   try {
     const tj = await (await fetch(BASEMAP_TILEJSON)).json();

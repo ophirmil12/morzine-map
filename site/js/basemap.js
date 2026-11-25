@@ -211,7 +211,8 @@
         contourLayer: 'contours', elevationKey: 'ele', levelKey: 'level'
       })],
       minzoom: c.majorMinZoom,
-      maxzoom: c.demMaxZoom
+      maxzoom: c.demMaxZoom,
+      bounds: [6.56, 46.09, 6.89, 46.26]   // the elevation tiles exist only for this box
     });
     const pal = PALETTES[currentSeason];
     const before = (id) => (map.getLayer(id) ? id : undefined);

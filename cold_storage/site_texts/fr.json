@@ -2668,10 +2668,6 @@
    "name": "Pisciculture des Meuniers",
    "description": "Poussez les portes de la Pisciculture des Meuniers pour observer les poissons de nos lacs de montagne et torrents : ombles chevalier, truites fario. A voir également : truites d'élevage arc en ciel et saumons de fontaine."
   },
-  "d132b84d-0464-4768-8bd4-c0fc676b1a71": {
-   "name": "Atray",
-   "description": ""
-  },
   "cd690d7f-cb6e-4782-b0ba-9c475bf1be53": {
    "name": "Château",
    "description": ""
@@ -2845,11 +2841,11 @@
    "description": ""
   },
   "bad349f5-871d-41ed-ac9b-3cd72c274a66": {
-   "name": "TK du Poireau 1",
+   "name": "TK des Poireaux 1",
    "description": ""
   },
   "dbd8e5b1-d4e7-415e-b7ca-ea3d65cf4f57": {
-   "name": "TK du Poireau 2",
+   "name": "TK des Poireaux 2",
    "description": ""
   },
   "6033546a-5176-4396-82bf-6e3ec2965a53": {
@@ -2874,10 +2870,6 @@
   },
   "e8d49818-1a9f-4374-b4a6-d204612592d5": {
    "name": "TK PRODAINS",
-   "description": ""
-  },
-  "be2b1556-8654-41e2-98d4-ce011ceda440": {
-   "name": "TK SUPER CHERY",
    "description": ""
   },
   "100deaba-f014-4c15-a43c-2c7adb813aa0": {
@@ -2944,10 +2936,6 @@
    "name": "TS FOLLIETS DU GOLF",
    "description": ""
   },
-  "93088529-92ba-48cd-971c-723e1320d13a": {
-   "name": "TS GRANDE OURSE",
-   "description": ""
-  },
   "6c1b6dab-381b-42e1-8f2d-df45830949b7": {
    "name": "TS Les Têtes",
    "description": ""
@@ -2957,7 +2945,7 @@
    "description": ""
   },
   "7513c239-d377-4294-97f2-2fcd4b8bc56f": {
-   "name": "TS POINTE",
+   "name": "TSD POINTE DU CHERY",
    "description": ""
   },
   "16dfff57-de1d-41fe-9d5f-61289d6fb2e6": {
@@ -2990,10 +2978,6 @@
   },
   "80690d93-9a0f-47cd-a881-d9d7546c0769": {
    "name": "TSD CHAVANNES EXPRESS",
-   "description": ""
-  },
-  "3068fc5f-712e-456f-a2fa-cbb6ee022c00": {
-   "name": "TSD GRAINS D'OR EXPRESS",
    "description": ""
   },
   "68fe1fa9-c9e7-49b8-abe4-4c5a93a07c12": {
@@ -3199,6 +3183,10 @@
   "fddadfb6-79ce-498f-90a1-0fc0caba9581": {
    "name": "Snack Le Pleney - Les Portes du Soleil",
    "description": "Restaurant situé au sommet du télécabine du Pléney. Restauration self-service, Crêperie, Plat du jour. Self-service, crêpes."
+  },
+  "osm-way-258907441": {
+   "name": "CABRI",
+   "description": ""
   }
  },
  "categories": {
@@ -3319,6 +3307,7 @@
   "activities": "Activités",
   "activity_routes": "itinéraires",
   "bars": "Bars",
+  "mountain_restaurants": "Restaurants d'altitude",
   "nordic_ski_trail": "",
   "producers": "Producteurs",
   "rental_accommodation": "Hébergements locatifs",

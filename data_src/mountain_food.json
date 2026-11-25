@@ -1,0 +1,20 @@
+{
+ "about": "Places to eat up on the ski area, split out of Restaurants (and Shops) into their own group, shown when the map opens. Chosen 2026-11-25: restaurants above about 1,150 m within 200 m of a piste, checked by hand against their descriptions. Restaurant Les Prodains (1,180 m) is left out: it is in the valley hamlet at the Prodains car park. Shops are added only when they sell food or drink on the mountain. La Dez'Alp Traiteur is left out (an event caterer at the edge of Les Gets village).",
+ "family": "mountain_restaurants",
+ "label": {"en-US": "Mountain restaurants", "fr-FR": "Restaurants d'altitude", "it-IT": "Rifugi e ristoranti in quota", "de-DE": "Bergrestaurants", "nl-NL": "Bergrestaurants"},
+ "places": [
+  {"id": "ad2d9b71-9865-44cc-b9af-98b009d3468b", "name": "Chez Flo", "alt_m": 1776},
+  {"id": "f56b2c1b-fc76-4ced-b6b4-814414092768", "name": "L'Alpage du Crôt", "alt_m": 1589},
+  {"id": "125edf70-b8fa-4a36-8c55-54c7c70ec041", "name": "Chez Nannon", "alt_m": 1537},
+  {"id": "a18bf85d-1565-4c4f-bbd6-038b8471af71", "name": "Le Vaffieu", "alt_m": 1532},
+  {"id": "af51a9d4-d432-4bc5-8aed-da17f3a684e3", "name": "Le Nabor", "alt_m": 1493},
+  {"id": "fddadfb6-79ce-498f-90a1-0fc0caba9581", "name": "Snack Le Pleney", "alt_m": 1488},
+  {"id": "bb819f18-bb00-4e2b-93e3-c5320c845d48", "name": "Le Resto - Les bulles des Mines d'or", "alt_m": 1355},
+  {"id": "4894868e-bce7-46af-a584-1954994b7985", "name": "Le Grand Pré", "alt_m": 1326},
+  {"id": "72f66db8-b31b-41ab-820f-a204aa1e2302", "name": "Les 2 Criquets", "alt_m": 1325},
+  {"id": "437b6997-614e-4d9f-b68e-0bce8801e60c", "name": "Les Mouilles", "alt_m": 1290},
+  {"id": "68414e95-3ce6-4acc-a0d2-fd20cf93e4cd", "name": "La Crapahute", "alt_m": 1252},
+  {"id": "cd3ef10f-cc4e-4d53-9ff3-21a17b35dd83", "name": "Le Grand Rocher", "alt_m": 1167},
+  {"id": "29b16c62-58aa-4ca4-99f3-4440b168b62a", "name": "La Ferme de Seraussaix (farm shop: cheese, charcuterie)", "alt_m": 1693, "was": "shops_and_services"}
+ ]
+}
