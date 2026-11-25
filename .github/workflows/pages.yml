@@ -1,5 +1,9 @@
 # Publishes the site/ folder to GitHub Pages on every push to main.
 # In the repository: Settings > Pages > Source: "GitHub Actions".
+#
+# Two jobs on purpose: with upload and deploy in one job, deploy-pages sometimes found
+# "0 artifacts" right after a successful upload (a GitHub timing race). A second job starts
+# only once the upload is fully registered.
 name: Deploy map to GitHub Pages
 
 on:
@@ -17,11 +21,8 @@ concurrency:
   cancel-in-progress: false   # let a running deploy finish; the next one follows
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - name: Drop development-only files
@@ -30,5 +31,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v5
