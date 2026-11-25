@@ -31,7 +31,7 @@
     mtb:     { families: ['mtb_trail'], icon: 'directions_bike', color: '#c2410c' },
     running: { families: ['trail_running'], icon: 'directions_run', color: '#0f766e' }
   };
-  const POI_ORDER = ['mountain_restaurants', 'activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
+  const POI_ORDER = ['home', 'mountain_restaurants', 'activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
     'shops_and_services', 'producers', 'stops'];
   // Piste colours as on the original site.
   const DIFF_COLOR = { novice: '#66BE58', easy: '#1B65D4', intermediate: '#E11C1C', advanced: '#111111' };
@@ -39,7 +39,7 @@
   const CLOSED_COLOR = '#a3acb5';   // lifts and pistes closed right now (live status)
 
   // Layers shown when the map opens, per season; the others start switched off.
-  const DEFAULT_ON = { winter: ['pistes', 'lifts', 'mountain_restaurants'], summer: ['lifts', 'mtb'] };
+  const DEFAULT_ON = { winter: ['pistes', 'lifts', 'mountain_restaurants', 'home'], summer: ['lifts', 'mtb'] };
 
   // ------------------------------------------------------------------ state
   const qs = new URLSearchParams(location.search);
@@ -273,12 +273,15 @@
     // --- points of interest: coloured dots when zoomed out (as on the original), icons when zoomed in
     const ICON_ZOOM = 14.3;
     map.addSource('pois', { type: 'geojson', data: emptyFC(), promoteId: 'id' });
-    map.addLayer({ id: 'poi-dots', type: 'circle', source: 'pois', maxzoom: ICON_ZOOM,
+    const ALWAYS_ICON = ['in', ['get', 'family'], ['literal', ['home']]];   // custom places: an icon at every zoom
+    map.addLayer({ id: 'poi-dots', type: 'circle', source: 'pois', maxzoom: ICON_ZOOM, filter: ['!', ALWAYS_ICON],
       paint: {
         'circle-color': ['get', 'color'],
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 3.5, 12.5, 5.5, 14.3, 7],
         'circle-stroke-color': '#ffffff', 'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 10, 0.8, 14, 1.5]
       } });
+    map.addLayer({ id: 'poi-home', type: 'symbol', source: 'pois', maxzoom: ICON_ZOOM, filter: ALWAYS_ICON,
+      layout: { 'icon-image': ['get', 'iconKey'], 'icon-size': 0.85, 'icon-allow-overlap': true } });
     map.addLayer({ id: 'poi-icons', type: 'symbol', source: 'pois', minzoom: ICON_ZOOM,
       layout: {
         'icon-image': ['get', 'iconKey'], 'icon-size': 1, 'icon-allow-overlap': true,
@@ -643,7 +646,7 @@
   // ------------------------------------------------------------------ map events
   function bindMapEvents() {
     const hoverPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 14, maxWidth: '260px' });
-    const interactive = ['poi-icons', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'closed-lines', 'trail-labels'];
+    const interactive = ['poi-icons', 'poi-home', 'poi-dots', 'pistes', 'nordic', 'routes', 'mtb', 'lifts', 'closed-lines', 'trail-labels'];
     let hovered = null;
 
     map.on('mousemove', (e) => {

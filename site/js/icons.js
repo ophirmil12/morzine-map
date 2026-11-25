@@ -45,7 +45,7 @@ const ICONS = (() => {
   };
   const FAMILY_MATERIAL = {
     activities: 'local_activity', shops_and_services: 'storefront', restaurants: 'restaurant', bars: 'local_bar',
-    mountain_restaurants: 'restaurant', rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
+    mountain_restaurants: 'restaurant', home: 'home', rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
   };
   const FAMILY_COLOR = { nordic_ski_trail: '#1B65D4', trail_running: '#FAB333', stops: '#006FD6' };
 

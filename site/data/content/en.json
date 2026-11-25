@@ -3088,6 +3088,10 @@
    "name": "CABRI",
    "description": "This red run drops from 1,520 m to 1,170 m over 1.5 km. It runs down to Les Gets village and has a few steeper pitches."
   },
+  "custom-home-1": {
+   "name": "House",
+   "description": "1130 Route de la Côte, 74110 La Côte-d'Arbroz, France"
+  },
   "7cf0d3d3-69fa-43b5-be3e-148b2727d349": {
    "name": "E-VTT sur neige avec Evolution 2",
    "description": ""
@@ -3246,6 +3250,7 @@
   "history": "History",
   "hockey": "Hockey",
   "holiday_resort": "Holiday resort",
+  "home": "House",
   "horse_riding": "Horse riding",
   "ice_skating": "Ice skating",
   "lake": "Lake",
@@ -3307,6 +3312,7 @@
   "activities": "Activities",
   "activity_routes": "routes",
   "bars": "Bars",
+  "home": "House",
   "mountain_restaurants": "Mountain restaurants",
   "nordic_ski_trail": "",
   "producers": "Producers",

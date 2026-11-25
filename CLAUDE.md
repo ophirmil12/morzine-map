@@ -72,7 +72,8 @@ whether it costs work on every frame, every move or every minute. If it does, fi
 
 ## Layout and behaviour the office asked for
 
-- The map opens on Morzine village. Default layers: Ski runs, Lifts, Mountain restaurants.
+- The map opens on Morzine village. Default layers: Ski runs, Lifts, Mountain restaurants, House.
+- The House layer is one hand-added place (`data_src/custom_places.json`), drawn as an icon at every zoom.
 - Phones:
   - The bottom panel can shrink to almost nothing.
   - The search box, share button and legend button sit in one row at the bottom.
@@ -110,6 +111,7 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   - `mountain_food.json`: the Mountain restaurants group
   - `ski_descriptions_en.json`: piste and lift texts
   - `ski_fixes_2027.json`: lift and piste changes for winter 2026-27
+  - `custom_places.json`: places not in the office data (the House), each family its own layer
 - **Winter only for now.** English only for now. French texts are kept in `cold_storage/`.
 
 ## Text

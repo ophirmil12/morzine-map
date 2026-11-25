@@ -280,6 +280,11 @@
    "icon": "hotel",
    "group": "accommodation"
   },
+  "home": {
+   "color": "#B45309",
+   "icon": "home",
+   "group": null
+  },
   "horse_riding": {
    "color": "#FAB333",
    "icon": "horse_riding",
@@ -572,6 +577,10 @@
   "bars": {
    "color": "#F44C65",
    "icon": "bar"
+  },
+  "home": {
+   "color": "#B45309",
+   "icon": "home"
   },
   "mountain_restaurants": {
    "color": "#F44C65",

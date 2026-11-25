@@ -15,7 +15,7 @@
  *
  * Bump VERSION to throw away every cached app file (tiles are kept).
  */
-const VERSION = 'v14';
+const VERSION = 'v15';
 const APP_CACHE = `app-${VERSION}`;
 const TILE_CACHE = 'tiles-v1';
 const LIB_CACHE = 'libs-v1';
