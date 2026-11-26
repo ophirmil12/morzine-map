@@ -15,7 +15,7 @@
  *
  * Bump VERSION to throw away every cached app file (tiles are kept).
  */
-const VERSION = 'v17';
+const VERSION = 'v18';
 const APP_CACHE = `app-${VERSION}`;
 const TILE_CACHE = 'tiles-v1';
 const LIB_CACHE = 'libs-v1';
@@ -28,7 +28,7 @@ const BASEMAP_ZOOMS = [8, 14];   // OpenFreeMap vector tiles stop at 14; the map
 // Stored on install. Icons are added from assets/icons/index.json.
 const APP_FILES = [
   './', 'index.html', 'css/app.css', 'css/share.css', 'sw.js',
-  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/live.js', 'js/share.js', 'js/weather.js', 'js/app.js',
+  'js/basemap.js', 'js/i18n.js', 'js/icons.js', 'js/live.js', 'js/share.js', 'js/weather.js', 'js/places.js', 'js/app.js',
   'style/base.json', 'i18n/languages.json', 'i18n/en.json',
   'data/trails.json', 'data/pois.json', 'data/categories.json', 'data/content/en.json',
   'assets/logo.svg', 'assets/icons/index.json', 'tiles/dem/metadata.json',
@@ -160,8 +160,8 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
 
-  // The terms page (terms/) always comes from the network and is never stored.
-  if (url.origin === self.location.origin && /\/terms(\/|\.html|$)/.test(url.pathname)) return;
+  // The terms page (terms/) and the admin link (admin/) always come from the network, never stored.
+  if (url.origin === self.location.origin && /\/(terms|admin)(\/|\.html|$)/.test(url.pathname)) return;
 
   if (url.origin === self.location.origin) {
     if (url.pathname.includes('/tiles/') && url.pathname.endsWith('.png')) {

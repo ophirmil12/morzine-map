@@ -341,24 +341,8 @@ def main():
             fix = json.load(fh)
         apply_ski_fixes(fix, trails, content)
 
-    # Places that are not in the office data (for example a house), added by hand in
-    # data_src/custom_places.json. Each family there becomes its own layer.
-    cp_path = os.path.join(ROOT, "data_src", "custom_places.json")
-    if os.path.exists(cp_path):
-        with open(cp_path, encoding="utf-8") as fh:
-            cp = json.load(fh)
-        for code, fam in cp["families"].items():
-            fams[code] = {"code": code, "color": fam["color"], "icon": fam["icon"], "label": fam["label"]}
-            cats[code] = {"color": fam["color"], "icon": fam["icon"], "label": fam["label"]}
-        for p in cp["places"]:
-            pois.append({"type": "Feature",
-                         "properties": {"id": p["id"], "family": p["family"], "category": p["category"],
-                                        "seasons": ["winter"]},
-                         "geometry": {"type": "Point", "coordinates": round_coords(p["point"])}})
-            for lang in ("fr", "en"):
-                content[lang]["items"][p["id"]] = {"name": p["name"].get(lang) or p["name"]["en"],
-                                                    "description": p["description"].get(lang, "")}
-        print("custom places:", len(cp["places"]))
+    # Pinned places (the House and others) are not built here: they live in the location Worker's
+    # database and are edited on the admin page (server/live-location/, site/js/places.js).
 
     # Lift lines run from the bottom station to the top, so the map's direction arrows point up.
     # Bottom stations come from the elevation data (tools/lift_bottoms.py). Nearly flat lifts

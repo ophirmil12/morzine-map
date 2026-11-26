@@ -1,10 +1,13 @@
 // Live location sharing for the Morzine ski map (Cloudflare Worker + D1 database "DB").
 //
-// One endpoint, POST /pos, with a JSON body:
+// GET /places: the pinned places (the House and others), edited on the admin page (admin-worker.js).
+//
+// POST /pos, with a JSON body:
 //   { id, name, lat, lon, acc, afterHours }   share my position, get everyone else who shares
 //   { id, afterHours }                        get everyone else (only while I am sharing)
 //   { id, stop: true }                        stop sharing: I disappear from the map at once
-// Reply: { sharing, others: [{ k, name, lat, lon, acc, age }], closed?, outside? }
+// Reply: { sharing, others: [{ k, name, lat, lon, acc, age }], closed?, outside?, disabled? }
+// disabled: an admin switched location sharing off for everyone (meta k='sharing_off').
 //
 // Rules:
 //   - Sharing works from 6:00 to 20:00, French time. After hours only with afterHours: true
@@ -29,7 +32,7 @@ export default {
     const origin = request.headers.get('Origin') || '';
     const cors = {
       'Access-Control-Allow-Origin': ORIGINS.includes(origin) ? origin : ORIGINS[0],
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type',
       'Access-Control-Max-Age': '86400',
       'Vary': 'Origin'
@@ -39,7 +42,15 @@ export default {
     });
 
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
-    if (new URL(request.url).pathname !== '/pos' || request.method !== 'POST') return reply({ error: 'not found' }, 404);
+    const path = new URL(request.url).pathname;
+    if (path === '/places' && request.method === 'GET') {
+      const { results } = await env.DB.prepare(
+        'SELECT id, name, description, emoji, color, lat, lon, updated FROM places ORDER BY name').all();
+      return new Response(JSON.stringify({ places: results }), {
+        headers: { ...cors, 'Content-Type': 'application/json', 'Cache-Control': 'public, max-age=300' }
+      });
+    }
+    if (path !== '/pos' || request.method !== 'POST') return reply({ error: 'not found' }, 404);
 
     let body;
     try { body = await request.json(); } catch (e) { return reply({ error: 'bad request' }, 400); }
@@ -53,6 +64,13 @@ export default {
     if (body.stop) {
       await db.prepare('DELETE FROM pos WHERE id = ?').bind(id).run();   // the emergency record stays
       return reply({ sharing: false, others: [] });
+    }
+
+    // Switched off for everyone on the admin page: nobody is stored or shown.
+    const off = await db.prepare("SELECT v FROM meta WHERE k = 'sharing_off'").first();
+    if (off && off.v === 1) {
+      await db.prepare('DELETE FROM pos WHERE id = ?').bind(id).run();
+      return reply({ sharing: false, disabled: true, others: [] });
     }
 
     const paris = parisClock(now);

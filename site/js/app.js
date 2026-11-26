@@ -31,7 +31,7 @@
     mtb:     { families: ['mtb_trail'], icon: 'directions_bike', color: '#c2410c' },
     running: { families: ['trail_running'], icon: 'directions_run', color: '#0f766e' }
   };
-  const POI_ORDER = ['home', 'mountain_restaurants', 'activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
+  const POI_ORDER = ['pinned', 'mountain_restaurants', 'activities', 'restaurants', 'bars', 'accommodations', 'rental_accommodation',
     'shops_and_services', 'producers', 'stops'];
   // Piste colours as on the original site.
   const DIFF_COLOR = { novice: '#66BE58', easy: '#1B65D4', intermediate: '#E11C1C', advanced: '#111111' };
@@ -39,7 +39,7 @@
   const CLOSED_COLOR = '#a3acb5';   // lifts and pistes closed right now (live status)
 
   // Layers shown when the map opens, per season; the others start switched off.
-  const DEFAULT_ON = { winter: ['pistes', 'lifts', 'mountain_restaurants', 'home'], summer: ['lifts', 'mtb'] };
+  const DEFAULT_ON = { winter: ['pistes', 'lifts', 'mountain_restaurants', 'pinned'], summer: ['lifts', 'mtb'] };
 
   // ------------------------------------------------------------------ state
   const qs = new URLSearchParams(location.search);
@@ -120,7 +120,8 @@
 
   const all = [];   // every feature, lines and points
   const byId = {};
-  for (const f of trailsFC.features.concat(poisFC.features)) {
+  for (const f of trailsFC.features.concat(poisFC.features)) addRecord(f);
+  function addRecord(f) {
     const p = f.properties;
     const isLine = f.geometry.type !== 'Point';
     const look = ICONS.look(p.family, p.category);
@@ -141,6 +142,26 @@
       .normalize('NFD').replace(/[̀-ͯ]/g, '');
     const rec = { f, p, isLine };
     all.push(rec); byId[p.id] = rec;
+  }
+
+  /** Pinned places (the House and others, edited on the admin page) arrive from js/places.js.
+   *  They become ordinary records: on the map with their emoji, in search, with a detail card. */
+  function setPinned(list) {
+    for (let i = all.length - 1; i >= 0; i--) {
+      if (all[i].p.family === 'pinned') { delete byId[all[i].p.id]; all.splice(i, 1); }
+    }
+    const items = {};
+    for (const pl of list) {
+      const id = 'pin-' + pl.id;
+      items[id] = { name: pl.name, description: pl.description || '' };
+      ICONS.setCustom(id, { emoji: pl.emoji || '📍', color: pl.color || '#b45309' });
+    }
+    I18N.addContent({ items, families: { pinned: t('places.layer') } });
+    for (const pl of list) {
+      addRecord({ type: 'Feature', geometry: { type: 'Point', coordinates: [pl.lon, pl.lat] },
+        properties: { id: 'pin-' + pl.id, family: 'pinned', category: 'pin-' + pl.id, seasons: ['winter'] } });
+    }
+    refresh();   // only called after the map has loaded (PLACES.init in the load handler)
   }
 
   // ------------------------------------------------------------------ map
@@ -301,7 +322,7 @@
     // --- points of interest: coloured dots when zoomed out (as on the original), icons when zoomed in
     const ICON_ZOOM = 14.3;
     map.addSource('pois', { type: 'geojson', data: emptyFC(), promoteId: 'id' });
-    const ALWAYS_ICON = ['in', ['get', 'family'], ['literal', ['home']]];   // custom places: an icon at every zoom
+    const ALWAYS_ICON = ['in', ['get', 'family'], ['literal', ['pinned']]];   // pinned places: an icon at every zoom
     map.addLayer({ id: 'poi-dots', type: 'circle', source: 'pois', maxzoom: ICON_ZOOM, filter: ['!', ALWAYS_ICON],
       paint: {
         'circle-color': ['get', 'color'],
@@ -330,6 +351,7 @@
     if (qs.get('id') && byId[qs.get('id')]) openDetail(qs.get('id'), true);
     LIVE.start(applyLive);
     SHARE.init(map, { t, toast });
+    PLACES.init(setPinned);   // pinned places from the location Worker (cached on the phone)
     WEATHER.init({ toast });   // mountain weather chip, top-right   // live location sharing (hidden until the Worker is deployed)
   });
 
@@ -625,7 +647,7 @@
         ? t('units.km', { n: (p.length / 1000).toLocaleString(I18N.lang, { maximumFractionDigits: 1 }) })
         : t('units.m', { n: Math.round(p.length / 10) * 10 })]);
     }
-    if (p.seasons && p.seasons.length) facts.push([t('detail.season'), p.seasons.map((s) => t(`season.${s}`)).join(', ')]);
+    if (p.seasons && p.seasons.length && p.family !== 'pinned') facts.push([t('detail.season'), p.seasons.map((s) => t(`season.${s}`)).join(', ')]);
     document.getElementById('dFacts').innerHTML = facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
     listView.hidden = true; detailView.hidden = false; detailView.scrollTop = 0;
     highlight(id);

@@ -22,6 +22,7 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   - live lift status: once on load, then every 5 minutes, only while the page is visible
   - location sharing: one request every 3 minutes, which both sends and receives, only while visible
   - mountain weather (`site/js/weather.js`): one request every 30 minutes, only while visible
+  - pinned places (`site/js/places.js`): once on load, then at most every 15 minutes when the page comes back
 - Never send requests for areas outside the map. Tile sources with limited coverage need `bounds`
   (see `DEM_BOUNDS` in `site/js/app.js` and the contours source in `site/js/basemap.js`).
 - No analytics, trackers, ads or third-party widgets.
@@ -60,7 +61,8 @@ whether it costs work on every frame, every move or every minute. If it does, fi
 - **New app files** go into the precache list there.
 - **Every page visit is answered with the cached map.** A new standalone page must be excluded,
   like `terms/`, or it will show the map instead.
-- **The terms page (`site/terms/`) is never cached.** It is not linked from the map and not indexed.
+- **The terms page (`site/terms/`) and the admin link (`site/admin/`) are never cached.** They are not
+  linked from the map and not indexed.
 - **The service worker only runs off localhost**, or locally with `?sw=1`.
 
 ## Camera
@@ -73,8 +75,10 @@ whether it costs work on every frame, every move or every minute. If it does, fi
 
 ## Layout and behaviour the office asked for
 
-- The map opens on Morzine village. Default layers: Ski runs, Lifts, Mountain restaurants, House.
-- The House layer is one hand-added place (`data_src/custom_places.json`), drawn as an icon at every zoom.
+- The map opens on Morzine village. Default layers: Ski runs, Lifts, Mountain restaurants, Pinned places.
+- **Pinned places** (the House and others) live in the location Worker's database and are edited on
+  the admin page. `site/js/places.js` fetches them once when the map opens (at most every 15 minutes),
+  keeps a copy on the phone, and draws each with its own emoji and colour at every zoom.
 - Phones:
   - The bottom panel can shrink to almost nothing.
   - The search box, share button and legend button sit in one row at the bottom.
@@ -106,6 +110,12 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   enough to stay inside it.
 - **Updating the Worker:** paste `worker.js` in the Cloudflare dashboard. The D1 console needs
   one-line SQL without comments.
+- **Admin page:** a second Worker (`morzine-admin`, built from `server/live-location/admin/` by
+  `tools/build_admin_worker.py`). Its Cloudflare Access login is ready but OFF for now (owner's choice): it
+  switches on when the Worker variables `TEAM_DOMAIN` and `POLICY_AUD` are set. Turn it on before real
+  visitors share their position, since the admin shows everyone's positions. It never adds weight to the map:
+  the map site only has a small `/admin/` link page. It can switch sharing off for everyone
+  (the public Worker then answers `disabled`). Never move admin data or code into `site/`.
 
 ## Data
 
@@ -117,7 +127,6 @@ whether it costs work on every frame, every move or every minute. If it does, fi
   - `mountain_food.json`: the Mountain restaurants group
   - `ski_descriptions_en.json`: piste and lift texts
   - `ski_fixes_2027.json`: lift and piste changes for winter 2026-27
-  - `custom_places.json`: places not in the office data (the House), each family its own layer
   - `lift_bottoms.json`: bottom station of each lift (made by `tools/lift_bottoms.py` from the
     elevation data). Lift lines are turned to run bottom to top, so the direction arrows point up.
     Nearly flat carpets and rope tows are marked `flat` and get no arrows.

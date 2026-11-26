@@ -1,5 +1,7 @@
 # Finding a skier in an emergency
 
+The quickest way is the admin page: `https://ophirmil12.github.io/morzine-map/admin/` (no login for now). Open the tab "Emergency record" and tap the person. Their path appears on the map, coloured by time, with the time of each point. The SQL below is the fallback.
+
 The server keeps a record of the positions of everyone who shares:
 - every position from the last 2 hours
 - one position per 20 minutes for the 2 days before that

@@ -53,6 +53,7 @@ const SHARE = (() => {
   // ------------------------------------------------------------------ state
   let map, toast;
   let active = false, lastSend = 0, others = [], warnedOutside = false, busy = false, drawnKey = '';
+  let offForAll = false;   // an admin switched sharing off for everyone (server reply 'disabled')
   const $ = (id) => document.getElementById(id);
   const choice = () => store.get(K_CHOICE);              // 'on', 'off', or null (never asked)
   const allowed = () => inHours() || afterHours();
@@ -144,6 +145,10 @@ const SHARE = (() => {
 
   function apply(res) {
     if (!active || !res) return;
+    if (!!res.disabled !== offForAll) {
+      offForAll = !!res.disabled;
+      if (offForAll) toast(I18N.t('share.disabled'));
+    }
     if (res.outside && !warnedOutside) { warnedOutside = true; toast(I18N.t('share.outside')); }
     const got = Date.now();
     others = (res.others || []).map((o) => ({ ...o, seenAt: got - o.age * 1000 }));
@@ -174,7 +179,7 @@ const SHARE = (() => {
     const b = $('btnShare'); if (!b) return;
     const on = choice() === 'on';
     b.setAttribute('aria-pressed', String(active));
-    b.classList.toggle('waiting', on && !active);   // switched on, but outside sharing hours
+    b.classList.toggle('waiting', (on && !active) || (active && offForAll));   // switched on, but outside sharing hours
     const n = b.querySelector('.n');
     n.hidden = !(active && others.length);
     n.textContent = n.hidden ? '' : String(others.length);

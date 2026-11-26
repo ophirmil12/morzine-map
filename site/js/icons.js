@@ -45,9 +45,9 @@ const ICONS = (() => {
   };
   const FAMILY_MATERIAL = {
     activities: 'local_activity', shops_and_services: 'storefront', restaurants: 'restaurant', bars: 'local_bar',
-    mountain_restaurants: 'restaurant', home: 'home', rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
+    mountain_restaurants: 'restaurant', pinned: 'push_pin', rental_accommodation: 'cottage', producers: 'agriculture', trail_running: 'directions_run', _default: 'location_on'
   };
-  const FAMILY_COLOR = { nordic_ski_trail: '#1B65D4', trail_running: '#FAB333', stops: '#006FD6' };
+  const FAMILY_COLOR = { nordic_ski_trail: '#1B65D4', trail_running: '#FAB333', stops: '#006FD6', pinned: '#B45309' };
 
   // Colour icons from the site's sprite, used on the layer chips (as on the original tabs).
   const CHIP_ICON = {
@@ -79,8 +79,13 @@ const ICONS = (() => {
     return n && siteIndex[n] && siteIndex[n].mono ? n : null;
   }
 
-  /** {glyph, kind: 'site'|'material', color} for a family/category. */
+  // Pinned places: their own emoji and colour, set by app.js (setPinned).
+  const custom = {};
+  const setCustom = (id, v) => { custom[id] = v; };
+
+  /** {glyph, kind: 'site'|'material'|'emoji', color} for a family/category. */
   function look(family, category) {
+    if (custom[category]) return { glyph: custom[category].emoji, kind: 'emoji', color: custom[category].color };
     const cat = meta.categories[category] || {};
     const fam = meta.families[family] || {};
     const color = cat.color && cat.color !== '#000000' && !/^ski_|^nordic_ski_/.test(category || '')
@@ -108,7 +113,7 @@ const ICONS = (() => {
     const l = look(family, category);
     const glyph = l.kind === 'site'
       ? `<img src="assets/icons/${l.glyph}.svg" alt="" class="si">`
-      : `<span class="ms">${l.glyph}</span>`;
+      : l.kind === 'emoji' ? `<span class="em">${l.glyph}</span>` : `<span class="ms">${l.glyph}</span>`;
     return `<span class="badge ${extraClass}" style="--c:${l.color}">${glyph}</span>`;
   }
 
@@ -138,6 +143,10 @@ const ICONS = (() => {
     ctx.fillStyle = color; ctx.beginPath(); ctx.arc(c, c, c - 4, 0, Math.PI * 2); ctx.fill();
     if (kind === 'site' && siteImg[glyph]) {
       const s = 16; ctx.drawImage(siteImg[glyph], c - s / 2, c - s / 2, s, s);
+    } else if (kind === 'emoji') {
+      ctx.font = '15px "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(glyph, c, c + 1);
     } else {
       ctx.fillStyle = '#fff'; ctx.font = `17px "${FONT}"`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText(glyph, c, c + 0.5);
@@ -160,5 +169,5 @@ const ICONS = (() => {
     await document.fonts.load(`24px "${FONT}"`, 'downhill_skiing').catch(() => {});
   }
 
-  return { init, look, key, badgeHTML, chipHTML, makeImage, LIFT_CATS };
+  return { init, look, key, badgeHTML, chipHTML, makeImage, setCustom, LIFT_CATS };
 })();

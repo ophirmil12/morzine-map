@@ -184,6 +184,7 @@ button { cursor: pointer; }
   background: var(--c, var(--ink-2)); color: #fff;
 }
 .badge .ms { font-size: 20px; }
+.badge .em { font-size: 18px; line-height: 1; }   /* pinned places: their emoji */
 .badge.line { border-radius: 10px; }
 
 .back {

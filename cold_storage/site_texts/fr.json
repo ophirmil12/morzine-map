@@ -3187,10 +3187,6 @@
   "osm-way-258907441": {
    "name": "CABRI",
    "description": ""
-  },
-  "custom-home-1": {
-   "name": "Maison",
-   "description": "1130 Route de la Côte, 74110 La Côte-d'Arbroz, France"
   }
  },
  "categories": {
@@ -3250,7 +3246,6 @@
   "history": "Patrimoine",
   "hockey": "Hockey",
   "holiday_resort": "Village vacances",
-  "home": "Maison",
   "horse_riding": "Equitation",
   "ice_skating": "Patinoire",
   "lake": "Lac",
@@ -3312,7 +3307,6 @@
   "activities": "Activités",
   "activity_routes": "itinéraires",
   "bars": "Bars",
-  "home": "Maison",
   "mountain_restaurants": "Restaurants d'altitude",
   "nordic_ski_trail": "",
   "producers": "Producteurs",

@@ -27,3 +27,16 @@ CREATE INDEX IF NOT EXISTS track_id_t ON track (id, t);
 
 -- Small key/value store (time of the last tidy-up).
 CREATE TABLE IF NOT EXISTS meta (k TEXT PRIMARY KEY, v INTEGER NOT NULL);
+
+-- Pinned places shown on the map (the House and others), edited on the admin page.
+CREATE TABLE IF NOT EXISTS places (
+  id          TEXT PRIMARY KEY,
+  name        TEXT NOT NULL,
+  description TEXT NOT NULL,
+  emoji       TEXT NOT NULL,
+  color       TEXT NOT NULL,   -- #rrggbb
+  lat         REAL NOT NULL,
+  lon         REAL NOT NULL,
+  updated     INTEGER NOT NULL
+);
+-- The meta table also holds k = 'sharing_off' (1: location sharing switched off for everyone).

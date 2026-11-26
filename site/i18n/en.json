@@ -95,7 +95,8 @@
     "agoHours": {
       "one": "{n} hour",
       "other": "{n} hours"
-    }
+    },
+    "disabled": "Location sharing is switched off for everyone at the moment."
   },
   "footer": {
     "office": "Morzine Tourist Office"
@@ -117,5 +118,8 @@
   "weather": {
     "label": "Weather at the top of the slopes (Avoriaz, 1,800 m): {temp}°C, updated {time}",
     "about": "Weather at the top of the slopes, Avoriaz 1,800 m, from Météo-France. Updated {time}."
+  },
+  "places": {
+    "layer": "Pinned places"
   }
 }

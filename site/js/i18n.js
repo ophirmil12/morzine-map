@@ -73,5 +73,12 @@ const I18N = (() => {
     document.title = t('page.title');
   }
 
-  return { init, t, tn, item, category, family, apply, get lang() { return lang; }, get languages() { return langs; } };
+  /** Extra names and labels that arrive later (pinned places from the server). */
+  function addContent(extra) {
+    for (const k of ['items', 'categories', 'families']) {
+      if (extra[k]) content[k] = Object.assign({}, content[k], extra[k]);
+    }
+  }
+
+  return { init, t, tn, item, category, family, apply, addContent, get lang() { return lang; }, get languages() { return langs; } };
 })();
